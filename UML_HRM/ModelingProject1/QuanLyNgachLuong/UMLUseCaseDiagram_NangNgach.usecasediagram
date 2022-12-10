@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="f873203a-5265-40c6-b9a1-acf94fb589c2" name="UMLUseCaseDiagram_NangNgach" linkedPackageId="ddd59078-121a-4596-aaa0-044a3c1b3e2e" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="84f176b8-b746-4804-b83f-a421c605c83e">
+      <elementDefinition Id="f499d257-dbb1-475a-bc21-4bb004b6850c" />
+      <body>UC Quản lý nâng ngạch</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4e516fce-48ff-4479-8fce-45410fa4d5ff" name="Lập danh sáchđề nghị nâng ngạch" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1abf0a42-1252-48ab-9ef0-95c47ac3d678" />
+        <additions>
+          <include Id="0fd38ff4-7a46-4816-8294-a6b2ba982fd6">
+            <useCaseMoniker Id="af6d0c01-7a69-45ce-b6d4-f027f5e00042" LastKnownName="Nâng ngạch" />
+            <elementDefinition Id="17d38f48-a737-4384-9586-ef048b370ebe" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a0105bd0-009c-483d-8065-648b0f094521" name="Lập quyết định nâng ngạch lương" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7e363000-606d-4200-a64c-7fde66675bbd" />
+        <extendedCases>
+          <extend Id="36f7e005-7b65-4a1b-be7c-d3b90a6be0ad">
+            <useCaseMoniker Id="af6d0c01-7a69-45ce-b6d4-f027f5e00042" LastKnownName="Nâng ngạch" />
+            <elementDefinition Id="c94fb7dd-23af-4f4e-bb47-3301ebf8e480" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="4371f594-a1f0-4409-a3bb-a15e6995eb28" name="người sử dụng" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ae0e4b42-e8e1-409d-af2f-8ca9e2836d0f" />
+        <suppliersInternal>
+          <dependency Id="6294b497-e029-4719-a42b-508f0a704bdb">
+            <useCaseMoniker Id="d1469ee5-d4d6-4aa2-af9a-0e88de1bf725" LastKnownName="Quản lý ngạch lương" />
+            <elementDefinition Id="28902cc9-ff2f-472c-abb3-8d2f8cfa161e" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="287aa36c-9b73-477e-9f4f-fe99e8ece154" name="quản trị nhân viên(admin tổ chức)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3adc7cf9-8565-4998-a8eb-4db02ba282d3" />
+        <generalsInternal>
+          <generalization Id="18e44544-ff8a-4c80-b2c5-6be70aff1270" isSubstitutable="false">
+            <actorMoniker Id="4371f594-a1f0-4409-a3bb-a15e6995eb28" LastKnownName="người sử dụng" />
+            <elementDefinition Id="6c902048-88b2-422f-b3e3-fb51ee2b67de" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="681b5438-47a8-424b-8194-2f35b2326b23" name="quản trị phần mềm(administrator)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f8657f9f-f282-4c4d-be60-36bab7b990be" />
+        <generalsInternal>
+          <generalization Id="7968d843-cd80-4ca8-94f2-7f58dc8f61d8" isSubstitutable="false">
+            <actorMoniker Id="4371f594-a1f0-4409-a3bb-a15e6995eb28" LastKnownName="người sử dụng" />
+            <elementDefinition Id="bde2c14c-bf8a-40db-a278-cfe341e9bcdc" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d1469ee5-d4d6-4aa2-af9a-0e88de1bf725" name="Quản lý ngạch lương" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b145d85c-f091-4242-aef3-a77eb28cea68" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="af6d0c01-7a69-45ce-b6d4-f027f5e00042" name="Nâng ngạch" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e64a864c-36a5-4562-a945-81d7792b9a8b" />
+        <extendedCases>
+          <extend Id="d182bed3-c750-4f9e-8541-3455d530c38b">
+            <useCaseMoniker Id="d1469ee5-d4d6-4aa2-af9a-0e88de1bf725" LastKnownName="Quản lý ngạch lương" />
+            <elementDefinition Id="6e08d4ed-3a3b-4824-9238-d31fa7f2baf3" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="ddd59078-121a-4596-aaa0-044a3c1b3e2e" name="ModelingProject1">
+    <elementDefinition Id="c1918b24-b69c-4818-aacd-4d280375ce7b" />
+    <profileInstances>
+      <packageHasProfileInstances Id="097cdf99-e7f2-4b49-aeea-02e193074a2e">
+        <profileInstance Id="558bfdbd-2410-4ae0-93f4-56252f367772" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="b050e809-90c8-45e2-b9fc-43f6e7ecd3b2">
+        <profileInstance Id="796e4dbf-9a02-4999-a200-8e3228e84450" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

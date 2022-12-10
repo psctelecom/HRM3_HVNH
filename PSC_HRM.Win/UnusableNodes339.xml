@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="QuyetDinhChoPhepNghiHocTamThoi_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="27.188328912466844">
+            <LayoutGroup Id="QuyetDinh" RelativeSize="100" Direction="Vertical" Index="0" Caption="Quyết định">
+              <LayoutGroup Id="QuyetDinh_col1" RelativeSize="80.975609756097555" Direction="Vertical">
+                <LayoutGroup Id="Autod4a16008-f3f3-4d96-89e1-ee794d991d69" ShowCaption="False" Caption="Autod4a16008-f3f3-4d96-89e1-ee794d991d69(5)" Direction="Horizontal" Index="0" RelativeSize="80.722891566265062">
+                  <LayoutGroup Id="Item1" ShowCaption="False" CaptionLocation="Top" Index="0" RelativeSize="33.931777378815077">
+                    <LayoutItem Id="ThongTinTruong" ViewItem="ThongTinTruong" SizeConstraintsType="Default" Index="0" RelativeSize="23.880597014925375" />
+                    <LayoutItem Id="CoQuanRaQuyetDinh" ViewItem="CoQuanRaQuyetDinh" SizeConstraintsType="Default" Index="1" RelativeSize="17.910447761194028" />
+                    <LayoutItem Id="TenCoQuan" ViewItem="TenCoQuan" SizeConstraintsType="Default" Index="2" RelativeSize="17.910447761194028" />
+                    <LayoutItem Id="SoQuyetDinh" ViewItem="SoQuyetDinh" SizeConstraintsType="Default" Index="3" RelativeSize="40.298507462686565" />
+                  </LayoutGroup>
+                  <LayoutGroup Id="Item2" ShowCaption="False" CaptionLocation="Top" Index="1" RelativeSize="32.854578096947932">
+                    <LayoutItem Id="NgayQuyetDinh" ViewItem="NgayQuyetDinh" SizeConstraintsType="Default" Index="0" RelativeSize="23.880597014925375" />
+                    <LayoutItem Id="NgayHieuLuc" ViewItem="NgayHieuLuc" SizeConstraintsType="Default" Index="1" RelativeSize="17.910447761194028" />
+                    <LayoutItem Id="CapQuyetDinh" ViewItem="CapQuyetDinh" SizeConstraintsType="Default" Index="2" RelativeSize="17.910447761194028" />
+                    <LayoutItem Id="PhanLoaiNguoiKy" ViewItem="PhanLoaiNguoiKy" SizeConstraintsType="Default" Index="3" RelativeSize="40.298507462686565" />
+                  </LayoutGroup>
+                  <LayoutGroup Id="Item3" ShowCaption="False" CaptionLocation="Top" Index="2" RelativeSize="33.213644524236983">
+                    <LayoutItem Id="ChucVuNguoiKy" ViewItem="ChucVuNguoiKy" SizeConstraintsType="Default" Index="0" RelativeSize="23.880597014925375" />
+                    <LayoutItem Id="NguoiKy" ViewItem="NguoiKy" SizeConstraintsType="Default" Index="1" RelativeSize="17.910447761194028" />
+                    <LayoutItem Id="NguoiKy1" ViewItem="NguoiKy1" SizeConstraintsType="Default" Index="2" RelativeSize="17.910447761194028" />
+                    <LayoutItem Id="LuuTru" ViewItem="LuuTru" SizeConstraintsType="Default" Index="3" RelativeSize="17.910447761194028" />
+                    <LayoutItem Id="NoiDung" ViewItem="NoiDung" SizeConstraintsType="Custom" MinSize="181, 30" MaxSize="0, 30" Index="4" RelativeSize="22.388059701492537" />
+                  </LayoutGroup>
+                </LayoutGroup>
+                <LayoutItem Id="ThongTinTruong" SizeConstraintsType="Default" Index="0" RelativeSize="20" Removed="True" />
+                <LayoutItem Id="CanCu" ViewItem="CanCu" SizeConstraintsType="Custom" Index="1" RelativeSize="19.277108433734941" MinSize="186, 32" MaxSize="0, 32" />
+                <LayoutItem Id="CoQuanRaQuyetDinh" SizeConstraintsType="Default" RelativeSize="15" Index="1" Removed="True" />
+                <LayoutItem Id="NgayQuyetDinh" SizeConstraintsType="Default" RelativeSize="44" Index="1" Removed="True" />
+                <LayoutItem Id="TenCoQuan" SizeConstraintsType="Default" Index="2" RelativeSize="15" Removed="True" />
+                <LayoutItem Id="NgayHieuLuc" SizeConstraintsType="Default" RelativeSize="20" Removed="True" />
+                <LayoutItem Id="SoQuyetDinh" SizeConstraintsType="Default" RelativeSize="15" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="QuyetDinh_col2" RelativeSize="24.452554744525546" Direction="Horizontal" Removed="True">
+                <LayoutItem Id="CapQuyetDinh" Removed="True" />
+                <LayoutItem Id="ChucVuNguoiKy" Removed="True" />
+                <LayoutItem Id="NguoiKy" Removed="True" />
+                <LayoutItem Id="NguoiKy1" Removed="True" />
+                <LayoutItem Id="PhanLoaiNguoiKy" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="QuyetDinhChoPhepNghiHocTamThoi" RelativeSize="34.277620396600568" Removed="True">
+              <LayoutGroup Id="QuyetDinhChoPhepNghiHocTamThoi_col1" RelativeSize="48.661800486618006">
+                <LayoutItem Id="DenNgay" SizeConstraintsType="Default" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="QuyetDinhDaoTao" SizeConstraintsType="Default" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="TuNgay" SizeConstraintsType="Default" RelativeSize="27.272727272727273" />
+              </LayoutGroup>
+              <LayoutGroup Id="QuyetDinhChoPhepNghiHocTamThoi_col2" RelativeSize="48.661800486618006">
+                <LayoutItem Id="GhiChu" SizeConstraintsType="Default" RelativeSize="63.636363636363633" Index="1" />
+                <LayoutItem Id="LuuTru" SizeConstraintsType="Default" RelativeSize="27.272727272727273" Removed="True" />
+                <LayoutItem Id="QuyetDinhMoi" SizeConstraintsType="Default" RelativeSize="36.363636363636367" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="QuyetDinhChoPhepNghiHocTamThoi" ShowCaption="True" Caption="Nội dung" Direction="Horizontal" Index="1" RelativeSize="18.302387267904511">
+            <LayoutGroup Id="QuyetDinhChoPhepNghiHocTamThoi_col1" ShowCaption="False" Index="0" RelativeSize="48.013816925734027">
+              <LayoutItem Id="QuyetDinhDaoTao" ViewItem="QuyetDinhDaoTao" SizeConstraintsType="Default" Index="0" RelativeSize="28.318584070796462" />
+              <LayoutItem Id="QuyetDinhMoi" ViewItem="QuyetDinhMoi" SizeConstraintsType="Default" Index="1" RelativeSize="21.238938053097346" />
+              <LayoutItem Id="GhiChu" ViewItem="GhiChu" SizeConstraintsType="Default" Index="2" RelativeSize="50.442477876106196" />
+            </LayoutGroup>
+            <LayoutGroup Id="Auto88bfe739-eb4b-44cf-8780-aacf59804571" ShowCaption="False" Caption="" Index="1" RelativeSize="48.186528497409327">
+              <LayoutItem Id="TuNgay" ViewItem="TuNgay" SizeConstraintsType="Default" Index="0" RelativeSize="28.318584070796462" />
+              <LayoutItem Id="DenNgay" ViewItem="DenNgay" SizeConstraintsType="Default" Index="1" RelativeSize="21.238938053097346" />
+              <LayoutItem Id="HocTiepTuNgay" ViewItem="HocTiepTuNgay" SizeConstraintsType="Default" Index="2" RelativeSize="21.238938053097346" />
+              <LayoutItem Id="HocTiepDenNgay" ViewItem="HocTiepDenNgay" SizeConstraintsType="Default" Index="3" RelativeSize="28.318584070796462" />
+              <LayoutGroup Id="QuyetDinhChoPhepNghiHocTamThoi_col2" ShowCaption="False" Direction="Horizontal" Index="4" RelativeSize="0.88495575221238942" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="ListChiTietChoPhepNghiHocTamThoi_Group" Direction="Vertical" RelativeSize="54.509283819628649" Index="2">
+            <LayoutItem Id="ListChiTietChoPhepNghiHocTamThoi" SizeConstraintsType="Default" RelativeSize="90.510948905109487" />
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="3.5809018567639259" Caption="SizeableEditors" Direction="Horizontal" Index="2" Removed="True">
+            <LayoutItem Id="CanCu" Removed="True" />
+            <LayoutItem Id="NoiDung" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Report_DanhSach_DanhSachCanBoCongNhanVien_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="StoreProcedureReport" RelativeSize="100" Caption="Ngày lập báo cáo" Index="0" Direction="Vertical">
+              <LayoutItem Id="TuNgay" ViewItem="TuNgay" SizeConstraintsType="Default" Index="0" RelativeSize="4.3715846994535523" />
+              <LayoutItem Id="DenNgay" ViewItem="DenNgay" SizeConstraintsType="Default" Index="1" RelativeSize="3.278688524590164" />
+              <LayoutItem Id="GioiTinh" ViewItem="GioiTinh" SizeConstraintsType="Default" Index="2" RelativeSize="3.278688524590164" />
+              <LayoutItem Id="HocVi" ViewItem="HocVi" SizeConstraintsType="Default" Index="3" RelativeSize="3.278688524590164" />
+              <LayoutItem Id="HocHam" ViewItem="HocHam" SizeConstraintsType="Default" Index="4" RelativeSize="3.278688524590164" />
+              <LayoutGroup Id="Auto3ea7c7d1-3495-49e2-8ca3-263f3cbacd01" ShowCaption="False" Caption="" Direction="Horizontal" Index="5" RelativeSize="3.278688524590164">
+                <LayoutItem Id="DangLamViec" ShowCaption="False" ViewItem="DangLamViec" SizeConstraintsType="Default" Index="0" RelativeSize="35.940099833610645" />
+                <LayoutItem Id="MoiVao" ShowCaption="False" ViewItem="MoiVao" SizeConstraintsType="Default" Index="1" RelativeSize="25.291181364392678" />
+                <LayoutItem Id="DaNghi" ShowCaption="False" ViewItem="DaNghi" SizeConstraintsType="Default" Index="2" RelativeSize="38.76871880199667" />
+              </LayoutGroup>
+              <LayoutItem Id="NgayLapBaoCao" ViewItem="NgayLapBaoCao" SizeConstraintsType="Default" Index="6" RelativeSize="79.234972677595621" Removed="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="Report_DanhSach_DanhSachCanBoCongNhanVien" RelativeSize="78.4153005464481" Direction="Horizontal" Removed="True">
+              <LayoutGroup Id="Report_DanhSach_DanhSachCanBoCongNhanVien_col1" Removed="True" />
+              <LayoutGroup Id="Report_DanhSach_DanhSachCanBoCongNhanVien_col2" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="HetHanBoNhiem_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutItem Id="QuyetDinhBoNhiem" ViewItem="QuyetDinhBoNhiem" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="DanhGiaCanBoCuoiNam_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="DanhGiaCanBoCuoiNam">
+              <LayoutItem Id="ChotDanhGia" ViewItem="ChotDanhGia" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="GiayToHoSo_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SizeableEditors">
+            <LayoutItem Id="NgayLap" ViewItem="NgayLap" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="DanhSachDenTuoiNghiHuu_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="DanhSachDenTuoiNghiHuu">
+              <LayoutGroup Id="Auto89dfa229-86d5-4c4b-a37b-58647c8b05ba">
+                <LayoutItem Id="SoThang" ViewItem="SoThang" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ChiTietThanhLapKhac_ThanhVien_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="ChiTietThanhLapKhac_ThanhVien">
+              <LayoutGroup Id="ChiTietThanhLapKhac_ThanhVien_col1" RelativeSize="48.264984227129339">
+                <LayoutItem Id="BoPhan" SizeConstraintsType="Default" RelativeSize="4.630969609261939" />
+                <LayoutItem Id="ThongTinNhanVien" SizeConstraintsType="Default" RelativeSize="95.369030390738061" />
+                <LayoutItem Id="ChucVuText" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="ChiTietThanhLapKhac_ThanhVien_col2" RelativeSize="48.264984227129339">
+                <LayoutItem Id="HoTenText" SizeConstraintsType="Default" RelativeSize="4.630969609261939" />
+                <LayoutItem Id="ChucVuText" ViewItem="ChucVuText" SizeConstraintsType="Default" Index="1" RelativeSize="3.4732272069464543" />
+                <LayoutItem Id="ChucDanhHoiDong" SizeConstraintsType="Default" Index="2" RelativeSize="91.8958031837916" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="QuyetDinhCongNhanDaoTao_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="QuyetDinhCongNhanDaoTao">
+              <LayoutGroup Id="QuyetDinhCongNhanDaoTao_col1">
+                <LayoutGroup Id="Auto9073d016-9d90-4e9a-b287-d6c6073db513">
+                  <LayoutItem Id="NgayPhatSinhBienDong" ViewItem="NgayPhatSinhBienDong" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="QuyetDinhDaoTao_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="QuyetDinhDaoTao">
+              <LayoutGroup Id="QuyetDinhDaoTao_col1">
+                <LayoutGroup Id="Auto7461c228-a11a-45af-b09a-bc624374ffd9">
+                  <LayoutItem Id="NgayPhatSinhBienDong" ViewItem="NgayPhatSinhBienDong" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="QuyetDinhHuongCheDoDiHocTrongNuoc_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="ListChiTietQuyetDinhHuongCheDoDiHocTrongNuoc_Group" Direction="Vertical" Index="1" RelativeSize="56.557377049180324">
+            <LayoutItem Id="ListChiTietQuyetDinhHuongCheDoDiHocTrongNuoc" SizeConstraintsType="Default" RelativeSize="90.579710144927532" />
+          </LayoutGroup>
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="QuyetDinhHuongCheDoDiHocTrongNuoc">
+              <LayoutGroup Id="QuyetDinhHuongCheDoDiHocTrongNuoc_col1">
+                <LayoutItem Id="QuyetDinhDaoTao" Removed="True" />
+                <LayoutGroup Id="Item5">
+                  <LayoutItem Id="QuyetDinhDaoTao" ViewItem="QuyetDinhDaoTao" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="QuyetDinhLuanChuyen_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="QuyetDinhCaNhan">
+              <LayoutGroup Id="Item1">
+                <LayoutGroup Id="Auto5e887f6d-b104-4d3f-930c-9b6069d29f84">
+                  <LayoutItem Id="BoMonCu" ViewItem="BoMonCu" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="QuyetDinhThoiViec_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Item1">
+              <LayoutGroup Id="Autoff7104a1-7cf7-4066-8ef9-3bbb95bbaa29">
+                <LayoutItem Id="NgayPhatSinhBienDong" ViewItem="NgayPhatSinhBienDong" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ToTrinhNghiKhongHuongLuong_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="ToTrinhNghiKhongHuongLuong">
+              <LayoutGroup Id="Item1">
+                <LayoutGroup Id="Auto767dad89-83c7-4fb1-8fce-d557d9859c2d">
+                  <LayoutItem Id="ThoiGianGiaHan" ViewItem="ThoiGianGiaHan" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="BangTruyLuongNew_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="BangTruyLuongNew">
+              <LayoutGroup Id="BangTruyLuongNew_col1">
+                <LayoutItem Id="LoaiLuong" ViewItem="LoaiLuong" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

@@ -1,0 +1,1248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9c8872cc-b8e5-4d06-b276-226442b6d5ff}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>ModelingProject_Sequence</Name>
+    <RootNamespace>ModelingProject_Sequence</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ItemGroup>
+    <Content Include="BaoHiem\BaoHiem_CapNhatBHYTController_popupWindowShowAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="BaoHiem\BaoHiem_CapNhatBHYTController_popupWindowShowAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>BaoHiem\BaoHiem_CapNhatBHYTController_popupWindowShowAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="BaoHiem\BaoHiem_DieuChinhHoSoController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="BaoHiem\BaoHiem_DieuChinhHoSoController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>BaoHiem\BaoHiem_DieuChinhHoSoController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="BaoHiem\BaoHiem_ImportHoSoBaoHiemController_simpleAction_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="BaoHiem\BaoHiem_ImportHoSoBaoHiemController_simpleAction_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>BaoHiem\BaoHiem_ImportHoSoBaoHiemController_simpleAction_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="BaoHiem\BaoHiem_KetChuyenSoLieuController_simpleAction_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="BaoHiem\BaoHiem_KetChuyenSoLieuController_simpleAction_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>BaoHiem\BaoHiem_KetChuyenSoLieuController_simpleAction_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="BaoHiem\BaoHiem_TruyThuBaoHiemController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="BaoHiem\BaoHiem_TruyThuBaoHiemController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>BaoHiem\BaoHiem_TruyThuBaoHiemController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="BoiDuong\BoiDuong_ChonNhanVienDuyetBoiDuongController_popupWindowShowAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="BoiDuong\BoiDuong_ChonNhanVienDuyetBoiDuongController_popupWindowShowAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>BoiDuong\BoiDuong_ChonNhanVienDuyetBoiDuongController_popupWindowShowAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="BoiDuong\BoiDuong_ChonNhanVienLapQuyetDinhBoiDuongController_popupWindowShowAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="BoiDuong\BoiDuong_ChonNhanVienLapQuyetDinhBoiDuongController_popupWindowShowAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>BoiDuong\BoiDuong_ChonNhanVienLapQuyetDinhBoiDuongController_popupWindowShowAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="BoiDuong\BoiDuong_DangKyBoiDuongController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="BoiDuong\BoiDuong_DangKyBoiDuongController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>BoiDuong\BoiDuong_DangKyBoiDuongController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="BoiDuong\BoiDuong_DuyetBoiDuongController_simpleAction_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="BoiDuong\BoiDuong_DuyetBoiDuongController_simpleAction_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>BoiDuong\BoiDuong_DuyetBoiDuongController_simpleAction_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="BoiDuong\BoiDuong_LapQuyetDinhBoiDuongController_popupWindowShowAction1_CustomizePopupWindowParams.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="BoiDuong\BoiDuong_LapQuyetDinhBoiDuongController_popupWindowShowAction1_CustomizePopupWindowParams.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>BoiDuong\BoiDuong_LapQuyetDinhBoiDuongController_popupWindowShowAction1_CustomizePopupWindowParams.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="BoNhiem\BoNhiem_LapDeNghiBoNhiemController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="BoNhiem\BoNhiem_LapDeNghiBoNhiemController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>BoNhiem\BoNhiem_LapDeNghiBoNhiemController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="BoNhiem\BoNhiem_TaoQuyetDinhBoNhiemController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="BoNhiem\BoNhiem_TaoQuyetDinhBoNhiemController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>BoNhiem\BoNhiem_TaoQuyetDinhBoNhiemController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="BoNhiem\BoNhiem_TaoQuyetDinhBoNhiemTuTimKiemController_popupWindowShowAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="BoNhiem\BoNhiem_TaoQuyetDinhBoNhiemTuTimKiemController_popupWindowShowAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>BoNhiem\BoNhiem_TaoQuyetDinhBoNhiemTuTimKiemController_popupWindowShowAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="BoNhiem\BoNhiem_TaoQuyetDinhMienNhiemController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="BoNhiem\BoNhiem_TaoQuyetDinhMienNhiemController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>BoNhiem\BoNhiem_TaoQuyetDinhMienNhiemController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="BoNhiem\BoNhiem_TaoQuyetDinhMienNhiemTuTimKiemController_popupWindowShowAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="BoNhiem\BoNhiem_TaoQuyetDinhMienNhiemTuTimKiemController_popupWindowShowAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>BoNhiem\BoNhiem_TaoQuyetDinhMienNhiemTuTimKiemController_popupWindowShowAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="BoNhiem\BoNhiem_TheoDoiHetHanBoNhiemController_BoNhiem_TheoDoiHetHanBoNhiemController_ViewControlsCreated.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="BoNhiem\BoNhiem_TheoDoiHetHanBoNhiemController_BoNhiem_TheoDoiHetHanBoNhiemController_ViewControlsCreated.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>BoNhiem\BoNhiem_TheoDoiHetHanBoNhiemController_BoNhiem_TheoDoiHetHanBoNhiemController_ViewControlsCreated.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="BoSungLuong\BoSungLuong_ImportBoSungLuongController_popupWindowShowAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="BoSungLuong\BoSungLuong_ImportBoSungLuongController_popupWindowShowAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>BoSungLuong\BoSungLuong_ImportBoSungLuongController_popupWindowShowAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="BoSungLuong\BoSungLuong_TinhChiBoSungLuongKy1Controller_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="BoSungLuong\BoSungLuong_TinhChiBoSungLuongKy1Controller_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>BoSungLuong\BoSungLuong_TinhChiBoSungLuongKy1Controller_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="BoSungLuong\BoSungLuong_TinhChiBoSungLuongKy2Controller_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="BoSungLuong\BoSungLuong_TinhChiBoSungLuongKy2Controller_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>BoSungLuong\BoSungLuong_TinhChiBoSungLuongKy2Controller_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="BoSungLuong\BoSungLuong_TinhChiBoSungNangLuongKy1Controller_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="BoSungLuong\BoSungLuong_TinhChiBoSungNangLuongKy1Controller_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>BoSungLuong\BoSungLuong_TinhChiBoSungNangLuongKy1Controller_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="BoSungLuong\BoSungLuong_TinhChiBoSungNangLuongKy2Controller_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="BoSungLuong\BoSungLuong_TinhChiBoSungNangLuongKy2Controller_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>BoSungLuong\BoSungLuong_TinhChiBoSungNangLuongKy2Controller_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="BoSungLuong\BoSungLuong_TinhChiBoSungPhuCapThamNienController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="BoSungLuong\BoSungLuong_TinhChiBoSungPhuCapThamNienController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>BoSungLuong\BoSungLuong_TinhChiBoSungPhuCapThamNienController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="BoSungLuong\BoSungLuong_TinhChiBoSungPhuCapTrachNhiemController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="BoSungLuong\BoSungLuong_TinhChiBoSungPhuCapTrachNhiemController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>BoSungLuong\BoSungLuong_TinhChiBoSungPhuCapTrachNhiemController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="BoSungLuong\BoSungLuong_TinhChiBoSungPhuCapUuDaiController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="BoSungLuong\BoSungLuong_TinhChiBoSungPhuCapUuDaiController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>BoSungLuong\BoSungLuong_TinhChiBoSungPhuCapUuDaiController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ChamCong\ChamCong_ChotChamCongNhanVienTheoThangController_simpleAction2_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ChamCong\ChamCong_ChotChamCongNhanVienTheoThangController_simpleAction2_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ChamCong\ChamCong_ChotChamCongNhanVienTheoThangController_simpleAction2_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ChamCong\ChamCong_ImportChamCongNhanVienController_simpleAction_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ChamCong\ChamCong_ImportChamCongNhanVienController_simpleAction_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ChamCong\ChamCong_ImportChamCongNhanVienController_simpleAction_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ChamCong\ChamCong_TheoDoiNgayNghiController_ChamCong_TheoDoiNgayNghiController_ViewControlsCreated.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ChamCong\ChamCong_TheoDoiNgayNghiController_ChamCong_TheoDoiNgayNghiController_ViewControlsCreated.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ChamCong\ChamCong_TheoDoiNgayNghiController_ChamCong_TheoDoiNgayNghiController_ViewControlsCreated.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ChamCong\ChamCong_XoaBangChamCongNhanVienController_ExecuteCustomDeleteObjects.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ChamCong\ChamCong_XoaBangChamCongNhanVienController_ExecuteCustomDeleteObjects.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ChamCong\ChamCong_XoaBangChamCongNhanVienController_ExecuteCustomDeleteObjects.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="DanhGia\DanhGia_CopyBangQuyDoiThangController_popupWindowShowAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DanhGia\DanhGia_CopyBangQuyDoiThangController_popupWindowShowAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DanhGia\DanhGia_CopyBangQuyDoiThangController_popupWindowShowAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="DanhGia\DanhGia_DanhSachDanhGiaLan1Controller_simpleAction2_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DanhGia\DanhGia_DanhSachDanhGiaLan1Controller_simpleAction2_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DanhGia\DanhGia_DanhSachDanhGiaLan1Controller_simpleAction2_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="DanhGia\DanhGia_DanhSachDanhGiaLan2Controller_simpleAction2_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DanhGia\DanhGia_DanhSachDanhGiaLan2Controller_simpleAction2_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DanhGia\DanhGia_DanhSachDanhGiaLan2Controller_simpleAction2_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="DanhGia\DanhGia_DanhSachGiangVienViPhamController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DanhGia\DanhGia_DanhSachGiangVienViPhamController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DanhGia\DanhGia_DanhSachGiangVienViPhamController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="DanhGia\DanhGia_ImportChamCongController_simpleAction_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DanhGia\DanhGia_ImportChamCongController_simpleAction_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DanhGia\DanhGia_ImportChamCongController_simpleAction_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="DanhGia\DanhGia_LayDanhSachNhanVienController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DanhGia\DanhGia_LayDanhSachNhanVienController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DanhGia\DanhGia_LayDanhSachNhanVienController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="DanhGia\DanhGia_LayDanhSachNhanVienThuocQuyenNguoiDungController_popupWindowShowAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DanhGia\DanhGia_LayDanhSachNhanVienThuocQuyenNguoiDungController_popupWindowShowAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DanhGia\DanhGia_LayDanhSachNhanVienThuocQuyenNguoiDungController_popupWindowShowAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="DanhGia\DanhGia_TaoDanhGiaController_popupWindowShowAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DanhGia\DanhGia_TaoDanhGiaController_popupWindowShowAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DanhGia\DanhGia_TaoDanhGiaController_popupWindowShowAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="DanhGia\DanhGia_XoaBangDanhGiaCanBoCuoiNamController_ObjectSpace_CustomDeleteObjects.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DanhGia\DanhGia_XoaBangDanhGiaCanBoCuoiNamController_ObjectSpace_CustomDeleteObjects.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DanhGia\DanhGia_XoaBangDanhGiaCanBoCuoiNamController_ObjectSpace_CustomDeleteObjects.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="DaoTao\DaoTao_ChonNhanVienDuyetDaoTaoController_popupWindowShowAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DaoTao\DaoTao_ChonNhanVienDuyetDaoTaoController_popupWindowShowAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DaoTao\DaoTao_ChonNhanVienDuyetDaoTaoController_popupWindowShowAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="DaoTao\DaoTao_ChonNhanVienLapQuyetDinhDaoTaoController_popupWindowShowAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DaoTao\DaoTao_ChonNhanVienLapQuyetDinhDaoTaoController_popupWindowShowAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DaoTao\DaoTao_ChonNhanVienLapQuyetDinhDaoTaoController_popupWindowShowAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="DaoTao\DaoTao_DuyetDaoTaoController_simpleAction_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DaoTao\DaoTao_DuyetDaoTaoController_simpleAction_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DaoTao\DaoTao_DuyetDaoTaoController_simpleAction_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="DaoTao\DaoTao_LapQuyetDinhChiTienThuongTienSiController_popupWindowShowAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DaoTao\DaoTao_LapQuyetDinhChiTienThuongTienSiController_popupWindowShowAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DaoTao\DaoTao_LapQuyetDinhChiTienThuongTienSiController_popupWindowShowAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="DaoTao\DaoTao_LapQuyetDinhCongNhanDaoTaoController_popupWindowShowAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DaoTao\DaoTao_LapQuyetDinhCongNhanDaoTaoController_popupWindowShowAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DaoTao\DaoTao_LapQuyetDinhCongNhanDaoTaoController_popupWindowShowAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="DaoTao\DaoTao_LapQuyetDinhDaoTaoController_popupWindowShowAction1_CustomizePopupWindowParams.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DaoTao\DaoTao_LapQuyetDinhDaoTaoController_popupWindowShowAction1_CustomizePopupWindowParams.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DaoTao\DaoTao_LapQuyetDinhDaoTaoController_popupWindowShowAction1_CustomizePopupWindowParams.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="DiNuocNgoai\DiNuocNgoai_ChonNhanVienLapQuyetDinhDiNuocNgoaiController_popupWindowShowAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DiNuocNgoai\DiNuocNgoai_ChonNhanVienLapQuyetDinhDiNuocNgoaiController_popupWindowShowAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DiNuocNgoai\DiNuocNgoai_ChonNhanVienLapQuyetDinhDiNuocNgoaiController_popupWindowShowAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="DiNuocNgoai\DiNuocNgoai_LapQuyetDinhDiNuocNgoaiController_popupWindowShowAction1_CustomizePopupWindowParams.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DiNuocNgoai\DiNuocNgoai_LapQuyetDinhDiNuocNgoaiController_popupWindowShowAction1_CustomizePopupWindowParams.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DiNuocNgoai\DiNuocNgoai_LapQuyetDinhDiNuocNgoaiController_popupWindowShowAction1_CustomizePopupWindowParams.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="HopDong\HopDong_CapNhatSoHopDongController_popupWindowShowAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="HopDong\HopDong_CapNhatSoHopDongController_popupWindowShowAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>HopDong\HopDong_CapNhatSoHopDongController_popupWindowShowAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="HopDong\HopDong_GiaHanHopDongController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="HopDong\HopDong_GiaHanHopDongController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>HopDong\HopDong_GiaHanHopDongController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="HopDong\HopDong_HetHanHopDongController_BoNhiem_TheoDoiBoNhiemController_ViewControlsCreated.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="HopDong\HopDong_HetHanHopDongController_BoNhiem_TheoDoiBoNhiemController_ViewControlsCreated.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>HopDong\HopDong_HetHanHopDongController_BoNhiem_TheoDoiBoNhiemController_ViewControlsCreated.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="HopDong\HopDong_ImportHopDongController_popupWindowShowAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="HopDong\HopDong_ImportHopDongController_popupWindowShowAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>HopDong\HopDong_ImportHopDongController_popupWindowShowAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="HopDong\HopDong_KyMoiHopDongController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="HopDong\HopDong_KyMoiHopDongController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>HopDong\HopDong_KyMoiHopDongController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="HopDong\HopDong_TaoGiaHanTuTimKiemController_popupWindowShowAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="HopDong\HopDong_TaoGiaHanTuTimKiemController_popupWindowShowAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>HopDong\HopDong_TaoGiaHanTuTimKiemController_popupWindowShowAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="HopDong\HopDong_TaoHopDongThinhGiangTuDanhSachDeNghiMoiGiangController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="HopDong\HopDong_TaoHopDongThinhGiangTuDanhSachDeNghiMoiGiangController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>HopDong\HopDong_TaoHopDongThinhGiangTuDanhSachDeNghiMoiGiangController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="HopDong\HopDong_TaoHopDongTuTimKiemController_popupWindowShowAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="HopDong\HopDong_TaoHopDongTuTimKiemController_popupWindowShowAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>HopDong\HopDong_TaoHopDongTuTimKiemController_popupWindowShowAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="HopDong\HopDong_TaoMoiHopDongController_popupWindowShowAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="HopDong\HopDong_TaoMoiHopDongController_popupWindowShowAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>HopDong\HopDong_TaoMoiHopDongController_popupWindowShowAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="HopDong\HopDong_TaoMoiHopDongThinhGiangController_popupWindowShowAction2_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="HopDong\HopDong_TaoMoiHopDongThinhGiangController_popupWindowShowAction2_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>HopDong\HopDong_TaoMoiHopDongThinhGiangController_popupWindowShowAction2_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="HopDong\HopDong_TaoMoiHopDongThinhGiangTuDanhSachDeNghiController_popupWindowShowAction2_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="HopDong\HopDong_TaoMoiHopDongThinhGiangTuDanhSachDeNghiController_popupWindowShowAction2_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>HopDong\HopDong_TaoMoiHopDongThinhGiangTuDanhSachDeNghiController_popupWindowShowAction2_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="HopDong\HopDong_TaoPhuLucHopDongKhoanController_popupWindowShowAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="HopDong\HopDong_TaoPhuLucHopDongKhoanController_popupWindowShowAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>HopDong\HopDong_TaoPhuLucHopDongKhoanController_popupWindowShowAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="HoSo\ChangeCaptionThongTinNhanVienController_ChangeCaptionThongTinNhanVienController_Activated.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="HoSo\ChangeCaptionThongTinNhanVienController_ChangeCaptionThongTinNhanVienController_Activated.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>HoSo\ChangeCaptionThongTinNhanVienController_ChangeCaptionThongTinNhanVienController_Activated.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="HoSo\HoSo_CapNhatHeSoNhanVienThongTinLuongController_HoSo_CapNhatHeSoNhanVienThongTinLuongController_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="HoSo\HoSo_CapNhatHeSoNhanVienThongTinLuongController_HoSo_CapNhatHeSoNhanVienThongTinLuongController_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>HoSo\HoSo_CapNhatHeSoNhanVienThongTinLuongController_HoSo_CapNhatHeSoNhanVienThongTinLuongController_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="HoSo\HoSo_CapNhatSoThuTuKeHoachTaiChinhController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="HoSo\HoSo_CapNhatSoThuTuKeHoachTaiChinhController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>HoSo\HoSo_CapNhatSoThuTuKeHoachTaiChinhController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="HoSo\HoSo_GiamTruGiaCanhController_simpleAction_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="HoSo\HoSo_GiamTruGiaCanhController_simpleAction_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>HoSo\HoSo_GiamTruGiaCanhController_simpleAction_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="HoSo\HoSo_ImportNhanVienController_popupWindowShowAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="HoSo\HoSo_ImportNhanVienController_popupWindowShowAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>HoSo\HoSo_ImportNhanVienController_popupWindowShowAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="HoSo\HoSo_KhoaHoSoController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="HoSo\HoSo_KhoaHoSoController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>HoSo\HoSo_KhoaHoSoController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="HoSo\HoSo_NgoaiNguChinhAction_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="HoSo\HoSo_NgoaiNguChinhAction_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>HoSo\HoSo_NgoaiNguChinhAction_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="HoSo\HoSo_TaoHoSoGiangVienThinhGiangController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="HoSo\HoSo_TaoHoSoGiangVienThinhGiangController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>HoSo\HoSo_TaoHoSoGiangVienThinhGiangController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="HoSo\HoSo_TrinhDoChuyenMonCaoNhatAction_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="HoSo\HoSo_TrinhDoChuyenMonCaoNhatAction_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>HoSo\HoSo_TrinhDoChuyenMonCaoNhatAction_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="KhauTruLuong\KhauTruLuong_TinhController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="KhauTruLuong\KhauTruLuong_TinhController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>KhauTruLuong\KhauTruLuong_TinhController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="KhauTruLuong\KhauTruLuong_XoaBangKhauTruLuongController_ObjectSpace_CustomDeleteObjects.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="KhauTruLuong\KhauTruLuong_XoaBangKhauTruLuongController_ObjectSpace_CustomDeleteObjects.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>KhauTruLuong\KhauTruLuong_XoaBangKhauTruLuongController_ObjectSpace_CustomDeleteObjects.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="KhenThuong\KhenThuong_QuyetDinhKhenThuongController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="KhenThuong\KhenThuong_QuyetDinhKhenThuongController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>KhenThuong\KhenThuong_QuyetDinhKhenThuongController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="KhenThuong\KhenThuong_QuyetDinhLapHoiDongKhenThuongController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="KhenThuong\KhenThuong_QuyetDinhLapHoiDongKhenThuongController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>KhenThuong\KhenThuong_QuyetDinhLapHoiDongKhenThuongController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="LuongThuong\Thuong_TinhThuongController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="LuongThuong\Thuong_TinhThuongController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>LuongThuong\Thuong_TinhThuongController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="LuongThuong\Thuong_XoaBangThuongNhanVienController_ObjectSpace_CustomDeleteObjects.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="LuongThuong\Thuong_XoaBangThuongNhanVienController_ObjectSpace_CustomDeleteObjects.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>LuongThuong\Thuong_XoaBangThuongNhanVienController_ObjectSpace_CustomDeleteObjects.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="Luong\Luong_BaoCaoHienDetailViewController_singleChoiceAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Luong\Luong_BaoCaoHienDetailViewController_singleChoiceAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Luong\Luong_BaoCaoHienDetailViewController_singleChoiceAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="Luong\Luong_MoKhoaSoController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Luong\Luong_MoKhoaSoController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Luong\Luong_MoKhoaSoController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="Luong\Luong_TinhLuongNhanVienController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Luong\Luong_TinhLuongNhanVienController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Luong\Luong_TinhLuongNhanVienController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="Luong\Luong_XoaBangLuongNhanVienController_ObjectSpace_CustomDeleteObjects.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Luong\Luong_XoaBangLuongNhanVienController_ObjectSpace_CustomDeleteObjects.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Luong\Luong_XoaBangLuongNhanVienController_ObjectSpace_CustomDeleteObjects.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="NangLuong\NangLuong_CapNhatSoQuyetDinhNangLuongController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="NangLuong\NangLuong_CapNhatSoQuyetDinhNangLuongController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>NangLuong\NangLuong_CapNhatSoQuyetDinhNangLuongController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="NangLuong\NangLuong_ChonNhanVienLapQuyetDinhNangLuongController_popupWindowShowAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="NangLuong\NangLuong_ChonNhanVienLapQuyetDinhNangLuongController_popupWindowShowAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>NangLuong\NangLuong_ChonNhanVienLapQuyetDinhNangLuongController_popupWindowShowAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="NangLuong\NangLuong_ImportNangLuongController_simpleAction_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="NangLuong\NangLuong_ImportNangLuongController_simpleAction_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>NangLuong\NangLuong_ImportNangLuongController_simpleAction_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="NangLuong\NangLuong_LapDeNghiNangLuongController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="NangLuong\NangLuong_LapDeNghiNangLuongController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>NangLuong\NangLuong_LapDeNghiNangLuongController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="NangLuong\NangLuong_QuyetDinhNangLuongController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="NangLuong\NangLuong_QuyetDinhNangLuongController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>NangLuong\NangLuong_QuyetDinhNangLuongController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="NangLuong\NangLuong_TaoQuyetDinhNangLuongController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="NangLuong\NangLuong_TaoQuyetDinhNangLuongController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>NangLuong\NangLuong_TaoQuyetDinhNangLuongController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="NangLuong\NangLuong_TaoQuyetDinhTuTimKiemController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="NangLuong\NangLuong_TaoQuyetDinhTuTimKiemController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>NangLuong\NangLuong_TaoQuyetDinhTuTimKiemController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="NangLuong\NangLuong_TheoDoiDenHanNangLuongController_NangLuong_TheoDoiDenHanNangLuongController_ViewControlsCreated.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="NangLuong\NangLuong_TheoDoiDenHanNangLuongController_NangLuong_TheoDoiDenHanNangLuongController_ViewControlsCreated.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>NangLuong\NangLuong_TheoDoiDenHanNangLuongController_NangLuong_TheoDoiDenHanNangLuongController_ViewControlsCreated.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="NghiHuu\NghiHuu_TaoQuyetDinhNghiHuuTuTimKiemController_popupWindowShowAction1_CustomizePopupWindowParams.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="NghiHuu\NghiHuu_TaoQuyetDinhNghiHuuTuTimKiemController_popupWindowShowAction1_CustomizePopupWindowParams.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>NghiHuu\NghiHuu_TaoQuyetDinhNghiHuuTuTimKiemController_popupWindowShowAction1_CustomizePopupWindowParams.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="QuangLyChungTuChiTien\ChungTu_ChiLuongTienMatController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuangLyChungTuChiTien\ChungTu_ChiLuongTienMatController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuangLyChungTuChiTien\ChungTu_ChiLuongTienMatController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="QuangLyChungTuChiTien\ChungTu_ChotTongThuNhapNhanVienController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuangLyChungTuChiTien\ChungTu_ChotTongThuNhapNhanVienController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuangLyChungTuChiTien\ChungTu_ChotTongThuNhapNhanVienController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="QuangLyChungTuChiTien\ChungTu_ChuyenKhoanLuongController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuangLyChungTuChiTien\ChungTu_ChuyenKhoanLuongController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuangLyChungTuChiTien\ChungTu_ChuyenKhoanLuongController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="QuangLyChungTuChiTien\ChungTu_DeleteChiTMLuongNhanVienController_ObjectSpace_CustomDeleteObjects.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuangLyChungTuChiTien\ChungTu_DeleteChiTMLuongNhanVienController_ObjectSpace_CustomDeleteObjects.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuangLyChungTuChiTien\ChungTu_DeleteChiTMLuongNhanVienController_ObjectSpace_CustomDeleteObjects.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="QuangLyChungTuChiTien\ChungTu_DeleteChotTongThuNhapNhanVienController_ObjectSpace_CustomDeleteObjects.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuangLyChungTuChiTien\ChungTu_DeleteChotTongThuNhapNhanVienController_ObjectSpace_CustomDeleteObjects.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuangLyChungTuChiTien\ChungTu_DeleteChotTongThuNhapNhanVienController_ObjectSpace_CustomDeleteObjects.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="QuangLyChungTuChiTien\ChungTu_DeleteChuyenKhoanLuongNhanVienController_ObjectSpace_CustomDeleteObjects.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuangLyChungTuChiTien\ChungTu_DeleteChuyenKhoanLuongNhanVienController_ObjectSpace_CustomDeleteObjects.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuangLyChungTuChiTien\ChungTu_DeleteChuyenKhoanLuongNhanVienController_ObjectSpace_CustomDeleteObjects.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="QuangLyChungTuChiTien\ChungTu_DeleteChuyenKhoanLuongNhanVien_TamGiuLuongController_ObjectSpace_CustomDeleteObjects.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuangLyChungTuChiTien\ChungTu_DeleteChuyenKhoanLuongNhanVien_TamGiuLuongController_ObjectSpace_CustomDeleteObjects.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuangLyChungTuChiTien\ChungTu_DeleteChuyenKhoanLuongNhanVien_TamGiuLuongController_ObjectSpace_CustomDeleteObjects.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="QuangLyChungTuChiTien\ChungTu_DeleteThanhToanController_ObjectSpace_CustomDeleteObjects.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuangLyChungTuChiTien\ChungTu_DeleteThanhToanController_ObjectSpace_CustomDeleteObjects.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuangLyChungTuChiTien\ChungTu_DeleteThanhToanController_ObjectSpace_CustomDeleteObjects.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="QuangLyChungTuChiTien\ChungTu_ExportExcelBangLuongUTEController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuangLyChungTuChiTien\ChungTu_ExportExcelBangLuongUTEController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuangLyChungTuChiTien\ChungTu_ExportExcelBangLuongUTEController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="QuangLyChungTuChiTien\ChungTu_LapChungTuTamGiuLuongNhanVienController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuangLyChungTuChiTien\ChungTu_LapChungTuTamGiuLuongNhanVienController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuangLyChungTuChiTien\ChungTu_LapChungTuTamGiuLuongNhanVienController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="QuangLyChungTuChiTien\ChungTu_LapThanhToanController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuangLyChungTuChiTien\ChungTu_LapThanhToanController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuangLyChungTuChiTien\ChungTu_LapThanhToanController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="QuangLyChungTuChiTien\ChungTu_LapUyNhiemChiChuyenKhoanController_popupWindowShowAction1_CustomizePopupWindowParams.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuangLyChungTuChiTien\ChungTu_LapUyNhiemChiChuyenKhoanController_popupWindowShowAction1_CustomizePopupWindowParams.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuangLyChungTuChiTien\ChungTu_LapUyNhiemChiChuyenKhoanController_popupWindowShowAction1_CustomizePopupWindowParams.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="QuangLyChungTuChiTien\ChungTu_LayDanhSachTamGiuLuongController_ChungTu_LayDanhSachTamGiuLuongController_ViewControlsCreated.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuangLyChungTuChiTien\ChungTu_LayDanhSachTamGiuLuongController_ChungTu_LayDanhSachTamGiuLuongController_ViewControlsCreated.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuangLyChungTuChiTien\ChungTu_LayDanhSachTamGiuLuongController_ChungTu_LayDanhSachTamGiuLuongController_ViewControlsCreated.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyNgach\ChuyenNgach\ChuyenNgach_CapNhatSoQuyetDinhController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyNgach\ChuyenNgach\ChuyenNgach_CapNhatSoQuyetDinhController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyNgach\ChuyenNgach\ChuyenNgach_CapNhatSoQuyetDinhController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyNgach\ChuyenNgach\ChuyenNgach_ChonNhanVienLapQuyetDinhChuyenNgachController_popupWindowShowAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyNgach\ChuyenNgach\ChuyenNgach_ChonNhanVienLapQuyetDinhChuyenNgachController_popupWindowShowAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyNgach\ChuyenNgach\ChuyenNgach_ChonNhanVienLapQuyetDinhChuyenNgachController_popupWindowShowAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyNgach\ChuyenNgach\ChuyenNgach_ImportChuyenNgachController_simpleAction_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyNgach\ChuyenNgach\ChuyenNgach_ImportChuyenNgachController_simpleAction_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyNgach\ChuyenNgach\ChuyenNgach_ImportChuyenNgachController_simpleAction_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyNgach\ChuyenNgach\ChuyenNgach_TaoQuyetDinhChuyenNgachController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyNgach\ChuyenNgach\ChuyenNgach_TaoQuyetDinhChuyenNgachController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyNgach\ChuyenNgach\ChuyenNgach_TaoQuyetDinhChuyenNgachController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyNgach\NangNgach\NangNgach_CapNhatSoQuyetDinhNangNgachController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyNgach\NangNgach\NangNgach_CapNhatSoQuyetDinhNangNgachController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyNgach\NangNgach\NangNgach_CapNhatSoQuyetDinhNangNgachController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyNgach\NangNgach\NangNgach_ChonNhanVienLapQuyetDinhNangNgachController_popupWindowShowAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyNgach\NangNgach\NangNgach_ChonNhanVienLapQuyetDinhNangNgachController_popupWindowShowAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyNgach\NangNgach\NangNgach_ChonNhanVienLapQuyetDinhNangNgachController_popupWindowShowAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyNgach\NangNgach\NangNgach_ImportNangNgachController_simpleAction_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyNgach\NangNgach\NangNgach_ImportNangNgachController_simpleAction_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyNgach\NangNgach\NangNgach_ImportNangNgachController_simpleAction_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyNgach\NangNgach\NangNgach_TaoQuyetDinhNangNgachController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyNgach\NangNgach\NangNgach_TaoQuyetDinhNangNgachController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyNgach\NangNgach\NangNgach_TaoQuyetDinhNangNgachController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="SinhNhat\SinhNhat_GuiMailChucMungSinhNhatController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SinhNhat\SinhNhat_GuiMailChucMungSinhNhatController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>SinhNhat\SinhNhat_GuiMailChucMungSinhNhatController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="SinhNhat\SinhNhat_LapDanhSachTangQuaController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SinhNhat\SinhNhat_LapDanhSachTangQuaController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>SinhNhat\SinhNhat_LapDanhSachTangQuaController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="SinhNhat\SinhNhat_TimDanhSachSinhNhatCanBoController_SinhNhat_TimDanhSachSinhNhatCanBoController_ViewControlsCreated.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SinhNhat\SinhNhat_TimDanhSachSinhNhatCanBoController_SinhNhat_TimDanhSachSinhNhatCanBoController_ViewControlsCreated.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>SinhNhat\SinhNhat_TimDanhSachSinhNhatCanBoController_SinhNhat_TimDanhSachSinhNhatCanBoController_ViewControlsCreated.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="TamUng\TamUng_KetChuyenTamUngController_popupWindowShowAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="TamUng\TamUng_KetChuyenTamUngController_popupWindowShowAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>TamUng\TamUng_KetChuyenTamUngController_popupWindowShowAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="TamUng\TamUng_TinhKhauTruTamUngController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="TamUng\TamUng_TinhKhauTruTamUngController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>TamUng\TamUng_TinhKhauTruTamUngController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="TamUng\TamUng_XoaBangKhauTruTamUngController_ObjectSpace_CustomDeleteObjects.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="TamUng\TamUng_XoaBangKhauTruTamUngController_ObjectSpace_CustomDeleteObjects.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>TamUng\TamUng_XoaBangKhauTruTamUngController_ObjectSpace_CustomDeleteObjects.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="TapSu\TapSu_CapNhatSoQuyetDinhBoNhiemNgachController_CapNhatSoQuyetDinh.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="TapSu\TapSu_CapNhatSoQuyetDinhBoNhiemNgachController_CapNhatSoQuyetDinh.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>TapSu\TapSu_CapNhatSoQuyetDinhBoNhiemNgachController_CapNhatSoQuyetDinh.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="TapSu\TapSu_ChonCanBoLapQuyetDinhBoNhiemNgachController_popupWindowShowAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="TapSu\TapSu_ChonCanBoLapQuyetDinhBoNhiemNgachController_popupWindowShowAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>TapSu\TapSu_ChonCanBoLapQuyetDinhBoNhiemNgachController_popupWindowShowAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="TapSu\TapSu_ChonCanBoLapQuyetDinhHuongDanTapSuController_popupWindowShowAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="TapSu\TapSu_ChonCanBoLapQuyetDinhHuongDanTapSuController_popupWindowShowAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>TapSu\TapSu_ChonCanBoLapQuyetDinhHuongDanTapSuController_popupWindowShowAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="TapSu\TapSu_HetHanTamHoanTapSuController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="TapSu\TapSu_HetHanTamHoanTapSuController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>TapSu\TapSu_HetHanTamHoanTapSuController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="TapSu\TapSu_ImportBoNhiemNgachController_simpleAction_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="TapSu\TapSu_ImportBoNhiemNgachController_simpleAction_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>TapSu\TapSu_ImportBoNhiemNgachController_simpleAction_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="TapSu\TapSu_LapQuyetDinhHuongDanTapSuController_popupWindowShowAction1_CustomizePopupWindowParams.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="TapSu\TapSu_LapQuyetDinhHuongDanTapSuController_popupWindowShowAction1_CustomizePopupWindowParams.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>TapSu\TapSu_LapQuyetDinhHuongDanTapSuController_popupWindowShowAction1_CustomizePopupWindowParams.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="TapSu\TapSu_QuyetDinhBoNhiemNgachController_popupWindowShowAction1_CustomizePopupWindowParams.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="TapSu\TapSu_QuyetDinhBoNhiemNgachController_popupWindowShowAction1_CustomizePopupWindowParams.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>TapSu\TapSu_QuyetDinhBoNhiemNgachController_popupWindowShowAction1_CustomizePopupWindowParams.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="TapSu\TapSu_TaoQuyetDinhBoNhiemNgachController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="TapSu\TapSu_TaoQuyetDinhBoNhiemNgachController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>TapSu\TapSu_TaoQuyetDinhBoNhiemNgachController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="TapSu\TapSu_TheoHetHanTamHoanTapSuController_TapSu_TheoHetHanTamHoanTapSuController_ViewControlsCreated.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="TapSu\TapSu_TheoHetHanTamHoanTapSuController_TapSu_TheoHetHanTamHoanTapSuController_ViewControlsCreated.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>TapSu\TapSu_TheoHetHanTamHoanTapSuController_TapSu_TheoHetHanTamHoanTapSuController_ViewControlsCreated.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="TapSu\TapSu_TheoHetHanTapSuController_BoNhiem_TheoDoiBoNhiemController_ViewControlsCreated.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="TapSu\TapSu_TheoHetHanTapSuController_BoNhiem_TheoDoiBoNhiemController_ViewControlsCreated.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>TapSu\TapSu_TheoHetHanTapSuController_BoNhiem_TheoDoiBoNhiemController_ViewControlsCreated.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="TapSu\ThuViec_QuyetDinhXepLuongController_popupWindowShowAction1_CustomizePopupWindowParams.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="TapSu\ThuViec_QuyetDinhXepLuongController_popupWindowShowAction1_CustomizePopupWindowParams.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>TapSu\ThuViec_QuyetDinhXepLuongController_popupWindowShowAction1_CustomizePopupWindowParams.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ThamNien\ThamNienCongTac_CapNhatThamNienCongTacController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ThamNien\ThamNienCongTac_CapNhatThamNienCongTacController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ThamNien\ThamNienCongTac_CapNhatThamNienCongTacController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ThamNien\ThamNien_ChonNhanVienLapQuyetDinhNangThamNienController_popupWindowShowAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ThamNien\ThamNien_ChonNhanVienLapQuyetDinhNangThamNienController_popupWindowShowAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ThamNien\ThamNien_ChonNhanVienLapQuyetDinhNangThamNienController_popupWindowShowAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ThamNien\ThamNien_ImportNangPhuCapThamNienController_simpleAction_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ThamNien\ThamNien_ImportNangPhuCapThamNienController_simpleAction_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ThamNien\ThamNien_ImportNangPhuCapThamNienController_simpleAction_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ThamNien\ThamNien_ImportNangPhuCapThamNienHCController_simpleAction_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ThamNien\ThamNien_ImportNangPhuCapThamNienHCController_simpleAction_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ThamNien\ThamNien_ImportNangPhuCapThamNienHCController_simpleAction_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ThamNien\ThamNien_LapDeNghiNangPhuCapThamNienController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ThamNien\ThamNien_LapDeNghiNangPhuCapThamNienController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ThamNien\ThamNien_LapDeNghiNangPhuCapThamNienController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ThamNien\ThamNien_TaoQuyetDinhNangPhuCapThamNienController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ThamNien\ThamNien_TaoQuyetDinhNangPhuCapThamNienController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ThamNien\ThamNien_TaoQuyetDinhNangPhuCapThamNienController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ThamNien\ThamNien_TaoQuyetDinhNangPhuCapThamNienNhaGiaoController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ThamNien\ThamNien_TaoQuyetDinhNangPhuCapThamNienNhaGiaoController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ThamNien\ThamNien_TaoQuyetDinhNangPhuCapThamNienNhaGiaoController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ThamNien\ThamNien_TheoDoiDenHanNangPCThamNienController_ThamNien_TheoDoiDenHanNangPCThamNienController_ViewControlsCreated.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ThamNien\ThamNien_TheoDoiDenHanNangPCThamNienController_ThamNien_TheoDoiDenHanNangPCThamNienController_ViewControlsCreated.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ThamNien\ThamNien_TheoDoiDenHanNangPCThamNienController_ThamNien_TheoDoiDenHanNangPCThamNienController_ViewControlsCreated.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ThongTinLuong\ThongTinLuong_CapNhatHeSoChuyenMonController_simpleAction2_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ThongTinLuong\ThongTinLuong_CapNhatHeSoChuyenMonController_simpleAction2_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ThongTinLuong\ThongTinLuong_CapNhatHeSoChuyenMonController_simpleAction2_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ThongTinLuong\ThongTinLuong_CapNhatHeSoQuanLyController_simpleAction2_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ThongTinLuong\ThongTinLuong_CapNhatHeSoQuanLyController_simpleAction2_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ThongTinLuong\ThongTinLuong_CapNhatHeSoQuanLyController_simpleAction2_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ThongTinLuong\ThongTinLuong_CapNhatPCCVCongDoanController_simpleAction2_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ThongTinLuong\ThongTinLuong_CapNhatPCCVCongDoanController_simpleAction2_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ThongTinLuong\ThongTinLuong_CapNhatPCCVCongDoanController_simpleAction2_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ThongTinLuong\ThongTinLuong_CapNhatPCCVDangController_simpleAction2_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ThongTinLuong\ThongTinLuong_CapNhatPCCVDangController_simpleAction2_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ThongTinLuong\ThongTinLuong_CapNhatPCCVDangController_simpleAction2_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ThongTinLuong\ThongTinLuong_CapNhatPCCVDoanController_simpleAction2_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ThongTinLuong\ThongTinLuong_CapNhatPCCVDoanController_simpleAction2_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ThongTinLuong\ThongTinLuong_CapNhatPCCVDoanController_simpleAction2_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ThongTinLuong\ThongTinLuong_CapNhatThongTinThamNienController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ThongTinLuong\ThongTinLuong_CapNhatThongTinThamNienController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ThongTinLuong\ThongTinLuong_CapNhatThongTinThamNienController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ThongTinLuong\ThongTinLuong_ChotThongTinTinhLuongController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ThongTinLuong\ThongTinLuong_ChotThongTinTinhLuongController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ThongTinLuong\ThongTinLuong_ChotThongTinTinhLuongController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ThongTinLuong\ThongTinLuong_CopyChotThongTinTinhLuongController_popupWindowShowAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ThongTinLuong\ThongTinLuong_CopyChotThongTinTinhLuongController_popupWindowShowAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ThongTinLuong\ThongTinLuong_CopyChotThongTinTinhLuongController_popupWindowShowAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ThongTinLuong\ThongTinLuong_ImportThongTinTinhLuongController_simpleAction_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ThongTinLuong\ThongTinLuong_ImportThongTinTinhLuongController_simpleAction_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ThongTinLuong\ThongTinLuong_ImportThongTinTinhLuongController_simpleAction_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ThongTinLuong\ThongTinLuong_XoaBangChotThongTinTinhLuongController_ExecuteCustomDeleteObjects.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ThongTinLuong\ThongTinLuong_XoaBangChotThongTinTinhLuongController_ExecuteCustomDeleteObjects.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ThongTinLuong\ThongTinLuong_XoaBangChotThongTinTinhLuongController_ExecuteCustomDeleteObjects.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ThueTNCN\ThueTNCN_CopyThueTNCNController_popupWindowShowAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ThueTNCN\ThueTNCN_CopyThueTNCNController_popupWindowShowAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ThueTNCN\ThueTNCN_CopyThueTNCNController_popupWindowShowAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ThueTNCN\ThueTNCN_DieuChinhThueTNCNController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ThueTNCN\ThueTNCN_DieuChinhThueTNCNController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ThueTNCN\ThueTNCN_DieuChinhThueTNCNController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ThueTNCN\ThueTNCN_Export05A_BK_TNCNController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ThueTNCN\ThueTNCN_Export05A_BK_TNCNController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ThueTNCN\ThueTNCN_Export05A_BK_TNCNController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ThueTNCN\ThueTNCN_Export05B_BK_TNCNController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ThueTNCN\ThueTNCN_Export05B_BK_TNCNController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ThueTNCN\ThueTNCN_Export05B_BK_TNCNController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ThueTNCN\ThueTNCN_KhauTruThueTNCNController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ThueTNCN\ThueTNCN_KhauTruThueTNCNController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ThueTNCN\ThueTNCN_KhauTruThueTNCNController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ThueTNCN\ThueTNCN_MienGiamThueTNCNController_actCopy_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ThueTNCN\ThueTNCN_MienGiamThueTNCNController_actCopy_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ThueTNCN\ThueTNCN_MienGiamThueTNCNController_actCopy_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ThueTNCN\ThueTNCN_QuyetToanThueTNCNController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ThueTNCN\ThueTNCN_QuyetToanThueTNCNController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ThueTNCN\ThueTNCN_QuyetToanThueTNCNController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ThueTNCN\ThueTNCN_TruyThuThueTNCNController_popupWindowShowAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ThueTNCN\ThueTNCN_TruyThuThueTNCNController_popupWindowShowAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ThueTNCN\ThueTNCN_TruyThuThueTNCNController_popupWindowShowAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ThueTNCN\ThueTNCN_XoaQuyetToanController_ObjectSpace_CustomDeleteObjects.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ThueTNCN\ThueTNCN_XoaQuyetToanController_ObjectSpace_CustomDeleteObjects.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ThueTNCN\ThueTNCN_XoaQuyetToanController_ObjectSpace_CustomDeleteObjects.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ThuNhapTangThem\ThuNhapTangThem_TinhQuyetToanTNTTController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ThuNhapTangThem\ThuNhapTangThem_TinhQuyetToanTNTTController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ThuNhapTangThem\ThuNhapTangThem_TinhQuyetToanTNTTController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ThuNhapTangThem\ThuNhapTangThem_TinhThuNhapTangThemController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ThuNhapTangThem\ThuNhapTangThem_TinhThuNhapTangThemController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ThuNhapTangThem\ThuNhapTangThem_TinhThuNhapTangThemController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ThuNhapTangThem\ThuNhapTangThem_XoaBangQuyetToanController_ObjectSpace_CustomDeleteObjects.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ThuNhapTangThem\ThuNhapTangThem_XoaBangQuyetToanController_ObjectSpace_CustomDeleteObjects.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ThuNhapTangThem\ThuNhapTangThem_XoaBangQuyetToanController_ObjectSpace_CustomDeleteObjects.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ThuNhapTangThem\ThuNhapTangThem_XoaBangThuNhapTangThemController_ObjectSpace_CustomDeleteObjects.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ThuNhapTangThem\ThuNhapTangThem_XoaBangThuNhapTangThemController_ObjectSpace_CustomDeleteObjects.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ThuNhapTangThem\ThuNhapTangThem_XoaBangThuNhapTangThemController_ObjectSpace_CustomDeleteObjects.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="TiepNhan\TiepNhan_LapQuyetDinhTiepNhanNghiKhongHuongLuongController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="TiepNhan\TiepNhan_LapQuyetDinhTiepNhanNghiKhongHuongLuongController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>TiepNhan\TiepNhan_LapQuyetDinhTiepNhanNghiKhongHuongLuongController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="TinhLuongNgoaiGio\NgoaiGio_TinhNgoaiGioController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="TinhLuongNgoaiGio\NgoaiGio_TinhNgoaiGioController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>TinhLuongNgoaiGio\NgoaiGio_TinhNgoaiGioController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="TinhLuongNgoaiGio\NgoaiGio_XoaBangLuongNgoaiGioController_ObjectSpace_CustomDeleteObjects.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="TinhLuongNgoaiGio\NgoaiGio_XoaBangLuongNgoaiGioController_ObjectSpace_CustomDeleteObjects.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>TinhLuongNgoaiGio\NgoaiGio_XoaBangLuongNgoaiGioController_ObjectSpace_CustomDeleteObjects.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="TruyLuong\TruyLuong_TinhTruyLuongController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="TruyLuong\TruyLuong_TinhTruyLuongController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>TruyLuong\TruyLuong_TinhTruyLuongController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="TruyLuong\TruyLuong_XoaBangTruyLuongController_ObjectSpace_CustomDeleteObjects.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="TruyLuong\TruyLuong_XoaBangTruyLuongController_ObjectSpace_CustomDeleteObjects.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>TruyLuong\TruyLuong_XoaBangTruyLuongController_ObjectSpace_CustomDeleteObjects.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="TuyenDung\TuyenDung_ChonUngVienLapQuyetDinhTuyenDungController_popupWindowShowAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="TuyenDung\TuyenDung_ChonUngVienLapQuyetDinhTuyenDungController_popupWindowShowAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>TuyenDung\TuyenDung_ChonUngVienLapQuyetDinhTuyenDungController_popupWindowShowAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="TuyenDung\TuyenDung_DuyetDangKyTuyenDungController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="TuyenDung\TuyenDung_DuyetDangKyTuyenDungController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>TuyenDung\TuyenDung_DuyetDangKyTuyenDungController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="TuyenDung\TuyenDung_ImportUngVienTuExcelController_popupWindowShowAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="TuyenDung\TuyenDung_ImportUngVienTuExcelController_popupWindowShowAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>TuyenDung\TuyenDung_ImportUngVienTuExcelController_popupWindowShowAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="TuyenDung\TuyenDung_LapHopDongThinhGiangController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="TuyenDung\TuyenDung_LapHopDongThinhGiangController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>TuyenDung\TuyenDung_LapHopDongThinhGiangController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="TuyenDung\TuyenDung_LapQuyetDinhHopDongController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="TuyenDung\TuyenDung_LapQuyetDinhHopDongController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>TuyenDung\TuyenDung_LapQuyetDinhHopDongController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="TuyenDung\TuyenDung_LapQuyetDinhThanhLapHoiDongTuyenDungController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="TuyenDung\TuyenDung_LapQuyetDinhThanhLapHoiDongTuyenDungController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>TuyenDung\TuyenDung_LapQuyetDinhThanhLapHoiDongTuyenDungController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="TuyenDung\TuyenDung_LapQuyetDinhTuyenDungController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="TuyenDung\TuyenDung_LapQuyetDinhTuyenDungController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>TuyenDung\TuyenDung_LapQuyetDinhTuyenDungController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="TuyenDung\TuyenDung_TaoMoiDanhSachThiController_popupWindowShowAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="TuyenDung\TuyenDung_TaoMoiDanhSachThiController_popupWindowShowAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>TuyenDung\TuyenDung_TaoMoiDanhSachThiController_popupWindowShowAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="TuyenDung\TuyenDung_TinhDiemTrungBinhController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="TuyenDung\TuyenDung_TinhDiemTrungBinhController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>TuyenDung\TuyenDung_TinhDiemTrungBinhController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="TuyenDung\TuyenDung_TrungTuyenController_simpleAction1_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="TuyenDung\TuyenDung_TrungTuyenController_simpleAction1_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>TuyenDung\TuyenDung_TrungTuyenController_simpleAction1_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Folder Include="BaoHiem\" />
+    <Folder Include="BoiDuong\" />
+    <Folder Include="BoNhiem\" />
+    <Folder Include="BoSungLuong\" />
+    <Folder Include="ChamCong\" />
+    <Folder Include="DanhGia\" />
+    <Folder Include="DaoTao\" />
+    <Folder Include="DiNuocNgoai\" />
+    <Folder Include="HopDong\" />
+    <Folder Include="KhauTruLuong\" />
+    <Folder Include="KhenThuong\" />
+    <Folder Include="LuongThuong\" />
+    <Folder Include="Luong\" />
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\ModelingProject_Sequence.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Folder Include="HoSo" />
+    <Folder Include="NangLuong\" />
+    <Folder Include="NghiHuu\" />
+    <Folder Include="QuangLyChungTuChiTien\" />
+    <Folder Include="QuanLyNgach\" />
+    <Folder Include="QuanLyNgach\ChuyenNgach\" />
+    <Folder Include="QuanLyNgach\NangNgach\" />
+    <Folder Include="SinhNhat\" />
+    <Folder Include="TamUng\" />
+    <Folder Include="TapSu\" />
+    <Folder Include="ThamNien\" />
+    <Folder Include="ThongTinLuong\" />
+    <Folder Include="ThueTNCN\" />
+    <Folder Include="ThuNhapTangThem\" />
+    <Folder Include="TiepNhan\" />
+    <Folder Include="TinhLuongNgoaiGio\" />
+    <Folder Include="TruyLuong\" />
+    <Folder Include="TuyenDung\" />
+  </ItemGroup>
+</Project>

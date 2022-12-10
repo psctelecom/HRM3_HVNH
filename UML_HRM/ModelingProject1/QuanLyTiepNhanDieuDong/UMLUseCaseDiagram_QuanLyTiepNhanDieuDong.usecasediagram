@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="c82f5e0e-368a-4684-bc59-531deac8da1d" name="UMLUseCaseDiagram_QuanLyTiepNhanDieuDong" linkedPackageId="3c1dfb34-ceba-4224-8acb-1d9f603e4266" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="fad54031-f18a-4b58-8804-22e937a9c18b">
+      <elementDefinition Id="74e16a1a-1f0f-4b9f-b79a-c9a943c85f2e" />
+      <body>UC Quản lý tiếp nhận điều động</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="16f77f8e-0665-41ae-a313-af22eadbbd80">
+      <profileInstance Id="e9bd2ea3-c82f-434d-8fbc-0e9c36e3bff5" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="b371622b-eb54-4b5b-9992-7ed142e01547">
+      <profileInstance Id="dcb5128b-b0c4-498c-81eb-a9e386e149d3" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="dfc073be-14b3-429c-8df0-70d05728eae4" name="người sử dụng" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ae0e4b42-e8e1-409d-af2f-8ca9e2836d0f" />
+        <suppliersInternal>
+          <dependency Id="64a6eb5a-dc4a-420c-8645-ec79e2e8bb4b">
+            <useCaseMoniker Id="3ae07f3d-e01d-4a2a-bc88-14d2245a4577" LastKnownName="Quản lý tiếp nhận điều động" />
+            <elementDefinition Id="b15650a1-daf7-4efe-880a-0f7fba0cd7d4" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="9707015f-5879-4d34-9ebf-b3612ae72396" name="quản trị nhân viên(admin tổ chức)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3adc7cf9-8565-4998-a8eb-4db02ba282d3" />
+        <generalsInternal>
+          <generalization Id="6472cc44-d125-41ab-accb-2ecc5b30f633" isSubstitutable="false">
+            <actorMoniker Id="dfc073be-14b3-429c-8df0-70d05728eae4" LastKnownName="người sử dụng" />
+            <elementDefinition Id="6c902048-88b2-422f-b3e3-fb51ee2b67de" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="ed385d40-b2bc-417d-9871-8575910d42ec" name="quản trị phần mềm(administrator)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f8657f9f-f282-4c4d-be60-36bab7b990be" />
+        <generalsInternal>
+          <generalization Id="72b46d7d-fe0b-4180-8ea5-2fbb6b49571e" isSubstitutable="false">
+            <actorMoniker Id="dfc073be-14b3-429c-8df0-70d05728eae4" LastKnownName="người sử dụng" />
+            <elementDefinition Id="bde2c14c-bf8a-40db-a278-cfe341e9bcdc" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="3ae07f3d-e01d-4a2a-bc88-14d2245a4577" name="Quản lý tiếp nhận điều động" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="03fad36d-6460-4684-a099-92f6c8d5c2f3" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2934222c-a9ed-49c8-a78d-2f4d320d38fa" name="Thêm QĐ Tiêp nhận/Điều động" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="07a8900c-4015-4644-8990-06c8f21d0614" />
+        <extendedCases>
+          <extend Id="d3744bba-a017-407e-8210-1b313ff7d3de">
+            <useCaseMoniker Id="3ae07f3d-e01d-4a2a-bc88-14d2245a4577" LastKnownName="Quản lý tiếp nhận điều động" />
+            <elementDefinition Id="3eb96be0-288c-4250-890d-0d01d408260a" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="19297dbb-599a-459d-8413-0fe713f8291d" name="Cập nhật/Sửa QĐ Tiếp nhận/Điều động" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="769eafb9-f80c-4686-81d8-6cbe8f826355" />
+        <extendedCases>
+          <extend Id="970c228d-3be8-4e29-a174-8d3d18766f32">
+            <useCaseMoniker Id="3ae07f3d-e01d-4a2a-bc88-14d2245a4577" LastKnownName="Quản lý tiếp nhận điều động" />
+            <elementDefinition Id="afcab162-6e0f-428e-8080-0dfab02f5a6f" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2353d1da-7306-48b0-89cd-3dc4c14d6a7e" name="Xóa QĐ Tiếp nhận/Điều động" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fd7e8811-0b31-480c-942e-c5540c304082" />
+        <extendedCases>
+          <extend Id="cb6e4193-8755-44c5-a40e-63c0db99a2ea">
+            <useCaseMoniker Id="3ae07f3d-e01d-4a2a-bc88-14d2245a4577" LastKnownName="Quản lý tiếp nhận điều động" />
+            <elementDefinition Id="f5ff865e-fd63-42b2-b97f-a4520d8496de" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b8b82e03-a427-493b-8035-741f1d5c0b32" name="In QĐ Tiếp nhận/Điều động" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="40ac7233-13f6-47eb-a5f6-509f0b830716" />
+        <extendedCases>
+          <extend Id="b770bbbe-deb5-451f-b977-5b9602ca5e74">
+            <useCaseMoniker Id="3ae07f3d-e01d-4a2a-bc88-14d2245a4577" LastKnownName="Quản lý tiếp nhận điều động" />
+            <elementDefinition Id="0cdd441d-e85d-4298-8635-5a65e0503482" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="3c1dfb34-ceba-4224-8acb-1d9f603e4266" name="ModelingProject1">
+    <elementDefinition Id="c1918b24-b69c-4818-aacd-4d280375ce7b" />
+  </package>
+</useCaseModelRoot>

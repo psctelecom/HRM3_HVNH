@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="e182dcbd-82a3-400c-b7e9-9261a8ce3bcb" name="UMLUseCaseDiagram_KhenThuong" linkedPackageId="71111a78-6e7e-4a81-b2ee-81cce6efcf72" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="90b318e4-9848-4181-879b-44f85f9ee8a4">
+      <elementDefinition Id="98191e72-6848-4fd9-8702-7ec15dacf565" />
+      <body>UC quản lý khen thưởng</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b5fb2665-a5ce-4264-bf36-3128db45a531" name="Thêm QĐ khen thưởng" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f5eba948-3660-483a-b0b4-3a8794846df5" />
+        <extendedCases>
+          <extend Id="7a6433cb-0ad8-475b-831e-0faeaebcd2d0">
+            <useCaseMoniker Id="20c0cd15-fdb4-4eb3-b0e5-9e9086eacfb6" LastKnownName="Quản lý khen thưởng" />
+            <elementDefinition Id="16b0eed4-225c-42bf-ab16-9d5ce9bb48f9" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="78889713-1275-4b43-b647-03f9b34e4e94" name="Xóa QĐ khen thưởng" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f5d12950-d455-4652-8038-5db6a605ef9c" />
+        <extendedCases>
+          <extend Id="fe04c323-b0d1-44d6-96ff-ffd911be20a3">
+            <useCaseMoniker Id="20c0cd15-fdb4-4eb3-b0e5-9e9086eacfb6" LastKnownName="Quản lý khen thưởng" />
+            <elementDefinition Id="e2a5a336-5bf7-4faf-a605-0504825bb9cb" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8dca81d2-033a-420d-b2a0-b7376f62146c" name="Cập nhật/sửa QĐ khen thưởng" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1d7444ca-5f37-4eee-91fb-2a03ababd01d" />
+        <extendedCases>
+          <extend Id="9ea06532-0af0-4e35-813b-a7ec6bc88e6b">
+            <useCaseMoniker Id="20c0cd15-fdb4-4eb3-b0e5-9e9086eacfb6" LastKnownName="Quản lý khen thưởng" />
+            <elementDefinition Id="181ef1b6-a867-43b8-b094-3eb0e4e48c1a" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fc091f40-3465-4196-a8ff-fa7db0801299" name="In QĐ khen thưởng" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d30db73f-a104-4449-b6be-7871b0e5ef8a" />
+        <extendedCases>
+          <extend Id="24396595-d941-47f6-a99a-45eb7333d12e">
+            <useCaseMoniker Id="20c0cd15-fdb4-4eb3-b0e5-9e9086eacfb6" LastKnownName="Quản lý khen thưởng" />
+            <elementDefinition Id="ba55f5d6-f083-46b4-90a8-ad9afb1a9ad7" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="b7771daa-3fda-420e-b6b8-ca2c2b68fa99" name="người sử dụng" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ae0e4b42-e8e1-409d-af2f-8ca9e2836d0f" />
+        <suppliersInternal>
+          <dependency Id="a1322ecc-be5b-4040-bfa9-907d5ffbb545">
+            <useCaseMoniker Id="20c0cd15-fdb4-4eb3-b0e5-9e9086eacfb6" LastKnownName="Quản lý khen thưởng" />
+            <elementDefinition Id="f6796df8-10c5-41e6-8d09-6f03ab846ef4" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="21b47b9c-5500-4d7d-88d5-fbe5ceefc9b7" name="quản trị nhân viên(admin tổ chức)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3adc7cf9-8565-4998-a8eb-4db02ba282d3" />
+        <generalsInternal>
+          <generalization Id="a4564e78-b095-447a-adae-6f0f0330423b" isSubstitutable="false">
+            <actorMoniker Id="b7771daa-3fda-420e-b6b8-ca2c2b68fa99" LastKnownName="người sử dụng" />
+            <elementDefinition Id="6c902048-88b2-422f-b3e3-fb51ee2b67de" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="7331b404-6bec-4f80-acb4-be93c1f92e0f" name="quản trị phần mềm(administrator)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f8657f9f-f282-4c4d-be60-36bab7b990be" />
+        <generalsInternal>
+          <generalization Id="b0fe3928-2528-4cf9-bbcb-7dc4cc4a5387" isSubstitutable="false">
+            <actorMoniker Id="b7771daa-3fda-420e-b6b8-ca2c2b68fa99" LastKnownName="người sử dụng" />
+            <elementDefinition Id="bde2c14c-bf8a-40db-a278-cfe341e9bcdc" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="20c0cd15-fdb4-4eb3-b0e5-9e9086eacfb6" name="Quản lý khen thưởng" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b4712ab8-d624-46dd-8e5a-3e868d8d4a72" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="71111a78-6e7e-4a81-b2ee-81cce6efcf72" name="ModelingProject1">
+    <elementDefinition Id="c1918b24-b69c-4818-aacd-4d280375ce7b" />
+    <profileInstances>
+      <packageHasProfileInstances Id="807f1e00-476d-464f-9224-d6cbcca6d97f">
+        <profileInstance Id="9b881ab5-5ded-495f-8145-8e173a5a05c2" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="e69205c6-b3b8-44bf-a08c-8f0b18d49731">
+        <profileInstance Id="9ca02a31-5a1f-4217-99e4-df10a1f3106b" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

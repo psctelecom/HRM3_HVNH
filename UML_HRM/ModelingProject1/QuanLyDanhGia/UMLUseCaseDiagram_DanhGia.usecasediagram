@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="5e499752-e3e2-4e3b-a036-b3c2e3f26628" name="UMLUseCaseDiagram_DanhGia" linkedPackageId="e7e735c2-174c-48f2-b13d-c12639b2e9ca" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="72dfba4a-88fa-4dc4-a957-723d8ebda05f">
+      <elementDefinition Id="962616de-9b28-498f-997e-9afdbdc36f6a" />
+      <body>UC quản lý đánh giá nhân viên</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="7c454f09-67e5-4b2d-9459-728b8641a65d">
+      <profileInstance Id="92cf04db-36d7-4b4b-bee2-00c2c2066e74" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="074333f4-7995-41b8-9108-ed542f3d7ad1">
+      <profileInstance Id="b99cd2ff-2685-4d19-b798-e9332f73a2a0" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="ed4f42fa-5568-44d6-a928-8100b3ed1bc9" name="người sử dụng" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ae0e4b42-e8e1-409d-af2f-8ca9e2836d0f" />
+        <suppliersInternal>
+          <dependency Id="db24f4b9-7c83-4055-89fb-857b2a4c1e9b">
+            <useCaseMoniker Id="b8892f72-a24c-4546-86dc-4d69b6bf884b" LastKnownName="Quản lý đánh giá nhân viên" />
+            <elementDefinition Id="be18b2c3-7878-4df6-a8e1-f589b4cdf85f" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="f9854da4-157d-4ddb-9172-8ff32c8f8fa4" name="quản trị nhân viên(admin tổ chức)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3adc7cf9-8565-4998-a8eb-4db02ba282d3" />
+        <generalsInternal>
+          <generalization Id="f8ab8835-e792-49be-8f18-9d21ca032e23" isSubstitutable="false">
+            <actorMoniker Id="ed4f42fa-5568-44d6-a928-8100b3ed1bc9" LastKnownName="người sử dụng" />
+            <elementDefinition Id="6c902048-88b2-422f-b3e3-fb51ee2b67de" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="368b45ad-081b-4d2e-86f6-ab94f5ec1758" name="quản trị phần mềm(administrator)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f8657f9f-f282-4c4d-be60-36bab7b990be" />
+        <generalsInternal>
+          <generalization Id="ea77217a-6a5f-4650-9e99-d75ff15fb6aa" isSubstitutable="false">
+            <actorMoniker Id="ed4f42fa-5568-44d6-a928-8100b3ed1bc9" LastKnownName="người sử dụng" />
+            <elementDefinition Id="bde2c14c-bf8a-40db-a278-cfe341e9bcdc" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b8892f72-a24c-4546-86dc-4d69b6bf884b" name="Quản lý đánh giá nhân viên" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cde7ba7c-60aa-4e55-a43d-add7af236a81" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6e6221da-d5b5-4fd2-b3d2-36ffa8fdb365" name="Thêm Đánh giá" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="262ba5ef-3c53-4066-8b3f-b5776d2bdc2a" />
+        <extendedCases>
+          <extend Id="a168083a-a20f-416f-a219-9896aaa96736">
+            <useCaseMoniker Id="b8892f72-a24c-4546-86dc-4d69b6bf884b" LastKnownName="Quản lý đánh giá nhân viên" />
+            <elementDefinition Id="a79c8cdc-2377-4196-8f9b-7b6930d9a3af" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="83b0b968-1b10-45b8-a9c5-c894b54ea8b9" name="Cập nhật/Sửa đánh giá" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="94cf1bcc-18dc-4579-b927-9e4d89c5120b" />
+        <extendedCases>
+          <extend Id="82f4ff09-af43-4169-acac-308fa21f3a0f">
+            <useCaseMoniker Id="b8892f72-a24c-4546-86dc-4d69b6bf884b" LastKnownName="Quản lý đánh giá nhân viên" />
+            <elementDefinition Id="febce8aa-f79a-4b68-ac79-ddf5f0495c2b" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="51afbade-47ab-46b3-b269-0ccae7c29efd" name="Xóa đánh giá" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a4158d5a-6bf9-4592-8a8d-295992063ba4" />
+        <extendedCases>
+          <extend Id="0495aa0f-4749-4c96-8a5c-f3568fd574a5">
+            <useCaseMoniker Id="b8892f72-a24c-4546-86dc-4d69b6bf884b" LastKnownName="Quản lý đánh giá nhân viên" />
+            <elementDefinition Id="308fdaaa-b56c-491c-9004-7c8dc094d0e2" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="e7e735c2-174c-48f2-b13d-c12639b2e9ca" name="ModelingProject1">
+    <elementDefinition Id="c1918b24-b69c-4818-aacd-4d280375ce7b" />
+  </package>
+</useCaseModelRoot>

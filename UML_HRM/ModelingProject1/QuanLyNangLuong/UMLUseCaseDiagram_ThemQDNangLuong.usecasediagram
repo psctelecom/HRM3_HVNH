@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="64ddfeb6-9567-449e-99e2-ebdb7e348585" name="UMLUseCaseDiagram_ThemQDNangLuong" linkedPackageId="f18bda35-3184-4469-91d8-f03ba72d0820" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="3afd5392-25bd-4e00-8865-eb0f95597c29">
+      <elementDefinition Id="ec196ca7-56fe-4796-b10a-fcbf888b2cca" />
+      <body>UC quản lý quá trình nâng lương</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="16e8af30-d41b-43f3-9b7e-25cf3c4c3dba">
+      <profileInstance Id="fd0e1965-db12-4d39-b9a7-e9633712a8b0" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="a057cbf9-4a3c-4de0-b83d-c0a67c1cd365">
+      <profileInstance Id="33213db1-6ce4-4dba-ac8b-44aadb373d8c" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="79dcfc35-503d-4d33-8778-44845ba58b53" name="người sử dụng" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ae0e4b42-e8e1-409d-af2f-8ca9e2836d0f" />
+        <suppliersInternal>
+          <dependency Id="f1990a3a-9ed9-479a-883e-d4b7b22eb281">
+            <useCaseMoniker Id="21a11db3-5ffd-4a34-acdc-b6116dfe1294" LastKnownName="Quản lý nâng lương" />
+            <elementDefinition Id="1a7255b3-e661-42b1-bc94-0b2e5e61c4e6" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="3c78f89d-fb90-4e5e-af50-72f40402a4fa" name="quản trị nhân viên(admin tổ chức)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3adc7cf9-8565-4998-a8eb-4db02ba282d3" />
+        <generalsInternal>
+          <generalization Id="9ef43fca-c211-4467-b6e8-a78600bce2b5" isSubstitutable="false">
+            <actorMoniker Id="79dcfc35-503d-4d33-8778-44845ba58b53" LastKnownName="người sử dụng" />
+            <elementDefinition Id="6c902048-88b2-422f-b3e3-fb51ee2b67de" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="798a7a2a-24cc-4971-a9ce-0685cec6f690" name="quản trị phần mềm(administrator)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f8657f9f-f282-4c4d-be60-36bab7b990be" />
+        <generalsInternal>
+          <generalization Id="a4cd46ff-4f90-46bd-9dc8-0134e9a70668" isSubstitutable="false">
+            <actorMoniker Id="79dcfc35-503d-4d33-8778-44845ba58b53" LastKnownName="người sử dụng" />
+            <elementDefinition Id="bde2c14c-bf8a-40db-a278-cfe341e9bcdc" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="21a11db3-5ffd-4a34-acdc-b6116dfe1294" name="Quản lý nâng lương" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2d445af2-128c-415c-800e-66c8740f254b" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0ee34209-e3e8-46f0-be78-d2ed0e57c527" name="Thêm QĐ nâng lương" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="231c900e-af62-4d6e-8f59-3df335b7a470" />
+        <extendedCases>
+          <extend Id="609748b6-c8f2-43ef-ac45-3a6953952ed8">
+            <useCaseMoniker Id="21a11db3-5ffd-4a34-acdc-b6116dfe1294" LastKnownName="Quản lý nâng lương" />
+            <elementDefinition Id="dc77ba6c-ce93-4738-8640-ff0516dbef27" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e7b40204-42b4-49f3-bcf3-2f08f9d23b41" name="Chọn nhân viên nâng lương" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="530025af-3782-4ccf-9f4c-dd384bab9bb9" />
+        <additions>
+          <include Id="613bb623-a5ab-4c68-a5f5-a469f53f6208">
+            <useCaseMoniker Id="0ee34209-e3e8-46f0-be78-d2ed0e57c527" LastKnownName="Thêm QĐ nâng lương" />
+            <elementDefinition Id="544646d4-fcca-448a-ba85-75d0f4f7de17" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b27355f9-222d-4ef6-a07f-af33e485cdb3" name="Lập QĐ nâng lương" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bce96ef0-bf57-425a-9cae-ac66eb5636bd" />
+        <extendedCases>
+          <extend Id="54129551-c0bd-432b-ba03-f30e5adfcedd">
+            <useCaseMoniker Id="0ee34209-e3e8-46f0-be78-d2ed0e57c527" LastKnownName="Thêm QĐ nâng lương" />
+            <elementDefinition Id="6bd2b8c3-8ef6-461c-8c71-75829cc28aea" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="12d2d23a-e4d2-45f0-a240-c13308b4e41f" name="Theo dõi nâng lương" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2967a36d-ad71-4697-8e19-996d093fd111" />
+        <extendedCases>
+          <extend Id="a5ff7447-6810-4aab-ab6a-0b214139a461">
+            <useCaseMoniker Id="83f14cf1-42f9-4ab6-a8b6-d42f06fc894f" LastKnownName="Lập đề nghị nâng lương" />
+            <elementDefinition Id="bbd20e75-8dae-427e-9cbb-9f296fc60720" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2c2fa774-1138-461e-8d4f-440f42b5b2db" name="Theo dõi nâng lương sớm" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4d68d5e9-6952-402d-89ad-ee83970d0967" />
+        <extendedCases>
+          <extend Id="0d3f1152-4fa0-47dc-96d4-812bef6c84a9">
+            <useCaseMoniker Id="83f14cf1-42f9-4ab6-a8b6-d42f06fc894f" LastKnownName="Lập đề nghị nâng lương" />
+            <elementDefinition Id="9b619c4c-609d-4788-951b-a964ae9b5fdf" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="83f14cf1-42f9-4ab6-a8b6-d42f06fc894f" name="Lập đề nghị nâng lương" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2a9c0ceb-cbbe-49cb-9d93-edc9c21ace76" />
+        <additions>
+          <include Id="10ff8170-0ce7-4c85-aa2e-6bdbfaf4ac65">
+            <useCaseMoniker Id="0ee34209-e3e8-46f0-be78-d2ed0e57c527" LastKnownName="Thêm QĐ nâng lương" />
+            <elementDefinition Id="6893173f-1c7f-46d2-bd9c-0deaf8989023" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="f18bda35-3184-4469-91d8-f03ba72d0820" name="ModelingProject1">
+    <elementDefinition Id="c1918b24-b69c-4818-aacd-4d280375ce7b" />
+  </package>
+</useCaseModelRoot>

@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="9bc9666f-084e-43e2-b10c-6a45dc4fb55f" name="UMLUseCaseDiagram_QuanLyHoSo" linkedPackageId="a70cf118-32d7-4e1f-aea3-a0468f6737e3" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="3a5695da-149f-4aa4-94ef-6424c83a5833">
+      <elementDefinition Id="067531a8-0b46-43b5-aa8a-14c960946db7" />
+      <body>UC Xóa nhân viên</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ea5c8138-94f3-4467-917a-9be0242827b5" name="Xóa sơ yếu lý lịch" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1a17eed4-252e-4651-a46d-a358f536e7d6" />
+        <extendedCases>
+          <extend Id="0422c69e-4b45-4df5-9192-9f26ce307dac">
+            <useCaseMoniker Id="08fcf023-98ee-47c5-bc5d-b42df7056705" LastKnownName="Xóa nhân viên" />
+            <elementDefinition Id="a250ff8f-f0b1-4e67-bcf3-0a00a596216c" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c3326891-da28-4a46-84e8-08df95d69951" name="Xóa thông tin lương" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f448be31-70cb-4efa-95dd-31731dcb1ee6" />
+        <extendedCases>
+          <extend Id="6a9056d3-bb7f-498a-b665-7d7d5404db23">
+            <useCaseMoniker Id="08fcf023-98ee-47c5-bc5d-b42df7056705" LastKnownName="Xóa nhân viên" />
+            <elementDefinition Id="b4e1ebd3-4744-401f-8f7f-21ff163aa51a" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="cdfab32e-f674-4c77-83e5-2dbbd05902cb" name="Xóa Quan hệ gia đình" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b2a8f282-27f6-43dd-816b-aee3f51b53d5" />
+        <extendedCases>
+          <extend Id="871eddbc-682f-4a32-ac5c-0e4e378d0b0d">
+            <useCaseMoniker Id="08fcf023-98ee-47c5-bc5d-b42df7056705" LastKnownName="Xóa nhân viên" />
+            <elementDefinition Id="0c828dee-e6d0-493d-a924-01b56d047b44" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5c55e9ed-22d5-43f6-87df-5754971ccf39" name="Xóa các quá trình" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5ea7b14d-d51f-4037-a0da-6472a09161d6" />
+        <extendedCases>
+          <extend Id="533b151d-3b85-4891-961f-c8c72f96e94e">
+            <useCaseMoniker Id="08fcf023-98ee-47c5-bc5d-b42df7056705" LastKnownName="Xóa nhân viên" />
+            <elementDefinition Id="cebe5f52-78d8-4c0f-bb4a-42f01c9f1f7a" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2790961c-fb7b-486a-a7ad-8b4a67d00494" name="Xóa chứ vụ kiêm nhiêm" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="42adaea3-83e1-45e8-a023-9384d15fd69d" />
+        <extendedCases>
+          <extend Id="cfdaaff0-fcc1-40f1-9d2f-12c3de209d70">
+            <useCaseMoniker Id="08fcf023-98ee-47c5-bc5d-b42df7056705" LastKnownName="Xóa nhân viên" />
+            <elementDefinition Id="6460350a-91af-48d2-bbf3-f1019f9ada86" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fd1efdb6-a3c5-4a92-8902-bc231869f6b7" name="Xóa giấy tơ hồ sơ" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6264fb95-1fc5-4280-95b7-03abd9848832" />
+        <extendedCases>
+          <extend Id="1431eff2-a334-4cb4-a3ba-baf8757b6d8a">
+            <useCaseMoniker Id="08fcf023-98ee-47c5-bc5d-b42df7056705" LastKnownName="Xóa nhân viên" />
+            <elementDefinition Id="d44c1cea-67f8-464d-a31f-86268529df2a" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="d80adc2b-d1d3-4072-b688-c1b4a2c8894e" name="quản trị nhân viên(admin tổ chức)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3adc7cf9-8565-4998-a8eb-4db02ba282d3" />
+        <generalsInternal>
+          <generalization Id="7658b435-8968-475e-8459-d94a09f1607f" isSubstitutable="false">
+            <actorMoniker Id="24a572b4-db6e-40c9-999a-73d900e4adb1" LastKnownName="người sử dụng" />
+            <elementDefinition Id="6c902048-88b2-422f-b3e3-fb51ee2b67de" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="24a572b4-db6e-40c9-999a-73d900e4adb1" name="người sử dụng" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ae0e4b42-e8e1-409d-af2f-8ca9e2836d0f" />
+        <suppliersInternal>
+          <dependency Id="9c9d2092-7e4c-4ec2-bb50-20cb74e6ad25">
+            <useCaseMoniker Id="b4437d33-c67e-4b45-9453-7a7507405016" LastKnownName="Quản lý nhân viên" />
+            <elementDefinition Id="070916ef-0ed8-48d6-9978-a4a9b568c920" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="8abdda7e-327b-4638-9b22-59e6e6cdb7fb" name="quản trị phần mềm(administrator)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f8657f9f-f282-4c4d-be60-36bab7b990be" />
+        <generalsInternal>
+          <generalization Id="ce49f0d3-3470-41db-84e1-28bad7ac0f66" isSubstitutable="false">
+            <actorMoniker Id="24a572b4-db6e-40c9-999a-73d900e4adb1" LastKnownName="người sử dụng" />
+            <elementDefinition Id="bde2c14c-bf8a-40db-a278-cfe341e9bcdc" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b4437d33-c67e-4b45-9453-7a7507405016" name="Quản lý nhân viên" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e2d20d9a-56e9-4b13-8d7f-07eb8f0ea687" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="08fcf023-98ee-47c5-bc5d-b42df7056705" name="Xóa nhân viên" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e0ef781b-6d18-48b9-baf5-5923b4fddcd7" />
+        <extendedCases>
+          <extend Id="8d4a819a-597d-4824-95c8-38ecd4fc5119">
+            <useCaseMoniker Id="b4437d33-c67e-4b45-9453-7a7507405016" LastKnownName="Quản lý nhân viên" />
+            <elementDefinition Id="eadcd10e-8a22-4eb8-b458-522076e4b69b" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="dfc624b0-ea1e-4a0b-837e-992ab9e52e7c" name="Chọn nhân viên" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="18094f7a-582b-4c65-810c-fe871b75ae00" />
+        <additions>
+          <include Id="1eb1d493-913a-457d-a24d-4af3305c8700">
+            <useCaseMoniker Id="08fcf023-98ee-47c5-bc5d-b42df7056705" LastKnownName="Xóa nhân viên" />
+            <elementDefinition Id="b20ad01c-6293-42cb-821f-ce9bb89658b2" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0ed7218c-a1a9-4b57-ad08-1d712bbedb94" name="Xóa hợp đồng lao động" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5211d2a7-0cbc-4a67-a485-ac757fce499e" />
+        <extendedCases>
+          <extend Id="7cb3f036-098d-4583-b228-c614bfa6a376">
+            <useCaseMoniker Id="08fcf023-98ee-47c5-bc5d-b42df7056705" LastKnownName="Xóa nhân viên" />
+            <elementDefinition Id="b02e5003-2343-4aaf-901e-9dbb4d90fe42" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8d233f95-b24b-4a20-bd66-94410dac2e20" name="Xóa trình độ" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1a4b5097-3ae3-481a-82f1-927ed0fd3cc0" />
+        <extendedCases>
+          <extend Id="cb3dd119-8b6a-441e-af9b-8e36ef3be42f">
+            <useCaseMoniker Id="08fcf023-98ee-47c5-bc5d-b42df7056705" LastKnownName="Xóa nhân viên" />
+            <elementDefinition Id="ec228e04-9116-4a0a-9a93-d33c0c2adc59" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="a70cf118-32d7-4e1f-aea3-a0468f6737e3" name="ModelingProject1">
+    <elementDefinition Id="c1918b24-b69c-4818-aacd-4d280375ce7b" />
+    <profileInstances>
+      <packageHasProfileInstances Id="aa22cfb2-bdd4-4684-a955-d9ef71f3a800">
+        <profileInstance Id="f248bd21-0bd2-49b3-92e9-66054d9af133" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="051828a4-f9bd-4816-94c9-d00f8b7ea255">
+        <profileInstance Id="8a9cd670-ece9-4dcb-8a53-6d800c28bcdd" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

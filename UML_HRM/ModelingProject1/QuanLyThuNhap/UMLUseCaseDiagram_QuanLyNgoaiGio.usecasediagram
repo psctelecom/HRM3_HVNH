@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="ffc174cd-bdd8-4bf0-9614-3582181ed4ef" name="UMLUseCaseDiagram_QuanLyNgoaiGio" linkedPackageId="329db6f9-f794-4775-bdd6-e8a89dff7e4e" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="a1ef1964-eb44-4146-a2f3-453053ee7b20">
+      <elementDefinition Id="f563db79-18a9-496e-bbc0-ab7441dc550c" />
+      <body>UML quản lý ngoài giờ</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="78be0a06-6cc4-4192-b874-e2cdf787570f" name="quản trị tính lương(admin tính lương)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="09b5775f-e7c0-41ac-b31d-806771f7772c" />
+        <generalsInternal>
+          <generalization Id="a94c4032-3919-47b9-9066-320aaf5a106a" isSubstitutable="false">
+            <actorMoniker Id="357f33bb-653b-49ed-bade-bf8c70c6f023" LastKnownName="người sử dụng" />
+            <elementDefinition Id="2998a0da-6443-4634-bcff-436d6bd9480f" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="357f33bb-653b-49ed-bade-bf8c70c6f023" name="người sử dụng" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ae0e4b42-e8e1-409d-af2f-8ca9e2836d0f" />
+        <suppliersInternal>
+          <dependency Id="8a692c5a-5394-4428-a427-30af410fc812">
+            <useCaseMoniker Id="bacbe68b-a3fa-4246-b915-8cf7ea9b10ce" LastKnownName="Quản lý thu nhập" />
+            <elementDefinition Id="f024223c-9578-435a-b23b-29743067e228" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="1ff1454c-6518-4d7a-aacf-77223f827c47" name="quản trị phần mềm(administrator)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f8657f9f-f282-4c4d-be60-36bab7b990be" />
+        <generalsInternal>
+          <generalization Id="4c60e9b6-4c89-48fb-b3cb-eda57a800347" isSubstitutable="false">
+            <actorMoniker Id="357f33bb-653b-49ed-bade-bf8c70c6f023" LastKnownName="người sử dụng" />
+            <elementDefinition Id="bde2c14c-bf8a-40db-a278-cfe341e9bcdc" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="bacbe68b-a3fa-4246-b915-8cf7ea9b10ce" name="Quản lý thu nhập" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="09972feb-42c9-4be6-b0bc-c1193ef24595" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8975d80b-4e1d-459e-ae4b-0ce772d96b6a" name="Quản lý ngoài giờ" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7ad38caf-fdf2-4a93-a514-f96682e8d37b" />
+        <extendedCases>
+          <extend Id="83922164-0d47-4cb9-a24a-a5d24fd04a82">
+            <useCaseMoniker Id="bacbe68b-a3fa-4246-b915-8cf7ea9b10ce" LastKnownName="Quản lý thu nhập" />
+            <elementDefinition Id="069f7684-0c35-47d7-bfdb-643479f390e0" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f5dc394b-dcbd-4a7b-abcb-64c84137285c" name="tính tiền ngoài giờ" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c4390488-ad7d-4b11-861f-e869ef3b563b" />
+        <extendedCases>
+          <extend Id="16356aad-0120-489a-aef6-d44c593811d6">
+            <useCaseMoniker Id="8975d80b-4e1d-459e-ae4b-0ce772d96b6a" LastKnownName="Quản lý ngoài giờ" />
+            <elementDefinition Id="ba502cc1-a02d-4c00-8a08-42c7287f40f6" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f3220ce6-e8bd-4999-8488-f23fe28ad853" name="Sửa tiền ngoài giời" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4dfca67d-5983-4b25-b1fe-bc58ee83e9fa" />
+        <extendedCases>
+          <extend Id="2ea20b19-5a94-4107-8b8c-9c69a2da41db">
+            <useCaseMoniker Id="8975d80b-4e1d-459e-ae4b-0ce772d96b6a" LastKnownName="Quản lý ngoài giờ" />
+            <elementDefinition Id="7aae7372-763a-4dd0-938a-a6af54a96887" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8e571d12-fbec-447a-9491-8976fb8e2f88" name="Xóa tiền ngoài giờ" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2fae6ca6-e9eb-4f06-baff-2cc8a1900cba" />
+        <extendedCases>
+          <extend Id="ffa6284d-df9f-49c8-ae1f-9e9201d30d48">
+            <useCaseMoniker Id="8975d80b-4e1d-459e-ae4b-0ce772d96b6a" LastKnownName="Quản lý ngoài giờ" />
+            <elementDefinition Id="64c1974c-ec14-4c22-a8ac-6d74d5211ec6" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="acc87c54-a4bf-4c92-8dd3-0f9e509c4260" name="In tiền ngoài giờ" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c43124f9-9e1e-4c59-8450-88ed791cbb03" />
+        <extendedCases>
+          <extend Id="46b360d0-ea22-4b36-a2af-a4f3ca69b100">
+            <useCaseMoniker Id="8975d80b-4e1d-459e-ae4b-0ce772d96b6a" LastKnownName="Quản lý ngoài giờ" />
+            <elementDefinition Id="c752356c-1939-4063-af33-330815d0288b" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f470db03-b011-473b-807d-440bc7f3b3d5" name="Lập công thức tính tiền ngoài giờ" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="250f03a4-47a8-4218-afb0-5ce0545d12d6" />
+        <additions>
+          <include Id="de7691e3-94bd-44b5-a275-288c2f152053">
+            <useCaseMoniker Id="8975d80b-4e1d-459e-ae4b-0ce772d96b6a" LastKnownName="Quản lý ngoài giờ" />
+            <elementDefinition Id="f8ae9c77-dd7a-4e09-ba7f-95f81a88cc39" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6c57f5ff-3ae5-4703-972b-2c311223cc89" name="cập nhật tiền ngoài giờ" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="63d04864-5851-4c56-9571-f56e162d5266" />
+        <extendedCases>
+          <extend Id="76847c91-44e9-457d-a9a6-5e10233064ba">
+            <useCaseMoniker Id="8975d80b-4e1d-459e-ae4b-0ce772d96b6a" LastKnownName="Quản lý ngoài giờ" />
+            <elementDefinition Id="ba4b38eb-5d1c-447f-b060-bf99f3028368" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="329db6f9-f794-4775-bdd6-e8a89dff7e4e" name="ModelingProject1">
+    <elementDefinition Id="c1918b24-b69c-4818-aacd-4d280375ce7b" />
+    <profileInstances>
+      <packageHasProfileInstances Id="e68ef717-ffc0-414c-b0ea-bde6fb61f959">
+        <profileInstance Id="b4a8b0be-ed30-4285-972c-609dee3ea34f" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="59bce102-8bbd-4a0a-8552-f8732347dc09">
+        <profileInstance Id="a1147f57-417a-4ca6-ba5a-e67a2eeae771" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="94e50c89-8f40-418f-8180-6348b1f9f38a" name="UMLUseCaseDiagram_QuanLyPhongBan" linkedPackageId="9b5cc6f6-ad11-48c7-ba0d-0c05ce1ab5ca" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="daf98aff-4adb-4f0d-8214-2f86cf1fdea8">
+      <elementDefinition Id="1b1a7f14-e567-4e03-89ee-9b0347f54542" />
+      <body>UC Quản Lý đơn vị/phòng ban</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="9766414d-50f4-4917-b0c1-094929a961c8" name="người sử dụng" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ae0e4b42-e8e1-409d-af2f-8ca9e2836d0f" />
+        <suppliersInternal>
+          <dependency Id="2d3cb0ee-777e-4af8-ac8d-92ce6340e22a">
+            <useCaseMoniker Id="f2f4be80-1a03-4a39-a461-9c038bc3acb2" LastKnownName="Quản lý đơn vị/phòng ban" />
+            <elementDefinition Id="4d33e5d1-1fed-4c08-b3f8-287ba2f70869" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="ad2f3e6e-2cbb-43fd-91bb-20528d00a5f8" name="quản trị nhân viên(admin tổ chức)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3adc7cf9-8565-4998-a8eb-4db02ba282d3" />
+        <generalsInternal>
+          <generalization Id="54414b45-de93-4be5-8cf0-a96ecbc37251" isSubstitutable="false">
+            <actorMoniker Id="9766414d-50f4-4917-b0c1-094929a961c8" LastKnownName="người sử dụng" />
+            <elementDefinition Id="6c902048-88b2-422f-b3e3-fb51ee2b67de" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="8d0a5ed9-034c-4c45-9cb0-3c09670f705e" name="quản trị phần mềm(administrator)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f8657f9f-f282-4c4d-be60-36bab7b990be" />
+        <generalsInternal>
+          <generalization Id="e9d46450-3a01-4127-9a7c-13b62a6c8d3e" isSubstitutable="false">
+            <actorMoniker Id="9766414d-50f4-4917-b0c1-094929a961c8" LastKnownName="người sử dụng" />
+            <elementDefinition Id="bde2c14c-bf8a-40db-a278-cfe341e9bcdc" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f2f4be80-1a03-4a39-a461-9c038bc3acb2" name="Quản lý đơn vị/phòng ban" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c6ecb0f9-7fc7-4257-b94a-8d2a1a034c16" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f9a748b7-d2d8-4bda-babe-f6bf7e73cd3c" name="Thêm đơn vị/ phòng ban" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="119e50f0-ecec-402c-ac32-076665d43927" />
+        <extendedCases>
+          <extend Id="5d3d67b4-6b33-46a6-b282-75ff0ff53ed3">
+            <useCaseMoniker Id="f2f4be80-1a03-4a39-a461-9c038bc3acb2" LastKnownName="Quản lý đơn vị/phòng ban" />
+            <elementDefinition Id="060ccbbe-086e-40e4-ba4b-129da33645a0" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4d94140c-4050-4905-9dc9-1529c1e56a06" name="Cập nhật/Sửa Đơn vị/phòng ban" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d24d7fbb-c0b7-486b-9cad-37c6f2cf0f14" />
+        <extendedCases>
+          <extend Id="76be2b18-c325-4aa8-a8ca-4646e6f20f52">
+            <useCaseMoniker Id="f2f4be80-1a03-4a39-a461-9c038bc3acb2" LastKnownName="Quản lý đơn vị/phòng ban" />
+            <elementDefinition Id="e9810405-c92a-4a5d-b29f-e116fef8ba0e" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6093fd88-7b31-4b38-ab51-f4931081f8c9" name="Xóa đơn vị/ phòng ban" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f90c2943-4e87-498d-9518-aa45d1d26937" />
+        <extendedCases>
+          <extend Id="07cf185a-20f6-41b3-a96d-2312dd5bff4c">
+            <useCaseMoniker Id="f2f4be80-1a03-4a39-a461-9c038bc3acb2" LastKnownName="Quản lý đơn vị/phòng ban" />
+            <elementDefinition Id="20908314-c7f6-4337-a5e2-0d67909d2ab5" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="9b5cc6f6-ad11-48c7-ba0d-0c05ce1ab5ca" name="ModelingProject1">
+    <elementDefinition Id="c1918b24-b69c-4818-aacd-4d280375ce7b" />
+    <profileInstances>
+      <packageHasProfileInstances Id="25cc80d8-9876-48e2-8aa4-a70489b46c87">
+        <profileInstance Id="c8e6a25e-2180-4490-b994-7a5d8b159297" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="8e23cc93-de43-470e-9b89-1d13fff1f570">
+        <profileInstance Id="5145c321-f204-4411-9af3-71ec9011bb9c" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

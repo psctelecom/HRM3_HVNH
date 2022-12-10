@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="8ea86fe6-e3c6-47ad-9435-a335e5fc826e" name="UMLUseCaseDiagram_QuanLyThoiViec" linkedPackageId="35566305-6833-4b0c-9b1a-63da5d02ecc7" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="567b6b0c-e6f6-40db-957a-271b4522691b">
+      <elementDefinition Id="6a45d4f2-a3db-49c8-bdc0-33c0c64cf6fe" />
+      <body>UC Quản lý nghỉ việc</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="f7530f8c-dc1f-4b02-90a1-cf6f3ec71b8f" name="người sử dụng" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ae0e4b42-e8e1-409d-af2f-8ca9e2836d0f" />
+        <suppliersInternal>
+          <dependency Id="04762e56-c842-4db1-82e7-7d60444f5474">
+            <useCaseMoniker Id="b6bac18a-659c-404c-beeb-07d037cc3e2c" LastKnownName="Quản lý thôi việc" />
+            <elementDefinition Id="13047f94-838d-4ec8-8f39-04a68e1d056a" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="b55fcd49-2b75-4ed3-9477-a652142486f8" name="quản trị nhân viên(admin tổ chức)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3adc7cf9-8565-4998-a8eb-4db02ba282d3" />
+        <generalsInternal>
+          <generalization Id="7a55d187-e2fb-481a-b76a-30ae6d639aa7" isSubstitutable="false">
+            <actorMoniker Id="f7530f8c-dc1f-4b02-90a1-cf6f3ec71b8f" LastKnownName="người sử dụng" />
+            <elementDefinition Id="6c902048-88b2-422f-b3e3-fb51ee2b67de" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="7019639c-6aa2-4a45-8614-5f3ce593f5f5" name="quản trị phần mềm(administrator)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f8657f9f-f282-4c4d-be60-36bab7b990be" />
+        <generalsInternal>
+          <generalization Id="b5e1d96c-0a1a-40da-a2f3-ca1f969a4554" isSubstitutable="false">
+            <actorMoniker Id="f7530f8c-dc1f-4b02-90a1-cf6f3ec71b8f" LastKnownName="người sử dụng" />
+            <elementDefinition Id="bde2c14c-bf8a-40db-a278-cfe341e9bcdc" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b6bac18a-659c-404c-beeb-07d037cc3e2c" name="Quản lý thôi việc" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="af907570-3166-4ba1-ae63-ffb7a779d591" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e83dd4a3-b6ef-406e-bdf7-4d4ab687ea31" name="Thêm QĐ nghỉ vệc" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5e055f2d-3e51-446c-9a6e-6caa8de685e2" />
+        <extendedCases>
+          <extend Id="339ea9f5-e07c-4eb2-bb2a-cb21658da747">
+            <useCaseMoniker Id="b6bac18a-659c-404c-beeb-07d037cc3e2c" LastKnownName="Quản lý thôi việc" />
+            <elementDefinition Id="7402cdb3-751f-49f2-8257-1a493bf16360" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4c167ae5-a432-4629-8564-c3160a9bbb5b" name="Cập nhật/Sửa QĐ nghỉ việc" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0a3ed24b-df8e-48b2-8d15-cc2a15a4e2d7" />
+        <extendedCases>
+          <extend Id="a410d874-578c-4412-b802-e43a74d66901">
+            <useCaseMoniker Id="b6bac18a-659c-404c-beeb-07d037cc3e2c" LastKnownName="Quản lý thôi việc" />
+            <elementDefinition Id="88047e1c-0add-4694-be09-973b0ae3c894" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ff5fedba-0cca-4041-99a5-97c94106ba2a" name="Xóa QĐ nghỉ việc" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="42aaf4c0-c896-4857-8d9a-8776653aa201" />
+        <extendedCases>
+          <extend Id="693a0fdc-a1ba-42a8-ae3d-e57a8e9e5952">
+            <useCaseMoniker Id="b6bac18a-659c-404c-beeb-07d037cc3e2c" LastKnownName="Quản lý thôi việc" />
+            <elementDefinition Id="6b08e2bc-3f90-4bcf-a823-b38751bac085" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8adad505-8ff4-4725-8b3d-34d1014db3d2" name="In QĐ Nghỉ việc" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9ccd91c6-ef60-4207-bacb-d018b8b83100" />
+        <extendedCases>
+          <extend Id="c3b99110-e911-4d08-bfe9-ebbcde284e05">
+            <useCaseMoniker Id="b6bac18a-659c-404c-beeb-07d037cc3e2c" LastKnownName="Quản lý thôi việc" />
+            <elementDefinition Id="c5840d4a-006a-49a9-83fe-e767967bb352" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="14bbaca3-e0ba-4b5f-b75a-b4280268d34b" name="Nghỉ việc" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e213c019-16db-461a-93c3-11bed14fa5ad" />
+        <extendedCases>
+          <extend Id="085b3519-699f-4062-9176-afb726f170a7">
+            <useCaseMoniker Id="e83dd4a3-b6ef-406e-bdf7-4d4ab687ea31" LastKnownName="Thêm QĐ nghỉ vệc" />
+            <elementDefinition Id="cef68c0c-5fa3-4dab-82f9-1c0e2d2e43a0" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="559bebd0-86e2-465a-aa83-1a5416a9d048" name="Chuyển công tác" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5502bd14-f936-47b3-9edb-cb18334447cf" />
+        <extendedCases>
+          <extend Id="453f5a4e-ca6b-451a-b103-974e65810c7f">
+            <useCaseMoniker Id="e83dd4a3-b6ef-406e-bdf7-4d4ab687ea31" LastKnownName="Thêm QĐ nghỉ vệc" />
+            <elementDefinition Id="1a88e04f-85ea-40ba-a3e6-574d3cdbfbd9" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2423f0b4-a2c4-409e-8f66-01be05d6f1de" name="Chọn nhân viên" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="18094f7a-582b-4c65-810c-fe871b75ae00" />
+        <additions>
+          <include Id="fd62d34b-1599-40be-9082-426ff6653b79">
+            <useCaseMoniker Id="e83dd4a3-b6ef-406e-bdf7-4d4ab687ea31" LastKnownName="Thêm QĐ nghỉ vệc" />
+            <elementDefinition Id="bb20401e-b664-469b-bd64-24f55fba2d40" />
+          </include>
+          <include Id="3d0798d5-234c-48fa-bf88-f20e808a31d3">
+            <useCaseMoniker Id="14bbaca3-e0ba-4b5f-b75a-b4280268d34b" LastKnownName="Nghỉ việc" />
+            <elementDefinition Id="360e0a34-5293-411a-8314-478362abf356" />
+          </include>
+          <include Id="6be3716c-12b2-4814-9a3d-4b4bfc78224e">
+            <useCaseMoniker Id="559bebd0-86e2-465a-aa83-1a5416a9d048" LastKnownName="Chuyển công tác" />
+            <elementDefinition Id="4c7f5a7b-527d-4fa9-bea9-30495b14079d" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="228244a5-52f3-4536-9ab3-8ea297e2ab1a" name="In Giấy thôi trả lương" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c7f96cd5-0af8-4ff4-9aca-a944315e5d6d" />
+        <extendedCases>
+          <extend Id="0e878aa5-b17c-4f6e-8ca1-35a72d4ea31e">
+            <useCaseMoniker Id="559bebd0-86e2-465a-aa83-1a5416a9d048" LastKnownName="Chuyển công tác" />
+            <elementDefinition Id="89bd2191-d91f-40fe-84cb-3eedb710b08e" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b5a50bf1-4ddf-4154-9e7c-610f8bc380b7" name="Quản lý nghỉ hưu" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5498a15f-7c62-488e-a187-016c901f84d8" />
+        <extendedCases>
+          <extend Id="e29565ae-3193-46c9-b487-8944bf348503">
+            <useCaseMoniker Id="b6bac18a-659c-404c-beeb-07d037cc3e2c" LastKnownName="Quản lý thôi việc" />
+            <elementDefinition Id="270379b9-3d30-450d-8b18-2f89ae1e0dc2" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="35566305-6833-4b0c-9b1a-63da5d02ecc7" name="ModelingProject1">
+    <elementDefinition Id="c1918b24-b69c-4818-aacd-4d280375ce7b" />
+    <profileInstances>
+      <packageHasProfileInstances Id="a0c562f6-29a5-4433-8532-84e7ef6cb5ea">
+        <profileInstance Id="91de9dce-653b-4d81-bf9b-40655ae2fc1c" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="93adbbcb-38c3-4770-bdaf-43d065cc66f6">
+        <profileInstance Id="640e15b7-9ecb-4af9-98a2-3c34b2c66c81" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

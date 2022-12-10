@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="HetHanBoNhiem_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutItem Id="QuyetDinhBoNhiem" ViewItem="QuyetDinhBoNhiem" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="DanhGiaCanBoCuoiNam_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="DanhGiaCanBoCuoiNam">
+              <LayoutItem Id="ChotDanhGia" ViewItem="ChotDanhGia" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="GiayToHoSo_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SizeableEditors">
+            <LayoutItem Id="NgayLap" ViewItem="NgayLap" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="DanhSachDenTuoiNghiHuu_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="DanhSachDenTuoiNghiHuu">
+              <LayoutGroup Id="Auto89dfa229-86d5-4c4b-a37b-58647c8b05ba">
+                <LayoutItem Id="SoThang" ViewItem="SoThang" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="TamGiuLuongNhanVien_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="Autodc6f3d89-6297-445f-860f-3b6492d8141d">
+            <LayoutGroup Id="Autoe6cf8e53-2565-4500-b5e9-ad5f7ef46288">
+              <LayoutGroup Id="SimpleEditors">
+                <LayoutGroup Id="TamGiuLuongNhanVien">
+                  <LayoutItem Id="DenKy" ViewItem="DenKy" />
+                  <LayoutItem Id="TuKy" ViewItem="TuKy" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

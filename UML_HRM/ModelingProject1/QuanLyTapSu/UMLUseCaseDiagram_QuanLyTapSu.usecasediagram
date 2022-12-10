@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="044e7863-512a-4610-95c1-7726730c2945" name="UMLUseCaseDiagram_QuanLyTapSu" linkedPackageId="32b361cd-5667-4af2-bb71-1a5c9a1b1f64" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="89cc839e-e39c-429b-ae11-b6d86a1546f0">
+      <elementDefinition Id="0d76e942-8bd5-461c-9a35-2105fdbd38cc" />
+      <body>UC Quản lý tập sự</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f349534d-e1dc-418c-b3e9-afffce9d05e1" name="Thêm tập sự" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8bbc18c0-ade4-4dcd-8f76-c61817be7b10" />
+        <extendedCases>
+          <extend Id="aad7e359-1855-4336-97b6-4c349a578152">
+            <useCaseMoniker Id="3251c1df-99c9-488a-83c8-caa158e1df34" LastKnownName="Quản lý tập sự" />
+            <elementDefinition Id="a29ef4f2-6a11-46b1-b1a8-13516c96ec12" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="468bc6a0-02ae-4db6-8bbd-48e9ba9c794a" name="Xóa tập sự" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="471a8579-d48b-4f93-9650-7ce56af9401f" />
+        <extendedCases>
+          <extend Id="36d18442-4902-4487-9d9c-1ddc74864fc0">
+            <useCaseMoniker Id="3251c1df-99c9-488a-83c8-caa158e1df34" LastKnownName="Quản lý tập sự" />
+            <elementDefinition Id="097b7169-202c-47d8-b9c7-6e9861233bb3" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c739a685-0901-4cc1-a6f3-71a2a884672d" name="Cập nhật/sửa thông tin tập sự" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a8066ffa-4884-425c-97a2-2d85a4c918c8" />
+        <extendedCases>
+          <extend Id="5c75ef8d-8564-40e6-afcc-32469700c187">
+            <useCaseMoniker Id="3251c1df-99c9-488a-83c8-caa158e1df34" LastKnownName="Quản lý tập sự" />
+            <elementDefinition Id="ca106050-f0cb-4b09-b410-c717c48e01a2" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c3bde1c1-210a-4683-a270-86a0ab09d353" name="In thông tin tập sự" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="66488615-2f2d-4065-ab47-caa9bfcdbdc1" />
+        <extendedCases>
+          <extend Id="5bed4c43-6569-43f9-b7ca-a50758c93d31">
+            <useCaseMoniker Id="3251c1df-99c9-488a-83c8-caa158e1df34" LastKnownName="Quản lý tập sự" />
+            <elementDefinition Id="ee890ed5-cfaf-4843-9853-df681be8ed9f" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="324250ec-1cfb-43dc-853f-bdb222a61489" name="người sử dụng" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ae0e4b42-e8e1-409d-af2f-8ca9e2836d0f" />
+        <suppliersInternal>
+          <dependency Id="aff1042f-b11a-4787-ba6e-ba85ba8dd38b">
+            <useCaseMoniker Id="3251c1df-99c9-488a-83c8-caa158e1df34" LastKnownName="Quản lý tập sự" />
+            <elementDefinition Id="3eca52b7-138b-4f9b-9898-51ece8304223" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="0ce36143-e338-436d-a4e2-a1340f6ad09c" name="quản trị nhân viên(admin tổ chức)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3adc7cf9-8565-4998-a8eb-4db02ba282d3" />
+        <generalsInternal>
+          <generalization Id="fe6a28d7-c29b-41e1-8ec9-94136299f508" isSubstitutable="false">
+            <actorMoniker Id="324250ec-1cfb-43dc-853f-bdb222a61489" LastKnownName="người sử dụng" />
+            <elementDefinition Id="6c902048-88b2-422f-b3e3-fb51ee2b67de" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="0732ed1e-7258-473e-89b0-f8ee046d11eb" name="quản trị phần mềm(administrator)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f8657f9f-f282-4c4d-be60-36bab7b990be" />
+        <generalsInternal>
+          <generalization Id="1a0b6aec-a37e-468d-8f7d-3cb28287a51d" isSubstitutable="false">
+            <actorMoniker Id="324250ec-1cfb-43dc-853f-bdb222a61489" LastKnownName="người sử dụng" />
+            <elementDefinition Id="bde2c14c-bf8a-40db-a278-cfe341e9bcdc" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="3251c1df-99c9-488a-83c8-caa158e1df34" name="Quản lý tập sự" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3a1e63ca-19e4-46d3-84ba-5654a6b8e385" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="32b361cd-5667-4af2-bb71-1a5c9a1b1f64" name="ModelingProject1">
+    <elementDefinition Id="c1918b24-b69c-4818-aacd-4d280375ce7b" />
+    <profileInstances>
+      <packageHasProfileInstances Id="95b6ecf1-fe67-421d-b9ee-ec27ef9f3c83">
+        <profileInstance Id="e25d2c25-0b3a-4afa-8ba6-f992812b8ddc" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="2533edf8-4430-4e22-8d14-fd51c6bb13f7">
+        <profileInstance Id="44c654cd-5339-402a-b551-da96c157d363" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="2d152e61-74c7-4287-8efa-ea886516c34a" name="UMLUseCaseDiagram_ThemDanhGia" linkedPackageId="7ad83661-1a4c-4059-9b4b-8f201e521cc2" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="d014caa3-e3ee-4a2e-a044-70bb5e093afd">
+      <elementDefinition Id="3d368f24-9961-44e2-9efa-06614c03f17f" />
+      <body>UC Đánh giá nhân viên</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="8ee0eb69-59ad-4ede-ac9f-d8e557423365">
+      <profileInstance Id="4b33c896-3c83-4686-83dd-d33cf58d55bf" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="5d23c4d0-871d-46c6-a5fc-64525870837f">
+      <profileInstance Id="52aed347-151a-4213-bf44-781cab391b8c" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="d55a61f3-1c68-4a41-beb5-7f03172d9829" name="người sử dụng" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ae0e4b42-e8e1-409d-af2f-8ca9e2836d0f" />
+        <suppliersInternal>
+          <dependency Id="9a6deb83-6a46-4db4-852c-296da49f4723">
+            <useCaseMoniker Id="3e01cc12-f8b1-411d-8ab9-7b3fe734cab2" LastKnownName="Quản lý đánh giá nhân viên" />
+            <elementDefinition Id="be18b2c3-7878-4df6-a8e1-f589b4cdf85f" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="f542f68a-e194-4496-9d7d-94e8878e0994" name="quản trị nhân viên(admin tổ chức)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3adc7cf9-8565-4998-a8eb-4db02ba282d3" />
+        <generalsInternal>
+          <generalization Id="79f99919-2b88-48b5-86a2-c66bd94ba519" isSubstitutable="false">
+            <actorMoniker Id="d55a61f3-1c68-4a41-beb5-7f03172d9829" LastKnownName="người sử dụng" />
+            <elementDefinition Id="6c902048-88b2-422f-b3e3-fb51ee2b67de" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="575e592e-32bd-4e55-ac32-60dc7a23bc26" name="quản trị phần mềm(administrator)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f8657f9f-f282-4c4d-be60-36bab7b990be" />
+        <generalsInternal>
+          <generalization Id="b1729a9c-3f08-4e62-9a90-a294af23f0e4" isSubstitutable="false">
+            <actorMoniker Id="d55a61f3-1c68-4a41-beb5-7f03172d9829" LastKnownName="người sử dụng" />
+            <elementDefinition Id="bde2c14c-bf8a-40db-a278-cfe341e9bcdc" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="3e01cc12-f8b1-411d-8ab9-7b3fe734cab2" name="Quản lý đánh giá nhân viên" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cde7ba7c-60aa-4e55-a43d-add7af236a81" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="28d29ede-b719-4f12-9d78-da8eccbf742b" name="Thêm Đánh giá" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="262ba5ef-3c53-4066-8b3f-b5776d2bdc2a" />
+        <extendedCases>
+          <extend Id="ce89587e-cd04-45e8-bcd2-c4d7138a59cf">
+            <useCaseMoniker Id="3e01cc12-f8b1-411d-8ab9-7b3fe734cab2" LastKnownName="Quản lý đánh giá nhân viên" />
+            <elementDefinition Id="a79c8cdc-2377-4196-8f9b-7b6930d9a3af" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9b834474-0915-41bb-9282-1aedc4c0d4a7" name="Chọn nhân viên đánh giá" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="46110aa7-78bb-40a2-989a-aa193adcbd6c" />
+        <additions>
+          <include Id="73b42f40-404c-4fd1-96f6-a3e4b4fea076">
+            <useCaseMoniker Id="28d29ede-b719-4f12-9d78-da8eccbf742b" LastKnownName="Thêm Đánh giá" />
+            <elementDefinition Id="7b90e0ce-1bd2-4207-be8a-b889dbacd345" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f5e38479-164f-4576-bd44-2a902b019943" name="Đánh giá xếp loại lao động" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9ebb8d4f-17e9-4984-849f-62b5ff91afa8" />
+        <extendedCases>
+          <extend Id="f00f913a-89c5-4472-9ec2-d67286f10f51">
+            <useCaseMoniker Id="28d29ede-b719-4f12-9d78-da8eccbf742b" LastKnownName="Thêm Đánh giá" />
+            <elementDefinition Id="f096b729-4f43-4f01-8628-39de66bcb47a" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2081709d-a15e-4e1a-82f6-feceae385b7d" name="Đánh giá tổng quát" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2c6d2b37-4026-47e3-95fd-3d5d267bf1fb" />
+        <extendedCases>
+          <extend Id="41f79aa0-1829-4b8c-950c-6dffe354a788">
+            <useCaseMoniker Id="28d29ede-b719-4f12-9d78-da8eccbf742b" LastKnownName="Thêm Đánh giá" />
+            <elementDefinition Id="0dec806c-8483-4149-8ca1-c0a440a0ce35" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="91940cd3-9d02-44bd-a29f-ca9ea4d92753" name="Đánh giá cuối năm" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3daf42c1-9ef8-4a1f-bb6d-650930d3ee6b" />
+        <extendedCases>
+          <extend Id="332fc160-3dc0-44c9-b24f-d53e76e887ea">
+            <useCaseMoniker Id="28d29ede-b719-4f12-9d78-da8eccbf742b" LastKnownName="Thêm Đánh giá" />
+            <elementDefinition Id="766d1d80-c7d3-4a6c-b2c0-e3962817b304" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="11557180-0466-4535-978e-0dd732070bea" name="Chọn tập thể đánh giá (phòng ban, tổ, nhóm)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0b28cefb-550f-4a7f-a34d-562563cc010e" />
+        <additions>
+          <include Id="d333b043-599f-477f-a0b2-b7b8b490d70b">
+            <useCaseMoniker Id="28d29ede-b719-4f12-9d78-da8eccbf742b" LastKnownName="Thêm Đánh giá" />
+            <elementDefinition Id="a5ca9488-b34d-42a7-a508-8e0bd8af27b6" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="7ad83661-1a4c-4059-9b4b-8f201e521cc2" name="ModelingProject1">
+    <elementDefinition Id="c1918b24-b69c-4818-aacd-4d280375ce7b" />
+  </package>
+</useCaseModelRoot>

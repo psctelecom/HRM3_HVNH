@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="7e1899ba-dbea-4fec-b2c9-49bfd8a4aef3" name="UMLUseCaseDiagram_QuanLyNghiHuu" linkedPackageId="3ad6414f-165a-4ad3-a7d1-e0b01fee737c" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="700a36ff-5d45-4bfb-b436-df658a501762">
+      <elementDefinition Id="2d075386-58a1-4e34-98fe-5cc2ff7e6d57" />
+      <body>UC Quản lý nghỉ hưu</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="aefee73d-caf2-4385-9c52-d4060e16123c">
+      <profileInstance Id="7ee74860-8724-4c54-b903-6c6ff81644a9" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="2485dddf-5708-487b-baee-d0932ac61752">
+      <profileInstance Id="70709953-1858-430b-8f5b-c98132680226" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="9ac5a8fa-0038-4ee3-bfba-61f60da98998" name="người sử dụng" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ae0e4b42-e8e1-409d-af2f-8ca9e2836d0f" />
+        <suppliersInternal>
+          <dependency Id="06b683ca-ce3a-4c60-9557-a865c7da1cf7">
+            <useCaseMoniker Id="c15c6c57-130f-4e12-8d1a-6ebf642bbb90" LastKnownName="Quản lý thôi việc" />
+            <elementDefinition Id="13047f94-838d-4ec8-8f39-04a68e1d056a" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="9e5ecf44-6885-46e1-a8fc-d1d7a2ab2232" name="quản trị nhân viên(admin tổ chức)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3adc7cf9-8565-4998-a8eb-4db02ba282d3" />
+        <generalsInternal>
+          <generalization Id="ec3e2cb4-a1c8-49e4-8265-32feead008ce" isSubstitutable="false">
+            <actorMoniker Id="9ac5a8fa-0038-4ee3-bfba-61f60da98998" LastKnownName="người sử dụng" />
+            <elementDefinition Id="6c902048-88b2-422f-b3e3-fb51ee2b67de" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="0e364be9-9735-4e0f-bc3f-8f3791d3a004" name="quản trị phần mềm(administrator)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f8657f9f-f282-4c4d-be60-36bab7b990be" />
+        <generalsInternal>
+          <generalization Id="d3433142-bbcc-4d7f-928d-009dc1ac120c" isSubstitutable="false">
+            <actorMoniker Id="9ac5a8fa-0038-4ee3-bfba-61f60da98998" LastKnownName="người sử dụng" />
+            <elementDefinition Id="bde2c14c-bf8a-40db-a278-cfe341e9bcdc" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c15c6c57-130f-4e12-8d1a-6ebf642bbb90" name="Quản lý thôi việc" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="af907570-3166-4ba1-ae63-ffb7a779d591" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b1046d1d-ad0e-41fb-a501-b50b74766a06" name="Quản lý nghỉ hưu" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5498a15f-7c62-488e-a187-016c901f84d8" />
+        <extendedCases>
+          <extend Id="f907e906-febc-4082-8374-700e33105a91">
+            <useCaseMoniker Id="c15c6c57-130f-4e12-8d1a-6ebf642bbb90" LastKnownName="Quản lý thôi việc" />
+            <elementDefinition Id="270379b9-3d30-450d-8b18-2f89ae1e0dc2" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5a2806be-daac-400e-9516-0d720289c4c5" name="Thêm QĐ Nghỉ hưu" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e62cc4a6-134f-477c-af57-3ed8f7335b97" />
+        <extendedCases>
+          <extend Id="501117ce-abab-49fc-809c-d6cb9a679fa2">
+            <useCaseMoniker Id="b1046d1d-ad0e-41fb-a501-b50b74766a06" LastKnownName="Quản lý nghỉ hưu" />
+            <elementDefinition Id="2e396726-ab3b-450f-a786-35185b6faaba" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1a0cb25f-c961-4608-83ea-84b395ffd2b3" name="Cập nhật/Sửa QĐ nghỉ hưu" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="458566c4-da0d-4a87-bae7-2cb35b37c345" />
+        <extendedCases>
+          <extend Id="a2cb31b1-a257-428c-806b-04a99fece67a">
+            <useCaseMoniker Id="b1046d1d-ad0e-41fb-a501-b50b74766a06" LastKnownName="Quản lý nghỉ hưu" />
+            <elementDefinition Id="78dc9499-64ef-4ccc-91b8-7f5e3e3677d5" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fa451b7e-a60f-4c8c-a4bc-f3063483b7ed" name="Xóa QĐ Nghỉ  hưu" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3d8bc336-ae6d-46a0-839c-48f306752042" />
+        <extendedCases>
+          <extend Id="591f5934-a122-43f4-a250-9f84cb28eb1a">
+            <useCaseMoniker Id="b1046d1d-ad0e-41fb-a501-b50b74766a06" LastKnownName="Quản lý nghỉ hưu" />
+            <elementDefinition Id="6fe27968-36d7-4f60-8a67-fe681c999044" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1734b31f-df32-4261-8464-d44a6e7222ad" name="In QĐ nghỉ hưu" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f8fef506-5280-4cff-a9d6-e07870b00eca" />
+        <extendedCases>
+          <extend Id="200fb516-7d64-45bb-99b1-4bd58d895366">
+            <useCaseMoniker Id="b1046d1d-ad0e-41fb-a501-b50b74766a06" LastKnownName="Quản lý nghỉ hưu" />
+            <elementDefinition Id="03918aea-e05c-4af0-8031-587d34af4f17" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ce44a368-2695-4dbf-a2f8-8a7d8847b37b" name="Theo dõi nghỉ hưu" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0d854742-e349-471d-9beb-8c07dfeeeeec" />
+        <extendedCases>
+          <extend Id="7e150148-68e2-4733-9644-a4c463f98195">
+            <useCaseMoniker Id="5a2806be-daac-400e-9516-0d720289c4c5" LastKnownName="Thêm QĐ Nghỉ hưu" />
+            <elementDefinition Id="42a869ff-17d6-4447-a1d1-a7bb404e70fa" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="faf96a08-7746-494c-968a-9a23d4cea2c6" name="Thông báo nghỉ hưu" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2dca04c1-5b6e-4be9-8caf-f8b37417df16" />
+        <extendedCases>
+          <extend Id="a42a8439-1bcc-4ebc-bd59-78909fcd86ed">
+            <useCaseMoniker Id="5a2806be-daac-400e-9516-0d720289c4c5" LastKnownName="Thêm QĐ Nghỉ hưu" />
+            <elementDefinition Id="3312a4bf-94fa-4504-9b95-1d534cee2757" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0f780a4f-b1fd-4658-87c8-8acda2a52e04" name="Gửi hồ sơ lên cơ quan bảo hiểm" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6faa4373-f9eb-47c8-9c4a-ec50f6ce837f" />
+        <extendedCases>
+          <extend Id="69337884-84c5-47ea-adf2-b58403531a69">
+            <useCaseMoniker Id="5a2806be-daac-400e-9516-0d720289c4c5" LastKnownName="Thêm QĐ Nghỉ hưu" />
+            <elementDefinition Id="e3643f01-8154-477f-89d3-b512631f8a74" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6c9a51fe-23d4-42a6-88d0-d1e745e8a9b2" name="Lập QĐ kéo dài thời gian công tác" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f1a48483-379e-4d26-8c6e-fa73ec8de47c" />
+        <extendedCases>
+          <extend Id="2cbb04a6-3683-4c40-ba08-41c18176ec6e">
+            <useCaseMoniker Id="5a2806be-daac-400e-9516-0d720289c4c5" LastKnownName="Thêm QĐ Nghỉ hưu" />
+            <elementDefinition Id="bd63db04-b1ad-4863-8011-3ba5b5ba26d2" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d86dadbc-3a08-40db-919c-2c011bd0ff0a" name="Chọn nhân viên" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="18094f7a-582b-4c65-810c-fe871b75ae00" />
+        <additions>
+          <include Id="4ada26d1-1f25-4862-bf1a-d7a7ae40a3ae">
+            <useCaseMoniker Id="5a2806be-daac-400e-9516-0d720289c4c5" LastKnownName="Thêm QĐ Nghỉ hưu" />
+            <elementDefinition Id="b28a1ddf-118a-42cf-8822-6831c8b42e8c" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="3ad6414f-165a-4ad3-a7d1-e0b01fee737c" name="ModelingProject1">
+    <elementDefinition Id="c1918b24-b69c-4818-aacd-4d280375ce7b" />
+  </package>
+</useCaseModelRoot>

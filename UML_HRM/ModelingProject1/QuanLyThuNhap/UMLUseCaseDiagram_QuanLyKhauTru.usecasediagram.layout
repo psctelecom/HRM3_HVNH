@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLUseCaseDiagram_QuanLyKhauTru">
+  <useCaseModelRootMoniker Id="5b9e3c73-d6c0-4bcc-b2bb-2d8f40d80e43" />
+  <nestedChildShapes>
+    <useCaseShape Id="338f4677-2865-4689-a9e5-727a5bdebd28" absoluteBounds="2.125, 3, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="41b3bebb-3c6a-4ade-ad56-75f918eb8f7f" LastKnownName="Quản lý thu nhập" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseShape Id="90f33bc4-f81a-44fc-9574-f04daf452c85" absoluteBounds="3.875, 4, 1.375, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="1cc025bf-1853-4075-8788-71d7fb5b890a" LastKnownName="Quản các khoản khấu trừ" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <extendConnector edgePoints="[(4.16653194645219 : 4.04562939171726); (2.97289760791351 : 3.42956005569729)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black" useCaseStereotype="«extend»">
+      <extendMoniker Id="2ccf0ad5-5db7-48d6-ba80-98a42668a99f" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="90f33bc4-f81a-44fc-9574-f04daf452c85" />
+        <useCaseShapeMoniker Id="338f4677-2865-4689-a9e5-727a5bdebd28" />
+      </nodes>
+    </extendConnector>
+    <actorShape Id="3a843233-c41d-4f63-8f5b-59cee8a8e881" absoluteBounds="1.125, 1.75, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="9a20fbfb-8f21-433c-8968-f4a78a0cf066" LastKnownName="quản trị tính lương(admin tính lương)" />
+      <relativeChildShapes />
+    </actorShape>
+    <actorShape Id="9e717872-ae49-4c98-87ad-c39000501670" absoluteBounds="1.125, 3, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="e8885433-a310-42ae-a26d-4d00bf2077e5" LastKnownName="người sử dụng" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseGeneralizationConnector edgePoints="[(1.375 : 2.25); (1.375 : 3)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
+      <generalizationMoniker Id="eefe0f58-1072-468c-8b95-13c71198e48c" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="3a843233-c41d-4f63-8f5b-59cee8a8e881" />
+        <actorShapeMoniker Id="9e717872-ae49-4c98-87ad-c39000501670" />
+      </nodes>
+    </useCaseGeneralizationConnector>
+    <useCaseDependencyConnector edgePoints="[(1.625 : 3.25); (2.125 : 3.25)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <dependencyMoniker Id="d727e8cc-d752-470c-bfa2-da87b23a9737" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="9e717872-ae49-4c98-87ad-c39000501670" />
+        <useCaseShapeMoniker Id="338f4677-2865-4689-a9e5-727a5bdebd28" />
+      </nodes>
+    </useCaseDependencyConnector>
+    <actorShape Id="eec3aa87-dda0-43f9-9c0e-45a15482266f" absoluteBounds="1.125, 4.375, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="7cb8bf69-1771-49a9-aed7-bfe70ea77632" LastKnownName="quản trị phần mềm(administrator)" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseGeneralizationConnector edgePoints="[(1.375 : 4.375); (1.375 : 3.5)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
+      <generalizationMoniker Id="f16fe3b5-7ab3-482c-9d47-427b47c9a262" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="eec3aa87-dda0-43f9-9c0e-45a15482266f" />
+        <actorShapeMoniker Id="9e717872-ae49-4c98-87ad-c39000501670" />
+      </nodes>
+    </useCaseGeneralizationConnector>
+    <useCaseShape Id="2e1b2117-1f4e-4dd0-b1d3-8c0987fb5f45" absoluteBounds="4.25, 2.375, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="cfb6bb81-5f7e-4899-a9f8-f5c4107b1b6d" LastKnownName="đổ dữ liệu từ execl vào" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <extendConnector edgePoints="[(4.72120173245167 : 2.8745849854189); (4.59132079582361 : 4.0002197695287)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black" useCaseStereotype="«extend»">
+      <extendMoniker Id="711142b0-fff7-47ac-8106-2a7bb1ebb9a3" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="2e1b2117-1f4e-4dd0-b1d3-8c0987fb5f45" />
+        <useCaseShapeMoniker Id="90f33bc4-f81a-44fc-9574-f04daf452c85" />
+      </nodes>
+    </extendConnector>
+    <useCaseShape Id="7e61924d-4c9a-4e5c-8ea8-eb2cd5af40c8" absoluteBounds="5.875, 2.75, 1.25, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="1f92535c-ce96-45ce-a483-3f809b0110b2" LastKnownName="Xóa các khoản khấu trừ" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <extendConnector edgePoints="[(6.17066270696145 : 3.2124756729281); (4.90007148106646 : 4.03221194769906)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«extend»">
+      <extendMoniker Id="3ef4fde6-526e-4308-9b44-09300a7b51b7" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="7e61924d-4c9a-4e5c-8ea8-eb2cd5af40c8" />
+        <useCaseShapeMoniker Id="90f33bc4-f81a-44fc-9574-f04daf452c85" />
+      </nodes>
+    </extendConnector>
+    <useCaseShape Id="84ff19df-4955-49d3-a2ac-ac043354d940" absoluteBounds="6, 4.875, 1.25, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="f45047fa-a5f1-4083-aba1-417f09e222d1" LastKnownName="Sửa các khoản khấu trừ" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <extendConnector edgePoints="[(6.19624195706937 : 4.94310264845367); (5.00991906925098 : 4.43981415059132)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«extend»">
+      <extendMoniker Id="c8d6d3e1-182b-4b25-91bf-3e4c894f264b" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="84ff19df-4955-49d3-a2ac-ac043354d940" />
+        <useCaseShapeMoniker Id="90f33bc4-f81a-44fc-9574-f04daf452c85" />
+      </nodes>
+    </extendConnector>
+    <useCaseShape Id="070515c8-4921-4267-9558-7a7e173f9eaf" absoluteBounds="2.125, 4.625, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="a08e6371-07ab-43ff-9e07-6fad2bcfc366" LastKnownName="In các khoản khấu trừ" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <extendConnector edgePoints="[(3.04514832411212 : 4.73946828254448); (4.04819868611714 : 4.41590364963963)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black" useCaseStereotype="«extend»">
+      <extendMoniker Id="9f1ea217-50ed-4c2f-bdb4-089fa17ad3ed" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="070515c8-4921-4267-9558-7a7e173f9eaf" />
+        <useCaseShapeMoniker Id="90f33bc4-f81a-44fc-9574-f04daf452c85" />
+      </nodes>
+    </extendConnector>
+    <commentShape Id="82a2782c-28db-48b9-8f7f-a4d7b5b72eb2" absoluteBounds="0.5, 1.125, 2.125, 0.375" customColor="251, 247, 200">
+      <commentMoniker Id="11545abb-db21-4bc2-a14a-d9e86bf05bfc" />
+      <relativeChildShapes />
+    </commentShape>
+    <useCaseShape Id="f5163947-0107-4b0f-8076-38683427cbd7" absoluteBounds="3, 5.375, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="cb86bfd7-2b16-48b5-af74-0310095e963e" LastKnownName="Thêm loại khấu trừ" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseDependencyConnector edgePoints="[(4.3765208277352 : 4.49067892881327); (3.68019963960108 : 5.3918004663986)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+      <dependencyMoniker Id="9436dcf1-a8d9-4dd9-89eb-338eca2c6f7f" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="90f33bc4-f81a-44fc-9574-f04daf452c85" />
+        <useCaseShapeMoniker Id="f5163947-0107-4b0f-8076-38683427cbd7" />
+      </nodes>
+    </useCaseDependencyConnector>
+    <useCaseShape Id="bb621eec-b03c-4378-9b97-5e7d8d097530" absoluteBounds="4.625, 5.25, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="05769b84-eeba-43ce-a6f1-44d4ad2aadb7" LastKnownName="cập nhật khấu trừ" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <extendConnector edgePoints="[(5.01524390243902 : 5.25609756097561); (4.673523390576 : 4.49671864572444)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black" useCaseStereotype="«extend»">
+      <extendMoniker Id="a979e0d2-d795-4e4f-b976-43b082d0d4f3" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="bb621eec-b03c-4378-9b97-5e7d8d097530" />
+        <useCaseShapeMoniker Id="90f33bc4-f81a-44fc-9574-f04daf452c85" />
+      </nodes>
+    </extendConnector>
+    <useCaseShape Id="373ac1a4-45c6-4bab-ac0f-f0e6575131e4" absoluteBounds="6.25, 3.75, 1.25, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="ba4e4abb-1bf4-45e6-84f7-9e0c8ac79247" LastKnownName="Cập nhật các khoản khấu trừ" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <extendConnector edgePoints="[(6.27164787935733 : 4.06522725628569); (5.22149374494185 : 4.17875743297926)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«extend»">
+      <extendMoniker Id="19bb5bed-b1a0-48bb-99b6-00c4c59b548b" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="373ac1a4-45c6-4bab-ac0f-f0e6575131e4" />
+        <useCaseShapeMoniker Id="90f33bc4-f81a-44fc-9574-f04daf452c85" />
+      </nodes>
+    </extendConnector>
+    <rectangleShape Id="0e3a48ef-cf05-4484-b8b6-3a0b32a5a1fc" absoluteBounds="0.5, 1.125, 7.5, 4.875" outlineColor="83, 134, 191" outlineThickness="0.03125" />
+  </nestedChildShapes>
+</useCaseDiagram>

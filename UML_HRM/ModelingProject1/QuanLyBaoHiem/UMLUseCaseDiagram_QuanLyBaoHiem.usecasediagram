@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="46032f73-5e34-42a3-9e2b-3a1cff303d0b" name="UMLUseCaseDiagram_QuanLyBaoHiem" linkedPackageId="755a7bb0-7e1d-4be7-ac74-cf662e20c3cf" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="2a4e6b2e-f418-42b7-b8e3-5810f3ecfb76">
+      <elementDefinition Id="2a108a45-2ba6-43be-a04f-f1b8e9227724" />
+      <body>UC Quản lý bảo hiểm</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <useCase Id="92b3fd48-578c-48bd-968f-be9793b0cc30" name="Thêm hồ sơ bảo hiểm" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d0461dc0-9fd1-4711-8284-85a681e92444" />
+        <extendedCases>
+          <extend Id="553a7f1e-fb23-4c7a-9d09-de0f9815b945">
+            <useCaseMoniker Id="0e0b5ee1-93b6-4c9c-96c1-6a9d22f3b06f" LastKnownName="Quản lý bảo hiểm" />
+            <elementDefinition Id="88b1d081-eb38-4d39-92a8-99c1f3cbe1ab" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1b3645ec-cc7f-41c9-b4f2-e19d1e525562" name="Xóa hồ sơ bảo hiểm" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f856755f-dc95-4e51-8b59-c6774bed3e40" />
+        <extendedCases>
+          <extend Id="7e651d45-caec-4138-9ad1-ef77b91cf367">
+            <useCaseMoniker Id="0e0b5ee1-93b6-4c9c-96c1-6a9d22f3b06f" LastKnownName="Quản lý bảo hiểm" />
+            <elementDefinition Id="3d790980-1b85-4552-83ec-9b4458c60fea" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="57638e0a-f5b9-405e-a20f-f1918920b461" name="Cập nhật/sửa hồ sơ bảo hiểm" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9f307669-6346-466c-986d-718d7968ae8b" />
+        <extendedCases>
+          <extend Id="307e3434-ee4a-4928-89c5-f347c3aeb05f">
+            <useCaseMoniker Id="0e0b5ee1-93b6-4c9c-96c1-6a9d22f3b06f" LastKnownName="Quản lý bảo hiểm" />
+            <elementDefinition Id="6de9061c-fe04-4c5d-a796-dad9ba4ba092" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e1094a7d-ac4c-432f-8806-b646ebd62213" name="Tìm hồ sơ bảo hiểm" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5a03e02d-20ff-4b18-929f-a6ee43369804" />
+        <extendedCases>
+          <extend Id="14e1937f-d5a2-4b5a-8e13-d03f824d2930">
+            <useCaseMoniker Id="0e0b5ee1-93b6-4c9c-96c1-6a9d22f3b06f" LastKnownName="Quản lý bảo hiểm" />
+            <elementDefinition Id="7077a2ed-0df9-4e92-bbbf-a98510ed0fbf" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6310cd8c-7052-4a09-ab26-d3e46548a55a" name="In hồ sơ bảo hiểm" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4dcf33a8-67b3-4be4-9593-f00f700cd1cc" />
+        <extendedCases>
+          <extend Id="47dc5d36-bc6d-4887-8da0-af028bf4eb67">
+            <useCaseMoniker Id="0e0b5ee1-93b6-4c9c-96c1-6a9d22f3b06f" LastKnownName="Quản lý bảo hiểm" />
+            <elementDefinition Id="d7d8a19e-5ac5-4b67-9c42-244560f2ae1f" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="bcfe8bdc-962a-44a5-b1a6-251e6d859252" name="người sử dụng" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ae0e4b42-e8e1-409d-af2f-8ca9e2836d0f" />
+        <suppliersInternal>
+          <dependency Id="1a0d90ca-da9b-4988-b7e7-b8c80a05835c">
+            <useCaseMoniker Id="0e0b5ee1-93b6-4c9c-96c1-6a9d22f3b06f" LastKnownName="Quản lý bảo hiểm" />
+            <elementDefinition Id="bcaac33b-6ec6-4fea-9468-9ea8d548ab56" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="70c883dc-49d8-4f9c-b4ab-1abefbfb18b9" name="quản trị nhân viên(admin tổ chức)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3adc7cf9-8565-4998-a8eb-4db02ba282d3" />
+        <generalsInternal>
+          <generalization Id="051951d4-cc9a-4e14-bd39-3b5b8bea6654" isSubstitutable="false">
+            <actorMoniker Id="bcfe8bdc-962a-44a5-b1a6-251e6d859252" LastKnownName="người sử dụng" />
+            <elementDefinition Id="6c902048-88b2-422f-b3e3-fb51ee2b67de" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="9cd8f500-d2c3-4b63-b042-7237fbac8226" name="quản trị phần mềm(administrator)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f8657f9f-f282-4c4d-be60-36bab7b990be" />
+        <generalsInternal>
+          <generalization Id="edb6e22f-4552-4fac-bef3-7ae954e56ecf" isSubstitutable="false">
+            <actorMoniker Id="bcfe8bdc-962a-44a5-b1a6-251e6d859252" LastKnownName="người sử dụng" />
+            <elementDefinition Id="bde2c14c-bf8a-40db-a278-cfe341e9bcdc" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0e0b5ee1-93b6-4c9c-96c1-6a9d22f3b06f" name="Quản lý bảo hiểm" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="454e14b9-5c5f-42c6-b724-9adefe91a780" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="755a7bb0-7e1d-4be7-ac74-cf662e20c3cf" name="ModelingProject1">
+    <elementDefinition Id="c1918b24-b69c-4818-aacd-4d280375ce7b" />
+    <profileInstances>
+      <packageHasProfileInstances Id="664de677-32ac-4a86-8f15-c61760087cfa">
+        <profileInstance Id="65a907c1-e3d1-4527-b01a-36b277e918b9" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="a0fb17e8-7ec1-44c8-bef5-86c9ae711f1b">
+        <profileInstance Id="3c412014-e06e-4b09-bf07-4ffe0dd2e1c7" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

@@ -1,0 +1,515 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{52b535c9-419d-4bcc-8a24-d69284e7286c}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>UML HRM</Name>
+    <RootNamespace>ModelingProject1</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ItemGroup>
+    <Content Include="Mô tả Use Case chi tiết.docx">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyBaoHiem\UMLUseCaseDiagram_QuanLyBaoHiem.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyBaoHiem\UMLUseCaseDiagram_QuanLyBaoHiem.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyBaoHiem\UMLUseCaseDiagram_QuanLyBaoHiem.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyBoiDuong\UMLUseCaseDiagram_QuanLyBoiDuong.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyBoiDuong\UMLUseCaseDiagram_QuanLyBoiDuong.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyBoiDuong\UMLUseCaseDiagram_QuanLyBoiDuong.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyBoiDuong\UMLUseCaseDiagram_ThemBoiDuong.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyBoiDuong\UMLUseCaseDiagram_ThemBoiDuong.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyBoiDuong\UMLUseCaseDiagram_ThemBoiDuong.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyBoNhiem\UMLUseCaseDiagram_QuanLyBoNhiem.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyBoNhiem\UMLUseCaseDiagram_QuanLyBoNhiem.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyBoNhiem\UMLUseCaseDiagram_QuanLyBoNhiem.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyBoNhiem\UMLUseCaseDiagram_ThemBoNhiem.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyBoNhiem\UMLUseCaseDiagram_ThemBoNhiem.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyBoNhiem\UMLUseCaseDiagram_ThemBoNhiem.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyChamCong\UMLUseCaseDiagram_QuanLyChamCong.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyChamCong\UMLUseCaseDiagram_QuanLyChamCong.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyChamCong\UMLUseCaseDiagram_QuanLyChamCong.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyChamCong\UMLUseCaseDiagram_QuanLyQuyTrinhNghiKhongHuongLuong.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyChamCong\UMLUseCaseDiagram_QuanLyQuyTrinhNghiKhongHuongLuong.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyChamCong\UMLUseCaseDiagram_QuanLyQuyTrinhNghiKhongHuongLuong.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyChamCong\UMLUseCaseDiagram_ThemBangChamCong.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyChamCong\UMLUseCaseDiagram_ThemBangChamCong.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyChamCong\UMLUseCaseDiagram_ThemBangChamCong.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyDanhGia\UMLUseCaseDiagram_DanhGia.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyDanhGia\UMLUseCaseDiagram_DanhGia.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyDanhGia\UMLUseCaseDiagram_DanhGia.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyDanhGia\UMLUseCaseDiagram_ThemDanhGia.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyDanhGia\UMLUseCaseDiagram_ThemDanhGia.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyDanhGia\UMLUseCaseDiagram_ThemDanhGia.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyDaoTao\UMLUseCaseDiagram_QuanLyDaoTao.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyDaoTao\UMLUseCaseDiagram_QuanLyDaoTao.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyDaoTao\UMLUseCaseDiagram_QuanLyDaoTao.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyDaoTao\UMLUseCaseDiagram_ThemQuanLyDaoTao.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyDaoTao\UMLUseCaseDiagram_ThemQuanLyDaoTao.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyDaoTao\UMLUseCaseDiagram_ThemQuanLyDaoTao.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyDiCongTac\UMLUseCaseDiagram_DiCongTacNuocNgoai.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyDiCongTac\UMLUseCaseDiagram_DiCongTacNuocNgoai.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyDiCongTac\UMLUseCaseDiagram_DiCongTacNuocNgoai.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyDiCongTac\UMLUseCaseDiagram_QuanLyDiCongTac.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyDiCongTac\UMLUseCaseDiagram_QuanLyDiCongTac.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyDiCongTac\UMLUseCaseDiagram_QuanLyDiCongTac.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyDoan-Dang-CongDoan\UMLUseCaseDiagram_QuanLyDang-CongDoan-DoanTN.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyDoan-Dang-CongDoan\UMLUseCaseDiagram_QuanLyDang-CongDoan-DoanTN.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyDoan-Dang-CongDoan\UMLUseCaseDiagram_QuanLyDang-CongDoan-DoanTN.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyDonViPhongBan\UMLUseCaseDiagram_QuanLyPhongBan.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyDonViPhongBan\UMLUseCaseDiagram_QuanLyPhongBan.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyDonViPhongBan\UMLUseCaseDiagram_QuanLyPhongBan.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyGiangVienThinhGiang\UMLUseCaseDiagram_ExportThongTinGiangVienThinhGiang.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyGiangVienThinhGiang\UMLUseCaseDiagram_ExportThongTinGiangVienThinhGiang.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyGiangVienThinhGiang\UMLUseCaseDiagram_ExportThongTinGiangVienThinhGiang.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyGiangVienThinhGiang\UMLUseCaseDiagram_ImportThongTinGiangVienThinhGiang.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyGiangVienThinhGiang\UMLUseCaseDiagram_ImportThongTinGiangVienThinhGiang.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyGiangVienThinhGiang\UMLUseCaseDiagram_ImportThongTinGiangVienThinhGiang.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyGiangVienThinhGiang\UMLUseCaseDiagram_InHoSoGiangVienThinhGiang.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyGiangVienThinhGiang\UMLUseCaseDiagram_InHoSoGiangVienThinhGiang.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyGiangVienThinhGiang\UMLUseCaseDiagram_InHoSoGiangVienThinhGiang.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyGiangVienThinhGiang\UMLUseCaseDiagram_KhoaMoHoSoGiangVienThinhGiang.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyGiangVienThinhGiang\UMLUseCaseDiagram_KhoaMoHoSoGiangVienThinhGiang.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyGiangVienThinhGiang\UMLUseCaseDiagram_KhoaMoHoSoGiangVienThinhGiang.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyGiangVienThinhGiang\UMLUseCaseDiagram_QLGiangVienThinhGiang.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyGiangVienThinhGiang\UMLUseCaseDiagram_QLGiangVienThinhGiang.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyGiangVienThinhGiang\UMLUseCaseDiagram_QLGiangVienThinhGiang.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyGiangVienThinhGiang\UMLUseCaseDiagram_SuaCapNhatGiangVienThinhGiang.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyGiangVienThinhGiang\UMLUseCaseDiagram_SuaCapNhatGiangVienThinhGiang.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyGiangVienThinhGiang\UMLUseCaseDiagram_SuaCapNhatGiangVienThinhGiang.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyGiangVienThinhGiang\UMLUseCaseDiagram_ThemGiangVienThinhGiang.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyGiangVienThinhGiang\UMLUseCaseDiagram_ThemGiangVienThinhGiang.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyGiangVienThinhGiang\UMLUseCaseDiagram_ThemGiangVienThinhGiang.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyGiangVienThinhGiang\UMLUseCaseDiagram_TimGiangVienThinhGiang.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyGiangVienThinhGiang\UMLUseCaseDiagram_TimGiangVienThinhGiang.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyGiangVienThinhGiang\UMLUseCaseDiagram_TimGiangVienThinhGiang.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyGiangVienThinhGiang\UMLUseCaseDiagram_XoaGiangVienThinhGiang.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyGiangVienThinhGiang\UMLUseCaseDiagram_XoaGiangVienThinhGiang.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyGiangVienThinhGiang\UMLUseCaseDiagram_XoaGiangVienThinhGiang.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyHopDong\UMLUseCaseDiagram_QuanLyHopDong.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyHopDong\UMLUseCaseDiagram_QuanLyHopDong.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyHopDong\UMLUseCaseDiagram_QuanLyHopDong.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyKhenThuong\UMLUseCaseDiagram_KhenThuong.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyKhenThuong\UMLUseCaseDiagram_KhenThuong.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyKhenThuong\UMLUseCaseDiagram_KhenThuong.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyKhenThuong\UMLUseCaseDiagram_ThemKhenThuong.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyKhenThuong\UMLUseCaseDiagram_ThemKhenThuong.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyKhenThuong\UMLUseCaseDiagram_ThemKhenThuong.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyKyLuat\UMLUseCaseDiagram_QuanLyKyLuat.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyKyLuat\UMLUseCaseDiagram_QuanLyKyLuat.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyKyLuat\UMLUseCaseDiagram_QuanLyKyLuat.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyNangLuong\UMLUseCaseDiagram_QuanLyNangLuong.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyNangLuong\UMLUseCaseDiagram_QuanLyNangLuong.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyNangLuong\UMLUseCaseDiagram_QuanLyNangLuong.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyNangLuong\UMLUseCaseDiagram_ThemQDNangLuong.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyNangLuong\UMLUseCaseDiagram_ThemQDNangLuong.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyNangLuong\UMLUseCaseDiagram_ThemQDNangLuong.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyNgachLuong\UMLUseCaseDiagram_ChuyenNgach.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyNgachLuong\UMLUseCaseDiagram_ChuyenNgach.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyNgachLuong\UMLUseCaseDiagram_ChuyenNgach.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyNgachLuong\UMLUseCaseDiagram_NangNgach.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyNgachLuong\UMLUseCaseDiagram_NangNgach.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyNgachLuong\UMLUseCaseDiagram_NangNgach.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyNgachLuong\UMLUseCaseDiagram_QuanLyNgachLuong.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyNgachLuong\UMLUseCaseDiagram_QuanLyNgachLuong.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyNgachLuong\UMLUseCaseDiagram_QuanLyNgachLuong.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyNguoiSuDung\UMLUseCaseDiagram_PhanQuyen.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyNguoiSuDung\UMLUseCaseDiagram_PhanQuyen.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyNguoiSuDung\UMLUseCaseDiagram_PhanQuyen.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyNguoiSuDung\UMLUseCaseDiagram_QuanLyNguoiDung.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyNguoiSuDung\UMLUseCaseDiagram_QuanLyNguoiDung.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyNguoiSuDung\UMLUseCaseDiagram_QuanLyNguoiDung.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyNhanVien\UMLUseCaseDiagramExportNhanVien.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyNhanVien\UMLUseCaseDiagramExportNhanVien.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyNhanVien\UMLUseCaseDiagramExportNhanVien.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyNhanVien\UMLUseCaseDiagramImportNhanVien.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyNhanVien\UMLUseCaseDiagramImportNhanVien.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyNhanVien\UMLUseCaseDiagramImportNhanVien.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyNhanVien\UMLUseCaseDiagramInHoSoNhanVien.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyNhanVien\UMLUseCaseDiagramInHoSoNhanVien.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyNhanVien\UMLUseCaseDiagramInHoSoNhanVien.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyNhanVien\UMLUseCaseDiagramKhoaMoHoSo.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyNhanVien\UMLUseCaseDiagramKhoaMoHoSo.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyNhanVien\UMLUseCaseDiagramKhoaMoHoSo.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyNhanVien\UMLUseCaseDiagramNhatKyDuLieu.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyNhanVien\UMLUseCaseDiagramNhatKyDuLieu.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyNhanVien\UMLUseCaseDiagramNhatKyDuLieu.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyNhanVien\UMLUseCaseDiagramSuaCapNhatNhanVien.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyNhanVien\UMLUseCaseDiagramSuaCapNhatNhanVien.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyNhanVien\UMLUseCaseDiagramSuaCapNhatNhanVien.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyNhanVien\UMLUseCaseDiagramTimNhanVien.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyNhanVien\UMLUseCaseDiagramTimNhanVien.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyNhanVien\UMLUseCaseDiagramTimNhanVien.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyNhanVien\UMLUseCaseDiagramXoa.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyNhanVien\UMLUseCaseDiagramXoa.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyNhanVien\UMLUseCaseDiagramXoa.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyNhanVien\UMLUseCaseDiagram_QLNhanVien.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyNhanVien\UMLUseCaseDiagram_QLNhanVien.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyNhanVien\UMLUseCaseDiagram_QLNhanVien.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyNhanVien\UMLUseCaseDiagram_ThemNhanVien.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyNhanVien\UMLUseCaseDiagram_ThemNhanVien.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyNhanVien\UMLUseCaseDiagram_ThemNhanVien.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyTapSu\UMLUseCaseDiagram_QuanLyTapSu.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyTapSu\UMLUseCaseDiagram_QuanLyTapSu.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyTapSu\UMLUseCaseDiagram_QuanLyTapSu.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyTapSu\UMLUseCaseDiagram_ThemTapSu.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyTapSu\UMLUseCaseDiagram_ThemTapSu.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyTapSu\UMLUseCaseDiagram_ThemTapSu.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyThoiViec\UMLUseCaseDiagram_QuanLyNghiHuu.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyThoiViec\UMLUseCaseDiagram_QuanLyNghiHuu.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyThoiViec\UMLUseCaseDiagram_QuanLyNghiHuu.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyThoiViec\UMLUseCaseDiagram_QuanLyThoiViec.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyThoiViec\UMLUseCaseDiagram_QuanLyThoiViec.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyThoiViec\UMLUseCaseDiagram_QuanLyThoiViec.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyThuNhap\UMLUseCaseDiagramQuanLyChungTuChiTien.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyThuNhap\UMLUseCaseDiagramQuanLyChungTuChiTien.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyThuNhap\UMLUseCaseDiagramQuanLyChungTuChiTien.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyThuNhap\UMLUseCaseDiagram_QLLuongThuNhap.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyThuNhap\UMLUseCaseDiagram_QLLuongThuNhap.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyThuNhap\UMLUseCaseDiagram_QLLuongThuNhap.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyThuNhap\UMLUseCaseDiagram_QuanLyKhauTru.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyThuNhap\UMLUseCaseDiagram_QuanLyKhauTru.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyThuNhap\UMLUseCaseDiagram_QuanLyKhauTru.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyThuNhap\UMLUseCaseDiagram_QuanLyLuongPhuCap.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyThuNhap\UMLUseCaseDiagram_QuanLyLuongPhuCap.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyThuNhap\UMLUseCaseDiagram_QuanLyLuongPhuCap.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyThuNhap\UMLUseCaseDiagram_QuanLyNgoaiGio.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyThuNhap\UMLUseCaseDiagram_QuanLyNgoaiGio.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyThuNhap\UMLUseCaseDiagram_QuanLyNgoaiGio.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyThuNhap\UMLUseCaseDiagram_QuanLyTamUng.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyThuNhap\UMLUseCaseDiagram_QuanLyTamUng.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyThuNhap\UMLUseCaseDiagram_QuanLyTamUng.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyThuNhap\UMLUseCaseDiagram_QuanLyThuLaoGiangDay.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyThuNhap\UMLUseCaseDiagram_QuanLyThuLaoGiangDay.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyThuNhap\UMLUseCaseDiagram_QuanLyThuLaoGiangDay.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyThuNhap\UMLUseCaseDiagram_QuanLyThuNhapKhac.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyThuNhap\UMLUseCaseDiagram_QuanLyThuNhapKhac.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyThuNhap\UMLUseCaseDiagram_QuanLyThuNhapKhac.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyThuNhap\UMLUseCaseDiagram_QuanLyThuNhapTangThem.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyThuNhap\UMLUseCaseDiagram_QuanLyThuNhapTangThem.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyThuNhap\UMLUseCaseDiagram_QuanLyThuNhapTangThem.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyThuNhap\UMLUseCaseDiagram_QuanLyTruyLinhTruyThu.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyThuNhap\UMLUseCaseDiagram_QuanLyTruyLinhTruyThu.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyThuNhap\UMLUseCaseDiagram_QuanLyTruyLinhTruyThu.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyTiepNhanDieuDong\UMLUseCaseDiagram_QuanLyTiepNhanDieuDong.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyTiepNhanDieuDong\UMLUseCaseDiagram_QuanLyTiepNhanDieuDong.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyTiepNhanDieuDong\UMLUseCaseDiagram_QuanLyTiepNhanDieuDong.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyTrinhDoNhanVien\UMLUseCaseDiagram_QuanLyTrinhDoNhanVien.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyTrinhDoNhanVien\UMLUseCaseDiagram_QuanLyTrinhDoNhanVien.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyTrinhDoNhanVien\UMLUseCaseDiagram_QuanLyTrinhDoNhanVien.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyTuyenDung\UMLUseCaseDiagram_QuanLyTuyenDung.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyTuyenDung\UMLUseCaseDiagram_QuanLyTuyenDung.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyTuyenDung\UMLUseCaseDiagram_QuanLyTuyenDung.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="QuanLyTuyenDung\UMLUseCaseDiagram_ThemTuyenDung.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QuanLyTuyenDung\UMLUseCaseDiagram_ThemTuyenDung.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>QuanLyTuyenDung\UMLUseCaseDiagram_ThemTuyenDung.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="UMLUseCaseDiagram_QLNhanSu.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLUseCaseDiagram_QLNhanSu.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLUseCaseDiagram_QLNhanSu.usecasediagram</DependentUpon>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\ModelingProject1.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Folder Include="QuanLyThuNhap" />
+    <Folder Include="QuanLyThoiViec" />
+    <Folder Include="QuanLyTiepNhanDieuDong" />
+    <Folder Include="QuanLyDiCongTac" />
+    <Folder Include="QuanLyTrinhDoNhanVien" />
+    <Folder Include="QuanLyChamCong" />
+    <Folder Include="QuanLyDanhGia" />
+    <Folder Include="QuanLyKyLuat" />
+    <Folder Include="QuanLyTapSu" />
+    <Folder Include="QuanLyKhenThuong" />
+    <Folder Include="QuanLyNgachLuong" />
+    <Folder Include="QuanLyDoan-Dang-CongDoan" />
+    <Folder Include="QuanLyDonViPhongBan" />
+    <Folder Include="QuanLyBoNhiem" />
+    <Folder Include="QuanLyBoiDuong" />
+    <Folder Include="QuanLyTuyenDung" />
+    <Folder Include="QuanLyBaoHiem" />
+    <Folder Include="QuanLyHopDong" />
+    <Folder Include="QuanLyGiangVienThinhGiang" />
+    <Folder Include="QuanLyNangLuong" />
+    <Folder Include="QuanLyNguoiSuDung" />
+    <Folder Include="QuanLyNhanVien" />
+    <Folder Include="QuanLyDaoTao" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="4f59dc12-649f-4af2-8ae0-6fec427f746c" name="UMLUseCaseDiagram_QuanLyBoNhiem" linkedPackageId="05d4fea7-89c6-47b5-9736-c677d32a7951" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="5e58b6c2-993d-4a05-b0c3-e97d24e8d280">
+      <elementDefinition Id="dfdcaaff-905a-4fcc-8139-a4bb3806a34e" />
+      <body>UC Quản lý Bổ nhiệm</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f275225d-5c6e-477e-a8dd-eb6f79e4184a" name="Thêm QĐ bổ nhiệm/miễn nhiễm" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d7120c71-2581-46b4-ad5e-f7f67cb6744f" />
+        <extendedCases>
+          <extend Id="32c55fff-5006-46ab-bee4-1976741880c7">
+            <useCaseMoniker Id="302e5baf-8827-4137-aad7-90a6c55cca52" LastKnownName="Quản lý bổ nhiệm /miễn nhiệm" />
+            <elementDefinition Id="4b3ea3fb-90c2-4f44-bd81-4c55ed2ceaab" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4f32dcdf-7bc6-46dd-b77c-0cabad4dd6a3" name="Xóa QĐ bổ nhiệm/miễn nhiễm" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e7187604-01b1-486c-a1cc-4dfbc30e04f9" />
+        <extendedCases>
+          <extend Id="9235856d-a259-4ec3-8766-f26274e25cfb">
+            <useCaseMoniker Id="302e5baf-8827-4137-aad7-90a6c55cca52" LastKnownName="Quản lý bổ nhiệm /miễn nhiệm" />
+            <elementDefinition Id="98f6136d-0102-4049-b47a-e71a9fc62ac3" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="03d68415-78d2-461c-8b9c-8cb14e1d7f1c" name="Sửa /Cập nhật QĐ bổ nhiệm/miễn nhiệm" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0d0b314f-96a5-4426-b8af-3494c535e94f" />
+        <extendedCases>
+          <extend Id="397d3046-468a-41d7-8a4d-5e7ea9a5b61f">
+            <useCaseMoniker Id="302e5baf-8827-4137-aad7-90a6c55cca52" LastKnownName="Quản lý bổ nhiệm /miễn nhiệm" />
+            <elementDefinition Id="98593509-b3eb-46b5-9bca-44e109782fad" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8f58c95d-4bb7-4aca-be8b-321cb5c2dbae" name="In QĐ bổ nhiệm/miễn nhiệm" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="30c95e65-b3ec-482a-8338-fa427ad7106c" />
+        <extendedCases>
+          <extend Id="d19e4e73-f12f-4d69-8a5c-ed40ededd1e6">
+            <useCaseMoniker Id="302e5baf-8827-4137-aad7-90a6c55cca52" LastKnownName="Quản lý bổ nhiệm /miễn nhiệm" />
+            <elementDefinition Id="af46bd8b-a035-400a-ae61-f3942d22add8" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="001dd01d-2faa-4172-ae0b-ee72335704e9" name="người sử dụng" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ae0e4b42-e8e1-409d-af2f-8ca9e2836d0f" />
+        <suppliersInternal>
+          <dependency Id="1622a050-8732-4786-a72f-f09e9933f625">
+            <useCaseMoniker Id="302e5baf-8827-4137-aad7-90a6c55cca52" LastKnownName="Quản lý bổ nhiệm /miễn nhiệm" />
+            <elementDefinition Id="db6f3cf7-0784-4d8e-9213-0cba02b0217f" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="ba04e639-948b-4af0-a8e6-897d25061186" name="quản trị nhân viên(admin tổ chức)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3adc7cf9-8565-4998-a8eb-4db02ba282d3" />
+        <generalsInternal>
+          <generalization Id="68d55db4-b147-46d5-bb81-da1c9664fa2f" isSubstitutable="false">
+            <actorMoniker Id="001dd01d-2faa-4172-ae0b-ee72335704e9" LastKnownName="người sử dụng" />
+            <elementDefinition Id="6c902048-88b2-422f-b3e3-fb51ee2b67de" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="552af352-8800-4b34-bb21-a7e7fe30b0e1" name="quản trị phần mềm(administrator)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f8657f9f-f282-4c4d-be60-36bab7b990be" />
+        <generalsInternal>
+          <generalization Id="f5e797ce-e675-4013-9953-9321f8be0727" isSubstitutable="false">
+            <actorMoniker Id="001dd01d-2faa-4172-ae0b-ee72335704e9" LastKnownName="người sử dụng" />
+            <elementDefinition Id="bde2c14c-bf8a-40db-a278-cfe341e9bcdc" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="302e5baf-8827-4137-aad7-90a6c55cca52" name="Quản lý bổ nhiệm /miễn nhiệm" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fdd1b3d5-47c8-4432-913b-08d6cc407a08" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="05d4fea7-89c6-47b5-9736-c677d32a7951" name="ModelingProject1">
+    <elementDefinition Id="c1918b24-b69c-4818-aacd-4d280375ce7b" />
+    <profileInstances>
+      <packageHasProfileInstances Id="02d0117c-8a0c-4eb3-91fe-a54017de91be">
+        <profileInstance Id="e7d6915e-1686-43fa-8dc6-b8b6eeae22e2" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="0eeb73d9-ec2a-4043-842e-0af9008ce047">
+        <profileInstance Id="ddbf568b-ae55-4f0a-a982-3929443126a5" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="dde55ae8-2bde-4f22-8dd2-cf5c989511df" name="UMLUseCaseDiagram_QuanLyLuongPhuCap" linkedPackageId="95988e0f-9519-4bee-89c3-bf6262c0cbe3" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="06ca93ea-74b8-4175-be8c-00c4dfc3cd8b" name="quản trị tính lương(admin tính lương)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="09b5775f-e7c0-41ac-b31d-806771f7772c" />
+        <generalsInternal>
+          <generalization Id="ea0557cf-72dd-4746-a52b-3507e2601149" isSubstitutable="false">
+            <actorMoniker Id="61c0de0d-8ff9-4a25-8bfa-8c19aa68dfc8" LastKnownName="người sử dụng" />
+            <elementDefinition Id="2998a0da-6443-4634-bcff-436d6bd9480f" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="61c0de0d-8ff9-4a25-8bfa-8c19aa68dfc8" name="người sử dụng" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ae0e4b42-e8e1-409d-af2f-8ca9e2836d0f" />
+        <suppliersInternal>
+          <dependency Id="a6fa5656-9008-4e56-aec5-7a8db88598b5">
+            <useCaseMoniker Id="2efa7763-4a18-4932-87b5-a691e444fd88" LastKnownName="Quản lý thu nhập" />
+            <elementDefinition Id="f024223c-9578-435a-b23b-29743067e228" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="09b4891c-8e0f-46b6-b8cd-b167675ba083" name="quản trị phần mềm(administrator)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f8657f9f-f282-4c4d-be60-36bab7b990be" />
+        <generalsInternal>
+          <generalization Id="4d8aadeb-0e6c-4152-aab5-c1588eec364d" isSubstitutable="false">
+            <actorMoniker Id="61c0de0d-8ff9-4a25-8bfa-8c19aa68dfc8" LastKnownName="người sử dụng" />
+            <elementDefinition Id="bde2c14c-bf8a-40db-a278-cfe341e9bcdc" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2efa7763-4a18-4932-87b5-a691e444fd88" name="Quản lý thu nhập" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="09972feb-42c9-4be6-b0bc-c1193ef24595" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a8112734-7330-4a1a-b04f-90709d5aea8c" name="Quản lý lương, phụ cấp" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c430ed36-c3a4-404d-aad0-0e1919207b24" />
+        <extendedCases>
+          <extend Id="5c8b7079-c9f5-4b64-aa06-2791b6a66c5c">
+            <useCaseMoniker Id="2efa7763-4a18-4932-87b5-a691e444fd88" LastKnownName="Quản lý thu nhập" />
+            <elementDefinition Id="d41408bf-99a0-4abb-97a2-fe5160ac60c0" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fce1ce97-a336-46b3-9c11-8029eab52d97" name="Lập công thức tính lương, phụ cấp" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2bc5db2b-308b-4c1c-a92c-f07748d06ea1" />
+        <additions>
+          <include Id="99de17ca-ee24-4e45-a7b4-42a2775114b0">
+            <useCaseMoniker Id="a8112734-7330-4a1a-b04f-90709d5aea8c" LastKnownName="Quản lý lương, phụ cấp" />
+            <elementDefinition Id="b9f73f5a-0e10-4209-81cd-e0f2d2c669f8" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c7ea8e14-8aff-4f64-8194-cc1226ab19a9" name="Tính lương, phụ cấp" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="651caf52-bc22-4975-bcea-297681be96d5" />
+        <extendedCases>
+          <extend Id="d4c0c0e2-d0fc-4e9a-9864-cf966afe89e1">
+            <useCaseMoniker Id="a8112734-7330-4a1a-b04f-90709d5aea8c" LastKnownName="Quản lý lương, phụ cấp" />
+            <elementDefinition Id="1dc7e3c6-042d-42c4-8476-69557df8ed2b" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4036cdca-2320-4935-8c7d-fb0cc1684464" name="Sửa lương, phụ cấp" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7b53ba65-4a6c-436a-8dd8-9b388fb4895e" />
+        <extendedCases>
+          <extend Id="76dda04f-e030-429c-b296-817700251703">
+            <useCaseMoniker Id="a8112734-7330-4a1a-b04f-90709d5aea8c" LastKnownName="Quản lý lương, phụ cấp" />
+            <elementDefinition Id="d3257080-6409-4249-9928-ada555b5956b" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="be99962d-292d-4b71-922b-4fdc0a1aba06" name="Xóa lương, phụ cấp" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="90c66044-ab8b-42ae-9036-dd76ed2f0621" />
+        <extendedCases>
+          <extend Id="df1e403e-5471-46b6-9e33-122602cb25e3">
+            <useCaseMoniker Id="a8112734-7330-4a1a-b04f-90709d5aea8c" LastKnownName="Quản lý lương, phụ cấp" />
+            <elementDefinition Id="c7145563-fdf0-4802-b437-63dec3a5169b" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2dcc61bc-15c6-4fe8-9069-997ffd1bf2de" name="Chốt thông tin tính lương, phụ cấp" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ccc04103-3eff-4469-ba8e-5cf1018bfcd4" />
+        <additions>
+          <include Id="9e75684c-a05a-4257-b238-1cc0ec53ddff">
+            <useCaseMoniker Id="a8112734-7330-4a1a-b04f-90709d5aea8c" LastKnownName="Quản lý lương, phụ cấp" />
+            <elementDefinition Id="a6559632-a21a-4545-9515-38f54249f1df" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f7d0c4a0-182d-4ccf-a87b-db8672aaf373" name="In bảng lương, phụ cấp" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c52c1fae-7c06-4406-8447-fc0467bcf2c9" />
+        <extendedCases>
+          <extend Id="a89ea2b0-0681-403a-817a-d27ee304d0c8">
+            <useCaseMoniker Id="a8112734-7330-4a1a-b04f-90709d5aea8c" LastKnownName="Quản lý lương, phụ cấp" />
+            <elementDefinition Id="c3504822-53d0-48e3-967b-8e55cf3759f0" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="477f48a7-ac8b-4f19-ae1c-4541e791054c" name="cập nhật bảng lương, phụ cấp" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1be5b5f6-8f1d-4f5a-8903-0f13816f81fd" />
+        <extendedCases>
+          <extend Id="574c882f-8847-47dc-8932-92f3d9e4c173">
+            <useCaseMoniker Id="a8112734-7330-4a1a-b04f-90709d5aea8c" LastKnownName="Quản lý lương, phụ cấp" />
+            <elementDefinition Id="4d949fa9-726d-4d7f-bbc2-51287ce2d0e7" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="95988e0f-9519-4bee-89c3-bf6262c0cbe3" name="ModelingProject1">
+    <elementDefinition Id="c1918b24-b69c-4818-aacd-4d280375ce7b" />
+    <profileInstances>
+      <packageHasProfileInstances Id="51af25f1-e842-4d8d-b8f7-965b87389076">
+        <profileInstance Id="e5f3ee0a-8a68-40d7-a59d-d6ccfffbb5aa" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="2bc5adf9-97f3-4648-9063-249f1af15f7a">
+        <profileInstance Id="8adf92a4-697b-4cef-9cac-a239c7d2a8ad" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

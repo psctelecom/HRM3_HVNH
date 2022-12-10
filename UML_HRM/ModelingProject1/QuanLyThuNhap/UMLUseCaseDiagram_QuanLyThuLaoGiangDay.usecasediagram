@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="dc8a61f5-58cd-4419-8beb-bba889aeef8e" name="UMLUseCaseDiagram_QuanLyThuLaoGiangDay" linkedPackageId="a62037c1-ca5d-4ba2-a5ea-e398f483ecc8" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="0194522e-3a0d-446f-9c10-594f245ff527">
+      <elementDefinition Id="c81f12e5-9f6b-4e44-84c9-72486a4a88a1" />
+      <body>UC Quản lý thù lao giảng dạy</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="ef29f5e3-f880-4249-9c2b-3f5e3c702db0" name="quản trị tính lương(admin tính lương)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="09b5775f-e7c0-41ac-b31d-806771f7772c" />
+        <generalsInternal>
+          <generalization Id="87fe2832-3822-44ac-9fa0-1d3796ef9235" isSubstitutable="false">
+            <actorMoniker Id="0ce191df-2e11-454f-9dae-7a0e4e750cff" LastKnownName="người sử dụng" />
+            <elementDefinition Id="2998a0da-6443-4634-bcff-436d6bd9480f" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="0ce191df-2e11-454f-9dae-7a0e4e750cff" name="người sử dụng" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ae0e4b42-e8e1-409d-af2f-8ca9e2836d0f" />
+        <suppliersInternal>
+          <dependency Id="10b5cd52-8910-49b3-bd93-f436fec0e8a9">
+            <useCaseMoniker Id="6395da09-50bd-4d65-8512-0bf79baba897" LastKnownName="Quản lý thu nhập" />
+            <elementDefinition Id="f024223c-9578-435a-b23b-29743067e228" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="ef53bcb4-43bb-41e9-a580-106476e67d51" name="quản trị phần mềm(administrator)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f8657f9f-f282-4c4d-be60-36bab7b990be" />
+        <generalsInternal>
+          <generalization Id="0bf4cf6f-89fd-4d4e-98d1-5261a3b33490" isSubstitutable="false">
+            <actorMoniker Id="0ce191df-2e11-454f-9dae-7a0e4e750cff" LastKnownName="người sử dụng" />
+            <elementDefinition Id="bde2c14c-bf8a-40db-a278-cfe341e9bcdc" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6395da09-50bd-4d65-8512-0bf79baba897" name="Quản lý thu nhập" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="09972feb-42c9-4be6-b0bc-c1193ef24595" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b2c3912f-fdad-4836-ada1-365464c79534" name="Quản lý thù lao giảng dạy" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="706b4abd-58b2-48de-bb9a-b0eac0d53c4d" />
+        <extendedCases>
+          <extend Id="0e1096bd-d2b1-41b4-a8ad-2e3ea7ae6099">
+            <useCaseMoniker Id="6395da09-50bd-4d65-8512-0bf79baba897" LastKnownName="Quản lý thu nhập" />
+            <elementDefinition Id="f7b2056a-4739-4dca-9535-d089ad1237c6" />
+          </extend>
+        </extendedCases>
+        <additions>
+          <include Id="4405b010-6931-4797-8a9c-513b5dc5a292">
+            <useCaseMoniker Id="89bbc4e1-b000-41a8-887a-4e5096cb05a7" LastKnownName="Tích hợp lấy thù lạo giảng dạy tư PSC PMS" />
+            <elementDefinition Id="644701db-07bb-4979-9d4b-1fff0445bc91" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="89bbc4e1-b000-41a8-887a-4e5096cb05a7" name="Tích hợp lấy thù lạo giảng dạy tư PSC PMS" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="052a1ed7-9a70-418f-b70e-a388dbca2e30" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0f482a98-dcfa-4da0-a7bf-14c3d0557f40" name="Đổ thù lạo giảng dạy từ excel" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c28b42b9-83b2-4533-87e6-2208e6d3dbe8" />
+        <extendedCases>
+          <extend Id="5871d9de-9d4b-4def-bd01-7e606dccc4d2">
+            <useCaseMoniker Id="b2c3912f-fdad-4836-ada1-365464c79534" LastKnownName="Quản lý thù lao giảng dạy" />
+            <elementDefinition Id="8bfe888d-573e-4a5d-b45d-3b72394ce36c" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="bbd62405-569d-468b-8b53-8f400640b30d" name="sửa thù lao giảng dạy" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2dc2c714-fc44-4005-a9b4-169e8643021b" />
+        <extendedCases>
+          <extend Id="bf9d1771-49d5-4fc9-a96a-72942f155354">
+            <useCaseMoniker Id="b2c3912f-fdad-4836-ada1-365464c79534" LastKnownName="Quản lý thù lao giảng dạy" />
+            <elementDefinition Id="ad6541bc-f05f-4bb9-bfc5-7448dec24505" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e54e6dc9-aca4-4e62-8354-1f01ec0a634f" name="Xóa thù lao giảng dạy" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c0128640-def3-4b16-8f6c-e3290690d07d" />
+        <extendedCases>
+          <extend Id="f655ac58-e69a-4919-baca-c984d58fd10a">
+            <useCaseMoniker Id="b2c3912f-fdad-4836-ada1-365464c79534" LastKnownName="Quản lý thù lao giảng dạy" />
+            <elementDefinition Id="d48a19df-e760-4c84-8ec4-b54b876009b9" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="21037553-1c29-4cb9-a400-ffda33160831" name="In Báo cáo thù lao giảng dạy" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="dcd39ad4-8f60-4fd4-8fab-321010face4f" />
+        <extendedCases>
+          <extend Id="ac21cce5-bf6c-49a8-8dc8-42716be485de">
+            <useCaseMoniker Id="b2c3912f-fdad-4836-ada1-365464c79534" LastKnownName="Quản lý thù lao giảng dạy" />
+            <elementDefinition Id="2ecdfced-1e41-4da1-b755-039e07226a7f" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="156232e3-52fd-4adc-9c74-850993dcb6f0" name="cập nhật thù lao giảng dạy" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0ce735e6-55b0-4192-a864-946c3a58563e" />
+        <extendedCases>
+          <extend Id="c91a2e9a-43a5-4fe1-a9dc-8a7edfe7e7df">
+            <useCaseMoniker Id="b2c3912f-fdad-4836-ada1-365464c79534" LastKnownName="Quản lý thù lao giảng dạy" />
+            <elementDefinition Id="e59b499a-e59d-4c5a-abdb-420603d95eba" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="a62037c1-ca5d-4ba2-a5ea-e398f483ecc8" name="ModelingProject1">
+    <elementDefinition Id="c1918b24-b69c-4818-aacd-4d280375ce7b" />
+    <profileInstances>
+      <packageHasProfileInstances Id="e407a465-48fd-48bd-861a-c8cebcad92a0">
+        <profileInstance Id="ed66c71a-41dc-4732-b7ae-0fba0fa92283" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="018a20a8-f575-4056-9eac-1d79212c9cc1">
+        <profileInstance Id="590b4e67-2508-4b53-b2a4-b0cdb227b415" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLUseCaseDiagram_QuanLyPhongBan">
+  <useCaseModelRootMoniker Id="94e50c89-8f40-418f-8180-6348b1f9f38a" />
+  <nestedChildShapes>
+    <actorShape Id="ed88c323-9e21-479d-8547-86a5465745a0" absoluteBounds="0.75, 2.875, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="9766414d-50f4-4917-b0c1-094929a961c8" LastKnownName="người sử dụng" />
+      <relativeChildShapes />
+    </actorShape>
+    <actorShape Id="453783c5-f103-479e-aff0-b32bae84a1ff" absoluteBounds="0.75, 1.375, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="ad2f3e6e-2cbb-43fd-91bb-20528d00a5f8" LastKnownName="quản trị nhân viên(admin tổ chức)" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseGeneralizationConnector edgePoints="[(1 : 1.875); (1 : 2.875)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
+      <generalizationMoniker Id="54414b45-de93-4be5-8cf0-a96ecbc37251" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="453783c5-f103-479e-aff0-b32bae84a1ff" />
+        <actorShapeMoniker Id="ed88c323-9e21-479d-8547-86a5465745a0" />
+      </nodes>
+    </useCaseGeneralizationConnector>
+    <actorShape Id="abd7153f-0a95-4919-a077-b512ad404b6a" absoluteBounds="0.75, 4.5, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="8d0a5ed9-034c-4c45-9cb0-3c09670f705e" LastKnownName="quản trị phần mềm(administrator)" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseGeneralizationConnector edgePoints="[(1 : 4.5); (1 : 3.375)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
+      <generalizationMoniker Id="e9d46450-3a01-4127-9a7c-13b62a6c8d3e" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="abd7153f-0a95-4919-a077-b512ad404b6a" />
+        <actorShapeMoniker Id="ed88c323-9e21-479d-8547-86a5465745a0" />
+      </nodes>
+    </useCaseGeneralizationConnector>
+    <useCaseShape Id="30139eb4-0510-4716-8da9-294c03fc60a5" absoluteBounds="2.75, 2.875, 1.375, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="f2f4be80-1a03-4a39-a461-9c038bc3acb2" LastKnownName="Quản lý đơn vị/phòng ban" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseDependencyConnector edgePoints="[(1.25 : 3.13782051282051); (2.75301848370894 : 3.21489838377995)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <dependencyMoniker Id="2d3cb0ee-777e-4af8-ac8d-92ce6340e22a" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="ed88c323-9e21-479d-8547-86a5465745a0" />
+        <useCaseShapeMoniker Id="30139eb4-0510-4716-8da9-294c03fc60a5" />
+      </nodes>
+    </useCaseDependencyConnector>
+    <useCaseShape Id="b55ef1a9-f679-4b7d-86ed-011070a5749d" absoluteBounds="5.5, 1.625, 1.5, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="f9a748b7-d2d8-4bda-babe-f6bf7e73cd3c" LastKnownName="Thêm đơn vị/ phòng ban" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <extendConnector edgePoints="[(5.68944301098726 : 2.24913643956122); (3.97047405254314 : 3.01312264331416)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«extend»">
+      <extendMoniker Id="5d3d67b4-6b33-46a6-b282-75ff0ff53ed3" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="b55ef1a9-f679-4b7d-86ed-011070a5749d" />
+        <useCaseShapeMoniker Id="30139eb4-0510-4716-8da9-294c03fc60a5" />
+      </nodes>
+    </extendConnector>
+    <useCaseShape Id="306a65df-3175-4ae7-95ac-ef3bd8a213b7" absoluteBounds="5.875, 3.25, 1.5, 1" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="4d94140c-4050-4905-9dc9-1529c1e56a06" LastKnownName="Cập nhật/Sửa Đơn vị/phòng ban" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <extendConnector edgePoints="[(5.89493712374982 : 3.63548033313723); (4.09822081002833 : 3.35364248000444)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«extend»">
+      <extendMoniker Id="76be2b18-c325-4aa8-a8ca-4646e6f20f52" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="306a65df-3175-4ae7-95ac-ef3bd8a213b7" />
+        <useCaseShapeMoniker Id="30139eb4-0510-4716-8da9-294c03fc60a5" />
+      </nodes>
+    </extendConnector>
+    <useCaseShape Id="5f15d4fd-b2ee-4dd6-ad31-52e49f981624" absoluteBounds="3.5, 4.625, 1.25, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="6093fd88-7b31-4b38-ab51-f4931081f8c9" LastKnownName="Xóa đơn vị/ phòng ban" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <extendConnector edgePoints="[(4.02071356019193 : 4.62850477863548); (3.5920909108554 : 3.61539669838548)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«extend»">
+      <extendMoniker Id="07cf185a-20f6-41b3-a96d-2312dd5bff4c" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="5f15d4fd-b2ee-4dd6-ad31-52e49f981624" />
+        <useCaseShapeMoniker Id="30139eb4-0510-4716-8da9-294c03fc60a5" />
+      </nodes>
+    </extendConnector>
+    <commentShape Id="ecd2e2a6-8964-47dc-927a-753743b4dfae" absoluteBounds="0.5, 0.75, 2.375, 0.25" customColor="251, 247, 200">
+      <commentMoniker Id="daf98aff-4adb-4f0d-8214-2f86cf1fdea8" />
+      <relativeChildShapes />
+    </commentShape>
+    <rectangleShape Id="a4b17855-dfdc-4c20-934a-bd7ac756d160" absoluteBounds="0.5, 0.75, 7.125, 5.125" outlineColor="83, 134, 191" outlineThickness="0.03125" />
+  </nestedChildShapes>
+</useCaseDiagram>

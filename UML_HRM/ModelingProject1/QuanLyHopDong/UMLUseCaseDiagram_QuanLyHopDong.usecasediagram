@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="e31f668b-8fab-4c8e-91c1-15e62d637c25" name="UMLUseCaseDiagram_QuanLyHopDong" linkedPackageId="0eb38134-9ef6-476b-b0c6-8a359280f5b4" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="2cec1ff1-8c50-4f88-a684-d1e220c6cb10">
+      <elementDefinition Id="d7af3ab8-e381-44ca-b4e8-2ba2cd3ea7df" />
+      <body>UC Quản lý hợp đồng</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c547b91a-8c2c-4996-a2c9-d86b12fb5faf" name="Thêm hợp đồng lao động" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0ae18b33-3e14-4451-9888-b3381dc30ffd" />
+        <extendedCases>
+          <extend Id="2c46fdf2-e3ea-452e-a48e-18eb29c01edf">
+            <useCaseMoniker Id="b51d82a2-33ef-47aa-8988-f62cc5739a83" LastKnownName="Quản lý hợp đồng lao động" />
+            <elementDefinition Id="1f41113c-0555-42bd-b8d0-4b43836610c6" />
+          </extend>
+          <extend Id="4eceb969-1e13-4f76-9418-0b0b77d011e5">
+            <useCaseMoniker Id="99af942f-b10a-402a-bfc5-23fdae821f88" LastKnownName="Import/Export  hợp đồng lao động" />
+            <elementDefinition Id="25e8e14b-3513-4e6d-8fec-a6ec09e75fbb" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7991aaac-3e9f-4cba-be1e-e894702a8b24" name="Xóa hợp đồng lao động" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5211d2a7-0cbc-4a67-a485-ac757fce499e" />
+        <extendedCases>
+          <extend Id="77de9ffc-40a7-41c2-b163-7562f96dfccc">
+            <useCaseMoniker Id="b51d82a2-33ef-47aa-8988-f62cc5739a83" LastKnownName="Quản lý hợp đồng lao động" />
+            <elementDefinition Id="00e21376-1277-486a-a80c-67686913e030" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="99af942f-b10a-402a-bfc5-23fdae821f88" name="Import/Export  hợp đồng lao động" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="759bc081-8616-451b-a414-c5e36d4757c8" />
+        <extendedCases>
+          <extend Id="3022d7e8-7ef9-4d7a-b626-20e5ddbf50f9">
+            <useCaseMoniker Id="b51d82a2-33ef-47aa-8988-f62cc5739a83" LastKnownName="Quản lý hợp đồng lao động" />
+            <elementDefinition Id="3e9e7e1b-f14f-4bc2-8061-5d0ed96d0616" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e697a604-c010-4e6e-85ad-76d8c6d50bd5" name="Cập nhật/sửa hợp đồng lao động" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7fb3d37e-2580-47ef-8f7b-bc4eb5e87d5b" />
+        <extendedCases>
+          <extend Id="ce5c6863-3518-46c8-ba9e-a01a6d0f880b">
+            <useCaseMoniker Id="b51d82a2-33ef-47aa-8988-f62cc5739a83" LastKnownName="Quản lý hợp đồng lao động" />
+            <elementDefinition Id="4ae9496e-31b8-4681-97bb-27096e9f6ded" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="72cea4db-b806-42a2-9a23-f264dbc76495" name="In hợp đồng lao động " isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d926f787-4142-4540-8334-ec6f7c2af263" />
+        <extendedCases>
+          <extend Id="1933c617-bf4a-4eb6-9a4c-237194f82141">
+            <useCaseMoniker Id="b51d82a2-33ef-47aa-8988-f62cc5739a83" LastKnownName="Quản lý hợp đồng lao động" />
+            <elementDefinition Id="8f1b4b0f-0108-4ad5-9175-587fdb280c73" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="800eae9d-3abc-4b5d-a3cf-0580226fb28d" name="người sử dụng" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ae0e4b42-e8e1-409d-af2f-8ca9e2836d0f" />
+        <suppliersInternal>
+          <dependency Id="f489c17a-d410-485f-ac62-f8f571604674">
+            <useCaseMoniker Id="b51d82a2-33ef-47aa-8988-f62cc5739a83" LastKnownName="Quản lý hợp đồng lao động" />
+            <elementDefinition Id="93ab3098-611e-4f9e-ae8e-41195a720ae2" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="fd47e57e-a219-42b3-af9d-c08249d61b03" name="quản trị nhân viên(admin tổ chức)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3adc7cf9-8565-4998-a8eb-4db02ba282d3" />
+        <generalsInternal>
+          <generalization Id="ff921a62-3b4f-42bf-80c7-05108b06ad6f" isSubstitutable="false">
+            <actorMoniker Id="800eae9d-3abc-4b5d-a3cf-0580226fb28d" LastKnownName="người sử dụng" />
+            <elementDefinition Id="6c902048-88b2-422f-b3e3-fb51ee2b67de" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="114ddc5b-310c-45f4-a11c-a3a188190184" name="quản trị phần mềm(administrator)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f8657f9f-f282-4c4d-be60-36bab7b990be" />
+        <generalsInternal>
+          <generalization Id="591bad0b-f419-41d1-abdd-b83326e937af" isSubstitutable="false">
+            <actorMoniker Id="800eae9d-3abc-4b5d-a3cf-0580226fb28d" LastKnownName="người sử dụng" />
+            <elementDefinition Id="bde2c14c-bf8a-40db-a278-cfe341e9bcdc" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b51d82a2-33ef-47aa-8988-f62cc5739a83" name="Quản lý hợp đồng lao động" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3a8f82ff-37ad-46f5-a5b0-3fb0acb337d6" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="0eb38134-9ef6-476b-b0c6-8a359280f5b4" name="ModelingProject1">
+    <elementDefinition Id="c1918b24-b69c-4818-aacd-4d280375ce7b" />
+    <profileInstances>
+      <packageHasProfileInstances Id="a4d177a0-aa3f-432d-aa15-fe023f824a58">
+        <profileInstance Id="bb46371e-c69a-44e9-9f6e-cc132e018a3d" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="885ff3af-a51a-42eb-9cdd-6125d88cce6e">
+        <profileInstance Id="94b139cf-4645-4061-8e37-5ce0f570144d" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="c60bbd9b-6294-4a01-9b2a-ccdbc57a63bc" name="UMLUseCaseDiagram_ThemBangChamCong" linkedPackageId="dabb148a-15d7-4da7-9eb3-2f2784d3ef0e" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="d677a872-cf17-4085-8462-d57f0130d1c9">
+      <elementDefinition Id="1d68fabf-22f6-430b-9865-8da4e93398f0" />
+      <body>UC lập bảng chấm công</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="69d763d7-a64b-497a-bcac-b08e1077d94a" name="người sử dụng" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ae0e4b42-e8e1-409d-af2f-8ca9e2836d0f" />
+        <suppliersInternal>
+          <dependency Id="02b4976c-42bc-4b17-bc7f-1a1cd513bea3">
+            <useCaseMoniker Id="0a5483ac-bf43-4758-9e30-dcff2607670f" LastKnownName="Quản lý chấm công" />
+            <elementDefinition Id="2f4022dd-4e1b-4e14-9120-0d5b135bafa1" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="8a4dcc42-006d-4579-998f-b8c4133c10ea" name="quản trị nhân viên(admin tổ chức)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3adc7cf9-8565-4998-a8eb-4db02ba282d3" />
+        <generalsInternal>
+          <generalization Id="40554242-a404-48af-a816-25fda1302667" isSubstitutable="false">
+            <actorMoniker Id="69d763d7-a64b-497a-bcac-b08e1077d94a" LastKnownName="người sử dụng" />
+            <elementDefinition Id="6c902048-88b2-422f-b3e3-fb51ee2b67de" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="fe2a8687-0c25-490d-b155-0cd2a6d96d17" name="quản trị phần mềm(administrator)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f8657f9f-f282-4c4d-be60-36bab7b990be" />
+        <generalsInternal>
+          <generalization Id="72e3de81-53d0-4281-aadb-42fae7d5bffa" isSubstitutable="false">
+            <actorMoniker Id="69d763d7-a64b-497a-bcac-b08e1077d94a" LastKnownName="người sử dụng" />
+            <elementDefinition Id="bde2c14c-bf8a-40db-a278-cfe341e9bcdc" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0a5483ac-bf43-4758-9e30-dcff2607670f" name="Quản lý chấm công" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c685f4d0-47e1-412d-82cc-07f7e52f2e01" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1c4d0567-403e-4b29-b63e-64fb67443ccb" name="Thêm bảng chấm công" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ed928784-ff3b-4e9f-b0b3-f9d125b8df90" />
+        <extendedCases>
+          <extend Id="a0e3cd45-20a0-4fee-8d9e-513210a44b4f">
+            <useCaseMoniker Id="0a5483ac-bf43-4758-9e30-dcff2607670f" LastKnownName="Quản lý chấm công" />
+            <elementDefinition Id="e2c0045e-0bd6-466f-8acc-61e0b4840278" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="3332ecc0-8af5-47b5-ac5f-f841130113a9" name="Lập bảng chấm công" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="713baa9f-f853-48d9-8c11-25b48aba6a08" />
+        <extendedCases>
+          <extend Id="151043e0-4ab4-499f-89ba-25ad9a5baff6">
+            <useCaseMoniker Id="1c4d0567-403e-4b29-b63e-64fb67443ccb" LastKnownName="Thêm bảng chấm công" />
+            <elementDefinition Id="7cbd2ce3-1210-4008-9bdf-f937495aa78c" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c2caaa10-c971-4382-9c67-f8be92b2f1a3" name="Lập bảng chấm công khoán" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f0463584-73e1-4f9d-85d4-fc5b84081ba1" />
+        <extendedCases>
+          <extend Id="e448c47a-3c68-4ccb-892e-5222c523083b">
+            <useCaseMoniker Id="1c4d0567-403e-4b29-b63e-64fb67443ccb" LastKnownName="Thêm bảng chấm công" />
+            <elementDefinition Id="dcc37e6c-afa8-47f6-82da-9d4a26d4f0cd" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b6de777b-b3ec-42c2-9105-a073cbf0ee8a" name="Lập bảng chấm công ngoài giờ" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="349e394b-9568-4f52-8d7c-59476247e3ab" />
+        <extendedCases>
+          <extend Id="2a90d3f0-1ddb-4fa6-afa6-fbf0eedf9ada">
+            <useCaseMoniker Id="1c4d0567-403e-4b29-b63e-64fb67443ccb" LastKnownName="Thêm bảng chấm công" />
+            <elementDefinition Id="bf9f89ce-42eb-45ef-ad49-12a3dbb1fbe8" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f1cb1c47-4e14-4d16-9f45-cd568fab4695" name="Lập bảng chấm công ngày nghỉ" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f970aae9-dd04-4415-a991-1c3a1908a327" />
+        <extendedCases>
+          <extend Id="d1a02725-0f59-4cbe-9606-6d7ca63ffa50">
+            <useCaseMoniker Id="1c4d0567-403e-4b29-b63e-64fb67443ccb" LastKnownName="Thêm bảng chấm công" />
+            <elementDefinition Id="9f01b3f3-5ee9-4a55-85a2-73c656c9aaed" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9154e3fa-adcc-4a63-b1f2-add8e52f0864" name="Chọn nhân viên" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="18094f7a-582b-4c65-810c-fe871b75ae00" />
+        <additions>
+          <include Id="657b1f3e-c0dc-42cb-a972-81e14ff31cc7">
+            <useCaseMoniker Id="1c4d0567-403e-4b29-b63e-64fb67443ccb" LastKnownName="Thêm bảng chấm công" />
+            <elementDefinition Id="34d4843b-273e-420f-a590-269f78b7f8ad" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d202108c-60f5-4b3e-9839-ae749ee82c65" name="Lấy dữ liệu từ máy chấm công" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9c468504-fb01-46af-8db3-ff2a3f04d412" />
+        <extendedCases>
+          <extend Id="d953d0fe-e734-4a06-b737-6916afa6387f">
+            <useCaseMoniker Id="1c4d0567-403e-4b29-b63e-64fb67443ccb" LastKnownName="Thêm bảng chấm công" />
+            <elementDefinition Id="458896b0-1f56-4834-b80e-32b836816189" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="dabb148a-15d7-4da7-9eb3-2f2784d3ef0e" name="ModelingProject1">
+    <elementDefinition Id="c1918b24-b69c-4818-aacd-4d280375ce7b" />
+    <profileInstances>
+      <packageHasProfileInstances Id="853d2a33-6c59-41c0-b9dd-28885a982db8">
+        <profileInstance Id="bba1a886-df58-448f-b602-195e68deeb2c" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="96f810e4-44a6-4685-8edd-70648bf22ab3">
+        <profileInstance Id="88466019-b873-45fb-a873-0f2914c30bec" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

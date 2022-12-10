@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <NavigationItems>
+    <Items>
+      <Item Id="Default">
+        <Items>
+          <Item Id="ThongTinCoBan">
+            <Items>
+              <Item Id="NgayNghiTrongNam_ListView" ViewId="NgayNghiTrongNam_ListView" ObjectKey="" ChildItemsDisplayStyle="List" IsNewNode="True" />
+            </Items>
+          </Item>
+          <Item Id="ThongTinLuong" ChildItemsDisplayStyle="List" />
+          <Item Id="ThongTinDiaDiem" ChildItemsDisplayStyle="List" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <SchemaModules>
+    <SchemaModule Name="CloneObjectModule" Version="13.2.9.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="13.2.9.0" IsNewNode="True" />
+    <SchemaModule Name="SystemWindowsFormsModule" Version="13.2.9.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <DetailView Id="VanBang_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="93.096646942800788">
+            <LayoutGroup Id="VanBang" RelativeSize="45.974576271186443">
+              <LayoutGroup Id="VanBang_col1" RelativeSize="47.640449438202246">
+                <LayoutItem Id="TrinhDoChuyenMon" RelativeSize="17.391304347826086" />
+                <LayoutItem Id="ChuyenMonDaoTao" RelativeSize="13.043478260869565" />
+                <LayoutItem Id="TruongDaoTao" RelativeSize="13.043478260869565" />
+                <LayoutItem Id="HinhThucDaoTao" RelativeSize="13.043478260869565" />
+                <LayoutItem Id="ThamNien" ViewItem="ThamNien" SizeConstraintsType="Default" Index="4" RelativeSize="13.043478260869565" IsNewNode="True" />
+                <LayoutItem Id="NamTotNghiep" SizeConstraintsType="Default" Index="5" RelativeSize="30.434782608695652" />
+              </LayoutGroup>
+              <LayoutGroup Id="VanBang_col2" RelativeSize="47.415730337078649">
+                <LayoutItem Id="GiayToHoSo" RelativeSize="17.391304347826086" />
+                <LayoutItem Id="LuuTruBangDiem" RelativeSize="13.043478260869565" />
+                <LayoutItem Id="NgayCapBang" SizeConstraintsType="Default" RelativeSize="13.043478260869565" />
+                <LayoutItem Id="NgayHieuLuc" SizeConstraintsType="Default" RelativeSize="13.043478260869565" />
+                <LayoutItem Id="NgayThucHien" SizeConstraintsType="Default" RelativeSize="13.043478260869565" />
+                <LayoutItem Id="DiemTrungBinh" RelativeSize="13.043478260869565" />
+                <LayoutItem Id="XepLoai" RelativeSize="17.391304347826086" />
+                <LayoutItem Id="ThamNien" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutItem Id="Item1" ViewItem="" RelativeSize="54.025423728813557" />
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="6.9033530571992108">
+            <LayoutItem Id="GhiChu" SizeConstraintsType="Default" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

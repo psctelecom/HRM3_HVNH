@@ -1,0 +1,574 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7A75F616-F539-40CB-9B01-944E1C5A7343}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PSC_HRM.Module.PMS</RootNamespace>
+    <AssemblyName>PSC_HRM.Module.PMS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'EasyTest|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\EasyTest\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;EASYTEST</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.AuditTrail.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.CloneObject.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.ConditionalAppearance.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.PivotChart.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.PivotChart.Web.Design.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.PivotChart.Web.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.PivotChart.Win.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.PivotGrid.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.PivotGrid.Web.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.PivotGrid.Win.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.Security.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Xpo.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.Base.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.BaseImpl.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v13.2.Core, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxPivotGrid.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.PivotGrid.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.Entity">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessObjects\BaoCao\DHDN\Report_PMS_BangKeKhaiChungTuThanhToanTamUng.cs" />
+    <Compile Include="BusinessObjects\BaoCao\DHDN\Report_PMS_BienBangThanhLyHopDongGiangDay_GVTG.cs" />
+    <Compile Include="BusinessObjects\BaoCao\DHDN\Report_PMS_BangNhanXetDanhGia.cs" />
+    <Compile Include="BusinessObjects\BaoCao\DHDN\Report_PMS_DeNghiThanhToan.cs" />
+    <Compile Include="BusinessObjects\BaoCao\DHDN\Report_PMS_HopDongGiangDay.cs" />
+    <Compile Include="BusinessObjects\BaoCao\DHDN\Report_PMS_TongSoTietThucHienKhoa.cs" />
+    <Compile Include="BusinessObjects\BaoCao\DHDN\Report_ThuLaoGiangDay_TaiChinh_PhuTroi_HopDong.cs" />
+    <Compile Include="BusinessObjects\BaoCao\DHDN\Report_ThuLaoGiangDay_ChuyenCaNhan.cs" />
+    <Compile Include="BusinessObjects\BaoCao\DHDN\Report_ThuLaoGiangDay_DacDiem_CB_GV.cs" />
+    <Compile Include="BusinessObjects\BaoCao\HUFLIT\KhaoThi\Report_PMS_BangTinhThuLaoVuotGioChuanCuaGiangVien_KhaoThi.cs" />
+    <Compile Include="BusinessObjects\BaoCao\HUFLIT\KhaoThi\Report_PMS_BangTinhThuLaoVuotGioChuanCuaGiangVien_KhaoThi_ThinhGiangVaVanPhong_TL.cs" />
+    <Compile Include="BusinessObjects\BaoCao\HUFLIT\KhaoThi\Report_PMS_BangTinhThuLaoVuotGioChuanCuaGiangVien_KhaoThi_ThinhGiangVaVanPhong_VD.cs" />
+    <Compile Include="BusinessObjects\BaoCao\HUFLIT\KhaoThi\Report_PMS_GuiPhongDaoTaoDaiHoc_KhaoThi.cs" />
+    <Compile Include="BusinessObjects\BaoCao\HUFLIT\KhaoThi\Report_PMS_PhieuDeNghiThanhToanThuLao_KhaoThi.cs" />
+    <Compile Include="BusinessObjects\BaoCao\HUFLIT\Report_PMS_BangTTTienLuongChuyenGiaQuyRaGio.cs" />
+    <Compile Include="BusinessObjects\BaoCao\HUFLIT\Report_PMS_BangTTTienLuongChuyenGiaQuyRaGio_Dot2.cs" />
+    <Compile Include="BusinessObjects\BaoCao\HUFLIT\Report_PMS_ThongKeGioGiangThinhGiang.cs" />
+    <Compile Include="BusinessObjects\BaoCao\HUFLIT\Report_PMS_GiangVien_XemThoiKhoaBieu.cs" />
+    <Compile Include="BusinessObjects\BaoCao\HUFLIT\Report_PMS_DanhSachCB_GV_NV.cs" />
+    <Compile Include="BusinessObjects\BaoCao\HUFLIT\Report_PMS_ThanhToanGioGiang_HK02.cs" />
+    <Compile Include="BusinessObjects\BaoCao\HUFLIT\Report_PMS_ThanhToanGioGiang_ThinhGiang.cs" />
+    <Compile Include="BusinessObjects\BaoCao\HUFLIT\Report_PMS_ThanhToanGioGiang.cs" />
+    <Compile Include="BusinessObjects\BaoCao\HUFLIT\Report_PMS_ThanhToanGioGiang_ThinhGiang_Dot2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessObjects\BaoCao\HUFLIT\Report_PMS_ThanhToanTienLuongChuyenGia.cs" />
+    <Compile Include="BusinessObjects\BaoCao\HUFLIT\Report_PMS_ThongKeGioGiangNamHoc_HUFLIT.cs" />
+    <Compile Include="BusinessObjects\BaoCao\HUFLIT\Report_PMS_ThanhToanTienLuongChuyenGia_Dot2.cs" />
+    <Compile Include="BusinessObjects\BaoCao\HVNH\Report_BangKeKhaiKhoiLuongGioGiangTheoGiangVien.cs" />
+    <Compile Include="BusinessObjects\BaoCao\HVNH\Report_BangKeKhaiKhoiLuongGioGiang.cs" />
+    <Compile Include="BusinessObjects\BaoCao\HVNH\Report_BinhQuanKhoiLuongGiangDay.cs" />
+    <Compile Include="BusinessObjects\BaoCao\HVNH\Report_KhaoThi.cs" />
+    <Compile Include="BusinessObjects\BaoCao\HVNH\Report_CongTacPhi.cs" />
+    <Compile Include="BusinessObjects\BaoCao\HVNH\Report_BinhQuanGioGiang.cs" />
+    <Compile Include="BusinessObjects\BaoCao\HVNH\Report_TinhBinhQuanSauGiang.cs" />
+    <Compile Include="BusinessObjects\BaoCao\HVNH\Report_BangKeKhoiLuongGiangDayCaNhan.cs" />
+    <Compile Include="BusinessObjects\BaoCao\HVNH\Report_TongHopGioGiang_HK01.cs" />
+    <Compile Include="BusinessObjects\BaoCao\HVNH\Report_TongHopGioGiang.cs" />
+    <Compile Include="BusinessObjects\BaoCao\HVNH\Report_KhoiLuongGiangDay.cs" />
+    <Compile Include="BusinessObjects\BaoCao\HVNH\Report_KeKhaiSauGiang.cs" />
+    <Compile Include="BusinessObjects\BaoCao\NEU\Report_BaoCaoChiTietBaiKtra_TieuLuan.cs" />
+    <Compile Include="BusinessObjects\BaoCao\NEU\Report_BaoCaoXemThongTin.cs" />
+    <Compile Include="BusinessObjects\BaoCao\NEU\Report_PMS_HeTuXa_BangTongHopDuLieuKeKhai.cs" />
+    <Compile Include="BusinessObjects\BaoCao\NEU\Report_PMS_XuatDuLieuHuongDanChuyenDe.cs" />
+    <Compile Include="BusinessObjects\BaoCao\NEU\Report_PMS_HeTuXa_LayDuLieuKeKhai.cs" />
+    <Compile Include="BusinessObjects\BaoCao\NEU\Report_BaoCaoChiTietTienTuXa.cs" />
+    <Compile Include="BusinessObjects\BaoCao\NEU\Report_PMS_BangKeTongHopChuyenTien.cs" />
+    <Compile Include="BusinessObjects\BaoCao\NEU\Report_BaoCaoTongHopXacNhan.cs" />
+    <Compile Include="BusinessObjects\BaoCao\NEU\Report_PMS_KeKhaiGiangVienKhongDuGio.cs" />
+    <Compile Include="BusinessObjects\BaoCao\NEU\Report_PMS_MonHocChuaPhanCongGV.cs" />
+    <Compile Include="BusinessObjects\BaoCao\NEU\Report_PMS_TongHopKeKhaiKhoiLuongVaHuongDan.cs" />
+    <Compile Include="BusinessObjects\BaoCao\NEU\Report_PMS_TongHopThueTNCNVuotGio.cs" />
+    <Compile Include="BusinessObjects\BaoCao\NEU\Report_PMS_XacNhanKhoiLuongGiangDayVaHDTT.cs" />
+    <Compile Include="BusinessObjects\BaoCao\NEU\Report_PMS_KeKhaiKhoiLuongGiangDay.cs" />
+    <Compile Include="BusinessObjects\BaoCao\NEU\Report_PMS_BangTongHopKhoiLuongGiangDay.cs" />
+    <Compile Include="BusinessObjects\BaoCao\QNU\DaiHocChinhQuy\Report_GiaoVuPhi.cs" />
+    <Compile Include="BusinessObjects\BaoCao\QNU\DaiHocChinhQuy\Report_GiaoDucTC_QP.cs" />
+    <Compile Include="BusinessObjects\BaoCao\QNU\DaiHocChinhQuy\Report_SauDaiHoc.cs" />
+    <Compile Include="BusinessObjects\BaoCao\QNU\DaiHocChinhQuy\Report_KhoaLuanTotNghiep.cs" />
+    <Compile Include="BusinessObjects\BaoCao\QNU\DaiHocChinhQuy\Report_DaoTaoDaiHocChinhQuy.cs" />
+    <Compile Include="BusinessObjects\BaoCao\QNU\DaiHocChinhQuy\Report_TongHopKhoiLuongGiangDay.cs" />
+    <Compile Include="BusinessObjects\BaoCao\QNU\DaoTaoChinhQuy\Report_ThongKeGioGiang_DTChinhQuy.cs" />
+    <Compile Include="BusinessObjects\BaoCao\QNU\DaoTaoChinhQuy\Report_ThongKeGioGiang_DTChinhQuy_CaNam.cs" />
+    <Compile Include="BusinessObjects\BaoCao\QNU\DaoTaoTaiChuc\Report_ThongKeCongTacPhi_BDTX.cs" />
+    <Compile Include="BusinessObjects\BaoCao\QNU\DaoTaoTaiChuc\Report_ThongKeGioGiangCanBo_DTTaiChuc.cs" />
+    <Compile Include="BusinessObjects\BaoCao\QNU\DaoTaoTaiChuc\Report_ThongKeGioGiang_DTTaiChuc.cs" />
+    <Compile Include="BusinessObjects\BaoCao\QNU\KhaoThi\Report_ThongKeGio_KhaoThi.cs" />
+    <Compile Include="BusinessObjects\BaoCao\QNU\Report_BangThanhToanDot3.cs" />
+    <Compile Include="BusinessObjects\BaoCao\QNU\Report_BangThanhToanDot2.cs" />
+    <Compile Include="BusinessObjects\BaoCao\QNU\Report_BangThanhToanDot1.cs" />
+    <Compile Include="BusinessObjects\BaoCao\QNU\Report_ThanhToanVuotGioDinhMuc.cs" />
+    <Compile Include="BusinessObjects\BaoCao\QNU\Report_ThanhToanVuotGioDinhMucDot2.cs" />
+    <Compile Include="BusinessObjects\BaoCao\QNU\SauDaiHoc\Report_ThongKeTongHopGioGiang_SDH.cs" />
+    <Compile Include="BusinessObjects\BaoCao\QNU\SauDaiHoc\Report_ThongKeGioGiang_SDH.cs" />
+    <Compile Include="BusinessObjects\BaoCao\QNU\TaiChinh\Report_BaoCaoTheoGio.cs" />
+    <Compile Include="BusinessObjects\BaoCao\QNU\TaiChinh\Report_BaoCaoTruyThu.cs" />
+    <Compile Include="BusinessObjects\BaoCao\UFM\Report_PMS_BangKeKhaiGioGiang.cs" />
+    <Compile Include="BusinessObjects\BaoCao\UFM\Report_PMS_BangThanhToanVuotGio.cs" />
+    <Compile Include="BusinessObjects\BaoCao\UFM\Report_PMS_GVDinhMucKhongGioGiang.cs" />
+    <Compile Include="BusinessObjects\BaoCao\UFM\Report_PMS_ThieuGioGiang.cs" />
+    <Compile Include="BusinessObjects\BaoCao\UFM\Report_PMS_ThieuGioNCKH.cs" />
+    <Compile Include="BusinessObjects\BaoCao\UFM\Report_PMS_ThieuNCKH_ThieuGioGiang.cs" />
+    <Compile Include="BusinessObjects\BaoCao\UFM\Report_PMS_ThongKeGVXacNhan.cs" />
+    <Compile Include="BusinessObjects\BaoCao\VHU\Report_PMS_XuatDuLieuNCKH_XacNhan.cs" />
+    <Compile Include="BusinessObjects\BaoCao\VHU\Report_PMS_ThanhToanThuLaoGiangDay_HopDong.cs" />
+    <Compile Include="BusinessObjects\BaoCao\VHU\Report_PMS_ThanhToanThuLaoGiangDay_Tong.cs" />
+    <Compile Include="BusinessObjects\BaoCao\VHU\Report_PMS_ThanhToanThuLaoGiangDay_CT.cs" />
+    <Compile Include="BusinessObjects\BaoCao\VHU\Report_PMS_KiemDoVuotGio.cs" />
+    <Compile Include="BusinessObjects\CauHinh\CapNhat\CapNhatMonHocTheoKhoiNganh.cs" />
+    <Compile Include="BusinessObjects\CauHinh\HeSo\HeSoBacDaoTao.cs" />
+    <Compile Include="BusinessObjects\CauHinh\HeSo\HeSoChucDanh.cs" />
+    <Compile Include="BusinessObjects\CauHinh\HeSo\HeSoDayOnline.cs" />
+    <Compile Include="BusinessObjects\CauHinh\HeSo\HeSoCoSo.cs" />
+    <Compile Include="BusinessObjects\CauHinh\HeSo\HeSoGiangDay_NgoaiGio.cs" />
+    <Compile Include="BusinessObjects\CauHinh\HeSo\HeSoMonHocBoSung.cs" />
+    <Compile Include="BusinessObjects\CauHinh\HeSo\HeSoLopDong.cs" />
+    <Compile Include="BusinessObjects\CauHinh\HeSo\HeSoHocPhan.cs" />
+    <Compile Include="BusinessObjects\CauHinh\HeSo\HeSoNgonNgu.cs" />
+    <Compile Include="BusinessObjects\CauHinh\HeSo\HeSoThucHanh.cs" />
+    <Compile Include="BusinessObjects\CauHinh\HeSo\HeSoThamNien.cs" />
+    <Compile Include="BusinessObjects\CauHinh\HeSo\HeSoTNTH.cs" />
+    <Compile Include="BusinessObjects\CauHinh\HeSo\HeSoLuong.cs" />
+    <Compile Include="BusinessObjects\CauHinh\HeSo\HeSoThaoLuan.cs" />
+    <Compile Include="BusinessObjects\CauHinh\HeSo\HeSoTinChi.cs" />
+    <Compile Include="BusinessObjects\CauHinh\HeSo\HeSo_ChucDanhMonHoc.cs" />
+    <Compile Include="BusinessObjects\CauHinh\HeSo\HeSo_ChucDanhNhanVien.cs" />
+    <Compile Include="BusinessObjects\CauHinh\HeSo\QuanLyHeSo.cs" />
+    <Compile Include="BusinessObjects\CauHinh\HeSo\UEL\HeSoKhac_UEL.cs" />
+    <Compile Include="BusinessObjects\CauHinh\HeSo\UEL\HeSoDiaDiemNgoaiGio.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\HUFLIT\DonGiaThamNien.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\LoaiGiangVienPMS.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\DanhMucHoatDongKhac.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\NhomHoatDongKhac.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\Bac_HeDaoTao.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\ChiTietThuLaoNhanVien_Update.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\BoPhan_ChuyenGiaTheoGio.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\DanhSachChiTietHDKhac.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\HUFLIT\DonGiaKhaoThi.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\HUFLIT\VaiTro_KhaoThi.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\HUFLIT\NhomVaiTro_KhaoThi.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\KeKhaiNhanVienThuLao.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\LoaiHoatDong.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\LoaiHocPhan.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\NgonNguGiangDay.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\NhomHoatDong.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\ChiTietPhanQuyen_PMS_WEB.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\PhanQuyenNhapLieuWeb.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\PhanQuyen_PMS_WEB.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\UEL\DonGiaTietChuanThinhgGiangNuocNgoai.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\UEL\DonGiaTietChuan.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\UEL\DanhMucHeSoKhac.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\VHU\DonGiaTheoPhanLoai.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\VHU\DanhMucLoaiKhongPhanThoiKhoaBieu.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\VHU\DanhMucTinhChatHocPhan.cs" />
+    <Compile Include="BusinessObjects\Enum\ChamHuongDanEnum.cs" />
+    <Compile Include="BusinessObjects\Enum\LoaiGioThanhToanEnum.cs" />
+    <Compile Include="BusinessObjects\Enum\LoaiKhaoThi.cs" />
+    <Compile Include="BusinessObjects\Enum\LoaiXacNhanThanhToan.cs" />
+    <Compile Include="BusinessObjects\Enum\LoaiXoaEnum.cs" />
+    <Compile Include="BusinessObjects\GioChuan\DinhMuc_GioTruKhac.cs" />
+    <Compile Include="BusinessObjects\GioChuan\DinhMuc_NghienCuuKhoaHoc.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\ThuTuTruGioUuTien.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\DinhMucTrinhDoTrongNam.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\HeDaoTao.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\CheDoXaHoi.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\ChiTietCheDoXaHoi.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\DonGiaTrinhDo.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\ChuyenNganhDaoTao.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\DonViDaoTaoThuongXuyen.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\BacDaoTao.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\CoSoGiangDay.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\DanhSachHeSoChucDanh_NhanVien.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\HoatDongQuanLy.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\HocPhan_BoiDuongThuongXuyen.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\HocPhan.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\NguoiSuDung_TheoBacDaoTao.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\HeSoChucDanh_NhanVien.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\HinhThucThi.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\HoatDongKhac.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\HocPhan_SauDaiHoc.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\LoaiMonHoc.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\psc_UIS_GiangVien.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\NhomMonHoc.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\QuanLyCheDoXaHoi.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\QuanLyThoiKhoaBieu.cs" />
+    <Compile Include="BusinessObjects\DanhMuc\ThoiKhoaBieu.cs" />
+    <Compile Include="BusinessObjects\DieuKien\DieuKien_ThuLaoGiangDay.cs" />
+    <Compile Include="BusinessObjects\Enum\VaiTroNCKHEnum.cs" />
+    <Compile Include="BusinessObjects\Enum\CongTruPMSEnum.cs" />
+    <Compile Include="BusinessObjects\Enum\LoaiNhanVienEnum.cs" />
+    <Compile Include="BusinessObjects\Enum\LoaiHoatDongEnum.cs" />
+    <Compile Include="BusinessObjects\Enum\LoaiHocPhanEnum.cs" />
+    <Compile Include="BusinessObjects\Enum\NgonNguEnum.cs" />
+    <Compile Include="BusinessObjects\Enum\NguonDuLieuEnum.cs" />
+    <Compile Include="BusinessObjects\Enum\GioGiangDayEnum.cs" />
+    <Compile Include="BusinessObjects\Enum\ThoiGiangHocEnum.cs" />
+    <Compile Include="BusinessObjects\Extend\PMSHelper.cs" />
+    <Compile Include="BusinessObjects\GioChuan\DinhMucGiamTru_NhanVien.cs" />
+    <Compile Include="BusinessObjects\GioChuan\DinhMucChucVu_NhanVien.cs" />
+    <Compile Include="BusinessObjects\GioChuan\DinhMucChucVu.cs" />
+    <Compile Include="BusinessObjects\GioChuan\QuanLyGioChuan.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\BangChot\BangChotThuLao.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\BangChot\ChiTietChotThuLao.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\BangChot\ThongTinBangChotThuLao.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\BangChot\ThongTinBangChot_Moi.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\BaoLuu\ChiTietBaoLuu.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\BaoLuu\QuanLyBaoLuu.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\BoiDuongThuongXuyen\ChiTietThuLaoBoiDuongThuongXuyen.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\BoiDuongThuongXuyen\ChiTietThuLaoCongTacPhi_BDTX.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\BoiDuongThuongXuyen\QuanLyBoiDuongThuongXuyen.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\CauHinh\CauHinhQuyDoiPMS_UEL.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\CauHinh\CauHinhTinhThuLaoGiangDay.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\CauHinh\CauHinhQuyDoiPMS_NgoaiGiangDay.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\CauHinh\CauHinhQuyDoiPMS_TaiChinh.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\CauHinh\CauHinhQuyDoiPMS_Moi.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\CauHinh\CauHinhQuyDoiPMS.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\BangChot\ChiTietBangChotThuLaoGiangDay.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\CauHinh\VHU\ChiTietCauHinhQuyDoiPMS_VHU.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\CauHinh\VHU\CauHinhQuyDoiPMS_VHU.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\ChiTietKhoiLuongGiangDay.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\ChiTietKhoiLuongGiangDay_Moi.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\CongTacPhi\ChiTietCongTacPhi.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\CongTacPhi\NEU\ChiTietCongTacPhi_NEU.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\CongTacPhi\QuanLyCongTacPhi.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\CongThucPMS\ChiTietCongThucTinhThuLaoGiangDay.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\CongThucPMS\ChonGiaTriLapCongThucPMS_UEL.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\CongThucPMS\ChonGiaTriLapCongThucPMS_KeKhai.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\CongThucPMS\ChonGiaTriLapCongThucPMS_NgoaiGiangDay.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\CongThucPMS\ChonGiaTriLapCongThucPMS_TaiChinh.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\CongThucPMS\ChonGiaTriLapCongThucPMS.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\CongThucPMS\CongThucTinhThuLaoGiangDay.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\GDTC_QP\ChiTietThongKeGDQP_TC.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\GDTC_QP\QuanLyGDTC_QP.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\HUFLIT\ChiTietDanhSachDanhSachDonGiaThanhToan.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\HUFLIT\ChiTietDanhSachMonHocNhieuChucDanh.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\HUFLIT\DanhSachDonGiaThanhToanMonHoc.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\HUFLIT\DonGiaThanhToanNhieuMonHoc .cs" />
+    <Compile Include="BusinessObjects\NghiepVu\HUFLIT\HeSoChucDanhNhieuMonHoc.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\HUFLIT\DanhSachMonHocNhieuChucDanh.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\HVNH\ChiTietNhomBac_HeDaoTao.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\HVNH\DanhMucNhomBacHe.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\HVNH\DanhSachChiTietBaiKiemTra.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\HVNH\QuanLyBaiKiemTra.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\KeKhaiSauGiang\ChiTietKeKhaiSauGiang.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\KeKhaiSauGiang\QuanLyKeKhaiSauGiang.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\KhaoThi\ChiTietCoiThi.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\KhaoThi\ChiTietCoiThi_ChamThi.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\KhaoThi\ChiTietRaDe.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\KhaoThi\ChiTietChamThi.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\KhaoThi\ChiTietChamBaiCoiThi.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\KhaoThi\HUFLIT\ThongTinThanhToanKhaoThi.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\KhaoThi\HUFLIT\QuanLyThanhToanKhaoThi.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\KhaoThi\HUFLIT\DanhSachSVThamGiaThi.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\KhaoThi\HUFLIT\CoiThi_ChamThi.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\KhaoThi\HUFLIT\NhanVien_VaoTroKhaoThi.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\KhaoThi\HVNH\ChiTietChamBaiCoiThi_HVNH.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\KhaoThi\HVNH\ThongTinChamBai.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\KhaoThi\QuanLyKhaoThi.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\KhoiLuongGiangDay.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\NCKH\ChiTietNCKH.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\NCKH\QuanLyNCKH.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\NCKH\VaiTroNCKH.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\NEU\DaoTaoTuXa\NhapHuongDan_TuXaNon.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\NEU\DaoTaoTuXa\ChiTietXemKeKhaiTuXa_Non.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\NEU\DaoTaoTuXa\ChiTiet_KhoiLuongGiangDay_TaoTaoTuXa.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\NEU\DaoTaoTuXa\QuanLyXemKeKhaiTuXa_Non.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\NEU\DaoTaoTuXa\KhoiLuongGiangDay_TaoTaoTuXa.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\NEU\QuanLyXacNhan\ChiThietXacNhanThanhToan.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\NEU\QuanLyXacNhan\QuanLyXacNhanThanhToan.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\NEU\ThoiKhoaBieu\ChiTietKeKhai_CacHoatDong_ThoiKhoaBieu.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\NEU\ThoiKhoaBieu\ChiTiet_ThoiKhoaBieu.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\NEU\ThoiKhoaBieu\KeKhai_CacHoatDong_ThoiKhoaBieu.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\NEU\ChuaThanhToan\ThoiKhoaBieu_DuLieuChuaThanhToan.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessObjects\NghiepVu\NEU\ThoiKhoaBieu\ThoiKhoaBieu_KhoiLuongGiangDay.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\NEU\VHVL\DanhMucDonGiaCongTacPhi_NEU.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessObjects\NghiepVu\NEU\VHVL\DiaDiemGiangDayLienKet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessObjects\NghiepVu\NhatKyYKienGiangVien\ChiTietYKienGV.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\NhatKyYKienGiangVien\ThongTinTongYKienGV.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\NhatKyYKienGiangVien\QuanLyNhatKyYKienGV.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\PhiGiaoVu\ChiTietPhiGiaoVu.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\PhiGiaoVu\QuanLyPhiGiaoVu.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\QuanLyDeNghiThanhToan\ChiTietHDThinhGiang.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\QuanLyDeNghiThanhToan\ChiTietDeNghi.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\QuanLyDeNghiThanhToan\HopDong_ThanhLy_ThinhGiang.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\QuanLyDeNghiThanhToan\QuanLyDeNghi.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\QuanLyKhac\ChiTietQuanLyHoatDongQuanLy.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\QuanLyKhac\KiemGiang.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\QuanLyKhac\CoVanHocTap.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\QuanLyKhac\QuanLyCoVanHocTap.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\QuanLyKhac\QuanLyHoatDongQuanLy.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\SauDaiHoc\ChiTietKhoiLuongSauDaiHoc.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\SauDaiHoc\QuanLySauDaiHoc.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\SauDaiHoc\SiSoChuyenNganh.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\TaiChinh\ChiTietTienCongKhaoThi.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\TaiChinh\QuanlyTienCongKhaoThi.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\TaiChinh\QuanlyThanhToan.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\TaiChinh\BangThanhToanGio.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\TamUngThuLao\ChiTietGioGiang.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\TamUngThuLao\NhanVien_GioGiang.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\TamUngThuLao\QuanLyGioGiang.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\ThanhToan\ChiTietKeKhaiHDK_VHU.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\ThanhToan\ChiTietKeKhaiHuongDanKhac.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\ThanhToan\ChiTietThanhToanBoSung.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\ThanhToan\DanhSachDonGiaThanhToan.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\ThanhToan\DonGiaThanhToanVuotGio.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\ThanhToan\DonGiaThanhToanTheoQuyMo_BacHe.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\ThanhToan\DonGiaThanhToan_NEU.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\ThanhToan\DonGiaThanhToan_VuotGio.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\ThanhToan\QuanLyThanhToanBoSung.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\ThanhToan\ChiTietKeKhaiHoatDongKhac.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\ThanhToan\KhoaLuanTotNhiep.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\ThanhToan\ChiTietThuLaoChamBaiCoiThi.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\ThanhToan\BangThuLaoGiangDay.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\ThanhToan\ChiTietThanhToanKhoiLuongGiangDay.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\ThanhToan\ChiTietHoatDongKhac.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\ThanhToan\ChiTietThuLaoGiangDay.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\ThanhToan\HoatDongKhac_ThanhToanTienMat.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\ThanhToan\QuanLyHoatDongKhac.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\BangChot\ThongTinBangChot.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\ThanhToan\QuanLyThanhToanThuLao.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\ThanhToan\ThanhToanVuotDinhMuc.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\ThanhTra\ChiTietThanhTraKLGiangDay.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\ThanhTra\Quanlythanhtra.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\ThinhGiang\BangChotThuLao_ThinhGiang.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\ThinhGiang\KhoiLuongGiangDay_ThinhGiang.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\UEL\ChiTietKhoiLuongGiangDay_UEL.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\UEL\KhoiLuongGiangDay_UEL.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\VHU\ChiTietMonHoc_Non.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\VHU\Nhap_ChiTietKeKhaiHDK_VHU_Non.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\VHU\ChiTietKeKhaiHDK_VHU_Non.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\VHU\ChiTietNCKH_Non.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\VHU\ChiTietQuanLyHoatDongQuanLy_Non.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\VHU\QuanLyDoHoanThanh\ChiTietDoHoanThanhGiangDay.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\VHU\QuanLyDoHoanThanh\QuanLyDoHoanThanhGiangDay.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\VHU\QuanLyHDK_Duyet_Non .cs" />
+    <Compile Include="BusinessObjects\NghiepVu\VHU\QuanLyHoatDongQuanLy_Non.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\VHU\QuanLyHDK_Nhap_Non.cs" />
+    <Compile Include="BusinessObjects\NghiepVu\VHU\QuanLyNCKH_Non.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\ChiTietKhaiBao_KhoiLuongGiangDay.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\ChiTietThuLao_NhanVien_Update.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\ChonKhoiLuongGiangDay_HeSoChucDanhMonHoc.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\ChonNhanVien_PhanQuyenPMS.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\dsChiTietKhoiLuong_NhanVien.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\dsChiTietThuLao_NhanVien_Update.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\dsChiTietTKB.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\dsChiTietTKB_KhoaDuLieu.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\dsDinhMucChucVu.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\dsDMucCheDoXaHoi.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\HoSo_QuyetDinh_NhanVien_ChucDanh.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\HoSo_QuyetDinh_NhanVien_CongTac.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\HoSo_QuyetDinh_NhanVien_ChucVu.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\ChonBoPhan_SoGio.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\ChonChuyenNganhDaoTao.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\ChonKhoiLuongGiangDay.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\Chon_HeDaoTao_BacDaoTao_Import.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\ChonThongTinBangChot.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\ChonNhanVien.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\dsChonKhoiLuongGiangDay.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\dsThanhToanThuLao.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\dsBangChotThuLao.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\ChiTietKhaiBao_KeKhaiSauGiang.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\HoSo_QuyetDinh_NhanVien_HocHam.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\HUFLIT\ChiTietPhanCongTongHop_HUFLIT.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\HUFLIT\QuanLyXemPhanCongTongHop_HUFLIT.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\HVNH\ChiTietKhaiBaoLaiHeSo_KhoiLuongGiangDay.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\HVNH\KhaiBao_LaiHeSoKhoiLuongGiangDay.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\KhaiBao_KeKhaiSauGiang.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\KhaiBao_KhoiLuongGiangDay.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\NEU\ChiTietDuLieuChuaThanhToan.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\NEU\ChiTietQuanLyKhongTinhTienTKB.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\NEU\ChiTietPhanCongTongHop.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\NEU\QuanLyDuLieuChuaThanhToan.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\NEU\QuanLyKhongTinhTienTKB.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\NEU\QuanLyXemPhanCongTongHop.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\NEU\ChiTietPhanCong.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\NEU\PhanCongGiangDay_ThoiKhoiBieu.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\QlyCheDoXaHoi_UpdateNV_DM.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\QLyGC_Update_DM.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\QLyTKB_KhoaDuLieu.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\QuanLyTKB_Delete.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\TaiChinh\DHDN\Pivot_ChiTietPhuLuc01.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\TaiChinh\DHDN\dsThanhToanPhuLuc01.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\TaiChinh\DHDN\Pivot_PhuLuc01.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\TaiChinh\DHDN\ThanhToanPhuLuc01.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\ThanhToan\Chon_ThanhToanBoSung.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\ThanhToan\dsChiTietThanhToanThuLaoBoSung.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\ThanhTra\ChiTietThanhTraGiangDay.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\ThanhTra\ThanhTraGiangDay.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\ThongTinClone.cs" />
+    <Compile Include="BusinessObjects\ChiTietThongTinChungPMS.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\UEL\ChiTietKhoiLuongThanhTra_Non_UEL.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\UEL\dsQuanLyNV_ThanhToanThuLao.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\UEL\QuanLyNV_ThanhToanThuLao.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\UEL\CotChonChauHinhQiuDoi.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\UEL\QuanLyThanhTra_Non_UEL.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\VHU\ChiTietDanhSachThongTinThoiKhoaBieuGiangVien.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\VHU\DanhSachThongTinThoiKhoaBieuGiangVien.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\VHU\CopyDanhMucHoatDongKhac.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\VHU\QuanLyXemTKBGV.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\VHU\DanhSachDuLieu_KhoiLuongGiangDay_Non.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\VHU\PMS_ThanhToanThuLaoGiangDay_HopDong_NonBaoCao.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\VHU\PMS_ThanhToanThuLaoGiangDay_ChiTiet_NonBaoCao.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\VHU\PMS_ThanhToanThuLaoGiangDay_Tong_NonBaoCao.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\VHU\Report_PMS_ThanhToanThuLaoGiangDay_HopDong_Non.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\VHU\Report_PMS_ThanhToanThuLaoGiangDay_ChiTiet_Non.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\VHU\ChiTietDuLieu_KhoiLuongGiangDay_Non.cs" />
+    <Compile Include="BusinessObjects\NonPersistentObjects\VHU\Report_PMS_ThanhToanThuLaoGiangDay_Tong_Non.cs" />
+    <Compile Include="BusinessObjects\ThongTinChungPMS.cs" />
+    <Compile Include="DatabaseUpdate\Updater.cs" />
+    <Compile Include="Module.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Module.Designer.cs">
+      <DependentUpon>Module.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Model.DesignedDiffs.xafml" />
+    <EmbeddedResource Include="Module.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Module.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BusinessObjects\BaoCao\DeMo\PSC_HRM.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="DatabaseUpdate\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\ReadMe.txt" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PSC_HRM.Module\PSC_HRM.Module.csproj">
+      <Project>{5f15837d-d1e5-44dc-92f0-4f2ebe9c3f8d}</Project>
+      <Name>PSC_HRM.Module</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PSC_NormalizationData\PSC_NormalizationData.csproj">
+      <Project>{3d0eb9b6-0b76-42cf-842e-ebb5d7ef3d4a}</Project>
+      <Name>PSC_NormalizationData</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BusinessObjects\BaoCao\UEL\" />
+    <Folder Include="BusinessObjects\Megre\" />
+    <Folder Include="BusinessObjects\Report\QNU\" />
+    <Folder Include="Controllers\BaoMat\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Images\LoginBaner_UEL.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

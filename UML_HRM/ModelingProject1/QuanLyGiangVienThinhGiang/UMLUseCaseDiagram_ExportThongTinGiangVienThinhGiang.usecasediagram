@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="5971f6ef-3bf7-4d75-9a57-058f2b8a1ec9" name="UMLUseCaseDiagram_ExportThongTinGiangVienThinhGiang" linkedPackageId="cd9d22d0-56f8-406d-b86d-8db68b5bb169" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="11d9d170-56eb-4943-8a9e-381436147410">
+      <elementDefinition Id="762cbbe2-09a7-4580-8255-f511bb09f8c3" />
+      <body>UC Export Thông tin giảng viên thỉnh giảng</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b8ee3ebd-4e60-4a99-95a2-075defe73232" name="Nhập tên file Export" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6ab69ffe-4cf2-4700-8ae1-31e543a963b8" />
+        <additions>
+          <include Id="dc54ec8c-af33-4764-bc3b-e7911a6ff1a7">
+            <useCaseMoniker Id="f4f9af94-aa53-43bf-b0f5-59c46da437a8" LastKnownName="Import/Export danh sách giảng viên thỉnh giảng" />
+            <elementDefinition Id="a4e34108-67f3-4eb8-8290-df89f023a4cf" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2dcea64c-a8eb-4c81-bbca-cbc3fa1b096d" name="Chọn giảng viên thỉnh giảng EX" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="47427124-dc5f-42a9-bd58-428510ebd8f9" />
+        <additions>
+          <include Id="4e724a3e-1149-46b5-8c7c-c5cb7db366b1">
+            <useCaseMoniker Id="f4f9af94-aa53-43bf-b0f5-59c46da437a8" LastKnownName="Import/Export danh sách giảng viên thỉnh giảng" />
+            <elementDefinition Id="8fb0cd4d-4d47-4dc8-9a89-7286617eff7d" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0210b7eb-236d-4079-978b-2d0e2d9f0698" name="Ghi thông tin giảng viên thỉnh giảng" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2aa7edc7-1a35-4cfc-b708-4e883075969b" />
+        <extendedCases>
+          <extend Id="1d411f7a-2646-437e-bdff-c9a87dbe1399">
+            <useCaseMoniker Id="f4f9af94-aa53-43bf-b0f5-59c46da437a8" LastKnownName="Import/Export danh sách giảng viên thỉnh giảng" />
+            <elementDefinition Id="2e906347-b347-4d3a-8f55-a0cc4ac05200" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="f7486be5-0a45-44d6-9166-d8fcf80a6608" name="người sử dụng" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ae0e4b42-e8e1-409d-af2f-8ca9e2836d0f" />
+        <suppliersInternal>
+          <dependency Id="0d821859-4525-43d0-b1c3-ab7413cce3e7">
+            <useCaseMoniker Id="16e653ac-9fd8-4266-a606-1a4ec3e285ef" LastKnownName="Quản lý Giảng viên thỉnh giảng" />
+            <elementDefinition Id="04f47f75-81c5-4e2a-90ae-53f8d08e880b" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="bfc348bb-5e09-4de1-95fe-bb2b70e9bce7" name="quản trị nhân viên(admin tổ chức)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3adc7cf9-8565-4998-a8eb-4db02ba282d3" />
+        <generalsInternal>
+          <generalization Id="4ef58d5a-d9eb-4d47-9940-8b9d92028b5c" isSubstitutable="false">
+            <actorMoniker Id="f7486be5-0a45-44d6-9166-d8fcf80a6608" LastKnownName="người sử dụng" />
+            <elementDefinition Id="6c902048-88b2-422f-b3e3-fb51ee2b67de" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="de2cf976-2c8a-4047-b291-7e2c26f3c4c5" name="quản trị phần mềm(administrator)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f8657f9f-f282-4c4d-be60-36bab7b990be" />
+        <generalsInternal>
+          <generalization Id="7cb95739-570a-442f-ac41-6667f0e6d901" isSubstitutable="false">
+            <actorMoniker Id="f7486be5-0a45-44d6-9166-d8fcf80a6608" LastKnownName="người sử dụng" />
+            <elementDefinition Id="bde2c14c-bf8a-40db-a278-cfe341e9bcdc" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="16e653ac-9fd8-4266-a606-1a4ec3e285ef" name="Quản lý Giảng viên thỉnh giảng" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ca50707a-5a27-4468-9b58-a7da24f9d70a" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f4f9af94-aa53-43bf-b0f5-59c46da437a8" name="Import/Export danh sách giảng viên thỉnh giảng" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3de9908c-3ea7-41c4-adbf-1daaa75984f2" />
+        <extendedCases>
+          <extend Id="8665b40c-f41e-435f-b743-94939344a25f">
+            <useCaseMoniker Id="16e653ac-9fd8-4266-a606-1a4ec3e285ef" LastKnownName="Quản lý Giảng viên thỉnh giảng" />
+            <elementDefinition Id="3156439a-38b6-4e42-92ce-72489c8b6a7f" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="cd9d22d0-56f8-406d-b86d-8db68b5bb169" name="ModelingProject1">
+    <elementDefinition Id="c1918b24-b69c-4818-aacd-4d280375ce7b" />
+    <profileInstances>
+      <packageHasProfileInstances Id="29646442-b1cd-456a-b7f8-16465bd6af8b">
+        <profileInstance Id="5dda4fae-e17e-42cb-8c15-f269782089fa" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="068fa1e8-75fa-4a63-952c-d647fba37fa0">
+        <profileInstance Id="dcf691ea-9636-435a-9beb-99eff692602c" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

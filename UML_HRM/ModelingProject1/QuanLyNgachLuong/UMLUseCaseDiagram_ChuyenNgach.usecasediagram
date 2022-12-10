@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="ac6c993c-c897-4683-b2c9-5f1621a034c1" name="UMLUseCaseDiagram_ChuyenNgach" linkedPackageId="3018ae1b-9a59-4c35-b616-1dc99260dffd" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="5bcd0126-79be-4cc2-86e5-8b22292f2b73">
+      <elementDefinition Id="13e86704-3c86-461f-9728-4b0c7b9de319" />
+      <body>UC chuyển ngạch lương</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <useCase Id="01b6dab4-b865-4382-9d52-24a79aab4a32" name="Lập danh sách đề nghị chuyển ngạch" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="82ede557-4a9a-4dda-8820-471a984b7ee8" />
+        <additions>
+          <include Id="22c6fc09-16d0-483c-8954-ea1524ab3128">
+            <useCaseMoniker Id="bd7ba515-9ef6-4acc-badb-4d7671b4cd90" LastKnownName="Chuyển ngạch" />
+            <elementDefinition Id="fb6b63c4-3821-4cad-a188-086f493027ce" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d13eadde-7280-4db8-98b6-150b95488252" name="Lập quyết định chuyển ngạch lương" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="18b2d5d4-9796-4c1a-a30d-84380a711841" />
+        <extendedCases>
+          <extend Id="41217d4c-f4a9-4fcc-a87b-a2ebb24e4399">
+            <useCaseMoniker Id="bd7ba515-9ef6-4acc-badb-4d7671b4cd90" LastKnownName="Chuyển ngạch" />
+            <elementDefinition Id="34a39830-76d2-4330-bfc0-e16e5c4ae318" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="7f30bc0e-7588-44ae-bd70-981c490d2595" name="người sử dụng" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ae0e4b42-e8e1-409d-af2f-8ca9e2836d0f" />
+        <suppliersInternal>
+          <dependency Id="9fc17d6d-1a5e-4593-a066-540f8d85c751">
+            <useCaseMoniker Id="56a572c0-311e-45b8-8389-80c65e77da7e" LastKnownName="Quản lý ngạch lương mina" />
+            <elementDefinition Id="28902cc9-ff2f-472c-abb3-8d2f8cfa161e" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="2d6fe7d3-7b13-4214-9c6f-b655de24cb3e" name="quản trị nhân viên(admin tổ chức)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3adc7cf9-8565-4998-a8eb-4db02ba282d3" />
+        <generalsInternal>
+          <generalization Id="9c8d1389-bdda-4253-92e5-38816b1abc57" isSubstitutable="false">
+            <actorMoniker Id="7f30bc0e-7588-44ae-bd70-981c490d2595" LastKnownName="người sử dụng" />
+            <elementDefinition Id="6c902048-88b2-422f-b3e3-fb51ee2b67de" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="cbdf8ece-f412-4b49-9dd8-44ff22b9a293" name="quản trị phần mềm(administrator)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f8657f9f-f282-4c4d-be60-36bab7b990be" />
+        <generalsInternal>
+          <generalization Id="578cf9e4-430c-4099-a067-d0a55ffbd978" isSubstitutable="false">
+            <actorMoniker Id="7f30bc0e-7588-44ae-bd70-981c490d2595" LastKnownName="người sử dụng" />
+            <elementDefinition Id="bde2c14c-bf8a-40db-a278-cfe341e9bcdc" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="56a572c0-311e-45b8-8389-80c65e77da7e" name="Quản lý ngạch lương mina" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b145d85c-f091-4242-aef3-a77eb28cea68" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="bd7ba515-9ef6-4acc-badb-4d7671b4cd90" name="Chuyển ngạch" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b175afb7-a41f-40e3-98b7-3bd07e77afc8" />
+        <extendedCases>
+          <extend Id="5751f80b-7a3d-4920-9790-9e9db9af6117">
+            <useCaseMoniker Id="56a572c0-311e-45b8-8389-80c65e77da7e" LastKnownName="Quản lý ngạch lương mina" />
+            <elementDefinition Id="199372d4-8f41-4fdc-a7c4-c7137c071376" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="3018ae1b-9a59-4c35-b616-1dc99260dffd" name="ModelingProject1">
+    <elementDefinition Id="c1918b24-b69c-4818-aacd-4d280375ce7b" />
+    <profileInstances>
+      <packageHasProfileInstances Id="751ccedf-b5e7-4aec-a407-8e601c754684">
+        <profileInstance Id="800c3d18-d8ff-4d98-8074-58d0f92fe584" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="4874074a-3e0f-44b5-b6af-1a491217db7a">
+        <profileInstance Id="8f3eb878-c09c-4d4d-8723-05091a5c6aa5" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

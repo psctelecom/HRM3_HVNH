@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="ChiTietChamCongNgayNghi_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="ChiTietChamCongNgayNghi_col1" RelativeSize="49.927849927849927">
+              <LayoutItem Id="BoPhan" RelativeSize="5.1529790660225441" />
+              <LayoutItem Id="ThongTinNhanVien" RelativeSize="3.8647342995169081" />
+              <LayoutItem Id="HinhThucNghi" RelativeSize="3.8647342995169081" />
+              <LayoutItem Id="TuNgay" RelativeSize="87.117552334943639" />
+            </LayoutGroup>
+            <LayoutGroup Id="ChiTietChamCongNgayNghi_col2" RelativeSize="50.072150072150073">
+              <LayoutItem Id="DenNgay" RelativeSize="5.1529790660225441" />
+              <LayoutItem Id="SoNgay" RelativeSize="3.8647342995169081" />
+              <LayoutItem Id="XepLoaiDanhGia" ViewItem="XepLoaiDanhGia" SizeConstraintsType="Default" Index="2" RelativeSize="3.8647342995169081" />
+              <LayoutItem Id="DienGiai" Index="3" RelativeSize="87.117552334943639" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="HetHanBoNhiem_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutItem Id="QuyetDinhBoNhiem" ViewItem="QuyetDinhBoNhiem" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="DanhGiaCanBoCuoiNam_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="DanhGiaCanBoCuoiNam">
+              <LayoutItem Id="ChotDanhGia" ViewItem="ChotDanhGia" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="GiayToHoSo_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SizeableEditors">
+            <LayoutItem Id="NgayLap" ViewItem="NgayLap" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="DanhSachDenTuoiNghiHuu_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="DanhSachDenTuoiNghiHuu">
+              <LayoutGroup Id="Auto89dfa229-86d5-4c4b-a37b-58647c8b05ba">
+                <LayoutItem Id="SoThang" ViewItem="SoThang" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

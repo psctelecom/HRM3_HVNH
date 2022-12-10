@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="68602c8a-e922-45e4-adc6-b272a6d3aa9e" name="UMLUseCaseDiagram_ThemTapSu" linkedPackageId="29db2b2c-66d5-4625-92c2-73572c54839f" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="375e6f52-3bcb-49a6-91da-c4409adb9fe3">
+      <elementDefinition Id="90320e27-5758-419d-9cde-880bcb9ae091" />
+      <body>UC Quy trình thêm tập sự</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <useCase Id="41d94415-8fcf-47b7-828b-181e64994caa" name="Lập Hợp đồng làm việc lần đầu" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3a49dedf-b710-4033-92b8-0c78b1eda3bb" />
+        <additions>
+          <include Id="fcd2cd79-4d07-4c48-8566-8da550f4cc44">
+            <useCaseMoniker Id="6eb9ff0e-cc79-490c-8540-5e8f3dcc01a4" LastKnownName="Thêm tập sự" />
+            <elementDefinition Id="7f436c83-66ac-439e-a8fd-9a941496c65e" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a3bfbd44-e88e-4649-9cca-91b112970df5" name="Lập QĐ hướng dẫn tập sự" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ea7b4022-0e32-42a4-b07b-38176a9462bc" />
+        <additions>
+          <include Id="f193251c-1690-491a-9a9d-e6e093fe69aa">
+            <useCaseMoniker Id="6eb9ff0e-cc79-490c-8540-5e8f3dcc01a4" LastKnownName="Thêm tập sự" />
+            <elementDefinition Id="056dcd66-618a-4880-8aaf-feb3904d7f73" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="590debb8-f2d3-4a14-bf7c-cbdd42b68eb0" name="Lập QĐ tạm hoãn tập sự" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="51c53ce8-6033-4fcc-8a31-a4bf7c58fb05" />
+        <extendedCases>
+          <extend Id="d2f309f9-c183-488f-9e85-4737a48ac450">
+            <useCaseMoniker Id="a3bfbd44-e88e-4649-9cca-91b112970df5" LastKnownName="Lập QĐ hướng dẫn tập sự" />
+            <elementDefinition Id="13721a99-fc78-488e-8322-7485b9a84067" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="db4080c1-9399-48f2-8d21-fe8c67d835d5" name="Lập QĐ gia hạn tập sự" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="93fcabe1-a6f4-40a8-b086-2092c8f2e2fe" />
+        <extendedCases>
+          <extend Id="322df331-eb69-49a4-8750-2a7c44d722d3">
+            <useCaseMoniker Id="a3bfbd44-e88e-4649-9cca-91b112970df5" LastKnownName="Lập QĐ hướng dẫn tập sự" />
+            <elementDefinition Id="f9996385-34fc-4709-99ce-966140e02a3e" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="17e28aee-5da0-4a9b-a0ab-8acbabb679e2" name="Lập đề nghị bổ nhiệm ngạch" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b1a1d6f6-1780-4650-91ab-dbdab021fc25" />
+        <additions>
+          <include Id="e3182dee-883b-4a4f-a384-66b981df5df2">
+            <useCaseMoniker Id="6e356939-8a32-4f70-913c-430dd7422fb4" LastKnownName="Lập hợp đồng làm việc có thời hạn" />
+            <elementDefinition Id="fb3f3a00-cc5a-4934-b9ad-dc04645889b5" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4934bdff-9ada-4723-b9ba-e4026fa1605d" name="Lập QĐ thay cán bộ hướng dẫn" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="afcc229c-51aa-4fd8-be2a-1f3a78058c59" />
+        <extendedCases>
+          <extend Id="1e504261-7c16-4d6d-acca-9671fc7d60a0">
+            <useCaseMoniker Id="a3bfbd44-e88e-4649-9cca-91b112970df5" LastKnownName="Lập QĐ hướng dẫn tập sự" />
+            <elementDefinition Id="702f2a11-0429-42c2-b997-d462df1f1247" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1097080d-d79b-4155-adfc-c19cf2e058a0" name="Lập QĐ chấm dứt hợp đồng" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7fc274c7-4e7d-4d65-8cf6-c550350712e9" />
+        <extendedCases>
+          <extend Id="40316814-a6a7-4bc5-9822-519b0e075d65">
+            <useCaseMoniker Id="6eb9ff0e-cc79-490c-8540-5e8f3dcc01a4" LastKnownName="Thêm tập sự" />
+            <elementDefinition Id="4b3c33d5-d2fe-4f52-b00b-565b5649345d" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6e356939-8a32-4f70-913c-430dd7422fb4" name="Lập hợp đồng làm việc có thời hạn" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8ec52dcd-5256-4b4a-bb97-8bc4c51293a8" />
+        <extendedCases>
+          <extend Id="92afa2e2-3113-4a4d-8d66-57fe636752d4">
+            <useCaseMoniker Id="6eb9ff0e-cc79-490c-8540-5e8f3dcc01a4" LastKnownName="Thêm tập sự" />
+            <elementDefinition Id="6f978f28-4639-4d3b-8f85-9f8faa30d2ab" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6958fd2c-8498-40bb-9572-2873c0a9a63c" name="Lập QĐ bổ nhiệm ngạch" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0ae493a9-9918-4678-8f0a-56e3b15c37e9" />
+        <additions>
+          <include Id="16b2b784-cf2a-48e2-93b9-3ec4bbfbd3dc">
+            <useCaseMoniker Id="6e356939-8a32-4f70-913c-430dd7422fb4" LastKnownName="Lập hợp đồng làm việc có thời hạn" />
+            <elementDefinition Id="28eeea37-b771-4368-9769-f3d178c1b7c5" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ecbea199-e72e-4f1b-8b27-0c68e0231794" name="Quản lý tập sự" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3a1e63ca-19e4-46d3-84ba-5654a6b8e385" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="90cc2627-1efb-4e0f-864f-07114f0f20ed" name="người sử dụng" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ae0e4b42-e8e1-409d-af2f-8ca9e2836d0f" />
+        <suppliersInternal>
+          <dependency Id="f6747d57-9e9a-4ccc-9923-f4adfec13591">
+            <useCaseMoniker Id="ecbea199-e72e-4f1b-8b27-0c68e0231794" LastKnownName="Quản lý tập sự" />
+            <elementDefinition Id="3eca52b7-138b-4f9b-9898-51ece8304223" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="f5038266-0ced-4965-85f5-08f5968a8a32" name="quản trị nhân viên(admin tổ chức)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3adc7cf9-8565-4998-a8eb-4db02ba282d3" />
+        <generalsInternal>
+          <generalization Id="47f0b03a-f767-47c4-a0b4-03f4e848ab48" isSubstitutable="false">
+            <actorMoniker Id="90cc2627-1efb-4e0f-864f-07114f0f20ed" LastKnownName="người sử dụng" />
+            <elementDefinition Id="6c902048-88b2-422f-b3e3-fb51ee2b67de" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="105911f3-b1fa-46f7-8d45-bd62bc50cede" name="quản trị phần mềm(administrator)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f8657f9f-f282-4c4d-be60-36bab7b990be" />
+        <generalsInternal>
+          <generalization Id="74fa610e-79f3-4710-9721-b43b3a6418f7" isSubstitutable="false">
+            <actorMoniker Id="90cc2627-1efb-4e0f-864f-07114f0f20ed" LastKnownName="người sử dụng" />
+            <elementDefinition Id="bde2c14c-bf8a-40db-a278-cfe341e9bcdc" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6eb9ff0e-cc79-490c-8540-5e8f3dcc01a4" name="Thêm tập sự" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8bbc18c0-ade4-4dcd-8f76-c61817be7b10" />
+        <extendedCases>
+          <extend Id="7d2f5777-b60d-476f-b6e9-2da8e567eb7a">
+            <useCaseMoniker Id="ecbea199-e72e-4f1b-8b27-0c68e0231794" LastKnownName="Quản lý tập sự" />
+            <elementDefinition Id="a29ef4f2-6a11-46b1-b1a8-13516c96ec12" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="29db2b2c-66d5-4625-92c2-73572c54839f" name="ModelingProject1">
+    <elementDefinition Id="c1918b24-b69c-4818-aacd-4d280375ce7b" />
+    <profileInstances>
+      <packageHasProfileInstances Id="bb0821f8-9eb1-4ff2-b5b3-16be85da34e7">
+        <profileInstance Id="e25e3fee-3468-4fb9-8bf5-f28d350c764b" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="3463e49a-d6cb-4f7d-9a83-2c0ee893a639">
+        <profileInstance Id="f7ee55f7-3db7-4740-8534-6edcdc8b6ec6" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

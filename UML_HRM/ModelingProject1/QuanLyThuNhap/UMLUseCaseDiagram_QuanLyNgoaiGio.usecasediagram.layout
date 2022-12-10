@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLUseCaseDiagram_QuanLyNgoaiGio">
+  <useCaseModelRootMoniker Id="ffc174cd-bdd8-4bf0-9614-3582181ed4ef" />
+  <nestedChildShapes>
+    <actorShape Id="7227c0eb-000e-47b1-8d40-73281efa2e39" absoluteBounds="1.25, 1.5, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="78be0a06-6cc4-4192-b874-e2cdf787570f" LastKnownName="quản trị tính lương(admin tính lương)" />
+      <relativeChildShapes />
+    </actorShape>
+    <actorShape Id="9282cf72-154f-466e-8a06-e336c5f9212f" absoluteBounds="1.25, 3, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="357f33bb-653b-49ed-bade-bf8c70c6f023" LastKnownName="người sử dụng" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseGeneralizationConnector edgePoints="[(1.5 : 2); (1.5 : 3)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
+      <generalizationMoniker Id="a94c4032-3919-47b9-9066-320aaf5a106a" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="7227c0eb-000e-47b1-8d40-73281efa2e39" />
+        <actorShapeMoniker Id="9282cf72-154f-466e-8a06-e336c5f9212f" />
+      </nodes>
+    </useCaseGeneralizationConnector>
+    <actorShape Id="e505e6b2-dc99-46b4-bf47-9d1d282a7c67" absoluteBounds="1.25, 4.375, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="1ff1454c-6518-4d7a-aacf-77223f827c47" LastKnownName="quản trị phần mềm(administrator)" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseGeneralizationConnector edgePoints="[(1.5 : 4.375); (1.5 : 3.5)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
+      <generalizationMoniker Id="4c60e9b6-4c89-48fb-b3cb-eda57a800347" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="e505e6b2-dc99-46b4-bf47-9d1d282a7c67" />
+        <actorShapeMoniker Id="9282cf72-154f-466e-8a06-e336c5f9212f" />
+      </nodes>
+    </useCaseGeneralizationConnector>
+    <useCaseShape Id="57afc634-35a4-40bd-8fe7-355fc9749626" absoluteBounds="2.25, 3, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="bacbe68b-a3fa-4246-b915-8cf7ea9b10ce" LastKnownName="Quản lý thu nhập" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseDependencyConnector edgePoints="[(1.75 : 3.25); (2.25 : 3.25)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <dependencyMoniker Id="8a692c5a-5394-4428-a427-30af410fc812" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="9282cf72-154f-466e-8a06-e336c5f9212f" />
+        <useCaseShapeMoniker Id="57afc634-35a4-40bd-8fe7-355fc9749626" />
+      </nodes>
+    </useCaseDependencyConnector>
+    <useCaseShape Id="dd1945f5-0a0c-4042-8202-756918e0d382" absoluteBounds="3.875, 2, 1.5, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="8975d80b-4e1d-459e-ae4b-0ce772d96b6a" LastKnownName="Quản lý ngoài giờ" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <extendConnector edgePoints="[(4.22750079499762 : 2.46199957600127); (3.09197056444066 : 3.06761569896498)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«extend»">
+      <extendMoniker Id="83922164-0d47-4cb9-a24a-a5d24fd04a82" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="dd1945f5-0a0c-4042-8202-756918e0d382" />
+        <useCaseShapeMoniker Id="57afc634-35a4-40bd-8fe7-355fc9749626" />
+      </nodes>
+    </extendConnector>
+    <useCaseShape Id="531466ec-b850-406c-a39d-4dbeb68487f4" absoluteBounds="6.75, 1.5, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="f5dc394b-dcbd-4a7b-abcb-64c84137285c" LastKnownName="tính tiền ngoài giờ" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <extendConnector edgePoints="[(6.78275613253552 : 1.838998831898); (5.27618235659334 : 2.12596526541079)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«extend»">
+      <extendMoniker Id="16356aad-0120-489a-aef6-d44c593811d6" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="531466ec-b850-406c-a39d-4dbeb68487f4" />
+        <useCaseShapeMoniker Id="dd1945f5-0a0c-4042-8202-756918e0d382" />
+      </nodes>
+    </extendConnector>
+    <useCaseShape Id="ceee96d5-091f-4402-8c37-fcd3d9067d5a" absoluteBounds="6.75, 2.5, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="f3220ce6-e8bd-4999-8488-f23fe28ad853" LastKnownName="Sửa tiền ngoài giời" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <extendConnector edgePoints="[(6.78275613253552 : 2.661001168102); (5.27618235659334 : 2.37403473458921)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«extend»">
+      <extendMoniker Id="2ea20b19-5a94-4107-8b8c-9c69a2da41db" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="ceee96d5-091f-4402-8c37-fcd3d9067d5a" />
+        <useCaseShapeMoniker Id="dd1945f5-0a0c-4042-8202-756918e0d382" />
+      </nodes>
+    </extendConnector>
+    <useCaseShape Id="5ed83cef-8581-46eb-8b9c-dc490e42a6f5" absoluteBounds="6.5, 3.125, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="8e571d12-fbec-447a-9491-8976fb8e2f88" LastKnownName="Xóa tiền ngoài giờ" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <extendConnector edgePoints="[(6.63702365804709 : 3.2030638380223); (5.05662005463096 : 2.45445160482519)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«extend»">
+      <extendMoniker Id="ffa6284d-df9f-49c8-ae1f-9e9201d30d48" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="5ed83cef-8581-46eb-8b9c-dc490e42a6f5" />
+        <useCaseShapeMoniker Id="dd1945f5-0a0c-4042-8202-756918e0d382" />
+      </nodes>
+    </extendConnector>
+    <useCaseShape Id="7b5ff1cb-98eb-4eaa-8730-70ca9253e273" absoluteBounds="6.25, 3.875, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="acc87c54-a4bf-4c92-8dd3-0f9e509c4260" LastKnownName="In tiền ngoài giờ" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <extendConnector edgePoints="[(6.50349371400956 : 3.90749445353785); (4.89005042653893 : 2.48386802341671)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«extend»">
+      <extendMoniker Id="46b360d0-ea22-4b36-a2af-a4f3ca69b100" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="7b5ff1cb-98eb-4eaa-8730-70ca9253e273" />
+        <useCaseShapeMoniker Id="dd1945f5-0a0c-4042-8202-756918e0d382" />
+      </nodes>
+    </extendConnector>
+    <useCaseShape Id="b4808bd5-b006-4f32-9cef-30fb20f1412e" absoluteBounds="4.375, 3.75, 1.375, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="f470db03-b011-473b-807d-440bc7f3b3d5" LastKnownName="Lập công thức tính tiền ngoài giờ" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <includeConnector edgePoints="[(5.00025667459577 : 3.75102669838307); (4.6872841098903 : 2.49913643956122)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«include»">
+      <includeMoniker Id="de7691e3-94bd-44b5-a275-288c2f152053" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="b4808bd5-b006-4f32-9cef-30fb20f1412e" />
+        <useCaseShapeMoniker Id="dd1945f5-0a0c-4042-8202-756918e0d382" />
+      </nodes>
+    </includeConnector>
+    <commentShape Id="087f0691-ee5e-498d-8c9b-806547102783" absoluteBounds="0.625, 1, 1.25, 0.375" customColor="251, 247, 200">
+      <commentMoniker Id="a1ef1964-eb44-4146-a2f3-453053ee7b20" />
+      <relativeChildShapes />
+    </commentShape>
+    <useCaseShape Id="3d7fe5ed-2fe0-4463-8c60-b63bb8a4229e" absoluteBounds="2.875, 3.5, 1.375, 0.625" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="6c57f5ff-3ae5-4703-972b-2c311223cc89" LastKnownName="cập nhật tiền ngoài giờ" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <extendConnector edgePoints="[(3.76552306120887 : 3.51393667469284); (4.45920572701788 : 2.49381510732665)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«extend»">
+      <extendMoniker Id="76847c91-44e9-457d-a9a6-5e10233064ba" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="3d7fe5ed-2fe0-4463-8c60-b63bb8a4229e" />
+        <useCaseShapeMoniker Id="dd1945f5-0a0c-4042-8202-756918e0d382" />
+      </nodes>
+    </extendConnector>
+    <rectangleShape Id="a2e5c315-7f7c-465a-9330-889f1480f2aa" absoluteBounds="0.625, 1, 7.25, 4.625" outlineColor="83, 134, 191" outlineThickness="0.03125" />
+  </nestedChildShapes>
+</useCaseDiagram>

@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="a228da4f-7c87-44b3-9291-e6fd31f7904f" name="UMLUseCaseDiagram_QuanLyDiCongTac" linkedPackageId="45cf43c7-5f91-4715-8fc3-87218090b3fb" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="ac546968-24cf-45e2-9614-ed06f2ea7ce0">
+      <elementDefinition Id="87c69d93-9c1b-439b-a956-b9b19d54e582" />
+      <body>UC Quản lý Công tác</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="5e251b65-5864-4ebe-8e35-35a4daebb8eb">
+      <profileInstance Id="fdef93a8-abb1-4297-ad0a-5ab65c1c2935" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="6ae0a963-a7c5-4c7d-a9bf-d4af1d85c9e9">
+      <profileInstance Id="85601395-e201-4b3b-93b1-71cf79332f1d" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="e5b8008f-7603-46f2-bcac-87739781b95e" name="người sử dụng" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ae0e4b42-e8e1-409d-af2f-8ca9e2836d0f" />
+        <suppliersInternal>
+          <dependency Id="a5e1d6db-1e05-4ede-ad0e-4a5da469812d">
+            <useCaseMoniker Id="6a78f48b-0624-4c8d-a03f-e204b5b4e098" LastKnownName="Quản lý đi công tác" />
+            <elementDefinition Id="4462569e-c1ad-4db7-8555-5e5bc78b7d60" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="c45b9c8e-72f9-4bf8-b86b-dad182f6aed9" name="quản trị nhân viên(admin tổ chức)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3adc7cf9-8565-4998-a8eb-4db02ba282d3" />
+        <generalsInternal>
+          <generalization Id="6622743b-043b-40e2-ac67-59b0c1f4756a" isSubstitutable="false">
+            <actorMoniker Id="e5b8008f-7603-46f2-bcac-87739781b95e" LastKnownName="người sử dụng" />
+            <elementDefinition Id="6c902048-88b2-422f-b3e3-fb51ee2b67de" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="e501f6fa-ece6-4e63-a768-06c049afd444" name="quản trị phần mềm(administrator)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f8657f9f-f282-4c4d-be60-36bab7b990be" />
+        <generalsInternal>
+          <generalization Id="ddaafde6-75ae-4382-a070-bd68fb615fd8" isSubstitutable="false">
+            <actorMoniker Id="e5b8008f-7603-46f2-bcac-87739781b95e" LastKnownName="người sử dụng" />
+            <elementDefinition Id="bde2c14c-bf8a-40db-a278-cfe341e9bcdc" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6a78f48b-0624-4c8d-a03f-e204b5b4e098" name="Quản lý đi công tác" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6166bce7-e078-4fe8-8d87-5e012af62c14" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="04056f42-8a9f-4878-9540-0a067b72381e" name="Thêm QĐ công tác" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c5171108-e658-4991-a9c8-54bd374d7298" />
+        <extendedCases>
+          <extend Id="ea6855a3-455e-44a2-ad28-61060078a109">
+            <useCaseMoniker Id="6a78f48b-0624-4c8d-a03f-e204b5b4e098" LastKnownName="Quản lý đi công tác" />
+            <elementDefinition Id="d851d4b7-c713-43c3-9502-82ba885a469f" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b9aba01d-98ae-474f-a47a-78bc77a37803" name="Cập nhật/Sửa QĐ công tác" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0e8bb2af-e839-4274-85b7-d67c4312ec5f" />
+        <extendedCases>
+          <extend Id="2e98c0f2-0bcc-431e-b5bd-410093af23ca">
+            <useCaseMoniker Id="6a78f48b-0624-4c8d-a03f-e204b5b4e098" LastKnownName="Quản lý đi công tác" />
+            <elementDefinition Id="75994b16-0226-439c-b745-c3564ff2b221" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fe267733-033f-43fa-9ee2-3b63769e20f5" name="Xóa QĐ công tác" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fcb556c8-a915-4ec9-a18c-d25d725b2bff" />
+        <extendedCases>
+          <extend Id="04e51e3a-73f1-48bd-a582-b16b7cd7bed2">
+            <useCaseMoniker Id="6a78f48b-0624-4c8d-a03f-e204b5b4e098" LastKnownName="Quản lý đi công tác" />
+            <elementDefinition Id="8d504362-c0ad-444c-938d-e04913283bf3" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8a2359b1-d505-4a28-97a0-7d3aabab63fe" name="In QĐ công tác" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="42dc0642-4dad-4e94-945e-04b59aa28ac0" />
+        <extendedCases>
+          <extend Id="051c8119-b73d-451c-a1b6-b5e333bdc0ae">
+            <useCaseMoniker Id="6a78f48b-0624-4c8d-a03f-e204b5b4e098" LastKnownName="Quản lý đi công tác" />
+            <elementDefinition Id="131eb910-00d6-42fc-9f03-4b36381b3c23" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ee5d4ff4-86bf-432a-af78-80400f5f294a" name="Đi công tác trong nước" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="00ac0560-1c07-4acc-9939-8bddad8646b8" />
+        <extendedCases>
+          <extend Id="379ec414-c01f-42c9-ba15-0e9f35c487eb">
+            <useCaseMoniker Id="04056f42-8a9f-4878-9540-0a067b72381e" LastKnownName="Thêm QĐ công tác" />
+            <elementDefinition Id="a9a25967-3aa4-40f4-9246-c3ea3aa56e30" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4a9320aa-8bcb-4fa7-b9d2-691dc736dc01" name="Đi công tác nước ngoài" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="adad7b2e-f586-446b-9768-3493c859c713" />
+        <extendedCases>
+          <extend Id="27c06b22-c948-4f2c-81ab-b924f9d6e670">
+            <useCaseMoniker Id="04056f42-8a9f-4878-9540-0a067b72381e" LastKnownName="Thêm QĐ công tác" />
+            <elementDefinition Id="0bb3aa68-9e16-4cf9-9502-fb2e3e0da359" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e194d459-7db4-4825-a56e-033e8aa1ac0b" name="Chọn nhân viên" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="18094f7a-582b-4c65-810c-fe871b75ae00" />
+        <additions>
+          <include Id="50791125-63a7-410d-81f1-84a8cad41a72">
+            <useCaseMoniker Id="04056f42-8a9f-4878-9540-0a067b72381e" LastKnownName="Thêm QĐ công tác" />
+            <elementDefinition Id="fde22d06-9db5-4578-9bee-6423051aef09" />
+          </include>
+          <include Id="ab5ec958-a08d-4f03-9e9e-2a2a9f7c5aa4">
+            <useCaseMoniker Id="4a9320aa-8bcb-4fa7-b9d2-691dc736dc01" LastKnownName="Đi công tác nước ngoài" />
+            <elementDefinition Id="70266418-a475-4ea1-b48c-9aa7a8636a36" />
+          </include>
+          <include Id="634e2401-8f26-423b-9754-155304d626c7">
+            <useCaseMoniker Id="ee5d4ff4-86bf-432a-af78-80400f5f294a" LastKnownName="Đi công tác trong nước" />
+            <elementDefinition Id="41125792-b6c4-4039-9aa1-3cbbbec3933a" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="45cf43c7-5f91-4715-8fc3-87218090b3fb" name="ModelingProject1">
+    <elementDefinition Id="c1918b24-b69c-4818-aacd-4d280375ce7b" />
+  </package>
+</useCaseModelRoot>

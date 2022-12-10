@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <NavigationItems Id="NavigationItems">
+    <Items Id="Items">
+      <Item Id="NhanSu">
+        <Items Id="Items">
+          <Item Id="QuanLyDanhGiaCanBo">
+            <Items Id="Items">
+              <Item Id="@abfacc70-c44d-41a2-8a79-4a4b9f5cf11f" ViewId="DanhGiaCanBoCuoiNamLan1_ListView" />
+            </Items>
+          </Item>
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Views Id="Views">
+    <DetailView Id="ChiTietQuyetDinhHuongDanTapSu_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="ChiTietQuyetDinhHuongDanTapSu_col1">
+              <LayoutItem Id="LoaiNhanVienHuongDanTapSu" ViewItem="LoaiNhanVienHuongDanTapSu" />
+            </LayoutGroup>
+            <LayoutGroup Id="ChiTietQuyetDinhHuongDanTapSu_col2">
+              <LayoutItem Id="CanBoHuongDan_NhanVien" ViewItem="CanBoHuongDan_NhanVien" />
+              <LayoutItem Id="CanBoHuongDan_ThinhGiang" ViewItem="CanBoHuongDan_ThinhGiang" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

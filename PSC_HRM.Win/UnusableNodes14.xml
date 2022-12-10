@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="QuyetDinhThanhLapHoiDongKyLuat_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="33.733333333333334">
+            <LayoutGroup Id="QuyetDinh" RelativeSize="100" Direction="Vertical" Index="0" Caption="Quyết định">
+              <LayoutGroup Id="QuyetDinh_col1" RelativeSize="84.584980237154156">
+                <LayoutGroup Id="Autoff098b56-d948-4d64-881c-0472da481a5d" ShowCaption="False" Caption="Autoff098b56-d948-4d64-881c-0472da481a5d(6)" Direction="Horizontal" Index="0" RelativeSize="85.046728971962622">
+                  <LayoutGroup Id="Autoab1c0e07-d7da-462b-816d-ec41940e1339" ShowCaption="False" Caption="Autoab1c0e07-d7da-462b-816d-ec41940e1339(7)" Index="0" RelativeSize="50.68681318681319">
+                    <LayoutItem Id="CoQuanRaQuyetDinh" ViewItem="CoQuanRaQuyetDinh" SizeConstraintsType="Default" Index="0" RelativeSize="17.582417582417584" />
+                    <LayoutItem Id="ThongTinTruong" ViewItem="ThongTinTruong" SizeConstraintsType="Default" Index="1" RelativeSize="13.186813186813186" />
+                    <LayoutItem Id="TenCoQuan" ViewItem="TenCoQuan" SizeConstraintsType="Default" Index="2" RelativeSize="13.186813186813186" />
+                    <LayoutItem Id="SoQuyetDinh" ViewItem="SoQuyetDinh" SizeConstraintsType="Default" Index="3" RelativeSize="13.186813186813186" />
+                    <LayoutItem Id="NgayQuyetDinh" ViewItem="NgayQuyetDinh" SizeConstraintsType="Default" Index="4" RelativeSize="13.186813186813186" />
+                    <LayoutItem Id="NgayHieuLuc" ViewItem="NgayHieuLuc" SizeConstraintsType="Default" Index="5" RelativeSize="29.670329670329672" />
+                  </LayoutGroup>
+                  <LayoutGroup Id="Auto3fb1441e-812f-408e-afc8-aff78c776c6e" ShowCaption="False" Caption="Auto3fb1441e-812f-408e-afc8-aff78c776c6e(14)" Index="1" RelativeSize="49.31318681318681">
+                    <LayoutItem Id="CapQuyetDinh" ViewItem="CapQuyetDinh" SizeConstraintsType="Default" Index="0" RelativeSize="17.582417582417584" />
+                    <LayoutItem Id="PhanLoaiNguoiKy" ViewItem="PhanLoaiNguoiKy" SizeConstraintsType="Default" Index="1" RelativeSize="13.186813186813186" />
+                    <LayoutItem Id="ChucVuNguoiKy" ViewItem="ChucVuNguoiKy" SizeConstraintsType="Default" Index="2" RelativeSize="13.186813186813186" />
+                    <LayoutItem Id="NguoiKy" ViewItem="NguoiKy" SizeConstraintsType="Default" Index="3" RelativeSize="13.186813186813186" />
+                    <LayoutItem Id="NguoiKy1" ViewItem="NguoiKy1" SizeConstraintsType="Default" Index="4" RelativeSize="13.186813186813186" />
+                    <LayoutItem Id="LuuTru" ViewItem="LuuTru" SizeConstraintsType="Default" Index="5" RelativeSize="13.186813186813186" />
+                    <LayoutItem Id="NoiDung" ViewItem="NoiDung" SizeConstraintsType="Custom" Index="6" RelativeSize="16.483516483516482" MinSize="181, 30" MaxSize="0, 30" />
+                  </LayoutGroup>
+                </LayoutGroup>
+                <LayoutItem Id="CanCu" ViewItem="CanCu" SizeConstraintsType="Custom" Index="1" RelativeSize="14.953271028037383" MinSize="186, 32" MaxSize="0, 32" />
+                <LayoutItem Id="CoQuanRaQuyetDinh" SizeConstraintsType="Default" RelativeSize="17.391304347826086" Removed="True" />
+                <LayoutItem Id="NgayHieuLuc" SizeConstraintsType="Default" RelativeSize="13.043478260869565" Removed="True" />
+                <LayoutItem Id="NgayQuyetDinh" SizeConstraintsType="Default" RelativeSize="13.043478260869565" Removed="True" />
+                <LayoutItem Id="SoQuyetDinh" SizeConstraintsType="Default" RelativeSize="13.043478260869565" Removed="True" />
+                <LayoutItem Id="TenCoQuan" SizeConstraintsType="Default" RelativeSize="13.043478260869565" Removed="True" />
+                <LayoutItem Id="ThongTinTruong" SizeConstraintsType="Default" RelativeSize="13.043478260869565" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="QuyetDinh_col2" RelativeSize="43.1784107946027" Caption="QuyetDinh_col2" Direction="Horizontal" Removed="True">
+                <LayoutItem Id="CapQuyetDinh" Removed="True" />
+                <LayoutItem Id="ChucVuNguoiKy" Removed="True" />
+                <LayoutItem Id="NguoiKy" Removed="True" />
+                <LayoutItem Id="NguoiKy1" Removed="True" />
+                <LayoutItem Id="PhanLoaiNguoiKy" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="QuyetDinhThanhLapHoiDongKyLuat" Direction="Horizontal" RelativeSize="4.6692607003891053" Caption="Lưu trữ" Removed="True">
+              <LayoutItem Id="LuuTru" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="ListHoiDongKyLuat_Group" Direction="Vertical" RelativeSize="66.266666666666666" Index="1" TextAlignMode="AlignLocal">
+            <LayoutItem Id="ListHoiDongKyLuat" SizeConstraintsType="Default" RelativeSize="92.152917505030175" ShowCaption="False" />
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="4.53920220082531" Caption="SizeableEditors" Direction="Horizontal" Removed="True">
+            <LayoutItem Id="CanCu" Removed="True" />
+            <LayoutItem Id="NoiDung" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="QuyetDinhThanhLapHoiDongKyLuat_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="NguoiKy" Index="-1" />
+        <ColumnInfo Id="TenCoQuan" Index="1" />
+        <ColumnInfo Id="NguoiKy1" Index="3" />
+        <ColumnInfo Id="ChucVuNguoiKy" Index="4" />
+        <ColumnInfo Id="NgayQuyetDinh" Index="5" />
+        <ColumnInfo Id="NgayHieuLuc" Index="6" />
+        <ColumnInfo Id="CanCu" Index="7" />
+        <ColumnInfo Id="CapQuyetDinh" Index="8" />
+        <ColumnInfo Id="CoQuanRaQuyetDinh" Index="9" />
+        <ColumnInfo Id="LuuTru" Index="11" />
+      </Columns>
+    </ListView>
+    <DetailView Id="BangChotThongTinTinhLuong_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="BangChotThongTinTinhLuong">
+              <LayoutGroup Id="Auto961c1566-6c5b-4b21-ace7-9a6444ac5bc1">
+                <LayoutItem Id="BangCapDaKiemDuyet" ViewItem="BangCapDaKiemDuyet" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="DanhGiaCanBoCuoiNam_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="DanhGiaCanBoCuoiNam">
+              <LayoutItem Id="ChotDanhGia" ViewItem="ChotDanhGia" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="GiayToHoSo_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SizeableEditors">
+            <LayoutItem Id="NgayLap" ViewItem="NgayLap" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+  <NavigationItems Id="NavigationItems">
+    <Items Id="Items">
+      <Item Id="NhanSu">
+        <Items Id="Items">
+          <Item Id="QuanLyKhenThuong">
+            <Items Id="Items">
+              <Item Id="QuyetDinhThanhLapHoiDongKyLuat_ListView" ViewId="QuyetDinhThanhLapHoiDongKyLuat_ListView" />
+            </Items>
+          </Item>
+        </Items>
+      </Item>
+      <Item Id="Default">
+        <Items Id="Items">
+          <Item Id="ChucDanhHoiDongKyLuat_ListView" Index="2" Removed="True" />
+          <Item Id="QuyetDinhThanhLapHoiDongKyLuat_ListView" Removed="True" />
+          <Item Id="ThongTinTongHop">
+            <Items Id="Items">
+              <Item Id="ChucDanhHoiDongKyLuat_ListView" ViewId="ChucDanhHoiDongKyLuat_ListView" />
+            </Items>
+          </Item>
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+</Application>

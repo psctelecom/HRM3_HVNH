@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLUseCaseDiagram_QuanLyDang-CongDoan-DoanTN">
+  <useCaseModelRootMoniker Id="cd5cdd38-5026-4f0d-8a2d-666ea2c26fbf" />
+  <nestedChildShapes>
+    <actorShape Id="f76fc383-c65c-46ff-9b64-bb0b1572b623" absoluteBounds="1.125, 2.875, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="d82f06ad-8cd2-40ae-a3ed-3ffc0edb9776" LastKnownName="người sử dụng" />
+      <relativeChildShapes />
+    </actorShape>
+    <actorShape Id="8dd1b37b-82f1-456f-b4b2-9f50c6970560" absoluteBounds="1.125, 1.625, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="0356899b-8c9a-40a7-b323-e141b1e37c5e" LastKnownName="quản trị nhân viên(admin tổ chức)" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseGeneralizationConnector edgePoints="[(1.375 : 2.125); (1.375 : 2.875)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
+      <generalizationMoniker Id="af8646a2-fce8-4c9f-a7fe-bdd02f160e5b" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="8dd1b37b-82f1-456f-b4b2-9f50c6970560" />
+        <actorShapeMoniker Id="f76fc383-c65c-46ff-9b64-bb0b1572b623" />
+      </nodes>
+    </useCaseGeneralizationConnector>
+    <actorShape Id="c1657aaa-7249-440a-87e6-4d9955842c5b" absoluteBounds="1.125, 4.125, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="b2fd2115-aa5b-492f-bd26-e24d861acb8d" LastKnownName="quản trị phần mềm(administrator)" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseGeneralizationConnector edgePoints="[(1.375 : 4.125); (1.375 : 3.375)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
+      <generalizationMoniker Id="6d72c74f-bd41-4d7d-a329-ab5cc04da6bc" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="c1657aaa-7249-440a-87e6-4d9955842c5b" />
+        <actorShapeMoniker Id="f76fc383-c65c-46ff-9b64-bb0b1572b623" />
+      </nodes>
+    </useCaseGeneralizationConnector>
+    <useCaseShape Id="3d03513b-5265-474f-af18-ebfdcf9a97dc" absoluteBounds="2.625, 2.75, 1.5, 0.875" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="45383fd5-9406-464d-9f89-c11bd3e30896" LastKnownName="Quản lý Đảng - Công Đoàn - Đoàn Thanh Niên" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseDependencyConnector edgePoints="[(1.625 : 3.1328125); (2.62607390079743 : 3.16409605939992)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <dependencyMoniker Id="155b48d5-c467-4b7d-b660-a326dfa1f5f3" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="f76fc383-c65c-46ff-9b64-bb0b1572b623" />
+        <useCaseShapeMoniker Id="3d03513b-5265-474f-af18-ebfdcf9a97dc" />
+      </nodes>
+    </useCaseDependencyConnector>
+    <useCaseShape Id="f1846ae9-05c9-4fdc-be2c-8d9de2c69e88" absoluteBounds="4.625, 1.375, 2, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="66feae87-1734-438b-91e8-31e00711f8ec" LastKnownName="Thêm TC Đảng - TC Công Đoàn - TC Đoàn TN" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <extendConnector edgePoints="[(5.11879943123578 : 2.0734059189327); (3.880702023016 : 2.86441259640644)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«extend»">
+      <extendMoniker Id="6f13c6a0-054f-4802-9fb1-f80c63a8c144" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="f1846ae9-05c9-4fdc-be2c-8d9de2c69e88" />
+        <useCaseShapeMoniker Id="3d03513b-5265-474f-af18-ebfdcf9a97dc" />
+      </nodes>
+    </extendConnector>
+    <useCaseShape Id="ef1f9c36-fa74-4891-af44-461b6e91981a" absoluteBounds="5.75, 2.625, 2.125, 1" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="8539deda-32cf-4bdf-89d5-4681dd609376" LastKnownName="Cập nhật/Sửa TC Đảng - TC Công Đoàn - TC Đoàn TN" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <extendConnector edgePoints="[(5.75079214655777 : 3.14430377915349); (4.12463595421672 : 3.17387025537788)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«extend»">
+      <extendMoniker Id="4d73c9d9-e82f-42e9-8816-067a8e17f4a3" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="ef1f9c36-fa74-4891-af44-461b6e91981a" />
+        <useCaseShapeMoniker Id="3d03513b-5265-474f-af18-ebfdcf9a97dc" />
+      </nodes>
+    </extendConnector>
+    <useCaseShape Id="98d0761b-bf78-48f4-9424-ded09e18780c" absoluteBounds="3.375, 4.625, 1.875, 0.875" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="4a4a1492-cd34-42ff-9ac2-56b7561221e2" LastKnownName="Xóa TC Đang - TC Công Đoàn - TC Đoàn TN" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <extendConnector edgePoints="[(4.09947223536898 : 4.63644447073797); (3.585 : 3.6075)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«extend»">
+      <extendMoniker Id="7526a51c-e2d1-47c3-936d-05f9a6e07b8d" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="98d0761b-bf78-48f4-9424-ded09e18780c" />
+        <useCaseShapeMoniker Id="3d03513b-5265-474f-af18-ebfdcf9a97dc" />
+      </nodes>
+    </extendConnector>
+    <commentShape Id="9e761e9c-e19e-4eba-a1f4-58176cbb40ba" absoluteBounds="0.625, 0.75, 2, 0.5" customColor="251, 247, 200">
+      <commentMoniker Id="56c3b59c-329a-4e08-9b59-7e75ec293447" />
+      <relativeChildShapes />
+    </commentShape>
+    <rectangleShape Id="e0291194-f741-432c-a289-beacbbab072a" absoluteBounds="0.5, 0.5, 8, 5.5" outlineColor="83, 134, 191" outlineThickness="0.03125" />
+  </nestedChildShapes>
+</useCaseDiagram>

@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="ChucDanhCongViec_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" Direction="Vertical" RelativeSize="100">
+            <LayoutGroup Id="ChucDanhCongViec_col1" ShowCaption="False" Index="0" RelativeSize="100">
+              <LayoutItem Id="TenChucDanhCongViec" ViewItem="TenChucDanhCongViec" SizeConstraintsType="Default" Index="0" RelativeSize="7.8624078624078626" />
+              <LayoutGroup Id="Item1" ShowCaption="True" CaptionLocation="Top" Index="1" RelativeSize="92.137592137592137" Caption="Điều kiện kèm theo">
+                <LayoutGroup Id="Auto185ca4d9-b8d6-4454-b5b6-ec989b9d4d33" ShowCaption="False" Caption="Auto185ca4d9-b8d6-4454-b5b6-ec989b9d4d33(6)" Direction="Horizontal" Index="0" RelativeSize="91.2">
+                  <LayoutGroup Id="Autoed687ef2-571d-45ca-90e1-651470ead285" ShowCaption="False" Caption="Autoed687ef2-571d-45ca-90e1-651470ead285(7)" Index="0" RelativeSize="41.063829787234042">
+                    <LayoutItem Id="TrinhDoChuyenMon" ViewItem="TrinhDoChuyenMon" SizeConstraintsType="Default" Index="0" RelativeSize="9.35672514619883" />
+                    <LayoutItem Id="HocHam" ViewItem="HocHam" SizeConstraintsType="Default" Index="1" RelativeSize="7.0175438596491224" />
+                    <LayoutItem Id="TrinhDoTinHoc" ViewItem="TrinhDoTinHoc" SizeConstraintsType="Default" Index="2" RelativeSize="7.0175438596491224" />
+                    <LayoutItem Id="TrinhDoNgoaiNgu" ViewItem="TrinhDoNgoaiNgu" SizeConstraintsType="Default" Index="3" RelativeSize="7.0175438596491224" />
+                    <LayoutItem Id="BienChe" ViewItem="BienChe" SizeConstraintsType="Default" Index="4" RelativeSize="7.0175438596491224" />
+                    <LayoutItem Id="DangVien" ViewItem="DangVien" SizeConstraintsType="Default" Index="5" RelativeSize="62.57309941520468" />
+                  </LayoutGroup>
+                  <LayoutGroup Id="Auto04b31c07-c5ad-462a-a635-643399e2e6ba" ShowCaption="False" Caption="Auto04b31c07-c5ad-462a-a635-643399e2e6ba(14)" Index="1" RelativeSize="58.936170212765958" Direction="Horizontal">
+                    <LayoutGroup Id="Auto2a6fc009-35e4-4b11-a858-ff5c8dddca36" ShowCaption="False" Caption="" Index="0" RelativeSize="67.870036101083031">
+                      <LayoutItem Id="LyLuanChinhTri" ViewItem="LyLuanChinhTri" SizeConstraintsType="Default" Index="0" RelativeSize="9.35672514619883" />
+                      <LayoutItem Id="LoaiNhanSu" ViewItem="LoaiNhanSu" SizeConstraintsType="Default" Index="1" RelativeSize="7.0175438596491224" />
+                      <LayoutItem Id="LoaiNhanVien" ViewItem="LoaiNhanVien" SizeConstraintsType="Default" Index="2" RelativeSize="7.0175438596491224" />
+                      <LayoutItem Id="DanToc" ViewItem="DanToc" SizeConstraintsType="Default" Index="3" RelativeSize="7.0175438596491224" />
+                      <LayoutItem Id="TonGiao" ViewItem="TonGiao" SizeConstraintsType="Default" Index="4" RelativeSize="7.0175438596491224" />
+                      <LayoutItem Id="DoanVien" ViewItem="DoanVien" SizeConstraintsType="Default" Index="5" RelativeSize="62.57309941520468" />
+                    </LayoutGroup>
+                    <LayoutItem Id="Item2" ShowCaption="False" ViewItem="" SizeConstraintsType="Custom" Index="1" RelativeSize="32.129963898916969" MinSize="89, 342" MaxSize="89, 342" />
+                  </LayoutGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="ChucDanhCongViec" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="ChucDanhCongViec_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="TrinhDoChuyenMon" Removed="True" />
+        <ColumnInfo Id="TrinhDoNgoaiNgu" Removed="True" />
+      </Columns>
+    </ListView>
+    <DetailView Id="HetHanBoNhiem_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutItem Id="QuyetDinhBoNhiem" ViewItem="QuyetDinhBoNhiem" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ThongTinTinhLuong_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="ThongTinTinhLuong_col1">
+              <LayoutGroup Id="Auto46871b23-c413-4202-a794-00dfffbf7365">
+                <LayoutItem Id="TrangThaiThamGiaBaoHiem" ViewItem="TrangThaiThamGiaBaoHiem" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="DanhGiaCanBoCuoiNam_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="DanhGiaCanBoCuoiNam">
+              <LayoutItem Id="ChotDanhGia" ViewItem="ChotDanhGia" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="GiayToHoSo_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SizeableEditors">
+            <LayoutItem Id="NgayLap" ViewItem="NgayLap" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+  <NavigationItems Id="NavigationItems">
+    <Items Id="Items">
+      <Item Id="Default">
+        <Items Id="Items">
+          <Item Id="ChucDanhCongViec_ListView" Index="5" Removed="True" />
+          <Item Id="ThongTinTongHop">
+            <Items Id="Items">
+              <Item Id="DinhBienChucVu_ListView" ViewId="DinhBienChucVu_ListView" />
+            </Items>
+          </Item>
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+</Application>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="BangChotThongTinTinhLuong_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="BangChotThongTinTinhLuong">
+              <LayoutGroup Id="Auto961c1566-6c5b-4b21-ace7-9a6444ac5bc1">
+                <LayoutItem Id="BangCapDaKiemDuyet" ViewItem="BangCapDaKiemDuyet" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="DanhGiaCanBoCuoiNam_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="DanhGiaCanBoCuoiNam">
+              <LayoutItem Id="ChotDanhGia" ViewItem="ChotDanhGia" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="GiayToHoSo_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SizeableEditors">
+            <LayoutItem Id="NgayLap" ViewItem="NgayLap" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ChuyenKhoanLuongNhanVien_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="ChungTu">
+              <LayoutGroup Id="ChungTu_col1">
+                <LayoutItem Id="LuongPhuCapKy1" SizeConstraintsType="Default" RelativeSize="49.275362318840578" Index="1" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="ChungTu_col2">
+                <LayoutItem Id="LuongPhuCapKy2" ViewItem="LuongPhuCapKy2" SizeConstraintsType="Default" Index="1" RelativeSize="15" Removed="True" />
+                <LayoutGroup Id="Auto7ab061a4-9062-4291-982c-9e0588d27bad">
+                  <LayoutGroup Id="Autocb35aca9-f514-4e57-a4c9-bf8727316cfe">
+                    <LayoutGroup Id="Auto8fc28212-60d2-4649-adaa-39c096a09320">
+                      <LayoutGroup Id="Auto9222ab72-aac3-4f80-8419-9d37b2afe806">
+                        <LayoutItem Id="LuongPhuCapKy2" ViewItem="LuongPhuCapKy2" />
+                        <LayoutGroup Id="Auto8945cde6-b50a-4dee-8478-1dba6e05663c">
+                          <LayoutItem Id="LuongPhuCapKy1" ViewItem="LuongPhuCapKy1" />
+                        </LayoutGroup>
+                      </LayoutGroup>
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

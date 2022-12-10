@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="0c6b252c-a79a-41c2-9449-4338d6e0ff40" name="UMLUseCaseDiagramQuanLyChungTuChiTien" linkedPackageId="894e151d-b8c5-49e0-8c3d-3761f27d2903" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="148a9b36-2865-4a48-b9cd-22a09edb1a4a">
+      <elementDefinition Id="b49e3a6f-5557-49d0-832a-d73c76b911b7" />
+      <body>UC  Quản lý chứng từ chi tiền</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="14dc1333-709a-4c2c-8dc0-db2df626a09e">
+      <profileInstance Id="39ee7a96-aa86-4f0f-be53-2312f077d9f2" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="1f78fb74-01dd-42d8-b53d-762fa968d4a3">
+      <profileInstance Id="03c5c9e6-40fc-4bab-ae4b-28e0034e265c" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <useCase Id="cbe61ffc-d7f5-453e-99ac-4d45e19f9a5c" name="Quản lý thu nhập" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="09972feb-42c9-4be6-b0bc-c1193ef24595" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d91f46bb-48f8-4c64-a0f6-e8169cc9bf4e" name="Quản lý chứng từ chi tiền" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="85782cf2-6aef-41e5-86c8-ff566177c3a2" />
+        <extendedCases>
+          <extend Id="d06faff4-bd3b-4346-9ed2-ddf2bf019a6d">
+            <useCaseMoniker Id="cbe61ffc-d7f5-453e-99ac-4d45e19f9a5c" LastKnownName="Quản lý thu nhập" />
+            <elementDefinition Id="80c69d7c-b23f-40b4-93aa-9eb2f7af01d3" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="34065f8e-f160-4e24-b84a-b74241d1024d" name="quản trị tính lương(admin tính lương)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="09b5775f-e7c0-41ac-b31d-806771f7772c" />
+        <generalsInternal>
+          <generalization Id="6370f949-8c17-4b47-84d5-eb3ea202a2de" isSubstitutable="false">
+            <actorMoniker Id="6df729ff-4ed2-40eb-ac54-9ad3a84856c9" LastKnownName="người sử dụng" />
+            <elementDefinition Id="2998a0da-6443-4634-bcff-436d6bd9480f" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="6df729ff-4ed2-40eb-ac54-9ad3a84856c9" name="người sử dụng" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ae0e4b42-e8e1-409d-af2f-8ca9e2836d0f" />
+        <suppliersInternal>
+          <dependency Id="45a959d0-da98-477c-a923-d9d2166024e4">
+            <useCaseMoniker Id="cbe61ffc-d7f5-453e-99ac-4d45e19f9a5c" LastKnownName="Quản lý thu nhập" />
+            <elementDefinition Id="f024223c-9578-435a-b23b-29743067e228" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="8a56286f-b5c3-44d8-982c-36d0cdf6e608" name="quản trị phần mềm(administrator)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f8657f9f-f282-4c4d-be60-36bab7b990be" />
+        <generalsInternal>
+          <generalization Id="d2406155-24f4-4a0e-a662-f06a5f0067a6" isSubstitutable="false">
+            <actorMoniker Id="6df729ff-4ed2-40eb-ac54-9ad3a84856c9" LastKnownName="người sử dụng" />
+            <elementDefinition Id="bde2c14c-bf8a-40db-a278-cfe341e9bcdc" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="45e53b17-8848-4eed-ab84-76490a3e9d13" name="Thêm chứng từ chi tiền" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ee82221c-e644-4327-8134-aba5fc5b0b9a" />
+        <extendedCases>
+          <extend Id="6ff37873-0cb7-4a1c-bc84-8cea1cda2753">
+            <useCaseMoniker Id="d91f46bb-48f8-4c64-a0f6-e8169cc9bf4e" LastKnownName="Quản lý chứng từ chi tiền" />
+            <elementDefinition Id="eb222a4c-2d23-4244-95ab-516c2566437f" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="87643c13-c815-4551-b505-c343f85cc33a" name="Xóa chứng từ chi tiền" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5160af6e-2d91-4f18-9012-0c76d7d9886e" />
+        <extendedCases>
+          <extend Id="51a4b16d-3ab1-4eb6-bf8b-3bad5228db5f">
+            <useCaseMoniker Id="d91f46bb-48f8-4c64-a0f6-e8169cc9bf4e" LastKnownName="Quản lý chứng từ chi tiền" />
+            <elementDefinition Id="4e0df099-bbb2-4afd-a7a3-a7913860c4a4" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="69e9aed4-bf4e-4d5a-8fd5-6fac4dd6853a" name="In chứng từ chi tiền" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f32d9943-24b6-4fb6-8686-a38dfb1690e3" />
+        <extendedCases>
+          <extend Id="c5e56fcd-d46b-46f8-bedd-75e928a44396">
+            <useCaseMoniker Id="d91f46bb-48f8-4c64-a0f6-e8169cc9bf4e" LastKnownName="Quản lý chứng từ chi tiền" />
+            <elementDefinition Id="9f367c8e-8816-4a12-b82f-7d3847e77499" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="25d0829f-f76a-4ee1-9831-cc4a82b2e0cd" name="In danh sach chuyển đi ngân hàng" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ccec92c1-cce4-448c-9358-058d9c72e099" />
+        <extendedCases>
+          <extend Id="8a206111-bdb9-4c2f-aad9-857353e23959">
+            <useCaseMoniker Id="d91f46bb-48f8-4c64-a0f6-e8169cc9bf4e" LastKnownName="Quản lý chứng từ chi tiền" />
+            <elementDefinition Id="8e1a9694-1373-4f3b-816f-13f3043a63dd" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="db44e589-58df-4099-88fb-d482d0f94ab2" name="Tính thuế TNCN" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b9fbd560-acb1-40cd-b3f6-b3ca4305e295" />
+        <extendedCases>
+          <extend Id="5a11df79-5500-4906-bcd9-112a9ec4a7bc">
+            <useCaseMoniker Id="d91f46bb-48f8-4c64-a0f6-e8169cc9bf4e" LastKnownName="Quản lý chứng từ chi tiền" />
+            <elementDefinition Id="e6147a52-50dd-4fa7-98fd-0e321405006a" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="894e151d-b8c5-49e0-8c3d-3761f27d2903" name="ModelingProject1">
+    <elementDefinition Id="c1918b24-b69c-4818-aacd-4d280375ce7b" />
+  </package>
+</useCaseModelRoot>

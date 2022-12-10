@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="f7bcd2f9-1807-489d-afe4-cfd5c9c965f0" name="UMLUseCaseDiagramInHoSoNhanVien" linkedPackageId="205605f1-b46f-4058-a895-89c50cea296d" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="df2cc8de-7622-42f7-9e55-8770a754aa13">
+      <elementDefinition Id="b25a92ad-7a8b-4042-8435-d3b9b4a946a1" />
+      <body>UC In Hồ sơ nhân viên</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d7c9db88-a99c-4282-a6c9-6f50f9ef4b70" name="Chọn mẫu cần In" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1e211957-4085-46d9-aa82-0d36728d5152" />
+        <additions>
+          <include Id="e6eca4c2-fd16-4dca-acbf-f3125525887e">
+            <useCaseMoniker Id="c89d0ed4-17a2-44b9-9e8d-afeb4e76ee81" LastKnownName="In hồ sơ nhân viên" />
+            <elementDefinition Id="e13b9d41-3f60-40e6-adc3-b099770b7401" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="14a10ad3-2d60-40a3-8d0c-8b41816b8eda" name="người sử dụng" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ae0e4b42-e8e1-409d-af2f-8ca9e2836d0f" />
+        <suppliersInternal>
+          <dependency Id="f3d97b57-bae6-4f8b-910d-fd608ccda749">
+            <useCaseMoniker Id="08289ce8-da00-487f-9bf2-a9c3fc568d9e" LastKnownName="Quản lý nhân viên" />
+            <elementDefinition Id="070916ef-0ed8-48d6-9978-a4a9b568c920" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="384bc028-6fb1-4ce8-b657-cbb0a74968c0" name="quản trị nhân viên(admin tổ chức)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3adc7cf9-8565-4998-a8eb-4db02ba282d3" />
+        <generalsInternal>
+          <generalization Id="2a68d49a-979d-4ede-aca0-369a1c27ac23" isSubstitutable="false">
+            <actorMoniker Id="14a10ad3-2d60-40a3-8d0c-8b41816b8eda" LastKnownName="người sử dụng" />
+            <elementDefinition Id="6c902048-88b2-422f-b3e3-fb51ee2b67de" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="5a6d4dd7-86d0-49df-83e1-02183ba369f4" name="quản trị phần mềm(administrator)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f8657f9f-f282-4c4d-be60-36bab7b990be" />
+        <generalsInternal>
+          <generalization Id="95172a3b-f09e-48ce-b913-f2402c5161db" isSubstitutable="false">
+            <actorMoniker Id="14a10ad3-2d60-40a3-8d0c-8b41816b8eda" LastKnownName="người sử dụng" />
+            <elementDefinition Id="bde2c14c-bf8a-40db-a278-cfe341e9bcdc" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="08289ce8-da00-487f-9bf2-a9c3fc568d9e" name="Quản lý nhân viên" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e2d20d9a-56e9-4b13-8d7f-07eb8f0ea687" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c89d0ed4-17a2-44b9-9e8d-afeb4e76ee81" name="In hồ sơ nhân viên" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2bb626ed-fc30-41c3-9d76-53630edca7ab" />
+        <extendedCases>
+          <extend Id="ab8f2bdb-82b7-44d6-8f83-8b8fc0ccbd9a">
+            <useCaseMoniker Id="08289ce8-da00-487f-9bf2-a9c3fc568d9e" LastKnownName="Quản lý nhân viên" />
+            <elementDefinition Id="48342efb-81f7-45cd-bfb8-0fe657673899" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="dc527066-589f-4f4d-84ba-71dcfc96b920" name="Chọn nhân viên" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="18094f7a-582b-4c65-810c-fe871b75ae00" />
+        <additions>
+          <include Id="266f23a0-17b5-49a0-82a4-68b225911c7c">
+            <useCaseMoniker Id="c89d0ed4-17a2-44b9-9e8d-afeb4e76ee81" LastKnownName="In hồ sơ nhân viên" />
+            <elementDefinition Id="5f82ab9c-a3b3-478b-b896-2dbbd88900ca" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="205605f1-b46f-4058-a895-89c50cea296d" name="ModelingProject1">
+    <elementDefinition Id="c1918b24-b69c-4818-aacd-4d280375ce7b" />
+    <profileInstances>
+      <packageHasProfileInstances Id="7e08552d-f469-4e0a-91ea-7a0392ea73d0">
+        <profileInstance Id="25bfd512-2c54-4649-bb4c-1063706c0c0b" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="73847762-861a-42e4-8b6e-5b079629ce17">
+        <profileInstance Id="9af51335-8ff8-469d-8f9a-1c7444151668" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

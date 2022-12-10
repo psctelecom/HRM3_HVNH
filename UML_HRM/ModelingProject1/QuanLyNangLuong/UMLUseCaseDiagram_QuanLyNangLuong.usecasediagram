@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="88456d13-a39f-4a81-ac45-e8d6e0e8ee81" name="UMLUseCaseDiagram_QuanLyNangLuong" linkedPackageId="b7bbde51-3908-44e9-bca5-434b6d7d721a" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="10ba46c0-5877-41d6-9bb0-a44539b37a06">
+      <elementDefinition Id="81b1f25a-1e67-4236-9ba5-3115ca3119d3" />
+      <body>UC Quản lý nâng lương</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <useCase Id="bcd42254-9001-4267-8b18-8ac8b02ca204" name="Xóa QĐ nâng lương" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ee75f12a-464a-4aa1-89aa-2ec51d1e5bb0" />
+        <extendedCases>
+          <extend Id="93ddba2a-16fa-483b-81f9-d567fb029761">
+            <useCaseMoniker Id="6c4a9a7c-1555-42b4-8a64-d146340ead29" LastKnownName="Quản lý nâng lương" />
+            <elementDefinition Id="dbe773a2-fce2-4c27-b694-bf4ee9c0e25e" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9343bd61-2b52-4ff6-bf6b-3d19e6367151" name="Thêm QĐ nâng lương" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="231c900e-af62-4d6e-8f59-3df335b7a470" />
+        <extendedCases>
+          <extend Id="5c2c5355-6c22-4473-8293-bd0f87ec780d">
+            <useCaseMoniker Id="6c4a9a7c-1555-42b4-8a64-d146340ead29" LastKnownName="Quản lý nâng lương" />
+            <elementDefinition Id="dc77ba6c-ce93-4738-8640-ff0516dbef27" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="91bfc3cb-65bd-421d-8ee9-e4777dc3d972" name="người sử dụng" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ae0e4b42-e8e1-409d-af2f-8ca9e2836d0f" />
+        <suppliersInternal>
+          <dependency Id="633419ca-89d0-4869-9450-15c1cea71c4f">
+            <useCaseMoniker Id="6c4a9a7c-1555-42b4-8a64-d146340ead29" LastKnownName="Quản lý nâng lương" />
+            <elementDefinition Id="1a7255b3-e661-42b1-bc94-0b2e5e61c4e6" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="75a33af6-2794-43a2-9740-d82fd7c08e5b" name="quản trị nhân viên(admin tổ chức)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3adc7cf9-8565-4998-a8eb-4db02ba282d3" />
+        <generalsInternal>
+          <generalization Id="0939dcc5-dfcd-4b62-98be-4a2d38fe1dca" isSubstitutable="false">
+            <actorMoniker Id="91bfc3cb-65bd-421d-8ee9-e4777dc3d972" LastKnownName="người sử dụng" />
+            <elementDefinition Id="6c902048-88b2-422f-b3e3-fb51ee2b67de" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="5346cad1-ce21-4a80-813d-1b0c680ed8c4" name="quản trị phần mềm(administrator)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f8657f9f-f282-4c4d-be60-36bab7b990be" />
+        <generalsInternal>
+          <generalization Id="0c98bdea-26e9-4dd3-a661-09973a1b33d2" isSubstitutable="false">
+            <actorMoniker Id="91bfc3cb-65bd-421d-8ee9-e4777dc3d972" LastKnownName="người sử dụng" />
+            <elementDefinition Id="bde2c14c-bf8a-40db-a278-cfe341e9bcdc" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6c4a9a7c-1555-42b4-8a64-d146340ead29" name="Quản lý nâng lương" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2d445af2-128c-415c-800e-66c8740f254b" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2c66e445-1f67-4224-a79f-8a121d1fce6e" name="Cập nhật/Sửa QĐ nâng lương" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ce8d353c-98bd-4dd5-b8a7-c642a5419295" />
+        <extendedCases>
+          <extend Id="5353c46a-0128-4f32-b273-f935ac96d1eb">
+            <useCaseMoniker Id="6c4a9a7c-1555-42b4-8a64-d146340ead29" LastKnownName="Quản lý nâng lương" />
+            <elementDefinition Id="a93475b7-f103-45bc-b31c-5cc485fa6f81" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="633389b2-f053-4fd6-beef-ac2ada69f7f0" name="In QĐ nâng lương" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="55fb309d-d7f3-4189-b7bc-cc1abe3b0926" />
+        <extendedCases>
+          <extend Id="6a467488-93d3-4a0e-9371-83e442526de4">
+            <useCaseMoniker Id="6c4a9a7c-1555-42b4-8a64-d146340ead29" LastKnownName="Quản lý nâng lương" />
+            <elementDefinition Id="5906f6f0-e655-4b96-9bfc-bdf79f5d5f75" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="b7bbde51-3908-44e9-bca5-434b6d7d721a" name="ModelingProject1">
+    <elementDefinition Id="c1918b24-b69c-4818-aacd-4d280375ce7b" />
+    <profileInstances>
+      <packageHasProfileInstances Id="e7f27959-2fbf-44be-a230-714561fd13ba">
+        <profileInstance Id="619a64d4-4bf3-4db4-a8ec-78b5d4dd9829" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="46bb4304-7f8e-492d-a52c-5de8f06cbbfc">
+        <profileInstance Id="2232487a-4455-41d1-ab4d-e283d25534f5" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

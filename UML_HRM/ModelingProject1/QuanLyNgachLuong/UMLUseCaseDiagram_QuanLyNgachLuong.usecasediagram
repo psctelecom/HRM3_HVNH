@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="6d59fdaa-d24f-4140-a268-6e17722e457e" name="UMLUseCaseDiagram_QuanLyNgachLuong" linkedPackageId="0f39db55-e476-4cdc-a3d6-f7432ea04370" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="a9c8964b-0168-42c4-ad15-6145cf8e9b79">
+      <elementDefinition Id="90132e39-1ff9-41b3-a04c-1d2ca2bc8bfc" />
+      <body>UC Quản lý Ngạch lương</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e16879dd-b733-4982-8050-bd740c0c79a2" name="Thêm ngạch lương" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="135c2323-d64d-4a65-8e9f-5153512a920d" />
+        <extendedCases>
+          <extend Id="34f9e07b-cee4-404c-9fef-557dabba28dd">
+            <useCaseMoniker Id="023da3c2-0514-46b8-b64a-e53b3c06f617" LastKnownName="Quản lý ngạch lương mina" />
+            <elementDefinition Id="4664269c-6d44-45ca-a5df-df216ec9599c" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c271f937-c16d-4a60-9775-16dd22f7fc49" name="Xóa ngạch lương" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1fb67fba-b805-4dea-b598-17ae9dc94050" />
+        <extendedCases>
+          <extend Id="72259f7c-17c7-449e-acbe-c77018d65489">
+            <useCaseMoniker Id="023da3c2-0514-46b8-b64a-e53b3c06f617" LastKnownName="Quản lý ngạch lương mina" />
+            <elementDefinition Id="09db9fc7-d92b-4e5b-bba1-ab5c6ee0439e" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="735bc290-f9d8-4392-8ffe-eca546748d41" name="Cập nhật/sửa ngạch lương" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ebd66543-708a-46e3-bb27-b922a7a57541" />
+        <extendedCases>
+          <extend Id="c56af952-286c-4e88-9cbf-95aa4e4db5bc">
+            <useCaseMoniker Id="023da3c2-0514-46b8-b64a-e53b3c06f617" LastKnownName="Quản lý ngạch lương mina" />
+            <elementDefinition Id="28d770b0-27ed-4c0f-ab00-7ea6b5039ee5" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e4d0f813-bc54-4855-975e-8c0b0a2a258f" name="Nâng ngạch" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e64a864c-36a5-4562-a945-81d7792b9a8b" />
+        <extendedCases>
+          <extend Id="59ee6493-221f-44e8-9687-6e7754c8e479">
+            <useCaseMoniker Id="023da3c2-0514-46b8-b64a-e53b3c06f617" LastKnownName="Quản lý ngạch lương mina" />
+            <elementDefinition Id="6e08d4ed-3a3b-4824-9238-d31fa7f2baf3" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4b652e23-1e67-4ddb-8330-20f5be5a8b22" name="Chuyển ngạch" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b175afb7-a41f-40e3-98b7-3bd07e77afc8" />
+        <extendedCases>
+          <extend Id="f17178fd-5c7b-4c89-b12d-0f1b637aeb21">
+            <useCaseMoniker Id="023da3c2-0514-46b8-b64a-e53b3c06f617" LastKnownName="Quản lý ngạch lương mina" />
+            <elementDefinition Id="199372d4-8f41-4fdc-a7c4-c7137c071376" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="b8f04069-efb1-4d17-8dcd-697979e96126" name="người sử dụng" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ae0e4b42-e8e1-409d-af2f-8ca9e2836d0f" />
+        <suppliersInternal>
+          <dependency Id="cb4fbecd-7182-4d86-ad0f-f6df4b83257f">
+            <useCaseMoniker Id="023da3c2-0514-46b8-b64a-e53b3c06f617" LastKnownName="Quản lý ngạch lương mina" />
+            <elementDefinition Id="28902cc9-ff2f-472c-abb3-8d2f8cfa161e" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="4209771d-791a-449a-a0ae-292605650cbc" name="quản trị nhân viên(admin tổ chức)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3adc7cf9-8565-4998-a8eb-4db02ba282d3" />
+        <generalsInternal>
+          <generalization Id="fa2b9016-306a-497c-8b14-a0a5750bc93a" isSubstitutable="false">
+            <actorMoniker Id="b8f04069-efb1-4d17-8dcd-697979e96126" LastKnownName="người sử dụng" />
+            <elementDefinition Id="6c902048-88b2-422f-b3e3-fb51ee2b67de" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="e67e3f1c-8fc5-4187-bf0a-ac9eb721b62d" name="quản trị phần mềm(administrator)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f8657f9f-f282-4c4d-be60-36bab7b990be" />
+        <generalsInternal>
+          <generalization Id="671d5955-308f-45a5-81fe-a76497008d50" isSubstitutable="false">
+            <actorMoniker Id="b8f04069-efb1-4d17-8dcd-697979e96126" LastKnownName="người sử dụng" />
+            <elementDefinition Id="bde2c14c-bf8a-40db-a278-cfe341e9bcdc" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="023da3c2-0514-46b8-b64a-e53b3c06f617" name="Quản lý ngạch lương mina" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b145d85c-f091-4242-aef3-a77eb28cea68" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="0f39db55-e476-4cdc-a3d6-f7432ea04370" name="ModelingProject1">
+    <elementDefinition Id="c1918b24-b69c-4818-aacd-4d280375ce7b" />
+    <profileInstances>
+      <packageHasProfileInstances Id="e4fbc4b4-6c74-44e7-b145-4d937366d707">
+        <profileInstance Id="45684118-ba32-4f57-ae54-8f4485aca793" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="8e418043-0af4-498a-b258-f31d11488db0">
+        <profileInstance Id="30fb1045-0c99-4648-bf5b-04540ccabd18" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

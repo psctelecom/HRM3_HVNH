@@ -1,0 +1,1370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel>
+    <Class Name="PSC_HRM.Module.BaoMat.NguoiSuDung" IsCloneable="False" />
+  </BOModel>
+  <NavigationItems>
+    <Items>
+      <Item Id="TaiChinh">
+        <Items>
+          <Item Id="BangChamCong" Caption="Bảng chấm công" Index="0" IsNewNode="True">
+            <Items IsNewNode="True">
+              <Item Id="BangChamCongKhoan_ListView" ViewId="BangChamCongKhoan_ListView" ObjectKey="" IsNewNode="True" />
+              <Item Id="BangChamCongNgayNghi_ListView" ViewId="BangChamCongNgayNghi_ListView" ObjectKey="" IsNewNode="True" />
+              <Item Id="BangChamCongNgoaiGio_ListView" ViewId="BangChamCongNgoaiGio_ListView" ObjectKey="" IsNewNode="True" />
+            </Items>
+          </Item>
+          <Item Id="LuongVaPhuCap" Caption="Lương - Phụ cấp" Index="1" IsNewNode="True">
+            <Items IsNewNode="True">
+              <Item Id="BangLuongNhanVien_ListView" ViewId="BangLuongNhanVien_ListView" ObjectKey="" IsNewNode="True" />
+              <Item Id="CongThucTinhLuong_ListView" ViewId="CongThucTinhLuong_ListView" ObjectKey="" IsNewNode="True" />
+              <Item Id="KyTinhLuong_ListView" ViewId="KyTinhLuong_ListView" ObjectKey="" IsNewNode="True" />
+            </Items>
+          </Item>
+          <Item Id="ThuNhapTangThem" Caption="Thu nhập tăng thêm" Index="1" IsNewNode="True">
+            <Items IsNewNode="True">
+              <Item Id="BangThuNhapTangThem_ListView" ViewId="BangThuNhapTangThem_ListView" ObjectKey="" Index="0" IsNewNode="True" />
+              <Item Id="BangQuyetToanThuNhapTangThem_ListView" ViewId="BangQuyetToanThuNhapTangThem_ListView" ObjectKey="" Index="1" Visible="False" IsNewNode="True" />
+              <Item Id="CongThucTinhThuNhapTangThem_ListView" ViewId="CongThucTinhThuNhapTangThem_ListView" ObjectKey="" Index="2" IsNewNode="True" />
+            </Items>
+          </Item>
+          <Item Id="KhenThuongPhucLoi" Caption="Khen thưởng - Phúc lợi" Index="2" IsNewNode="True">
+            <Items IsNewNode="True">
+              <Item Id="BangThuongNhanVien_ListView" ViewId="BangThuongNhanVien_ListView" ObjectKey="" IsNewNode="True" />
+              <Item Id="LoaiKhenThuongPhucLoi_ListView" ViewId="LoaiKhenThuongPhucLoi_ListView" ObjectKey="" ImageName="BO_List" IsNewNode="True" />
+            </Items>
+          </Item>
+          <Item Id="ThuLaoGiangDay" Caption="Thù lao giảng dạy" Index="3" Visible="False" IsNewNode="True">
+            <Items IsNewNode="True">
+              <Item Id="BangThuLaoNhanVien_ListView" ViewId="BangThuLaoNhanVien_ListView" ObjectKey="" IsNewNode="True" />
+            </Items>
+          </Item>
+          <Item Id="TruyLinh" Caption="Truy lĩnh" Index="4" IsNewNode="True">
+            <Items IsNewNode="True">
+              <Item Id="BangTruyLuong_ListView" ViewId="BangTruyLuong_ListView" ObjectKey="" IsNewNode="True" />
+            </Items>
+          </Item>
+          <Item Id="NgoaiGio" Caption="Ngoài giờ" Index="5" IsNewNode="True">
+            <Items IsNewNode="True">
+              <Item Id="BangLuongNgoaiGio_ListView" ViewId="BangLuongNgoaiGio_ListView" ObjectKey="" IsNewNode="True" />
+              <Item Id="CongThucTinhNgoaiGio_ListView" ViewId="CongThucTinhNgoaiGio_ListView" ObjectKey="" IsNewNode="True" />
+            </Items>
+          </Item>
+          <Item Id="ThuNhapKhac" Caption="Thu nhập khác" Index="6" IsNewNode="True">
+            <Items IsNewNode="True">
+              <Item Id="BangThuNhapKhac_ListView" ViewId="BangThuNhapKhac_ListView" ObjectKey="" IsNewNode="True" />
+              <Item Id="LoaiThuNhapKhac_ListView" ViewId="LoaiThuNhapKhac_ListView" ObjectKey="" IsNewNode="True" />
+            </Items>
+          </Item>
+          <Item Id="TamUng" Caption="Tạm ứng" Index="7" IsNewNode="True">
+            <Items IsNewNode="True">
+              <Item Id="BangKhauTruTamUng_ListView" ViewId="BangKhauTruTamUng_ListView" ObjectKey="" IsNewNode="True" />
+              <Item Id="BangTamUng_ListView" ViewId="BangTamUng_ListView" ObjectKey="" IsNewNode="True" />
+            </Items>
+          </Item>
+          <Item Id="KhauTruLuong" Caption="Khấu trừ lương" Index="8" IsNewNode="True">
+            <Items IsNewNode="True">
+              <Item Id="BangKhauTruLuong_ListView" ViewId="BangKhauTruLuong_ListView" ObjectKey="" IsNewNode="True" />
+              <Item Id="LoaiKhauTruLuong_ListView" ViewId="LoaiKhauTruLuong_ListView" ObjectKey="" IsNewNode="True" />
+            </Items>
+          </Item>
+          <Item Id="ChungTu" Caption="Chứng từ" Index="9" IsNewNode="True">
+            <Items IsNewNode="True">
+              <Item Id="ChiTMLuongNhanVien_ListView" ViewId="ChiTMLuongNhanVien_ListView" ObjectKey="" Visible="False" IsNewNode="True" />
+              <Item Id="ChuyenKhoanLuongNhanVien_ListView" ViewId="ChuyenKhoanLuongNhanVien_ListView" ObjectKey="" Caption="Chứng từ chi tiền" IsNewNode="True" />
+              <Item Id="UyNhiemChi_ListView" ViewId="UyNhiemChi_ListView" ObjectKey="" IsNewNode="True" />
+            </Items>
+          </Item>
+          <Item Id="ThueTNCN" Caption="Thuế TNCN" Index="10" IsNewNode="True">
+            <Items IsNewNode="True">
+              <Item Id="BangDinhMucNopThueTNCN_ListView" ViewId="BangDinhMucNopThueTNCN_ListView" Index="0" IsNewNode="True" />
+              <Item Id="ToKhaiKhauTruThueTNCN_ListView" ViewId="ToKhaiKhauTruThueTNCN_ListView" ObjectKey="" Index="1" IsNewNode="True" />
+              <Item Id="ToKhaiQuyetToanThueTNCN_ListView" ViewId="ToKhaiQuyetToanThueTNCN_ListView" ObjectKey="" Index="2" IsNewNode="True" />
+              <Item Id="BangThueTNCNTamTru_ListView" ViewId="BangThueTNCNTamTru_ListView" ObjectKey="" Index="3" IsNewNode="True" />
+            </Items>
+          </Item>
+        </Items>
+      </Item>
+      <Item Id="Default">
+        <Items>
+          <Item Id="BangKhauTruLuong_ListView" Removed="True" />
+          <Item Id="BangKhauTruTamUng_ListView" Removed="True" />
+          <Item Id="BangLuongNgoaiGio_ListView" Removed="True" />
+          <Item Id="BangLuongNhanVien_ListView" Removed="True" />
+          <Item Id="BangQuyetToanThuNhapTangThem_ListView" Removed="True" />
+          <Item Id="BangTamUng_ListView" Removed="True" />
+          <Item Id="BangThueTNCNTamTru_ListView" Removed="True" />
+          <Item Id="BangThuLaoNhanVien_ListView" Removed="True" />
+          <Item Id="BangThuNhapKhac_ListView" Removed="True" />
+          <Item Id="BangThuNhapTangThem_ListView" Removed="True" />
+          <Item Id="BangThuongNhanVien_ListView" Removed="True" />
+          <Item Id="BangTruyLuong_ListView" Removed="True" />
+          <Item Id="BangTruyThu_ListView" Removed="True" />
+          <Item Id="ChiTMLuongNhanVien_ListView" Removed="True" />
+          <Item Id="ChuyenKhoanLuongNhanVien_ListView" Removed="True" />
+          <Item Id="CongThucTinhLuong_ListView" Removed="True" />
+          <Item Id="CongThucTinhNgoaiGio_ListView" Removed="True" />
+          <Item Id="CongThucTinhThuNhapTangThem_ListView" Removed="True" />
+          <Item Id="LoaiKhauTruLuong_ListView" Removed="True" />
+          <Item Id="LoaiKhenThuongPhucLoi_ListView" Removed="True" />
+          <Item Id="LoaiThuNhapKhac_ListView" Removed="True" />
+          <Item Id="ToKhaiKhauTruThueTNCN_ListView" Removed="True" />
+          <Item Id="ToKhaiQuyetToanThueTNCN_ListView" Removed="True" />
+          <Item Id="UyNhiemChi_ListView" Removed="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Options LookupSmallCollectionItemCount="100" />
+  <SchemaModules>
+    <SchemaModule Name="CloneObjectModule" Version="13.2.9.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="13.2.9.0" IsNewNode="True" />
+    <SchemaModule Name="SystemWindowsFormsModule" Version="13.2.9.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <DetailView Id="BangChamCongKhoan_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="7.5396825396825395" ImageName="">
+            <LayoutGroup Id="BangChamCongKhoan" RelativeSize="100" ImageName="" Direction="Horizontal">
+              <LayoutGroup Id="Auto1eecf996-a522-421a-bb4c-c012dbdb1fdf" ShowCaption="False" Caption="Auto1eecf996-a522-421a-bb4c-c012dbdb1fdf(4)" Index="0" RelativeSize="66.292134831460672" Direction="Horizontal" IsNewNode="True">
+                <LayoutItem Id="KyTinhLuong" ViewItem="KyTinhLuong" SizeConstraintsType="Custom" MinSize="223, 32" MaxSize="223, 32" Index="0" RelativeSize="53.995157384987891" IsNewNode="True" />
+                <LayoutItem Id="NgayLap" ViewItem="NgayLap" SizeConstraintsType="Custom" Index="1" RelativeSize="46.004842615012109" MinSize="190, 38" MaxSize="190, 38" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutItem Id="Item1" ShowCaption="False" SizeConstraintsType="Default" Index="1" RelativeSize="33.707865168539328" ViewItem="" IsNewNode="True" />
+              <LayoutItem Id="KyTinhLuong" SizeConstraintsType="Default" RelativeSize="8" Removed="True" />
+              <LayoutItem Id="NgayLap" SizeConstraintsType="Default" RelativeSize="6" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="ListChiTietChamCongLuongKhoan_Group" TextAlignMode="AlignLocal" Direction="Vertical" RelativeSize="92.460317460317455" ImageName="BO_ChamCong">
+            <LayoutItem Id="ListChiTietChamCongLuongKhoan" ShowCaption="False" SizeConstraintsType="Default" RelativeSize="91.630901287553641" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="BangChamCongNgayNghi_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="7.5396825396825395" ImageName="">
+            <LayoutGroup Id="BangChamCongNgayNghi" RelativeSize="100" ImageName="" Direction="Horizontal">
+              <LayoutGroup Id="Auto7f392c5a-cdd3-4993-b2a6-3db0f612437c" ShowCaption="False" Caption="Auto7f392c5a-cdd3-4993-b2a6-3db0f612437c(4)" Index="0" RelativeSize="72.873194221508825" Direction="Horizontal" IsNewNode="True">
+                <LayoutItem Id="KyTinhLuong" ViewItem="KyTinhLuong" SizeConstraintsType="Custom" MinSize="261, 32" MaxSize="261, 32" Index="0" RelativeSize="57.48898678414097" IsNewNode="True" />
+                <LayoutItem Id="NgayLap" ViewItem="NgayLap" SizeConstraintsType="Custom" Index="1" RelativeSize="42.51101321585903" MinSize="132, 38" MaxSize="0, 0" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutItem Id="Item1" ShowCaption="False" SizeConstraintsType="Default" Index="1" RelativeSize="27.126805778491171" ViewItem="" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="ListChiTietChamCongNgayNghi_Group" TextAlignMode="AlignLocal" Direction="Vertical" RelativeSize="92.460317460317455" ImageName="BO_ChamCong">
+            <LayoutItem Id="ListChiTietChamCongNgayNghi" ShowCaption="False" SizeConstraintsType="Default" RelativeSize="91.630901287553641" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="BangChamCongNgoaiGio_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="7.5396825396825395" ImageName="">
+            <LayoutGroup Id="BangChamCongNgoaiGio" RelativeSize="100" ImageName="" Direction="Horizontal">
+              <LayoutGroup Id="Autob631c474-8a90-4421-b842-cdf57a35a7cc" ShowCaption="False" Caption="Autob631c474-8a90-4421-b842-cdf57a35a7cc(4)" Index="0" RelativeSize="70.144462279293734" Direction="Horizontal" IsNewNode="True">
+                <LayoutItem Id="KyTinhLuong" ViewItem="KyTinhLuong" SizeConstraintsType="Custom" MinSize="252, 32" MaxSize="252, 32" Index="0" RelativeSize="57.66590389016018" IsNewNode="True" />
+                <LayoutItem Id="NgayLap" ViewItem="NgayLap" SizeConstraintsType="Custom" Index="1" RelativeSize="42.33409610983982" MinSize="185, 38" MaxSize="185, 38" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutItem Id="Item1" ShowCaption="False" SizeConstraintsType="Default" Index="1" RelativeSize="29.855537720706259" ViewItem="" IsNewNode="True" />
+              <LayoutItem Id="KyTinhLuong" SizeConstraintsType="Default" RelativeSize="8" Removed="True" />
+              <LayoutItem Id="NgayLap" SizeConstraintsType="Default" RelativeSize="6" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="ListChiTietChamCongNgoaiGio_Group" TextAlignMode="AlignLocal" Direction="Vertical" RelativeSize="92.460317460317455" ImageName="BO_ChamCong">
+            <LayoutItem Id="ListChiTietChamCongNgoaiGio" ShowCaption="False" SizeConstraintsType="Default" RelativeSize="91.630901287553641" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="BangKeThueTNCNNgoai_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="16" ImageName="">
+            <LayoutGroup Id="BangKeThueTNCNNgoai" RelativeSize="100" ImageName="" Caption="Bảng kê thuế TNCN">
+              <LayoutGroup Id="BangKeThueTNCNNgoai_col1" RelativeSize="48" ImageName="">
+                <LayoutItem Id="BoPhan" SizeConstraintsType="Default" RelativeSize="36" />
+                <LayoutItem Id="NhanVien" SizeConstraintsType="Default" RelativeSize="27" />
+                <LayoutItem Id="ThuNhapChiuThue" SizeConstraintsType="Default" RelativeSize="36" />
+              </LayoutGroup>
+              <LayoutGroup Id="BangKeThueTNCNNgoai_col2" RelativeSize="48" ImageName="">
+                <LayoutItem Id="TNCTTinhGiamThue" SizeConstraintsType="Default" RelativeSize="36" />
+                <LayoutItem Id="ThueTNCNDaKhauTru" SizeConstraintsType="Default" RelativeSize="63" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="ListChiTietBangKeThueTNCNNgoai_Group" TextAlignMode="AlignLocal" Direction="Vertical" RelativeSize="83" ImageName="BO_HoaDon">
+            <LayoutItem Id="ListChiTietBangKeThueTNCNNgoai" ShowCaption="False" SizeConstraintsType="Default" RelativeSize="93" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="BangKeThueTNCNNhanVien_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="32" ImageName="">
+            <LayoutGroup Id="BangKeThueTNCNNhanVien" RelativeSize="100" ImageName="" Caption="Bảng kê thuế TNCN">
+              <LayoutGroup Id="BangKeThueTNCNNhanVien_col1" RelativeSize="48" ImageName="">
+                <LayoutItem Id="BoPhan" SizeConstraintsType="Default" RelativeSize="15" />
+                <LayoutItem Id="NhanVien" SizeConstraintsType="Default" RelativeSize="11" />
+                <LayoutItem Id="SoThangPhatSinhThuNhap" SizeConstraintsType="Default" RelativeSize="11" />
+                <LayoutItem Id="CaNhanUyQuyenQuyetToanThay" SizeConstraintsType="Default" RelativeSize="11" />
+                <LayoutItem Id="TongThuNhapChiuThue" SizeConstraintsType="Default" RelativeSize="11" />
+                <LayoutItem Id="TongTNCTLamCanCuGiamTru" SizeConstraintsType="Default" RelativeSize="11" />
+                <LayoutItem Id="GiamTruGiaCanh" SizeConstraintsType="Default" RelativeSize="11" />
+                <LayoutItem Id="TuThienNhanDaoKhuyenHoc" SizeConstraintsType="Default" RelativeSize="15" />
+              </LayoutGroup>
+              <LayoutGroup Id="BangKeThueTNCNNhanVien_col2" RelativeSize="48" ImageName="">
+                <LayoutItem Id="BaoHiemBatBuoc" SizeConstraintsType="Default" RelativeSize="15" />
+                <LayoutItem Id="ThuNhapTinhThue" SizeConstraintsType="Default" RelativeSize="11" />
+                <LayoutItem Id="ThueTNCNDaKhauTru" SizeConstraintsType="Default" RelativeSize="11" />
+                <LayoutItem Id="SoThuePhaiNop" SizeConstraintsType="Default" RelativeSize="11" />
+                <LayoutItem Id="SoThueDuocMien" SizeConstraintsType="Default" RelativeSize="11" />
+                <LayoutItem Id="SoThueNopThua" SizeConstraintsType="Default" RelativeSize="11" />
+                <LayoutItem Id="SoThueKhauTruThem" SizeConstraintsType="Default" RelativeSize="26" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="ListChiTietBangKeThueTNCNNhanVien_Group" TextAlignMode="AlignLocal" Direction="Vertical" RelativeSize="67" ImageName="BO_HoaDon">
+            <LayoutItem Id="ListChiTietBangKeThueTNCNNhanVien" ShowCaption="False" SizeConstraintsType="Default" RelativeSize="92" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="BangKhauTruLuong_DetailView">
+      <Items>
+        <PropertyEditor Id="ThuBangTienMat" Caption="Thu bằng tiền mặt" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="12.204724409448819" ImageName="">
+            <LayoutGroup Id="BangKhauTruLuong" RelativeSize="100" ImageName="" Direction="Vertical">
+              <LayoutGroup Id="Auto6992071c-42b3-4137-b38e-852039a3e236" ShowCaption="False" Caption="Auto6992071c-42b3-4137-b38e-852039a3e236(4)" Index="0" RelativeSize="100" Direction="Horizontal" IsNewNode="True">
+                <LayoutGroup Id="Autoaf8e21ef-c2e8-4d02-b004-2400f7378da8" ShowCaption="False" Caption="" Index="0" RelativeSize="47.666666666666664" IsNewNode="True">
+                  <LayoutItem Id="KyTinhLuong" ViewItem="KyTinhLuong" SizeConstraintsType="Custom" MinSize="286, 32" MaxSize="286, 32" Index="0" RelativeSize="51.612903225806448" IsNewNode="True" />
+                  <LayoutItem Id="NgayLap" ViewItem="NgayLap" SizeConstraintsType="Default" Index="1" RelativeSize="48.387096774193552" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutGroup Id="Autoec0a0136-b795-4763-be93-75df65e79c35" ShowCaption="False" Caption="" Index="1" RelativeSize="52.333333333333336" IsNewNode="True">
+                  <LayoutItem Id="LoaiKhauTruLuong" ViewItem="LoaiKhauTruLuong" SizeConstraintsType="Default" Index="0" RelativeSize="51.612903225806448" IsNewNode="True" />
+                  <LayoutItem Id="ThuBangTienMat" ViewItem="ThuBangTienMat" SizeConstraintsType="Default" Index="1" RelativeSize="48.387096774193552" IsNewNode="True" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="ListChiTietKhauTruLuong_Group" TextAlignMode="AlignLocal" Direction="Vertical" RelativeSize="87.795275590551185" ImageName="BO_KhauTru">
+            <LayoutItem Id="ListChiTietKhauTruLuong" ShowCaption="False" SizeConstraintsType="Default" RelativeSize="91.255605381165921" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="BangKhauTruTamUng_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="7.5396825396825395" ImageName="">
+            <LayoutGroup Id="BangKhauTruTamUng" RelativeSize="100" ImageName="" Direction="Horizontal">
+              <LayoutGroup Id="Auto491b9091-4ccc-4b0f-8325-0999bed1ab08" ShowCaption="False" Caption="Auto491b9091-4ccc-4b0f-8325-0999bed1ab08(4)" Index="0" RelativeSize="58.219178082191782" Direction="Horizontal" IsNewNode="True">
+                <LayoutItem Id="KyTinhLuong" ViewItem="KyTinhLuong" SizeConstraintsType="Custom" MinSize="259, 32" MaxSize="259, 32" Index="0" RelativeSize="60.941176470588232" IsNewNode="True" />
+                <LayoutItem Id="NgayLap" ViewItem="NgayLap" SizeConstraintsType="Custom" Index="1" RelativeSize="39.058823529411768" MinSize="166, 38" MaxSize="166, 38" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutItem Id="Item1" ShowCaption="False" SizeConstraintsType="Default" Index="1" RelativeSize="41.780821917808218" ViewItem="" IsNewNode="True" />
+              <LayoutItem Id="KyTinhLuong" SizeConstraintsType="Default" RelativeSize="8" Removed="True" />
+              <LayoutItem Id="NgayLap" SizeConstraintsType="Default" RelativeSize="6" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="ListChiTietKhauTruTamUng_Group" TextAlignMode="AlignLocal" Direction="Vertical" RelativeSize="92.460317460317455" ImageName="BO_KhauTru">
+            <LayoutItem Id="ListChiTietKhauTruTamUng" ShowCaption="False" SizeConstraintsType="Default" RelativeSize="91.630901287553641" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="BangLuongNgoaiGio_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="7.4803149606299213" ImageName="">
+            <LayoutGroup Id="BangLuongNgoaiGio" RelativeSize="100" ImageName="" Direction="Horizontal">
+              <LayoutGroup Id="Autodfdf21bf-efaf-4fab-a4fa-c85f37ee7587" ShowCaption="False" Caption="Autodfdf21bf-efaf-4fab-a4fa-c85f37ee7587(4)" Index="0" RelativeSize="73.833333333333329" Direction="Horizontal" IsNewNode="True">
+                <LayoutItem Id="KyTinhLuong" ViewItem="KyTinhLuong" SizeConstraintsType="Custom" MinSize="271, 32" MaxSize="271, 32" Index="0" RelativeSize="61.173814898419863" IsNewNode="True" />
+                <LayoutItem Id="NgayLap" ViewItem="NgayLap" SizeConstraintsType="Custom" Index="1" RelativeSize="38.826185101580137" MinSize="172, 38" MaxSize="172, 38" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutItem Id="Item1" ShowCaption="False" SizeConstraintsType="Default" Index="1" RelativeSize="26.166666666666668" ViewItem="" IsNewNode="True" />
+              <LayoutItem Id="KyTinhLuong" SizeConstraintsType="Default" RelativeSize="8" Removed="True" />
+              <LayoutItem Id="NgayLap" SizeConstraintsType="Default" RelativeSize="6" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="ListChiTietLuongNgoaiGio_Group" TextAlignMode="AlignLocal" Direction="Vertical" RelativeSize="92.519685039370074" ImageName="BO_BangLuong">
+            <LayoutItem Id="ListChiTietLuongNgoaiGio" ShowCaption="False" SizeConstraintsType="Default" RelativeSize="91.702127659574472" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="BangLuongNhanVien_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="7.4803149606299213" ImageName="">
+            <LayoutGroup Id="BangLuongNhanVien" RelativeSize="100" ImageName="" Direction="Horizontal">
+              <LayoutGroup Id="Auto8aaa265b-1c93-4254-9e95-3dee1890413f" ShowCaption="False" Caption="Auto8aaa265b-1c93-4254-9e95-3dee1890413f(4)" Index="0" RelativeSize="65.666666666666671" Direction="Horizontal" IsNewNode="True">
+                <LayoutItem Id="KyTinhLuong" ViewItem="KyTinhLuong" SizeConstraintsType="Custom" MinSize="223, 32" MaxSize="223, 32" Index="0" RelativeSize="56.598984771573605" IsNewNode="True" />
+                <LayoutItem Id="NgayLap" ViewItem="NgayLap" SizeConstraintsType="Custom" Index="1" RelativeSize="43.401015228426395" MinSize="171, 38" MaxSize="171, 38" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutItem Id="Item1" ShowCaption="False" SizeConstraintsType="Default" Index="1" RelativeSize="34.333333333333336" ViewItem="" IsNewNode="True" />
+              <LayoutItem Id="KyTinhLuong" SizeConstraintsType="Default" RelativeSize="8" Removed="True" />
+              <LayoutItem Id="NgayLap" SizeConstraintsType="Default" RelativeSize="48" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="ListLuongNhanVien_Group" TextAlignMode="AlignLocal" Direction="Vertical" RelativeSize="92.519685039370074" ImageName="BO_BangLuong">
+            <LayoutItem Id="ListLuongNhanVien" ShowCaption="False" SizeConstraintsType="Default" RelativeSize="91.702127659574472" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="BangQuyetToanThuNhapTangThem_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="21" ImageName="">
+            <LayoutGroup Id="BangQuyetToanThuNhapTangThem" RelativeSize="100" ImageName="" Direction="Horizontal">
+              <LayoutGroup Id="Auto465cab16-2589-4a7a-98ba-07a6c3c8a2fa" ShowCaption="False" Caption="" Index="0" RelativeSize="30" IsNewNode="True">
+                <LayoutItem Id="KyTinhLuong" ViewItem="KyTinhLuong" SizeConstraintsType="Custom" MinSize="253, 32" MaxSize="253, 32" Index="0" RelativeSize="29" IsNewNode="True" />
+                <LayoutItem Id="Nam" ViewItem="Nam" SizeConstraintsType="Default" Index="1" RelativeSize="21" IsNewNode="True" />
+                <LayoutItem Id="HeSoTangThem" ViewItem="HeSoTangThem" SizeConstraintsType="Default" Index="2" RelativeSize="21" IsNewNode="True" />
+                <LayoutItem Id="NgayLap" ViewItem="NgayLap" SizeConstraintsType="Default" Index="3" RelativeSize="27" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutItem Id="Item1" ShowCaption="False" ViewItem="" SizeConstraintsType="Default" Index="1" RelativeSize="69" IsNewNode="True" />
+              <LayoutItem Id="HeSoTangThem" SizeConstraintsType="Default" RelativeSize="6" Removed="True" />
+              <LayoutItem Id="KyTinhLuong" SizeConstraintsType="Default" RelativeSize="8" Removed="True" />
+              <LayoutItem Id="Nam" SizeConstraintsType="Default" RelativeSize="6" Removed="True" />
+              <LayoutItem Id="NgayLap" SizeConstraintsType="Default" RelativeSize="6" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="ListChiTietQuyetToanThuNhapTangThem_Group" TextAlignMode="AlignLocal" Direction="Vertical" RelativeSize="78" ImageName="">
+            <LayoutItem Id="ListChiTietQuyetToanThuNhapTangThem" ShowCaption="False" SizeConstraintsType="Default" RelativeSize="91" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="BangTamUng_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="" Caption="Main" CaptionLocation="Default" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default" TextAlignMode="UseParentOptions">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="7.5396825396825395" ImageName="" Caption="SimpleEditors" CaptionLocation="Default" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default" TextAlignMode="UseParentOptions">
+            <LayoutGroup Id="BangTamUng" RelativeSize="100" ImageName="" Direction="Horizontal" Caption="BangTamUng" CaptionLocation="Default" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default" TextAlignMode="UseParentOptions">
+              <LayoutItem Id="Nam" SizeConstraintsType="Custom" Index="0" RelativeSize="18.63013698630137" MinSize="136, 38" MaxSize="136, 38" />
+              <LayoutItem Id="KhoaSo" SizeConstraintsType="Default" Index="1" RelativeSize="14.657534246575343" />
+              <LayoutItem Id="Item1" ShowCaption="False" ViewItem="" SizeConstraintsType="Default" Index="2" RelativeSize="66.712328767123282" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="ListTamUng_Group" TextAlignMode="AlignLocal" Direction="Vertical" RelativeSize="92.460317460317455" ImageName="BO_BangLuong" Caption="Danh sách cán bộ" CaptionLocation="Default" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default">
+            <LayoutItem Id="ListTamUng" ShowCaption="False" SizeConstraintsType="Default" RelativeSize="91.630901287553641" TextAlignMode="UseParentOptions" CaptionLocation="Default" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="BangThuLaoNhanVien_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="12" ImageName="">
+            <LayoutGroup Id="BangThuLaoNhanVien" RelativeSize="100" ImageName="" Direction="Horizontal">
+              <LayoutGroup Id="Auto2dc3c9ca-e4c9-4a29-a057-de8a21a5a4c2" ShowCaption="False" Caption="" Index="0" RelativeSize="27" IsNewNode="True">
+                <LayoutItem Id="KyTinhLuong" ViewItem="KyTinhLuong" SizeConstraintsType="Custom" MinSize="223, 32" MaxSize="223, 32" Index="0" RelativeSize="51" IsNewNode="True" />
+                <LayoutItem Id="NgayLap" ViewItem="NgayLap" SizeConstraintsType="Default" Index="1" RelativeSize="48" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutItem Id="Item1" ShowCaption="False" ViewItem="" SizeConstraintsType="Default" Index="1" RelativeSize="72" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="BangThuNhapKhac_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="7.4803149606299213" ImageName="">
+            <LayoutGroup Id="BangThuNhapKhac" RelativeSize="100" ImageName="" Direction="Horizontal">
+              <LayoutGroup Id="Autocb225245-2296-4e62-aa4f-83ce212b9a42" ShowCaption="False" Caption="Autocb225245-2296-4e62-aa4f-83ce212b9a42(4)" Index="0" RelativeSize="37.290502793296092" IsNewNode="True">
+                <LayoutItem Id="KyTinhLuong" ViewItem="KyTinhLuong" SizeConstraintsType="Custom" MinSize="267, 38" MaxSize="267, 38" Index="0" RelativeSize="100" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutItem Id="NgayLap" ViewItem="NgayLap" SizeConstraintsType="Custom" Index="1" RelativeSize="28.491620111731844" MinSize="204, 38" MaxSize="204, 38" IsNewNode="True" Removed="True" />
+              <LayoutItem Id="LoaiThuNhapKhac" SizeConstraintsType="Default" RelativeSize="34.217877094972067" Index="2" />
+              <LayoutItem Id="KyTinhLuong" SizeConstraintsType="Default" RelativeSize="8" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="ListChiTietThuNhapKhac_Group" TextAlignMode="AlignLocal" Direction="Vertical" RelativeSize="92.519685039370074" ImageName="">
+            <LayoutItem Id="ListChiTietThuNhapKhac" ShowCaption="False" SizeConstraintsType="Default" RelativeSize="92.978723404255319" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="BangThuNhapTangThem_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="7.4803149606299213" ImageName="">
+            <LayoutGroup Id="BangThuNhapTangThem" RelativeSize="100" ImageName="" Direction="Horizontal">
+              <LayoutGroup Id="Auto8a179000-0628-4683-9bd7-4b56dca76d6f" ShowCaption="False" Caption="Auto8a179000-0628-4683-9bd7-4b56dca76d6f(4)" Index="0" RelativeSize="83.3969465648855" Direction="Horizontal" IsNewNode="True">
+                <LayoutItem Id="KyTinhLuong" ViewItem="KyTinhLuong" SizeConstraintsType="Custom" MinSize="265, 32" MaxSize="265, 32" Index="0" RelativeSize="60.640732265446225" IsNewNode="True" />
+                <LayoutItem Id="NgayLap" ViewItem="NgayLap" SizeConstraintsType="Custom" Index="1" RelativeSize="39.359267734553775" MinSize="172, 38" MaxSize="172, 38" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutItem Id="Item1" ShowCaption="False" SizeConstraintsType="Default" Index="1" RelativeSize="16.603053435114504" ViewItem="" IsNewNode="True" />
+              <LayoutItem Id="KyTinhLuong" SizeConstraintsType="Default" RelativeSize="8" Removed="True" />
+              <LayoutItem Id="NgayLap" SizeConstraintsType="Default" RelativeSize="6" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="ListChiTietThuNhapTangThem_Group" TextAlignMode="AlignLocal" Direction="Vertical" RelativeSize="92.519685039370074" ImageName="BO_BangLuong">
+            <LayoutItem Id="ListChiTietThuNhapTangThem" ShowCaption="False" SizeConstraintsType="Default" RelativeSize="91.702127659574472" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="BangThuongNhanVien_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="16" ImageName="">
+            <LayoutGroup Id="BangThuongNhanVien" RelativeSize="100" ImageName="" Direction="Horizontal">
+              <LayoutGroup Id="Autoe2c26433-1d98-42f2-8257-2a88210aee3b" ShowCaption="False" Caption="" Index="0" RelativeSize="42" IsNewNode="True">
+                <LayoutItem Id="KyTinhLuong" ViewItem="KyTinhLuong" SizeConstraintsType="Custom" MinSize="353, 32" MaxSize="353, 32" Index="0" RelativeSize="37" IsNewNode="True" />
+                <LayoutItem Id="LoaiKhenThuongPhucLoi" ViewItem="LoaiKhenThuongPhucLoi" SizeConstraintsType="Default" Index="1" RelativeSize="27" IsNewNode="True" />
+                <LayoutItem Id="NgayLap" ViewItem="NgayLap" SizeConstraintsType="Default" Index="2" RelativeSize="34" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutItem Id="Item1" ShowCaption="False" ViewItem="" SizeConstraintsType="Default" Index="1" RelativeSize="57" IsNewNode="True" />
+              <LayoutItem Id="KyTinhLuong" SizeConstraintsType="Default" RelativeSize="8" Removed="True" />
+              <LayoutItem Id="LoaiKhenThuongPhucLoi" SizeConstraintsType="Default" RelativeSize="6" Removed="True" />
+              <LayoutItem Id="NgayLap" SizeConstraintsType="Default" RelativeSize="6" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="ListChiTietThuongNhanVien_Group" TextAlignMode="AlignLocal" Direction="Vertical" RelativeSize="83" ImageName="BO_BangLuong">
+            <LayoutItem Id="ListChiTietThuongNhanVien" ShowCaption="False" SizeConstraintsType="Default" RelativeSize="90" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="BangTruyLuong_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="12" ImageName="">
+            <LayoutGroup Id="BangTruyLuong" RelativeSize="100" ImageName="" Direction="Horizontal">
+              <LayoutGroup Id="Auto0efa8fc2-4d69-47d3-8e92-60cc89d2228e" ShowCaption="False" Caption="" Index="0" RelativeSize="27" IsNewNode="True">
+                <LayoutItem Id="KyTinhLuong" ViewItem="KyTinhLuong" SizeConstraintsType="Custom" MinSize="229, 32" MaxSize="229, 32" Index="0" RelativeSize="51" IsNewNode="True" />
+                <LayoutItem Id="NgayLap" ViewItem="NgayLap" SizeConstraintsType="Default" Index="1" RelativeSize="48" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Autoebdf9c0f-6809-4195-bbfe-726f6bf714b5" ShowCaption="False" Caption="" Index="1" RelativeSize="22" IsNewNode="True">
+                <LayoutItem Id="TuNgay" ViewItem="TuNgay" SizeConstraintsType="Custom" MinSize="186, 32" MaxSize="186, 32" Index="0" RelativeSize="51" IsNewNode="True" />
+                <LayoutItem Id="DenNgay" ViewItem="DenNgay" SizeConstraintsType="Default" Index="1" RelativeSize="48" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutItem Id="Item1" ShowCaption="False" ViewItem="" SizeConstraintsType="Default" Index="2" RelativeSize="49" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="ListTruyLuongNhanVien_Group" RelativeSize="87" Caption="Danh sách truy lương" ImageName="" Direction="Vertical" ShowCaption="False" TextAlignMode="UseParentOptions">
+            <LayoutGroup Id="Item2" ShowCaption="True" CaptionLocation="Top" TextAlignMode="AlignLocal" Index="0" RelativeSize="100" Caption="Danh sách cán bộ" IsNewNode="True">
+              <LayoutItem Id="ListTruyLuongNhanVien" ShowCaption="False" ViewItem="ListTruyLuongNhanVien" SizeConstraintsType="Default" Index="0" RelativeSize="91" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutItem Id="ListTruyLuongNhanVien" ViewItem="ListTruyLuongNhanVien" SizeConstraintsType="Default" Index="0" RelativeSize="100" ShowCaption="False" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ChiTietBangKeThueTNCNNhanVien_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" Direction="Horizontal" RelativeSize="100" ImageName="">
+            <LayoutGroup Id="ChiTietBangKeThueTNCNNhanVien_col1" ShowCaption="False" Index="0" RelativeSize="50" IsNewNode="True">
+              <LayoutItem Id="KyTinhLuong" ViewItem="KyTinhLuong" SizeConstraintsType="Default" Index="0" RelativeSize="4" IsNewNode="True" />
+              <LayoutItem Id="TongThuNhapChiuThue" ViewItem="TongThuNhapChiuThue" SizeConstraintsType="Default" Index="1" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="TongGiamTruGiaCanh" ViewItem="TongGiamTruGiaCanh" SizeConstraintsType="Default" Index="2" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="TongTuThienNhanDao" ViewItem="TongTuThienNhanDao" SizeConstraintsType="Default" Index="3" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="TongBHXH" ViewItem="TongBHXH" SizeConstraintsType="Default" Index="4" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="TongBHYT" ViewItem="TongBHYT" SizeConstraintsType="Default" Index="5" RelativeSize="82" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="ChiTietBangKeThueTNCNNhanVien_col2" ShowCaption="False" Index="1" RelativeSize="50" IsNewNode="True">
+              <LayoutItem Id="TongBHTN" ViewItem="TongBHTN" SizeConstraintsType="Default" Index="0" RelativeSize="4" IsNewNode="True" />
+              <LayoutItem Id="TongThuNhapTinhThue" ViewItem="TongThuNhapTinhThue" SizeConstraintsType="Default" Index="1" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="TongThueTNCNTamTru" ViewItem="TongThueTNCNTamTru" SizeConstraintsType="Default" Index="2" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="TongTNCTLamCanCuGiamTru" ViewItem="TongTNCTLamCanCuGiamTru" SizeConstraintsType="Default" Index="3" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="SoNguoiPhuThuoc" ViewItem="SoNguoiPhuThuoc" SizeConstraintsType="Default" Index="4" RelativeSize="86" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="ChiTietBangKeThueTNCNNhanVien" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ChiTietChamCongNgoaiGio_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" Direction="Horizontal" RelativeSize="100" ImageName="">
+            <LayoutGroup Id="ChiTietChamCongNgoaiGio_col1" ShowCaption="False" Index="0" RelativeSize="50.080256821829856" IsNewNode="True">
+              <LayoutItem Id="BoPhan" ViewItem="BoPhan" SizeConstraintsType="Default" Index="0" RelativeSize="6.3492063492063489" IsNewNode="True" />
+              <LayoutItem Id="ThongTinNhanVien" ViewItem="ThongTinNhanVien" SizeConstraintsType="Default" Index="1" RelativeSize="4.7619047619047619" IsNewNode="True" />
+              <LayoutItem Id="SoCongNgoaiGio" ViewItem="SoCongNgoaiGio" SizeConstraintsType="Default" Index="2" RelativeSize="4.7619047619047619" IsNewNode="True" />
+              <LayoutItem Id="SoCongNgoaiGio2Sau23Gio" ViewItem="SoCongNgoaiGio2Sau23Gio" SizeConstraintsType="Default" Index="3" RelativeSize="84.126984126984127" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="ChiTietChamCongNgoaiGio_col2" ShowCaption="False" Index="1" RelativeSize="49.919743178170144" IsNewNode="True">
+              <LayoutItem Id="SoCongNgoaiGio1" ViewItem="SoCongNgoaiGio1" SizeConstraintsType="Default" Index="0" RelativeSize="6.3492063492063489" IsNewNode="True" />
+              <LayoutItem Id="SoCongNgoaiGio1Sau23Gio" ViewItem="SoCongNgoaiGio1Sau23Gio" SizeConstraintsType="Default" Index="1" RelativeSize="4.7619047619047619" IsNewNode="True" />
+              <LayoutItem Id="SoCongNgoaiGio2" ViewItem="SoCongNgoaiGio2" SizeConstraintsType="Default" Index="2" RelativeSize="4.7619047619047619" IsNewNode="True" />
+              <LayoutItem Id="SoCongNgoaiGioSau23Gio" ViewItem="SoCongNgoaiGioSau23Gio" SizeConstraintsType="Default" Index="3" RelativeSize="84.126984126984127" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="ChiTietChamCongNgoaiGio" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ChiTietCongThucTinhLuong_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="" Caption="Main" CaptionLocation="Default" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default" TextAlignMode="UseParentOptions">
+          <LayoutGroup Id="SizeableEditors" RelativeSize="100" ImageName="" Caption="SizeableEditors" CaptionLocation="Default" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default" TextAlignMode="UseParentOptions" Index="0">
+            <LayoutItem Id="MaChiTiet" ViewItem="MaChiTiet" SizeConstraintsType="Default" Index="0" RelativeSize="6" IsNewNode="True" />
+            <LayoutItem Id="DienGiai" ViewItem="DienGiai" SizeConstraintsType="Default" Index="1" RelativeSize="4" IsNewNode="True" />
+            <LayoutItem Id="CongTru" ViewItem="CongTru" SizeConstraintsType="Default" Index="2" RelativeSize="4" IsNewNode="True" />
+            <LayoutItem Id="NgungSuDung" ViewItem="NgungSuDung" SizeConstraintsType="Default" Index="3" RelativeSize="4" IsNewNode="True" />
+            <LayoutItem Id="CongThucTinhSoTien" ViewItem="CongThucTinhSoTien" SizeConstraintsType="Custom" Index="4" RelativeSize="4" MinSize="249, 24" MaxSize="0, 24" IsNewNode="True" Removed="True" />
+            <LayoutItem Id="TinhTNCT" ViewItem="TinhTNCT" SizeConstraintsType="Default" Index="5" RelativeSize="4" IsNewNode="True" />
+            <LayoutItem Id="CongThucTinhTNCT" ViewItem="CongThucTinhTNCT" SizeConstraintsType="Custom" Index="6" RelativeSize="4" MinSize="249, 24" MaxSize="0, 24" IsNewNode="True" Removed="True" />
+            <LayoutItem Id="Item1" ShowCaption="False" ViewItem="" SizeConstraintsType="Default" Index="7" RelativeSize="65" IsNewNode="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="SimpleEditors" RelativeSize="87" ImageName="" Caption="SimpleEditors" CaptionLocation="Default" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default" TextAlignMode="UseParentOptions" Direction="Horizontal" Removed="True">
+            <LayoutGroup Id="ChiTietCongThucTinhLuong" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ChiTietDieuChinhThueTNCNNhanVien_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="21" ImageName="">
+            <LayoutGroup Id="ChiTietDieuChinhThueTNCNNhanVien" RelativeSize="100" ImageName="">
+              <LayoutItem Id="PhanLoai" SizeConstraintsType="Default" RelativeSize="29" />
+              <LayoutItem Id="SoTien" SizeConstraintsType="Default" RelativeSize="21" />
+              <LayoutItem Id="SoLuong" SizeConstraintsType="Default" RelativeSize="21" />
+              <LayoutItem Id="GhiChu" ViewItem="GhiChu" SizeConstraintsType="Custom" Index="3" RelativeSize="27" MinSize="122, 30" MaxSize="0, 30" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="78" Caption="Ghi chú" ImageName="">
+            <LayoutItem Id="Item1" ShowCaption="False" ViewItem="" SizeConstraintsType="Default" Index="0" RelativeSize="100" IsNewNode="True" />
+            <LayoutItem Id="GhiChu" SizeConstraintsType="Default" RelativeSize="4" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ChiTietKhauTruLuong_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="26" ImageName="">
+            <LayoutGroup Id="ChiTietKhauTruLuong" RelativeSize="100" ImageName="">
+              <LayoutItem Id="BoPhan" SizeConstraintsType="Default" RelativeSize="23" />
+              <LayoutItem Id="ThongTinNhanVien" SizeConstraintsType="Default" RelativeSize="17" />
+              <LayoutItem Id="NgayLap" SizeConstraintsType="Default" RelativeSize="17" />
+              <LayoutItem Id="SoTien" SizeConstraintsType="Default" RelativeSize="17" />
+              <LayoutItem Id="GhiChu" ViewItem="GhiChu" SizeConstraintsType="Custom" Index="4" RelativeSize="22" MinSize="121, 30" MaxSize="0, 30" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="73" Caption="Ghi chú" ImageName="">
+            <LayoutItem Id="Item1" ShowCaption="False" ViewItem="" SizeConstraintsType="Default" Index="0" RelativeSize="100" IsNewNode="True" />
+            <LayoutItem Id="GhiChu" SizeConstraintsType="Default" RelativeSize="4" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ChiTietKhauTruTamUng_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="21" ImageName="">
+            <LayoutGroup Id="ChiTietKhauTruTamUng" RelativeSize="100" ImageName="">
+              <LayoutItem Id="BoPhan" SizeConstraintsType="Default" RelativeSize="29" />
+              <LayoutItem Id="ThongTinNhanVien" SizeConstraintsType="Default" RelativeSize="21" />
+              <LayoutItem Id="SoTien" SizeConstraintsType="Default" RelativeSize="21" />
+              <LayoutItem Id="GhiChu" ViewItem="GhiChu" SizeConstraintsType="Custom" Index="3" RelativeSize="27" MinSize="118, 30" MaxSize="0, 30" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="78" Caption="Ghi chú" ImageName="">
+            <LayoutItem Id="Item1" ShowCaption="False" ViewItem="" SizeConstraintsType="Default" Index="0" RelativeSize="100" IsNewNode="True" />
+            <LayoutItem Id="GhiChu" SizeConstraintsType="Default" RelativeSize="4" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ChiTietLuongNgoaiGio_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="26" ImageName="">
+            <LayoutGroup Id="ChiTietLuongNgoaiGio" RelativeSize="100" ImageName="">
+              <LayoutItem Id="BoPhan" SizeConstraintsType="Default" RelativeSize="23" />
+              <LayoutItem Id="ThongTinNhanVien" SizeConstraintsType="Default" RelativeSize="17" />
+              <LayoutItem Id="SoTien" SizeConstraintsType="Default" RelativeSize="17" />
+              <LayoutItem Id="SoTienChiuThue" SizeConstraintsType="Default" RelativeSize="17" />
+              <LayoutItem Id="GhiChu" ViewItem="GhiChu" SizeConstraintsType="Custom" Index="4" RelativeSize="22" MinSize="159, 30" MaxSize="0, 30" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="73" Caption="Ghi chú" ImageName="">
+            <LayoutItem Id="Item1" ShowCaption="False" ViewItem="" SizeConstraintsType="Default" Index="0" RelativeSize="100" IsNewNode="True" />
+            <LayoutItem Id="GhiChu" SizeConstraintsType="Default" RelativeSize="4" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ChiTietLuongNhanVien_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" Direction="Horizontal" RelativeSize="16" ImageName="">
+            <LayoutGroup Id="ChiTietLuongNhanVien_col1" ShowCaption="False" Index="0" RelativeSize="49" IsNewNode="True">
+              <LayoutItem Id="MaChiTiet" ViewItem="MaChiTiet" SizeConstraintsType="Default" Index="0" RelativeSize="37" IsNewNode="True" />
+              <LayoutItem Id="DienGiai" ViewItem="DienGiai" SizeConstraintsType="Default" Index="1" RelativeSize="27" IsNewNode="True" />
+              <LayoutItem Id="SoTien" ViewItem="SoTien" SizeConstraintsType="Default" Index="2" RelativeSize="34" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="ChiTietLuongNhanVien_col2" ShowCaption="False" Index="1" RelativeSize="50" IsNewNode="True">
+              <LayoutItem Id="SoTienChiuThue" ViewItem="SoTienChiuThue" SizeConstraintsType="Default" Index="0" RelativeSize="37" IsNewNode="True" />
+              <LayoutItem Id="CongTru" ViewItem="CongTru" SizeConstraintsType="Default" Index="1" RelativeSize="27" IsNewNode="True" />
+              <LayoutItem Id="GhiChu" ViewItem="GhiChu" SizeConstraintsType="Custom" MinSize="159, 27" MaxSize="0, 27" Index="2" RelativeSize="34" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="ChiTietLuongNhanVien" Removed="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="83" ImageName="" Caption="Ghi chú">
+            <LayoutItem Id="Item1" ShowCaption="False" ViewItem="" SizeConstraintsType="Default" Index="0" RelativeSize="100" IsNewNode="True" />
+            <LayoutItem Id="GhiChu" SizeConstraintsType="Custom" RelativeSize="4" MinSize="159, 27" MaxSize="0, 27" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ChiTietQuyetToanThuNhapTangThem_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" Direction="Horizontal" RelativeSize="100" ImageName="">
+            <LayoutGroup Id="ChiTietQuyetToanThuNhapTangThem_col1" ShowCaption="False" Index="0" RelativeSize="50" IsNewNode="True">
+              <LayoutItem Id="BoPhan" ViewItem="BoPhan" SizeConstraintsType="Default" Index="0" RelativeSize="4" IsNewNode="True" />
+              <LayoutItem Id="ThongTinNhanVien" ViewItem="ThongTinNhanVien" SizeConstraintsType="Default" Index="1" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="TamUngThang1" ViewItem="TamUngThang1" SizeConstraintsType="Default" Index="2" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="TamUngThang2" ViewItem="TamUngThang2" SizeConstraintsType="Default" Index="3" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="TamUngThang3" ViewItem="TamUngThang3" SizeConstraintsType="Default" Index="4" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="TamUngThang4" ViewItem="TamUngThang4" SizeConstraintsType="Default" Index="5" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="TamUngThang5" ViewItem="TamUngThang5" SizeConstraintsType="Default" Index="6" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="TamUngThang6" ViewItem="TamUngThang6" SizeConstraintsType="Default" Index="7" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="TamUngThang7" ViewItem="TamUngThang7" SizeConstraintsType="Default" Index="8" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="TamUngThang8" ViewItem="TamUngThang8" SizeConstraintsType="Default" Index="9" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="TamUngThang9" ViewItem="TamUngThang9" SizeConstraintsType="Default" Index="10" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="TamUngThang10" ViewItem="TamUngThang10" SizeConstraintsType="Default" Index="11" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="TamUngThang11" ViewItem="TamUngThang11" SizeConstraintsType="Default" Index="12" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="TamUngThang12" ViewItem="TamUngThang12" SizeConstraintsType="Default" Index="13" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="TongTamUng" ViewItem="TongTamUng" SizeConstraintsType="Default" Index="14" RelativeSize="54" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="ChiTietQuyetToanThuNhapTangThem_col2" ShowCaption="False" Index="1" RelativeSize="50" IsNewNode="True">
+              <LayoutItem Id="ThucNhanThang1" ViewItem="ThucNhanThang1" SizeConstraintsType="Default" Index="0" RelativeSize="4" IsNewNode="True" />
+              <LayoutItem Id="ThucNhanThang2" ViewItem="ThucNhanThang2" SizeConstraintsType="Default" Index="1" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="ThucNhanThang3" ViewItem="ThucNhanThang3" SizeConstraintsType="Default" Index="2" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="ThucNhanThang4" ViewItem="ThucNhanThang4" SizeConstraintsType="Default" Index="3" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="ThucNhanThang5" ViewItem="ThucNhanThang5" SizeConstraintsType="Default" Index="4" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="ThucNhanThang6" ViewItem="ThucNhanThang6" SizeConstraintsType="Default" Index="5" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="ThucNhanThang7" ViewItem="ThucNhanThang7" SizeConstraintsType="Default" Index="6" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="ThucNhanThang8" ViewItem="ThucNhanThang8" SizeConstraintsType="Default" Index="7" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="ThucNhanThang9" ViewItem="ThucNhanThang9" SizeConstraintsType="Default" Index="8" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="ThucNhanThang10" ViewItem="ThucNhanThang10" SizeConstraintsType="Default" Index="9" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="ThucNhanThang11" ViewItem="ThucNhanThang11" SizeConstraintsType="Default" Index="10" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="ThucNhanThang12" ViewItem="ThucNhanThang12" SizeConstraintsType="Default" Index="11" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="TongThucNhan" ViewItem="TongThucNhan" SizeConstraintsType="Default" Index="12" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="SoTienConLai" ViewItem="SoTienConLai" SizeConstraintsType="Default" Index="13" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="SoTienChiuThue" ViewItem="SoTienChiuThue" SizeConstraintsType="Default" Index="14" RelativeSize="54" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="ChiTietQuyetToanThuNhapTangThem" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ChiTietTamUng_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="16" ImageName="">
+            <LayoutGroup Id="ChiTietTamUng" RelativeSize="100" ImageName="">
+              <LayoutItem Id="NgayLap" SizeConstraintsType="Default" RelativeSize="37" />
+              <LayoutItem Id="SoTien" SizeConstraintsType="Default" RelativeSize="27" />
+              <LayoutItem Id="LyDo" ViewItem="LyDo" SizeConstraintsType="Custom" Index="2" RelativeSize="34" MinSize="121, 30" MaxSize="0, 30" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="83" Caption="Lý do" ImageName="">
+            <LayoutItem Id="Item1" ShowCaption="False" ViewItem="" SizeConstraintsType="Default" Index="0" RelativeSize="100" IsNewNode="True" />
+            <LayoutItem Id="LyDo" SizeConstraintsType="Default" RelativeSize="3" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ChiTietThuLaoNhanVien_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="16" ImageName="" Direction="Horizontal">
+            <LayoutGroup Id="ChiTietThuLaoNhanVien_col1" ShowCaption="False" Index="0" RelativeSize="50" IsNewNode="True">
+              <LayoutItem Id="BoPhan" ViewItem="BoPhan" SizeConstraintsType="Default" Index="0" RelativeSize="37" IsNewNode="True" />
+              <LayoutItem Id="NhanVien" ViewItem="NhanVien" SizeConstraintsType="Default" Index="1" RelativeSize="27" IsNewNode="True" />
+              <LayoutItem Id="NgayLap" ViewItem="NgayLap" SizeConstraintsType="Default" Index="2" RelativeSize="34" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="ChiTietThuLaoNhanVien_col2" ShowCaption="False" Index="1" RelativeSize="50" IsNewNode="True">
+              <LayoutItem Id="SoTien" ViewItem="SoTien" SizeConstraintsType="Default" Index="0" RelativeSize="37" IsNewNode="True" />
+              <LayoutItem Id="SoTienChiuThue" ViewItem="SoTienChiuThue" SizeConstraintsType="Default" Index="1" RelativeSize="27" IsNewNode="True" />
+              <LayoutItem Id="DienGiai" ViewItem="DienGiai" SizeConstraintsType="Custom" Index="2" RelativeSize="34" MinSize="154, 30" MaxSize="0, 30" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="ChiTietThuLaoNhanVien" RelativeSize="100" ImageName="" Removed="True">
+              <LayoutGroup Id="ChiTietThuLaoNhanVien_col1" RelativeSize="48" ImageName="">
+                <LayoutItem Id="BoPhan" SizeConstraintsType="Default" RelativeSize="36" />
+                <LayoutItem Id="NgayLap" SizeConstraintsType="Default" RelativeSize="36" />
+                <LayoutItem Id="NhanVien" SizeConstraintsType="Default" RelativeSize="27" />
+              </LayoutGroup>
+              <LayoutGroup Id="ChiTietThuLaoNhanVien_col2" RelativeSize="48" ImageName="">
+                <LayoutItem Id="SoTien" SizeConstraintsType="Default" RelativeSize="36" />
+                <LayoutItem Id="SoTienChiuThue" SizeConstraintsType="Default" RelativeSize="63" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="83" Caption="Diễn giải" ImageName="">
+            <LayoutItem Id="Item1" ShowCaption="False" ViewItem="" SizeConstraintsType="Default" Index="0" RelativeSize="100" IsNewNode="True" />
+            <LayoutItem Id="DienGiai" SizeConstraintsType="Default" RelativeSize="4" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ChiTietThuNhapKhac_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="" Caption="Main" CaptionLocation="Default" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default" TextAlignMode="UseParentOptions">
+          <LayoutGroup Id="SimpleEditors" Direction="Horizontal" RelativeSize="16.929133858267715" ImageName="" Caption="SimpleEditors" CaptionLocation="Default" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default" TextAlignMode="UseParentOptions">
+            <LayoutGroup Id="ChiTietThuNhapKhac_col1" ShowCaption="False" Index="0" RelativeSize="50" IsNewNode="True">
+              <LayoutItem Id="BoPhan" ViewItem="BoPhan" SizeConstraintsType="Default" Index="0" RelativeSize="37.2093023255814" IsNewNode="True" />
+              <LayoutItem Id="ThongTinNhanVien" ViewItem="ThongTinNhanVien" SizeConstraintsType="Default" Index="1" RelativeSize="27.906976744186046" IsNewNode="True" />
+              <LayoutItem Id="NgayLap" ViewItem="NgayLap" SizeConstraintsType="Default" Index="2" RelativeSize="34.883720930232556" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="ChiTietThuNhapKhac_col2" ShowCaption="False" Index="1" RelativeSize="50" IsNewNode="True">
+              <LayoutItem Id="SoTien" ViewItem="SoTien" SizeConstraintsType="Default" Index="0" RelativeSize="37.2093023255814" IsNewNode="True" />
+              <LayoutItem Id="SoTienChiuThue" ViewItem="SoTienChiuThue" SizeConstraintsType="Default" Index="1" RelativeSize="27.906976744186046" IsNewNode="True" />
+              <LayoutItem Id="DaChiTien" ViewItem="DaChiTien" SizeConstraintsType="Default" Index="2" RelativeSize="34.883720930232556" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="ChiTietThuNhapKhac" Removed="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="83.070866141732282" ImageName="" Caption="Ghi chú" CaptionLocation="Default" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default" TextAlignMode="UseParentOptions">
+            <LayoutItem Id="GhiChu" SizeConstraintsType="Custom" RelativeSize="6.3981042654028437" MinSize="159, 27" MaxSize="0, 27" TextAlignMode="UseParentOptions" CaptionLocation="Default" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default" />
+            <LayoutItem Id="Item1" ShowCaption="False" SizeConstraintsType="Default" Index="1" RelativeSize="93.60189573459715" ViewItem="" IsNewNode="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ChiTietThuNhapTangThem_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" Direction="Horizontal" RelativeSize="100" ImageName="">
+            <LayoutGroup Id="ChiTietThuNhapTangThem_col1" ShowCaption="False" Index="0" RelativeSize="50" IsNewNode="True">
+              <LayoutItem Id="BoPhan" ViewItem="BoPhan" SizeConstraintsType="Default" Index="0" RelativeSize="4" IsNewNode="True" />
+              <LayoutItem Id="ThongTinNhanVien" ViewItem="ThongTinNhanVien" SizeConstraintsType="Default" Index="1" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="XepLoaiLaoDong" ViewItem="XepLoaiLaoDong" SizeConstraintsType="Default" Index="2" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="MaChiTiet" ViewItem="MaChiTiet" SizeConstraintsType="Default" Index="3" RelativeSize="89" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="ChiTietThuNhapTangThem_col2" ShowCaption="False" Index="1" RelativeSize="50" IsNewNode="True">
+              <LayoutItem Id="DienGiai" ViewItem="DienGiai" SizeConstraintsType="Default" Index="0" RelativeSize="4" IsNewNode="True" />
+              <LayoutItem Id="SoTien" ViewItem="SoTien" SizeConstraintsType="Default" Index="1" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="SoTienChiuThue" ViewItem="SoTienChiuThue" SizeConstraintsType="Default" Index="2" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="GhiChu" ViewItem="GhiChu" SizeConstraintsType="Default" Index="3" RelativeSize="89" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="ChiTietThuNhapTangThem" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ChiTietThuongNhanVien_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" Direction="Horizontal" RelativeSize="11" ImageName="">
+            <LayoutGroup Id="ChiTietThuongNhanVien_col1" ShowCaption="False" Index="0" RelativeSize="50" IsNewNode="True">
+              <LayoutItem Id="BoPhan" ViewItem="BoPhan" SizeConstraintsType="Default" Index="0" RelativeSize="37" IsNewNode="True" />
+              <LayoutItem Id="NhanVien" ViewItem="NhanVien" SizeConstraintsType="Default" Index="1" RelativeSize="27" IsNewNode="True" />
+              <LayoutItem Id="NgayThuong" ViewItem="NgayThuong" SizeConstraintsType="Default" Index="2" RelativeSize="34" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="ChiTietThuongNhanVien_col2" ShowCaption="False" Index="1" RelativeSize="50" IsNewNode="True">
+              <LayoutItem Id="SoTien" ViewItem="SoTien" SizeConstraintsType="Default" Index="0" RelativeSize="37" IsNewNode="True" />
+              <LayoutItem Id="SoTienChiuThue" ViewItem="SoTienChiuThue" SizeConstraintsType="Default" Index="1" RelativeSize="62" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="ChiTietThuongNhanVien" Removed="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="88" ImageName="" Caption="Ghi chú">
+            <LayoutItem Id="GhiChu" SizeConstraintsType="Custom" RelativeSize="4" MinSize="824, 27" MaxSize="824, 27" />
+            <LayoutItem Id="Item1" ShowCaption="False" ViewItem="" SizeConstraintsType="Default" Index="1" RelativeSize="95" IsNewNode="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ChiTietTruyLuong_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" Direction="Horizontal" RelativeSize="100" ImageName="">
+            <LayoutGroup Id="ChiTietTruyLuong_col1" ShowCaption="False" Index="0" RelativeSize="50" IsNewNode="True">
+              <LayoutItem Id="MaChiTiet" ViewItem="MaChiTiet" SizeConstraintsType="Default" Index="0" RelativeSize="4" IsNewNode="True" />
+              <LayoutItem Id="DienGiai" ViewItem="DienGiai" SizeConstraintsType="Default" Index="1" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="KyTinhLuong" ViewItem="KyTinhLuong" SizeConstraintsType="Default" Index="2" RelativeSize="92" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="ChiTietTruyLuong_col2" ShowCaption="False" Index="1" RelativeSize="50" IsNewNode="True">
+              <LayoutItem Id="CongTru" ViewItem="CongTru" SizeConstraintsType="Default" Index="0" RelativeSize="4" IsNewNode="True" />
+              <LayoutItem Id="SoTien" ViewItem="SoTien" SizeConstraintsType="Default" Index="1" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="SoTienChiuThue" ViewItem="SoTienChiuThue" SizeConstraintsType="Default" Index="2" RelativeSize="92" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="ChiTietTruyLuong" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ChiTMLuongNhanVien_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="34" ImageName="">
+            <LayoutGroup Id="ChungTu" RelativeSize="100" ImageName="" Index="0" Caption="Chứng từ">
+              <LayoutGroup Id="ChungTu_col1" RelativeSize="23" ImageName="" Direction="Vertical">
+                <LayoutItem Id="SoThuTu" ViewItem="SoThuTu" SizeConstraintsType="Default" Index="0" RelativeSize="23" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="SoChungTu" ViewItem="SoChungTu" SizeConstraintsType="Default" Index="1" RelativeSize="17" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="NgayLap" ViewItem="NgayLap" SizeConstraintsType="Default" Index="2" RelativeSize="17" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="KyTinhLuong" ViewItem="KyTinhLuong" SizeConstraintsType="Default" Index="3" RelativeSize="17" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="TatCaCanBo" ViewItem="TatCaCanBo" SizeConstraintsType="Default" Index="4" RelativeSize="23" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="ChungTu_col2" RelativeSize="73" ImageName="">
+                <LayoutGroup Id="Autoc3c34334-7bc3-4679-a187-6b6f5bd5b25c" ShowCaption="False" Caption="" Direction="Horizontal" Index="0" RelativeSize="41" IsNewNode="True">
+                  <LayoutGroup Id="Autobdb0b4d2-25e4-47ad-905f-0a3427b99f17" ShowCaption="False" Caption="" Index="0" RelativeSize="24" IsNewNode="True">
+                    <LayoutItem Id="LuongPhuCap" ViewItem="LuongPhuCap" SizeConstraintsType="Default" Index="0" RelativeSize="57" IsNewNode="True" />
+                    <LayoutItem Id="Thuong" ViewItem="Thuong" SizeConstraintsType="Default" Index="1" RelativeSize="42" IsNewNode="True" />
+                  </LayoutGroup>
+                  <LayoutGroup Id="Autodf08aaeb-81b7-4d80-a06d-bbfb275666ab" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="49" IsNewNode="True">
+                    <LayoutGroup Id="Auto159a7d7b-6614-4ea0-978b-16cd7e1f5e7e" ShowCaption="False" Caption="" Index="0" RelativeSize="50" IsNewNode="True">
+                      <LayoutItem Id="NgoaiGio" ViewItem="NgoaiGio" SizeConstraintsType="Default" Index="0" RelativeSize="57" IsNewNode="True" />
+                      <LayoutItem Id="ThuNhapKhac" ViewItem="ThuNhapKhac" SizeConstraintsType="Default" Index="1" RelativeSize="42" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Auto2c44f98b-9092-49ea-9bc4-51f39e534827" ShowCaption="False" Caption="" Index="1" RelativeSize="50" IsNewNode="True">
+                      <LayoutItem Id="ThuNhapTangThem" ViewItem="ThuNhapTangThem" SizeConstraintsType="Default" Index="0" RelativeSize="57" IsNewNode="True" />
+                      <LayoutItem Id="TruyLuong" ViewItem="TruyLuong" SizeConstraintsType="Default" Index="1" RelativeSize="42" IsNewNode="True" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                  <LayoutItem Id="ThuLao" ViewItem="ThuLao" SizeConstraintsType="Default" Index="2" RelativeSize="25" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutItem Id="SoTien" SizeConstraintsType="Default" RelativeSize="17" Index="1" />
+                <LayoutItem Id="SoTienBangChu" ViewItem="SoTienBangChu" SizeConstraintsType="Default" Index="2" RelativeSize="17" IsNewNode="True" />
+                <LayoutItem Id="DienGiai" SizeConstraintsType="Default" RelativeSize="23" Index="3" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="ChiTMLuongNhanVien" RelativeSize="15" ImageName="" Direction="Horizontal" Removed="True">
+              <LayoutItem Id="TatCaCanBo" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="ChiTietList_Group" TextAlignMode="AlignLocal" Direction="Vertical" RelativeSize="65" ImageName="BO_ChuyenKhoan" Index="1">
+            <LayoutItem Id="ChiTietList" ShowCaption="False" SizeConstraintsType="Default" RelativeSize="88" />
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="25" ImageName="" Direction="Horizontal" Removed="True">
+            <LayoutItem Id="SoTienBangChu" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ChiTMLuongNhanVienChiTiet_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" Direction="Horizontal" RelativeSize="100" ImageName="">
+            <LayoutGroup Id="ChiTMLuongNhanVienChiTiet_col1" ShowCaption="False" Index="0" RelativeSize="50" IsNewNode="True">
+              <LayoutItem Id="BoPhan" ViewItem="BoPhan" SizeConstraintsType="Default" Index="0" RelativeSize="4" IsNewNode="True" />
+              <LayoutItem Id="NhanVien" ViewItem="NhanVien" SizeConstraintsType="Default" Index="1" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="ThuNhap" ViewItem="ThuNhap" SizeConstraintsType="Default" Index="2" RelativeSize="92" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="ChiTMLuongNhanVienChiTiet_col2" ShowCaption="False" Index="1" RelativeSize="50" IsNewNode="True">
+              <LayoutItem Id="KhauTru" ViewItem="KhauTru" SizeConstraintsType="Default" Index="0" RelativeSize="4" IsNewNode="True" />
+              <LayoutItem Id="ThueTNCNTamThu" ViewItem="ThueTNCNTamThu" SizeConstraintsType="Default" Index="1" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="ThucNhan" ViewItem="ThucNhan" SizeConstraintsType="Default" Index="2" RelativeSize="92" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="ChiTMLuongNhanVienChiTiet" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ChuyenKhoanLuongNhanVien_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="39" ImageName="">
+            <LayoutGroup Id="ChungTu" RelativeSize="100" ImageName="" Index="0" Caption="Chứng từ">
+              <LayoutGroup Id="ChungTu_col1" RelativeSize="29" ImageName="">
+                <LayoutItem Id="SoThuTu" SizeConstraintsType="Default" RelativeSize="20" />
+                <LayoutItem Id="SoChungTu" SizeConstraintsType="Default" RelativeSize="15" />
+                <LayoutItem Id="NgayLap" SizeConstraintsType="Default" RelativeSize="15" />
+                <LayoutItem Id="KyTinhLuong" SizeConstraintsType="Default" RelativeSize="15" />
+                <LayoutItem Id="NganHang" ViewItem="NganHang" SizeConstraintsType="Default" Index="4" RelativeSize="15" IsNewNode="True" />
+                <LayoutItem Id="SoTaiKhoanChuyen" ViewItem="SoTaiKhoanChuyen" SizeConstraintsType="Default" Index="5" RelativeSize="20" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="ChungTu_col2" RelativeSize="68" ImageName="">
+                <LayoutGroup Id="Auto7ab061a4-9062-4291-982c-9e0588d27bad" ShowCaption="False" Caption="" Direction="Horizontal" Index="0" RelativeSize="35" IsNewNode="True">
+                  <LayoutGroup Id="Autoabae48d9-4791-4c2a-9fe5-be1b9b64e560" ShowCaption="False" Caption="" Index="0" RelativeSize="24" IsNewNode="True">
+                    <LayoutItem Id="LuongPhuCap" ViewItem="LuongPhuCap" SizeConstraintsType="Default" Index="0" RelativeSize="57" IsNewNode="True" />
+                    <LayoutItem Id="Thuong" ViewItem="Thuong" SizeConstraintsType="Default" Index="1" RelativeSize="42" IsNewNode="True" />
+                  </LayoutGroup>
+                  <LayoutGroup Id="Autocb35aca9-f514-4e57-a4c9-bf8727316cfe" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="49" IsNewNode="True">
+                    <LayoutGroup Id="Auto1f54c696-317b-46a7-a9d1-4fecf60f7f44" ShowCaption="False" Caption="" Index="0" RelativeSize="50" IsNewNode="True">
+                      <LayoutItem Id="NgoaiGio" ViewItem="NgoaiGio" SizeConstraintsType="Default" Index="0" RelativeSize="57" IsNewNode="True" />
+                      <LayoutItem Id="ThuNhapKhac" ViewItem="ThuNhapKhac" SizeConstraintsType="Default" Index="1" RelativeSize="42" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Auto8fc28212-60d2-4649-adaa-39c096a09320" ShowCaption="False" Caption="" Index="1" RelativeSize="50" IsNewNode="True">
+                      <LayoutItem Id="TruyLuong" ViewItem="TruyLuong" SizeConstraintsType="Default" Index="0" RelativeSize="57" IsNewNode="True" />
+                      <LayoutItem Id="ThuNhapTangThem" ViewItem="ThuNhapTangThem" SizeConstraintsType="Default" Index="1" RelativeSize="42" IsNewNode="True" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                  <LayoutItem Id="ThuLao" ViewItem="ThuLao" SizeConstraintsType="Default" Index="2" RelativeSize="25" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutItem Id="DienGiai" ViewItem="DienGiai" SizeConstraintsType="Default" Index="1" RelativeSize="15" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="SoTien" SizeConstraintsType="Default" Index="2" RelativeSize="15" />
+                <LayoutItem Id="SoTienBangChu" ViewItem="SoTienBangChu" SizeConstraintsType="Default" Index="3" RelativeSize="35" IsNewNode="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="ChuyenKhoanLuongNhanVien" RelativeSize="6" ImageName="" Caption="ChuyenKhoanLuongNhanVien" Direction="Horizontal" Removed="True">
+              <LayoutItem Id="NganHang" Removed="True" />
+              <LayoutItem Id="SoTaiKhoanChuyen" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="ChiTietList_Group" Direction="Vertical" RelativeSize="60" ImageName="BO_ChuyenKhoan" Index="1" TextAlignMode="AlignLocal">
+            <LayoutItem Id="ChiTietList" SizeConstraintsType="Default" RelativeSize="87" ShowCaption="False" />
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="6" ImageName="" Direction="Horizontal" Caption="Số tiền bằng chữ" Removed="True">
+            <LayoutItem Id="SoTienBangChu" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ChuyenKhoanLuongNhanVienChiTiet_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" Direction="Horizontal" RelativeSize="100" ImageName="">
+            <LayoutGroup Id="ChuyenKhoanLuongNhanVienChiTiet_col1" ShowCaption="False" Index="0" RelativeSize="50" IsNewNode="True">
+              <LayoutItem Id="BoPhan" ViewItem="BoPhan" SizeConstraintsType="Default" Index="0" RelativeSize="4" IsNewNode="True" />
+              <LayoutItem Id="NhanVien" ViewItem="NhanVien" SizeConstraintsType="Default" Index="1" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="ThuNhap" ViewItem="ThuNhap" SizeConstraintsType="Default" Index="2" RelativeSize="92" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="ChuyenKhoanLuongNhanVienChiTiet_col2" ShowCaption="False" Index="1" RelativeSize="50" IsNewNode="True">
+              <LayoutItem Id="KhauTru" ViewItem="KhauTru" SizeConstraintsType="Default" Index="0" RelativeSize="4" IsNewNode="True" />
+              <LayoutItem Id="ThucNhan" ViewItem="ThucNhan" SizeConstraintsType="Default" Index="1" RelativeSize="95" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="ChuyenKhoanLuongNhanVienChiTiet" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="CongThucKhenThuongPhucLoi_DetailView">
+      <Items>
+        <PropertyEditor Id="DieuKienNhanVien" Caption="Điều kiện áp dụng" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="56" ImageName="">
+            <LayoutGroup Id="CongThucKhenThuongPhucLoi" RelativeSize="100" ImageName="">
+              <LayoutItem Id="MaQuanLy" SizeConstraintsType="Default" RelativeSize="11" />
+              <LayoutItem Id="DienGiai" SizeConstraintsType="Default" RelativeSize="8" />
+              <LayoutItem Id="DieuKienNhanVien" ViewItem="DieuKienNhanVien" SizeConstraintsType="Custom" Index="2" RelativeSize="80" MinSize="249, 232" MaxSize="0, 232" IsNewNode="True" />
+              <LayoutItem Id="TinhTNCT" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="43" ImageName="">
+            <LayoutItem Id="CongThucTinhSoTienNhan" SizeConstraintsType="Custom" RelativeSize="12" Index="0" MinSize="249, 27" MaxSize="0, 27" />
+            <LayoutItem Id="TinhTNCT" ViewItem="TinhTNCT" SizeConstraintsType="Default" Index="1" RelativeSize="10" IsNewNode="True" />
+            <LayoutItem Id="CongThucTinhTNCT" SizeConstraintsType="Custom" Index="2" RelativeSize="10" MinSize="249, 24" MaxSize="0, 24" />
+            <LayoutItem Id="Item1" ShowCaption="False" ViewItem="" SizeConstraintsType="Default" Index="3" RelativeSize="65" IsNewNode="True" />
+            <LayoutItem Id="DieuKienNhanVien" SizeConstraintsType="Default" RelativeSize="6" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="CongThucTinhKhauTru_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="61" ImageName="">
+            <LayoutGroup Id="CongThucTinhKhauTru" RelativeSize="100" ImageName="">
+              <LayoutItem Id="MaQuanLy" SizeConstraintsType="Default" RelativeSize="10" />
+              <LayoutItem Id="DienGiai" SizeConstraintsType="Default" RelativeSize="7" />
+              <LayoutItem Id="DieuKienNhanVien" ViewItem="DieuKienNhanVien" SizeConstraintsType="Custom" Index="2" RelativeSize="72" MinSize="185, 226" MaxSize="0, 226" IsNewNode="True" />
+              <LayoutItem Id="CongThucTinhSoTien" ViewItem="CongThucTinhSoTien" SizeConstraintsType="Default" Index="3" RelativeSize="9" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="38" Caption="SizeableEditors" ImageName="" Direction="Horizontal">
+            <LayoutItem Id="CongThucTinhSoTien" Removed="True" />
+            <LayoutItem Id="DieuKienNhanVien" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="CongThucTinhLuong_DetailView">
+      <Items>
+        <PropertyEditor Id="DieuKienNhanVien" Caption="Điều kiện áp dụng" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="" Caption="Main" CaptionLocation="Default" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default" TextAlignMode="UseParentOptions">
+          <LayoutGroup Id="SizeableEditors" TextAlignMode="UseParentOptions" RelativeSize="100" ImageName="" Caption="Áp dụng cho tất cả cán bộ thỏa điều kiện" Direction="Horizontal" Index="0" CaptionLocation="Default" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default">
+            <LayoutGroup Id="Autoc4259f1a-98b4-45e3-9755-7aa9a9447880" ShowCaption="False" Caption="Autoc4259f1a-98b4-45e3-9755-7aa9a9447880(3)" Index="0" RelativeSize="44" IsNewNode="True">
+              <LayoutItem Id="DienGiai" ViewItem="DienGiai" SizeConstraintsType="Default" Index="0" RelativeSize="6" IsNewNode="True" />
+              <LayoutItem Id="NgungSuDung" ViewItem="NgungSuDung" SizeConstraintsType="Default" Index="1" RelativeSize="4" IsNewNode="True" />
+              <LayoutItem Id="DieuKienNhanVien" ShowCaption="True" ViewItem="DieuKienNhanVien" SizeConstraintsType="Custom" MinSize="160, 32" MaxSize="0, 0" Index="2" RelativeSize="88" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="ListChiTietCongThucTinhLuong_Group" ShowCaption="True" Caption="Danh sách công thức tính lương" TextAlignMode="AlignLocal" Index="1" RelativeSize="55" IsNewNode="True">
+              <LayoutItem Id="ListChiTietCongThucTinhLuong" ShowCaption="False" ViewItem="ListChiTietCongThucTinhLuong" SizeConstraintsType="Default" Index="0" RelativeSize="90" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutItem Id="DieuKienNhanVien" ShowCaption="True" SizeConstraintsType="Default" RelativeSize="94" Removed="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="ListChiTietCongThucTinhLuong_Group" Direction="Vertical" RelativeSize="90" ImageName="BO_Expression" TextAlignMode="AlignLocal" Removed="True">
+            <LayoutItem Id="ListChiTietCongThucTinhLuong" SizeConstraintsType="Default" RelativeSize="94" ShowCaption="False" />
+          </LayoutGroup>
+          <LayoutGroup Id="SimpleEditors" RelativeSize="83" ImageName="" Direction="Horizontal" Removed="True">
+            <LayoutGroup Id="CongThucTinhLuong" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="CongThucTinhNgoaiGio_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="26" ImageName="">
+            <LayoutGroup Id="CongThucTinhNgoaiGio" RelativeSize="100" ImageName="">
+              <LayoutItem Id="MaChiTiet" SizeConstraintsType="Default" RelativeSize="23" />
+              <LayoutItem Id="DienGiai" SizeConstraintsType="Default" RelativeSize="17" />
+              <LayoutItem Id="CongThuc" ViewItem="CongThuc" SizeConstraintsType="Custom" Index="2" RelativeSize="17" MinSize="249, 24" MaxSize="0, 24" IsNewNode="True" />
+              <LayoutItem Id="TinhTNCT" ViewItem="TinhTNCT" SizeConstraintsType="Default" Index="3" RelativeSize="17" IsNewNode="True" Removed="True" />
+              <LayoutItem Id="CongThucTinhTNCT" ViewItem="CongThucTinhTNCT" SizeConstraintsType="Custom" Index="4" RelativeSize="22" MinSize="249, 30" MaxSize="0, 30" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="73" ImageName="" Caption="SizeableEditors" Direction="Horizontal">
+            <LayoutItem Id="CongThuc" Removed="True" />
+            <LayoutItem Id="CongThucTinhTNCT" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="DieuChinhThueTNCNNhanVien_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="7.5396825396825395" ImageName="">
+            <LayoutGroup Id="DieuChinhThueTNCNNhanVien" RelativeSize="100" ImageName="" Direction="Horizontal">
+              <LayoutGroup Id="Auto48918db6-cad2-47c2-9867-0c92cd28a2c9" ShowCaption="False" Caption="Auto48918db6-cad2-47c2-9867-0c92cd28a2c9(4)" Index="0" RelativeSize="74.520547945205479" Direction="Horizontal" IsNewNode="True">
+                <LayoutItem Id="BoPhan" ViewItem="BoPhan" SizeConstraintsType="Custom" MinSize="305, 38" MaxSize="305, 38" Index="0" RelativeSize="56.066176470588232" IsNewNode="True" />
+                <LayoutItem Id="NhanVien" ViewItem="NhanVien" SizeConstraintsType="Custom" Index="1" RelativeSize="43.933823529411768" MinSize="239, 38" MaxSize="239, 38" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutItem Id="Item1" ShowCaption="False" SizeConstraintsType="Default" Index="1" RelativeSize="25.479452054794521" ViewItem="" IsNewNode="True" />
+              <LayoutItem Id="BoPhan" SizeConstraintsType="Default" RelativeSize="8" Removed="True" />
+              <LayoutItem Id="NhanVien" SizeConstraintsType="Default" RelativeSize="6" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="ListChiTietDieuChinhThueTNCNNhanVien_Group" TextAlignMode="AlignLocal" Direction="Vertical" RelativeSize="92.460317460317455" ImageName="">
+            <LayoutItem Id="ListChiTietDieuChinhThueTNCNNhanVien" ShowCaption="False" SizeConstraintsType="Default" RelativeSize="92.918454935622322" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="KyTinhLuong_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" Direction="Horizontal" RelativeSize="100" ImageName="">
+            <LayoutGroup Id="KyTinhLuong_col1" ShowCaption="False" Index="0" RelativeSize="50" IsNewNode="True">
+              <LayoutItem Id="Thang" ViewItem="Thang" SizeConstraintsType="Default" Index="0" RelativeSize="4" IsNewNode="True" />
+              <LayoutItem Id="Nam" ViewItem="Nam" SizeConstraintsType="Default" Index="1" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="TenKy" ViewItem="TenKy" SizeConstraintsType="Default" Index="2" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="TuNgay" ViewItem="TuNgay" SizeConstraintsType="Default" Index="3" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="DenNgay" ViewItem="DenNgay" SizeConstraintsType="Default" Index="4" RelativeSize="86" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="KyTinhLuong_col2" ShowCaption="False" Index="1" RelativeSize="50" IsNewNode="True">
+              <LayoutItem Id="SoNgay" ViewItem="SoNgay" SizeConstraintsType="Default" Index="0" RelativeSize="4" IsNewNode="True" />
+              <LayoutItem Id="KhoaSo" ViewItem="KhoaSo" SizeConstraintsType="Default" Index="1" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="ThongTinChung" ViewItem="ThongTinChung" SizeConstraintsType="Default" Index="2" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="MocTinhThueTNCN" ViewItem="MocTinhThueTNCN" SizeConstraintsType="Default" Index="3" RelativeSize="89" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="KyTinhLuong" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="LoaiKhenThuongPhucLoi_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="12" ImageName="">
+            <LayoutGroup Id="LoaiKhenThuongPhucLoi" RelativeSize="100" ImageName="" Direction="Horizontal">
+              <LayoutGroup Id="Autofeaa17fd-0add-4b5b-88cd-93a223735b4b" ShowCaption="False" Caption="" Index="0" RelativeSize="32" IsNewNode="True">
+                <LayoutItem Id="MaQuanLy" ViewItem="MaQuanLy" SizeConstraintsType="Custom" MinSize="270, 32" MaxSize="270, 32" Index="0" RelativeSize="51" IsNewNode="True" />
+                <LayoutItem Id="TenLoai" ViewItem="TenLoai" SizeConstraintsType="Default" Index="1" RelativeSize="48" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutItem Id="Item1" ShowCaption="False" ViewItem="" SizeConstraintsType="Default" Index="1" RelativeSize="67" IsNewNode="True" />
+              <LayoutItem Id="MaQuanLy" SizeConstraintsType="Default" RelativeSize="8" Removed="True" />
+              <LayoutItem Id="TenLoai" SizeConstraintsType="Default" RelativeSize="6" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="CongThucList_Group" TextAlignMode="AlignLocal" Direction="Vertical" RelativeSize="87" ImageName="BO_Expression">
+            <LayoutItem Id="CongThucList" ShowCaption="False" SizeConstraintsType="Default" RelativeSize="91" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="LuongNhanVien_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="12.301587301587302" ImageName="">
+            <LayoutGroup Id="LuongNhanVien" RelativeSize="100" ImageName="" Direction="Horizontal">
+              <LayoutGroup Id="Auto30ff3511-bb59-48c9-bc87-447e962e6bdb" ShowCaption="False" Caption="Auto30ff3511-bb59-48c9-bc87-447e962e6bdb(4)" Index="0" RelativeSize="80.273972602739732" Direction="Horizontal" IsNewNode="True">
+                <LayoutGroup Id="Autoc8e34f45-54fc-4adc-9e01-f225373364ad" ShowCaption="False" Caption="" Index="0" RelativeSize="62.627986348122867" IsNewNode="True">
+                  <LayoutItem Id="BoPhan" ViewItem="BoPhan" SizeConstraintsType="Custom" MinSize="367, 32" MaxSize="367, 32" Index="0" RelativeSize="51.612903225806448" IsNewNode="True" />
+                  <LayoutItem Id="ThongTinNhanVien" ViewItem="ThongTinNhanVien" SizeConstraintsType="Default" Index="1" RelativeSize="48.387096774193552" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutGroup Id="Auto42835a10-e360-43ef-afee-91575215f0eb" ShowCaption="False" Caption="" Index="1" RelativeSize="37.372013651877133" IsNewNode="True">
+                  <LayoutItem Id="ThuNhap" ViewItem="ThuNhap" SizeConstraintsType="Custom" MinSize="219, 32" MaxSize="219, 32" Index="0" RelativeSize="51.612903225806448" IsNewNode="True" />
+                  <LayoutItem Id="ThuNhapChiuThue" ViewItem="ThuNhapChiuThue" SizeConstraintsType="Default" Index="1" RelativeSize="48.387096774193552" IsNewNode="True" />
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutItem Id="Item1" ShowCaption="False" SizeConstraintsType="Default" Index="1" RelativeSize="19.726027397260275" ViewItem="" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="ListChiTietLuongNhanVien_Group" TextAlignMode="AlignLocal" Direction="Vertical" RelativeSize="87.6984126984127" ImageName="BO_ChiTietLuong">
+            <LayoutItem Id="ListChiTietLuongNhanVien" ShowCaption="False" SizeConstraintsType="Default" RelativeSize="91.17647058823529" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="QuanLyDieuChinhThueTNCN_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="7" ImageName="">
+            <LayoutGroup Id="QuanLyDieuChinhThueTNCN" RelativeSize="100" ImageName="" Caption="Kỳ tính lương" Direction="Horizontal">
+              <LayoutItem Id="KyTinhLuong" SizeConstraintsType="Custom" RelativeSize="26" MinSize="217, 38" MaxSize="217, 38" />
+              <LayoutItem Id="Item1" ShowCaption="False" ViewItem="" SizeConstraintsType="Default" Index="1" RelativeSize="73" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="ListDieuChinhThueTNCNNhanVien_Group" TextAlignMode="AlignLocal" Direction="Vertical" RelativeSize="92" ImageName="">
+            <LayoutItem Id="ListDieuChinhThueTNCNNhanVien" ShowCaption="False" SizeConstraintsType="Default" RelativeSize="92" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="TamUng_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="16" ImageName="">
+            <LayoutGroup Id="TamUng" RelativeSize="100" ImageName="" Caption="Tạm ứng">
+              <LayoutGroup Id="TamUng_col1" RelativeSize="48" ImageName="">
+                <LayoutItem Id="BoPhan" SizeConstraintsType="Default" RelativeSize="36" />
+                <LayoutItem Id="ThongTinNhanVien" SizeConstraintsType="Default" RelativeSize="27" />
+                <LayoutItem Id="TongTamUng" SizeConstraintsType="Default" RelativeSize="36" />
+              </LayoutGroup>
+              <LayoutGroup Id="TamUng_col2" RelativeSize="48" ImageName="">
+                <LayoutItem Id="MucKhauTruHangThang" SizeConstraintsType="Default" RelativeSize="36" />
+                <LayoutItem Id="SoTienDaKhauTru" SizeConstraintsType="Default" RelativeSize="27" />
+                <LayoutItem Id="SoTienConLai" SizeConstraintsType="Default" RelativeSize="36" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="ListChiTietTamUng_Group" TextAlignMode="AlignLocal" Direction="Vertical" RelativeSize="83" ImageName="BO_BangLuong">
+            <LayoutItem Id="ListChiTietTamUng" ShowCaption="False" SizeConstraintsType="Default" RelativeSize="93" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ThueTNCNTamTruNgoai_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" Direction="Horizontal" RelativeSize="100" ImageName="">
+            <LayoutGroup Id="ThueTNCNTamTruNgoai_col1" ShowCaption="False" Index="0" RelativeSize="50" IsNewNode="True">
+              <LayoutItem Id="BoPhan" ViewItem="BoPhan" SizeConstraintsType="Default" Index="0" RelativeSize="4" IsNewNode="True" />
+              <LayoutItem Id="NhanVien" ViewItem="NhanVien" SizeConstraintsType="Default" Index="1" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="TongThuNhapChiuThue" ViewItem="TongThuNhapChiuThue" SizeConstraintsType="Default" Index="2" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="TongTNCTLamCanCuGiamTru" ViewItem="TongTNCTLamCanCuGiamTru" SizeConstraintsType="Default" Index="3" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="TongThueTNCNTamTru" ViewItem="TongThueTNCNTamTru" SizeConstraintsType="Default" Index="4" RelativeSize="86" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="ThueTNCNTamTruNgoai_col2" ShowCaption="False" Index="1" RelativeSize="50" IsNewNode="True">
+              <LayoutItem Id="ThuNhapChiuThueTrongThang" ViewItem="ThuNhapChiuThueTrongThang" SizeConstraintsType="Default" Index="0" RelativeSize="4" IsNewNode="True" />
+              <LayoutItem Id="ThueTNCNTamTruTrongThang" ViewItem="ThueTNCNTamTruTrongThang" SizeConstraintsType="Default" Index="1" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="ThuNhap" ViewItem="ThuNhap" SizeConstraintsType="Default" Index="2" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="ThueTNCNTamTru" ViewItem="ThueTNCNTamTru" SizeConstraintsType="Default" Index="3" RelativeSize="89" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="ThueTNCNTamTruNgoai" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ThueTNCNTamTruNhanVien_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" Direction="Horizontal" RelativeSize="100" ImageName="">
+            <LayoutGroup Id="ThueTNCNTamTruNhanVien_col1" ShowCaption="False" Index="0" RelativeSize="50" IsNewNode="True">
+              <LayoutItem Id="BoPhan" ViewItem="BoPhan" SizeConstraintsType="Default" Index="0" RelativeSize="4" IsNewNode="True" />
+              <LayoutItem Id="NhanVien" ViewItem="NhanVien" SizeConstraintsType="Default" Index="1" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="TongThuNhap" ViewItem="TongThuNhap" SizeConstraintsType="Default" Index="2" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="TongThuNhapChiuThue" ViewItem="TongThuNhapChiuThue" SizeConstraintsType="Default" Index="3" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="TongGiamTruGiaCanh" ViewItem="TongGiamTruGiaCanh" SizeConstraintsType="Default" Index="4" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="TongTuThienNhanDao" ViewItem="TongTuThienNhanDao" SizeConstraintsType="Default" Index="5" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="TongBHXH" ViewItem="TongBHXH" SizeConstraintsType="Default" Index="6" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="TongBHYT" ViewItem="TongBHYT" SizeConstraintsType="Default" Index="7" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="TongBHTN" ViewItem="TongBHTN" SizeConstraintsType="Default" Index="8" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="TongThuNhapTinhThue" ViewItem="TongThuNhapTinhThue" SizeConstraintsType="Default" Index="9" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="TongThueTNCNTamTru" ViewItem="TongThueTNCNTamTru" SizeConstraintsType="Default" Index="10" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="TongTNCTLamCanCuGiamTru" ViewItem="TongTNCTLamCanCuGiamTru" SizeConstraintsType="Default" Index="11" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="ThuNhapTrongThang" ViewItem="ThuNhapTrongThang" SizeConstraintsType="Default" Index="12" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="ThuNhapChiuThueTrongThang" ViewItem="ThuNhapChiuThueTrongThang" SizeConstraintsType="Default" Index="13" RelativeSize="57" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="ThueTNCNTamTruNhanVien_col2" ShowCaption="False" Index="1" RelativeSize="50" IsNewNode="True">
+              <LayoutItem Id="GiamTruGiaCanhTrongThang" ViewItem="GiamTruGiaCanhTrongThang" SizeConstraintsType="Default" Index="0" RelativeSize="4" IsNewNode="True" />
+              <LayoutItem Id="TuThienNhanDaoTrongThang" ViewItem="TuThienNhanDaoTrongThang" SizeConstraintsType="Default" Index="1" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="BHXHTrongThang" ViewItem="BHXHTrongThang" SizeConstraintsType="Default" Index="2" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="BHYTTrongThang" ViewItem="BHYTTrongThang" SizeConstraintsType="Default" Index="3" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="BHTNTrongThang" ViewItem="BHTNTrongThang" SizeConstraintsType="Default" Index="4" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="ThuNhapTinhThueTrongThang" ViewItem="ThuNhapTinhThueTrongThang" SizeConstraintsType="Default" Index="5" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="ThueTNCNTamTruTrongThang" ViewItem="ThueTNCNTamTruTrongThang" SizeConstraintsType="Default" Index="6" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="ThuNhap" ViewItem="ThuNhap" SizeConstraintsType="Default" Index="7" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="ThuNhapChiuThue" ViewItem="ThuNhapChiuThue" SizeConstraintsType="Default" Index="8" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="ThueTNCNTamTru" ViewItem="ThueTNCNTamTru" SizeConstraintsType="Default" Index="9" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="SoNguoiPhuThuoc" ViewItem="SoNguoiPhuThuoc" SizeConstraintsType="Default" Index="10" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="SoThang" ViewItem="SoThang" SizeConstraintsType="Default" Index="11" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="ThueTNCNNopThua" ViewItem="ThueTNCNNopThua" SizeConstraintsType="Default" Index="12" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="ThueTNCNConThieu" ViewItem="ThueTNCNConThieu" SizeConstraintsType="Default" Index="13" RelativeSize="57" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="ThueTNCNTamTruNhanVien" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ToKhaiKhauTruThueTNCN_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" Direction="Horizontal" RelativeSize="100" ImageName="">
+            <LayoutGroup Id="ToKhaiKhauTruThueTNCN_col1" ShowCaption="False" Index="0" RelativeSize="50" IsNewNode="True">
+              <LayoutItem Id="NgayLap" ViewItem="NgayLap" SizeConstraintsType="Default" Index="0" RelativeSize="4" IsNewNode="True" />
+              <LayoutItem Id="PhanLoai" ViewItem="PhanLoai" SizeConstraintsType="Default" Index="1" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="Thang" ViewItem="Thang" SizeConstraintsType="Default" Index="2" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="Quy" ViewItem="Quy" SizeConstraintsType="Default" Index="3" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="Nam" ViewItem="Nam" SizeConstraintsType="Default" Index="4" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="BoSung" ViewItem="BoSung" SizeConstraintsType="Default" Index="5" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="LanBoSung" ViewItem="LanBoSung" SizeConstraintsType="Default" Index="6" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="ThongTinTruong" ViewItem="ThongTinTruong" SizeConstraintsType="Default" Index="7" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="CaNhanCuTru" ViewItem="CaNhanCuTru" SizeConstraintsType="Default" Index="8" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="CaNhanKhongCuTru" ViewItem="CaNhanKhongCuTru" SizeConstraintsType="Default" Index="9" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="TongCaNhanKhauTruThue" ViewItem="TongCaNhanKhauTruThue" SizeConstraintsType="Default" Index="10" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="TNCTCaNhanCuTruCoHopDong" ViewItem="TNCTCaNhanCuTruCoHopDong" SizeConstraintsType="Default" Index="11" RelativeSize="63" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="ToKhaiKhauTruThueTNCN_col2" ShowCaption="False" Index="1" RelativeSize="50" IsNewNode="True">
+              <LayoutItem Id="TNCTCaNhanCuTruKhongCoHopDong" ViewItem="TNCTCaNhanCuTruKhongCoHopDong" SizeConstraintsType="Default" Index="0" RelativeSize="4" IsNewNode="True" />
+              <LayoutItem Id="TNCTCaNhanKhongCuTru" ViewItem="TNCTCaNhanKhongCuTru" SizeConstraintsType="Default" Index="1" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="TongTNCT" ViewItem="TongTNCT" SizeConstraintsType="Default" Index="2" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="KTTCaNhanCuTruCoHopDong" ViewItem="KTTCaNhanCuTruCoHopDong" SizeConstraintsType="Default" Index="3" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="KTTCaNhanCuTruKhongCoHopDong" ViewItem="KTTCaNhanCuTruKhongCoHopDong" SizeConstraintsType="Default" Index="4" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="KTTCaNhanKhongCuTru" ViewItem="KTTCaNhanKhongCuTru" SizeConstraintsType="Default" Index="5" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="TongKTT" ViewItem="TongKTT" SizeConstraintsType="Default" Index="6" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="ThueTNCNCaNhanCuTruCoHopDong" ViewItem="ThueTNCNCaNhanCuTruCoHopDong" SizeConstraintsType="Default" Index="7" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="ThueTNCNCaNhanCuTruKhongCoHopDong" ViewItem="ThueTNCNCaNhanCuTruKhongCoHopDong" SizeConstraintsType="Default" Index="8" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="ThueTNCNCaNhanKhongCuTru" ViewItem="ThueTNCNCaNhanKhongCuTru" SizeConstraintsType="Default" Index="9" RelativeSize="3" IsNewNode="True" />
+              <LayoutItem Id="TongThueTNCN" ViewItem="TongThueTNCN" SizeConstraintsType="Default" Index="10" RelativeSize="66" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="ToKhaiKhauTruThueTNCN" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ToKhaiQuyetToanThueTNCN_DetailView">
+      <Items>
+        <PropertyEditor Id="KyTinhThue" Caption="Kỳ tính thuế: Năm" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" Direction="Horizontal" RelativeSize="46" ImageName="">
+            <LayoutGroup Id="ToKhaiQuyetToanThueTNCN_col1" ShowCaption="False" Index="0" RelativeSize="50" IsNewNode="True">
+              <LayoutItem Id="NgayLap" ViewItem="NgayLap" SizeConstraintsType="Default" Index="0" RelativeSize="9" IsNewNode="True" />
+              <LayoutItem Id="KyTinhThue" ViewItem="KyTinhThue" SizeConstraintsType="Default" Index="1" RelativeSize="6" IsNewNode="True" />
+              <LayoutItem Id="BoSung" ViewItem="BoSung" SizeConstraintsType="Default" Index="2" RelativeSize="6" IsNewNode="True" />
+              <LayoutItem Id="LanBoSung" ViewItem="LanBoSung" SizeConstraintsType="Default" Index="3" RelativeSize="6" IsNewNode="True" />
+              <LayoutItem Id="ThongTinTruong" ViewItem="ThongTinTruong" SizeConstraintsType="Default" Index="4" RelativeSize="6" IsNewNode="True" />
+              <LayoutItem Id="MocTinhThueTNCN" ViewItem="MocTinhThueTNCN" SizeConstraintsType="Default" Index="5" RelativeSize="6" IsNewNode="True" />
+              <LayoutItem Id="CaNhanCuTru" ViewItem="CaNhanCuTru" SizeConstraintsType="Default" Index="6" RelativeSize="6" IsNewNode="True" />
+              <LayoutItem Id="CaNhanKhongCuTru" ViewItem="CaNhanKhongCuTru" SizeConstraintsType="Default" Index="7" RelativeSize="6" IsNewNode="True" />
+              <LayoutItem Id="TNCTCaNhanCuTruCoHopDong" ViewItem="TNCTCaNhanCuTruCoHopDong" SizeConstraintsType="Default" Index="8" RelativeSize="6" IsNewNode="True" />
+              <LayoutItem Id="TNCTCaNhanCuTruKhongHopDong" ViewItem="TNCTCaNhanCuTruKhongHopDong" SizeConstraintsType="Default" Index="9" RelativeSize="6" IsNewNode="True" />
+              <LayoutItem Id="TNCTCaNhanKhongCuTru" ViewItem="TNCTCaNhanKhongCuTru" SizeConstraintsType="Default" Index="10" RelativeSize="6" IsNewNode="True" />
+              <LayoutItem Id="KTTCaNhanCuTruCoHopDong" ViewItem="KTTCaNhanCuTruCoHopDong" SizeConstraintsType="Default" Index="11" RelativeSize="6" IsNewNode="True" />
+              <LayoutItem Id="KTTCaNhanCuTruKhongCoHopDong" ViewItem="KTTCaNhanCuTruKhongCoHopDong" SizeConstraintsType="Default" Index="12" RelativeSize="6" IsNewNode="True" />
+              <LayoutItem Id="KTTCaNhanKhongCuTru" ViewItem="KTTCaNhanKhongCuTru" SizeConstraintsType="Default" Index="13" RelativeSize="8" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="ToKhaiQuyetToanThueTNCN_col2" ShowCaption="False" Index="1" RelativeSize="50" IsNewNode="True">
+              <LayoutItem Id="ThueTNCNDaKT_CaNhanCuTruCoHopDong" ViewItem="ThueTNCNDaKT_CaNhanCuTruCoHopDong" SizeConstraintsType="Default" Index="0" RelativeSize="9" IsNewNode="True" />
+              <LayoutItem Id="ThueTNCNDaKT_CaNhanCuTruKhongHopDong" ViewItem="ThueTNCNDaKT_CaNhanCuTruKhongHopDong" SizeConstraintsType="Default" Index="1" RelativeSize="6" IsNewNode="True" />
+              <LayoutItem Id="ThueTNCNDaKT_CaNhanKhongCuTru" ViewItem="ThueTNCNDaKT_CaNhanKhongCuTru" SizeConstraintsType="Default" Index="2" RelativeSize="6" IsNewNode="True" />
+              <LayoutItem Id="ThueTNCNPhaiKT_CaNhanCuTruCoHopDong" ViewItem="ThueTNCNPhaiKT_CaNhanCuTruCoHopDong" SizeConstraintsType="Default" Index="3" RelativeSize="6" IsNewNode="True" />
+              <LayoutItem Id="ThueTNCNPhaiKT_CaNhanCuTruKhongHopDong" ViewItem="ThueTNCNPhaiKT_CaNhanCuTruKhongHopDong" SizeConstraintsType="Default" Index="4" RelativeSize="6" IsNewNode="True" />
+              <LayoutItem Id="ThueTNCNPhaiKT_CaNhanKhongCuTru" ViewItem="ThueTNCNPhaiKT_CaNhanKhongCuTru" SizeConstraintsType="Default" Index="5" RelativeSize="6" IsNewNode="True" />
+              <LayoutItem Id="TongSoThueTNCNDaNopNSNN" ViewItem="TongSoThueTNCNDaNopNSNN" SizeConstraintsType="Default" Index="6" RelativeSize="6" IsNewNode="True" />
+              <LayoutItem Id="TongSoThueTNCNConPhaiNopNSNN" ViewItem="TongSoThueTNCNConPhaiNopNSNN" SizeConstraintsType="Default" Index="7" RelativeSize="6" IsNewNode="True" />
+              <LayoutItem Id="TongSoThueTNCNDaNopThua" ViewItem="TongSoThueTNCNDaNopThua" SizeConstraintsType="Default" Index="8" RelativeSize="6" IsNewNode="True" />
+              <LayoutItem Id="TongSoCaNhanUyQuyen" ViewItem="TongSoCaNhanUyQuyen" SizeConstraintsType="Default" Index="9" RelativeSize="6" IsNewNode="True" />
+              <LayoutItem Id="QTT_TongSoThueTNCNDaKhauTru" ViewItem="QTT_TongSoThueTNCNDaKhauTru" SizeConstraintsType="Default" Index="10" RelativeSize="6" IsNewNode="True" />
+              <LayoutItem Id="QTT_TongSoThueTNCNPhaiNop" ViewItem="QTT_TongSoThueTNCNPhaiNop" SizeConstraintsType="Default" Index="11" RelativeSize="6" IsNewNode="True" />
+              <LayoutItem Id="QTT_TongSoThueTNCNConPhaiNopNSNN" ViewItem="QTT_TongSoThueTNCNConPhaiNopNSNN" SizeConstraintsType="Default" Index="12" RelativeSize="6" IsNewNode="True" />
+              <LayoutItem Id="QTT_TongSoThueTNCNNopThua" ViewItem="QTT_TongSoThueTNCNNopThua" SizeConstraintsType="Default" Index="13" RelativeSize="8" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="ToKhaiQuyetToanThueTNCN" Removed="True" />
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs" RelativeSize="53">
+            <LayoutGroup Id="BangKeThueTNCNNhanVienList" TextAlignMode="AlignLocal" RelativeSize="100" ImageName="BO_HoaDon">
+              <LayoutItem Id="BangKeThueTNCNNhanVienList" TextAlignMode="AutoSize" SizeConstraintsType="Default" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="BangKeThueTNCNNgoaiList" TextAlignMode="AlignLocal" RelativeSize="100" ImageName="BO_HoaDon">
+              <LayoutItem Id="BangKeThueTNCNNgoaiList" TextAlignMode="AutoSize" SizeConstraintsType="Default" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="ListQuanLyDieuChinhThueTNCN" TextAlignMode="AlignLocal" RelativeSize="100" ImageName="BO_HoaDon">
+              <LayoutItem Id="ListQuanLyDieuChinhThueTNCN" TextAlignMode="AutoSize" SizeConstraintsType="Default" RelativeSize="100" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="TruyLuongNhanVien_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="20" ImageName="">
+            <LayoutGroup Id="TruyLuongNhanVien" RelativeSize="100" ImageName="" Caption="Thông tin truy lương">
+              <LayoutGroup Id="TruyLuongNhanVien_col1" RelativeSize="48" ImageName="">
+                <LayoutItem Id="BoPhan" SizeConstraintsType="Default" RelativeSize="28" />
+                <LayoutItem Id="ThongTinNhanVien" SizeConstraintsType="Default" RelativeSize="21" />
+                <LayoutItem Id="QuyetDinh" SizeConstraintsType="Default" RelativeSize="21" />
+                <LayoutItem Id="TuNgay" SizeConstraintsType="Default" RelativeSize="28" />
+              </LayoutGroup>
+              <LayoutGroup Id="TruyLuongNhanVien_col2" RelativeSize="48" ImageName="">
+                <LayoutItem Id="SoTien" SizeConstraintsType="Default" RelativeSize="21" />
+                <LayoutItem Id="SoTienChiuThue" SizeConstraintsType="Default" RelativeSize="28" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="ListChiTietTruyLuong_Group" TextAlignMode="AlignLocal" Direction="Vertical" RelativeSize="79" ImageName="">
+            <LayoutItem Id="ListChiTietTruyLuong" ShowCaption="False" SizeConstraintsType="Default" RelativeSize="94" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="UyNhiemChi_DetailView">
+      <Items>
+        <PropertyEditor Id="DiaChi1" Caption="Địa chỉ" />
+        <PropertyEditor Id="MaDVQHNS1" Caption="Mã ĐVQHNS" />
+        <PropertyEditor Id="TaiKhoan1" Caption="Tài khoản" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" Direction="Horizontal" RelativeSize="11.466666666666667" ImageName="">
+            <LayoutGroup Id="UyNhiemChi_col1" ShowCaption="False" Index="0" RelativeSize="50" IsNewNode="True">
+              <LayoutItem Id="So" ViewItem="So" SizeConstraintsType="Default" Index="0" RelativeSize="37.2093023255814" IsNewNode="True" />
+              <LayoutItem Id="NgayLap" ViewItem="NgayLap" SizeConstraintsType="Default" Index="1" RelativeSize="27.906976744186046" IsNewNode="True" />
+              <LayoutItem Id="KyTinhLuong" ViewItem="KyTinhLuong" SizeConstraintsType="Default" Index="2" RelativeSize="34.883720930232556" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="UyNhiemChi_col2" ShowCaption="False" Index="1" RelativeSize="50" IsNewNode="True">
+              <LayoutItem Id="SoTien" ViewItem="SoTien" SizeConstraintsType="Default" Index="0" RelativeSize="37.2093023255814" IsNewNode="True" />
+              <LayoutItem Id="SoTienBangChu" ViewItem="SoTienBangChu" SizeConstraintsType="Default" Index="1" RelativeSize="27.906976744186046" IsNewNode="True" />
+              <LayoutItem Id="NoiDungThanhToan" ViewItem="NoiDungThanhToan" SizeConstraintsType="Default" Index="2" RelativeSize="34.883720930232556" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="UyNhiemChi" Removed="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="Auto905abdb5-9dfe-422c-9bbd-9934d4cdaf78" ShowCaption="False" Caption="Auto905abdb5-9dfe-422c-9bbd-9934d4cdaf78(12)" Direction="Horizontal" Index="1" RelativeSize="22.666666666666668" IsNewNode="True">
+            <LayoutGroup Id="Item1" ShowCaption="True" Caption="Đơn vị trả tiền" CaptionLocation="Top" Index="0" RelativeSize="50" IsNewNode="True">
+              <LayoutItem Id="DonViTraTien" ViewItem="DonViTraTien" SizeConstraintsType="Default" Index="0" RelativeSize="18.823529411764707" IsNewNode="True" />
+              <LayoutItem Id="MaDVQHNS" ViewItem="MaDVQHNS" SizeConstraintsType="Default" Index="1" RelativeSize="14.117647058823529" IsNewNode="True" />
+              <LayoutItem Id="DiaChi" ViewItem="DiaChi" SizeConstraintsType="Default" Index="2" RelativeSize="14.117647058823529" IsNewNode="True" />
+              <LayoutItem Id="TaiKhoan" ViewItem="TaiKhoan" SizeConstraintsType="Default" Index="3" RelativeSize="14.117647058823529" IsNewNode="True" />
+              <LayoutItem Id="KhoBac" ViewItem="KhoBac" SizeConstraintsType="Default" Index="4" RelativeSize="18.823529411764707" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="Item2" ShowCaption="True" Caption="Đơn vị nhận tiền" CaptionLocation="Top" Index="1" RelativeSize="50" IsNewNode="True">
+              <LayoutItem Id="DonViNhanTien" ViewItem="DonViNhanTien" SizeConstraintsType="Default" Index="0" RelativeSize="18.823529411764707" IsNewNode="True" />
+              <LayoutItem Id="MaDVQHNS1" ViewItem="MaDVQHNS1" SizeConstraintsType="Default" Index="1" RelativeSize="14.117647058823529" IsNewNode="True" />
+              <LayoutItem Id="DiaChi1" ViewItem="DiaChi1" SizeConstraintsType="Default" Index="2" RelativeSize="14.117647058823529" IsNewNode="True" />
+              <LayoutItem Id="TaiKhoan1" ViewItem="TaiKhoan1" SizeConstraintsType="Default" Index="3" RelativeSize="14.117647058823529" IsNewNode="True" />
+              <LayoutItem Id="KhoBac1" ViewItem="KhoBac1" SizeConstraintsType="Default" Index="4" RelativeSize="18.823529411764707" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="65.86666666666666" ImageName="" Direction="Horizontal" Caption="Nội dung thanh toán" Index="2">
+            <LayoutItem Id="NoiDungThanhToan" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

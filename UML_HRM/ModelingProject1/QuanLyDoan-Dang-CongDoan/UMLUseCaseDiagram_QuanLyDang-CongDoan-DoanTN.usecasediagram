@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="cd5cdd38-5026-4f0d-8a2d-666ea2c26fbf" name="UMLUseCaseDiagram_QuanLyDang-CongDoan-DoanTN" linkedPackageId="72613a54-fdce-455f-887a-5f3a41e2c771" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="56c3b59c-329a-4e08-9b59-7e75ec293447">
+      <elementDefinition Id="39b84452-73c5-4099-8bfd-e6f5f73f9cdf" />
+      <body>UC Quản lý Đảng - Công Đoàn - Đoàn thanh niên</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="133851d7-2a4b-4c59-af49-db1dce9dda8f">
+      <profileInstance Id="e9aa14ac-f3b0-4070-b73e-4d581aa8a6fa" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="256ee0a9-471f-4454-b713-58eca0442522">
+      <profileInstance Id="24e424eb-b461-4f6d-b716-17f00bed1636" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="d82f06ad-8cd2-40ae-a3ed-3ffc0edb9776" name="người sử dụng" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ae0e4b42-e8e1-409d-af2f-8ca9e2836d0f" />
+        <suppliersInternal>
+          <dependency Id="155b48d5-c467-4b7d-b660-a326dfa1f5f3">
+            <useCaseMoniker Id="45383fd5-9406-464d-9f89-c11bd3e30896" LastKnownName="Quản lý Đảng - Công Đoàn - Đoàn Thanh Niên" />
+            <elementDefinition Id="2c778e31-b3ee-4d0e-8284-6e173d44d36b" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="0356899b-8c9a-40a7-b323-e141b1e37c5e" name="quản trị nhân viên(admin tổ chức)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3adc7cf9-8565-4998-a8eb-4db02ba282d3" />
+        <generalsInternal>
+          <generalization Id="af8646a2-fce8-4c9f-a7fe-bdd02f160e5b" isSubstitutable="false">
+            <actorMoniker Id="d82f06ad-8cd2-40ae-a3ed-3ffc0edb9776" LastKnownName="người sử dụng" />
+            <elementDefinition Id="6c902048-88b2-422f-b3e3-fb51ee2b67de" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="b2fd2115-aa5b-492f-bd26-e24d861acb8d" name="quản trị phần mềm(administrator)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f8657f9f-f282-4c4d-be60-36bab7b990be" />
+        <generalsInternal>
+          <generalization Id="6d72c74f-bd41-4d7d-a329-ab5cc04da6bc" isSubstitutable="false">
+            <actorMoniker Id="d82f06ad-8cd2-40ae-a3ed-3ffc0edb9776" LastKnownName="người sử dụng" />
+            <elementDefinition Id="bde2c14c-bf8a-40db-a278-cfe341e9bcdc" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="45383fd5-9406-464d-9f89-c11bd3e30896" name="Quản lý Đảng - Công Đoàn - Đoàn Thanh Niên" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5226c9b4-2e86-4e0f-ac55-a7ba832c2270" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="66feae87-1734-438b-91e8-31e00711f8ec" name="Thêm TC Đảng - TC Công Đoàn - TC Đoàn TN" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="59eefbbc-4f07-46fa-8ba8-5b061b384860" />
+        <extendedCases>
+          <extend Id="6f13c6a0-054f-4802-9fb1-f80c63a8c144">
+            <useCaseMoniker Id="45383fd5-9406-464d-9f89-c11bd3e30896" LastKnownName="Quản lý Đảng - Công Đoàn - Đoàn Thanh Niên" />
+            <elementDefinition Id="46c1e21f-b40b-42a0-aca3-5f36328c8ae2" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8539deda-32cf-4bdf-89d5-4681dd609376" name="Cập nhật/Sửa TC Đảng - TC Công Đoàn - TC Đoàn TN" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cda8ee3f-9457-48c7-b304-e027031edc17" />
+        <extendedCases>
+          <extend Id="4d73c9d9-e82f-42e9-8816-067a8e17f4a3">
+            <useCaseMoniker Id="45383fd5-9406-464d-9f89-c11bd3e30896" LastKnownName="Quản lý Đảng - Công Đoàn - Đoàn Thanh Niên" />
+            <elementDefinition Id="24bd5637-fcc3-4c54-bd65-5396747895b4" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4a4a1492-cd34-42ff-9ac2-56b7561221e2" name="Xóa TC Đang - TC Công Đoàn - TC Đoàn TN" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="497382db-c8bc-4b67-b923-b2adfa8c076d" />
+        <extendedCases>
+          <extend Id="7526a51c-e2d1-47c3-936d-05f9a6e07b8d">
+            <useCaseMoniker Id="45383fd5-9406-464d-9f89-c11bd3e30896" LastKnownName="Quản lý Đảng - Công Đoàn - Đoàn Thanh Niên" />
+            <elementDefinition Id="f9b48cb3-f831-4523-aae6-03ec8271349d" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="72613a54-fdce-455f-887a-5f3a41e2c771" name="ModelingProject1">
+    <elementDefinition Id="c1918b24-b69c-4818-aacd-4d280375ce7b" />
+  </package>
+</useCaseModelRoot>

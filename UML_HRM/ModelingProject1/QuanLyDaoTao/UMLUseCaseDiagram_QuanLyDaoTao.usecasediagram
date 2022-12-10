@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="c5538a88-7d2c-4935-abea-dd4cd160330a" name="UMLUseCaseDiagram_QuanLyDaoTao" linkedPackageId="a522b02b-beea-4024-a406-e7df72916151" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="2ae14134-8a20-41d3-a57b-e7a2a62ea946">
+      <elementDefinition Id="ef7a1ccf-8e85-4a45-ad99-e70771264931" />
+      <body>UC Quản lý đào tạo</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c884c25b-09f3-4be1-9b3a-8c1ee72a4131" name="Thêm QĐ đào tạo" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c8dd7389-10ef-4573-8568-019e6b0f6f02" />
+        <extendedCases>
+          <extend Id="d458e274-4142-4058-83ae-75f7b1f9ce9e">
+            <useCaseMoniker Id="e06853b8-c885-4d9a-9e38-ab6d2178cdee" LastKnownName="Quản lý đào tạo" />
+            <elementDefinition Id="48b141e4-4542-4f6f-8f63-4332846b504c" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8f72c821-da97-4d3a-a3e8-856b59fa9a97" name="Xóa QĐ đào tạo" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="38dc7896-11a1-4307-bfd7-06f5c78d1bc3" />
+        <extendedCases>
+          <extend Id="9cc1dacc-8dd0-4153-9c91-0da44aa82bde">
+            <useCaseMoniker Id="e06853b8-c885-4d9a-9e38-ab6d2178cdee" LastKnownName="Quản lý đào tạo" />
+            <elementDefinition Id="fe5b0154-4ef9-45d2-9999-3f83b50cf295" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a0642da0-b3af-4e47-914d-2b33ef87c000" name="Cập nhật/sửa QĐ đào tạo" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="11eca180-80a0-404b-87dc-22e00a748126" />
+        <extendedCases>
+          <extend Id="392d9933-5542-4703-a974-857b4f4d6be8">
+            <useCaseMoniker Id="e06853b8-c885-4d9a-9e38-ab6d2178cdee" LastKnownName="Quản lý đào tạo" />
+            <elementDefinition Id="1f4b89a3-d9bc-4f9b-8def-465ed9144edb" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="54783afb-d3aa-42e7-8942-6672259d5bed" name="Tìm QĐ đào tạo" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7029cd25-9d1e-42a3-bbaa-a1b15e7c0235" />
+        <extendedCases>
+          <extend Id="1989fcd3-6714-4399-a9b0-a739dd0854be">
+            <useCaseMoniker Id="e06853b8-c885-4d9a-9e38-ab6d2178cdee" LastKnownName="Quản lý đào tạo" />
+            <elementDefinition Id="b90fa0af-3412-41ba-9a39-a18e553a3f55" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="670eaf00-ae74-40a5-af4b-2524d057975c" name="In QĐ đào tạo" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ef99279d-4e64-49b2-a50a-a114836e5286" />
+        <extendedCases>
+          <extend Id="0a45ef90-e34d-457b-b029-0c7da66bcd0c">
+            <useCaseMoniker Id="e06853b8-c885-4d9a-9e38-ab6d2178cdee" LastKnownName="Quản lý đào tạo" />
+            <elementDefinition Id="fd5fa012-bf7c-4399-9cdc-b6d7ba22ecba" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="32d24b06-30b5-446c-bb1c-7b0231f73444" name="người sử dụng" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ae0e4b42-e8e1-409d-af2f-8ca9e2836d0f" />
+        <suppliersInternal>
+          <dependency Id="7cce719a-b212-4005-b757-ffcf0d3cc585">
+            <useCaseMoniker Id="e06853b8-c885-4d9a-9e38-ab6d2178cdee" LastKnownName="Quản lý đào tạo" />
+            <elementDefinition Id="39b4f158-d27b-46d4-9b4a-87bda7927dae" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="4ba7eb03-f6e7-4b54-91c3-3a392b2ba68c" name="quản trị phần mềm(administrator)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f8657f9f-f282-4c4d-be60-36bab7b990be" />
+        <generalsInternal>
+          <generalization Id="01b69311-a82b-4034-b428-940b0f85922c" isSubstitutable="false">
+            <actorMoniker Id="32d24b06-30b5-446c-bb1c-7b0231f73444" LastKnownName="người sử dụng" />
+            <elementDefinition Id="bde2c14c-bf8a-40db-a278-cfe341e9bcdc" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="a5569159-1e65-4b81-b918-3a378a72dcda" name="quản trị nhân viên(admin tổ chức)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3adc7cf9-8565-4998-a8eb-4db02ba282d3" />
+        <generalsInternal>
+          <generalization Id="0a547405-aabb-411a-8e73-780fa7cafe4d" isSubstitutable="false">
+            <actorMoniker Id="32d24b06-30b5-446c-bb1c-7b0231f73444" LastKnownName="người sử dụng" />
+            <elementDefinition Id="6c902048-88b2-422f-b3e3-fb51ee2b67de" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e06853b8-c885-4d9a-9e38-ab6d2178cdee" name="Quản lý đào tạo" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4c0df70a-86ec-4caa-9e6a-a407d395479d" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="a522b02b-beea-4024-a406-e7df72916151" name="ModelingProject1">
+    <elementDefinition Id="c1918b24-b69c-4818-aacd-4d280375ce7b" />
+    <profileInstances>
+      <packageHasProfileInstances Id="3a22325a-79a5-428c-ab7a-32cf618024b4">
+        <profileInstance Id="f2b7a509-98b8-4b15-b442-a35cd9983469" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="4b7d0c91-1de2-4b8b-b63c-15ba124f59fe">
+        <profileInstance Id="4cd09df0-39ad-4569-88c9-b6ca76f414dc" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

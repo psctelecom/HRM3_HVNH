@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="ChuyenKhoanLuongNhanVien_TamGiuLuong_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="58.92255892255892">
+            <LayoutGroup Id="ChungTu" Caption="Chứng từ" Index="0" RelativeSize="100">
+              <LayoutGroup Id="ChungTu_col1" RelativeSize="43.562874251497007">
+                <LayoutItem Id="SoThuTu" SizeConstraintsType="Default" RelativeSize="23.529411764705884" />
+                <LayoutItem Id="SoChungTu" SizeConstraintsType="Default" RelativeSize="17.647058823529413" />
+                <LayoutItem Id="NgayLap" SizeConstraintsType="Default" RelativeSize="17.647058823529413" />
+                <LayoutItem Id="KyTinhLuong" SizeConstraintsType="Default" RelativeSize="17.647058823529413" />
+                <LayoutItem Id="SoTien" ViewItem="SoTien" SizeConstraintsType="Default" Index="4" RelativeSize="23.529411764705884" />
+              </LayoutGroup>
+              <LayoutGroup Id="ChungTu_col2" RelativeSize="53.1437125748503">
+                <LayoutItem Id="LoaiChi" SizeConstraintsType="Default" RelativeSize="23.529411764705884" />
+                <LayoutItem Id="TinhThueTNCN" SizeConstraintsType="Default" RelativeSize="17.647058823529413" />
+                <LayoutItem Id="DienGiai" SizeConstraintsType="Default" RelativeSize="17.647058823529413" />
+                <LayoutItem Id="SoTienBangChu" ViewItem="SoTienBangChu" SizeConstraintsType="Default" Index="3" RelativeSize="41.1764705882353" />
+                <LayoutItem Id="SoTien" SizeConstraintsType="Default" RelativeSize="17.647058823529413" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="ChiTietList_Group" Direction="Vertical" RelativeSize="41.07744107744108" Index="1" TextAlignMode="AlignLocal">
+            <LayoutItem Id="ChiTietList" SizeConstraintsType="Default" RelativeSize="68.0327868852459" ShowCaption="False" />
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="13.468013468013469" Direction="Horizontal" Caption="Số tiền bằng chữ" Removed="True">
+            <LayoutItem Id="SoTienBangChu" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="HetHanBoNhiem_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutItem Id="QuyetDinhBoNhiem" ViewItem="QuyetDinhBoNhiem" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="DanhGiaCanBoCuoiNam_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="DanhGiaCanBoCuoiNam">
+              <LayoutItem Id="ChotDanhGia" ViewItem="ChotDanhGia" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="GiayToHoSo_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SizeableEditors">
+            <LayoutItem Id="NgayLap" ViewItem="NgayLap" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="DanhSachDenTuoiNghiHuu_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="DanhSachDenTuoiNghiHuu">
+              <LayoutGroup Id="Auto89dfa229-86d5-4c4b-a37b-58647c8b05ba">
+                <LayoutItem Id="SoThang" ViewItem="SoThang" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+  <NavigationItems Id="NavigationItems">
+    <Items Id="Items">
+      <Item Id="TaiChinh">
+        <Items Id="Items">
+          <Item Id="ChungTu">
+            <Items Id="Items">
+              <Item Id="ChungTuChuyenKhoan_TamGiuLuong_ListView" ViewId="ChuyenKhoanLuongNhanVien_TamGiuLuong_ListView" />
+            </Items>
+          </Item>
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+</Application>

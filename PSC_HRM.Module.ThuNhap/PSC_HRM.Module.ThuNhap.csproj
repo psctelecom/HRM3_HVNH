@@ -1,0 +1,1171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B9EF03FF-D05B-4FD4-A8E9-F90D819CB1DC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PSC_HRM.Module.ThuNhap</RootNamespace>
+    <AssemblyName>PSC_HRM.Module.ThuNhap</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v13.2">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.AuditTrail.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.CloneObject.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.ConditionalAppearance.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Reports.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Reports.Win.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Security.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.TreeListEditors.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.TreeListEditors.Win.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Validation.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Validation.Win.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Win.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Xpo.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.Base.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.BaseImpl.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v13.2.Core, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v13.2.Core, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v13.2.Wizard, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v13.2.Core, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v13.2.Core, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v13.2.UI, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v13.2.Extensions, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DotNetOpenAuth">
+      <HintPath>..\packages\Microsoft.Practices.Unity\DotNetOpenAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Users\Administrator\AppData\Roaming\Skype\My Skype Received Files\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Practices.Unity\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Practices.Unity\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Practices.Unity\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.configuration">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessObjects\BoSungLuong\BoSungLuongNhanVien.cs" />
+    <Compile Include="BusinessObjects\BoSungLuong\ChiBoSungLuongKy1.cs" />
+    <Compile Include="BusinessObjects\BoSungLuong\ChiBoSungNangLuongKy2.cs" />
+    <Compile Include="BusinessObjects\BoSungLuong\ChiBoSungPhuCapThamNienChiTiet.cs" />
+    <Compile Include="BusinessObjects\BoSungLuong\ChiBoSungPhuCapThamNien.cs" />
+    <Compile Include="BusinessObjects\BoSungLuong\ChiBoSungPhuCapTienSi.cs" />
+    <Compile Include="BusinessObjects\BoSungLuong\ChiBoSungPhuCapUuDai.cs" />
+    <Compile Include="BusinessObjects\BoSungLuong\ChiBoSungNangLuongKy1.cs" />
+    <Compile Include="BusinessObjects\BoSungLuong\ChiBoSungLuongKy2.cs" />
+    <Compile Include="BusinessObjects\BoSungLuong\ChiBoSungPhuCapTrachNhiem.cs" />
+    <Compile Include="BusinessObjects\ChungTu\ChiTMLuongNhanVien.cs" />
+    <Compile Include="BusinessObjects\ChungTu\ChiTMLuongNhanVienChiTiet.cs" />
+    <Compile Include="BusinessObjects\ChungTu\ChungTu.cs" />
+    <Compile Include="BusinessObjects\ChungTu\ChuyenKhoanLuongNhanVien.cs" />
+    <Compile Include="BusinessObjects\ChungTu\ChuyenKhoanLuongNhanVienChiTiet.cs" />
+    <Compile Include="BusinessObjects\ChungTu\BangChotTongThuNhapNhanVien.cs" />
+    <Compile Include="BusinessObjects\ChungTu\ChiTietBangChotTongThuNhapNhanVien.cs" />
+    <Compile Include="BusinessObjects\ChungTu\ChiTietThanhToan.cs" />
+    <Compile Include="BusinessObjects\ChungTu\ChiTietTamGiuLuongNhanVien.cs" />
+    <Compile Include="BusinessObjects\ChungTu\ChuyenKhoanLuongNhanVienChiTiet_TamGiuLuong.cs" />
+    <Compile Include="BusinessObjects\ChungTu\ChungTu_TamGiuLuong.cs" />
+    <Compile Include="BusinessObjects\ChungTu\TamGiuLuongNhanVien.cs" />
+    <Compile Include="BusinessObjects\ChungTu\ThanhToan.cs" />
+    <Compile Include="BusinessObjects\Enums\BangTongHopLuongEnum.cs" />
+    <Compile Include="BusinessObjects\Enums\LoaiBaoCaoTongHopEnum.cs" />
+    <Compile Include="BusinessObjects\Enums\LoaiDeNghiThanhToan.cs" />
+    <Compile Include="BusinessObjects\Enums\TrangThaiChiLuongEnum.cs" />
+    <Compile Include="BusinessObjects\Enums\MauThanhToanEnum.cs" />
+    <Compile Include="BusinessObjects\Enums\LoaiBoSungLuongEnum.cs" />
+    <Compile Include="BusinessObjects\Enums\LoaiChiEnum.cs" />
+    <Compile Include="BusinessObjects\Enums\LoaiLuongChinhEnum.cs" />
+    <Compile Include="BusinessObjects\Import\ImportTruyLinhKhac_QNU.cs" />
+    <Compile Include="BusinessObjects\Import\ImportTruyLuong_UEL.cs" />
+    <Compile Include="BusinessObjects\Import\ImportTruyLuongNew.cs" />
+    <Compile Include="BusinessObjects\Import\ImportBangLuongNhanVienWeb.cs" />
+    <Compile Include="BusinessObjects\Import\ImportTruyThuKhac.cs" />
+    <Compile Include="BusinessObjects\Import\ImportTruyLinhKhac.cs" />
+    <Compile Include="BusinessObjects\Import\ImportChiBoSungPhuCapTrachNhiem.cs" />
+    <Compile Include="BusinessObjects\Import\ImportChiBoSungLuongKy2.cs" />
+    <Compile Include="BusinessObjects\Import\ImportChiBoSungNangLuongKy1.cs" />
+    <Compile Include="BusinessObjects\Import\ImportChiBoSungPhuCapUuDai.cs" />
+    <Compile Include="BusinessObjects\Import\ImportChiBoSungPhuCapTienSi.cs" />
+    <Compile Include="BusinessObjects\Import\ImportChiBoSungPhuCapThamNien.cs" />
+    <Compile Include="BusinessObjects\Import\ImportChiBoSungNangLuongKy2.cs" />
+    <Compile Include="BusinessObjects\Import\ImportChiBoSungLuongKy1.cs" />
+    <Compile Include="BusinessObjects\Import\ExportItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessObjects\Import\ExportTemplateHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessObjects\LuongWeb\BangLuongNhanVienWeb.cs" />
+    <Compile Include="BusinessObjects\LuongWeb\ChiTietLuongNhanVienWeb.cs" />
+    <Compile Include="BusinessObjects\Luong\ChonGiaTriLapCongThuc.cs" />
+    <Compile Include="BusinessObjects\NonPersistentThuNhap\BUH\CopyKhauTruThueThuNhap.cs" />
+    <Compile Include="BusinessObjects\NonPersistentThuNhap\HBU\Luong_BangLuongThang.cs" />
+    <Compile Include="BusinessObjects\NonPersistentThuNhap\HBU\Luong_BangLuongThangItem.cs" />
+    <Compile Include="BusinessObjects\NonPersistentThuNhap\IUH\BoSungLuong_LoaiBoSungLuong.cs" />
+    <Compile Include="BusinessObjects\NonPersistentThuNhap\LUH\CopyTruyThuThueTNCN.cs" />
+    <Compile Include="BusinessObjects\NonPersistentThuNhap\LUH\CopyBangDinhMucThueTNCN.cs" />
+    <Compile Include="BusinessObjects\NonPersistentThuNhap\LUH\Luong_BangTongHopTienLuongThang.cs" />
+    <Compile Include="BusinessObjects\NonPersistentThuNhap\LUH\Luong_BangTongHopTienLuongThangItem.cs" />
+    <Compile Include="BusinessObjects\NonPersistentThuNhap\LUH\Luong_BangThanhToanTienLuongThangItem.cs" />
+    <Compile Include="BusinessObjects\NonPersistentThuNhap\LUH\Luong_BangThanhToanTienLuongThang.cs" />
+    <Compile Include="BusinessObjects\Report\HVNH\Report_BangKeThanhToan_TG.cs" />
+    <Compile Include="BusinessObjects\Report\HVNH\Report_BangKeThanhToan.cs" />
+    <Compile Include="BusinessObjects\Report\NEU\Report_Luong_DonXinXacNhanBangLuong.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessObjects\Report\NEU\Report_TruyLuong_BangTruyLinhVienChuc.cs" />
+    <Compile Include="BusinessObjects\Report\NEU\Report_TruyLuong_BangTongHopTruyLinh.cs" />
+    <Compile Include="BusinessObjects\Report\NEU\Report_TruyLinhLuong_BangThongTinTruyLinhLuong.cs" />
+    <Compile Include="BusinessObjects\Report\QNU\Report_Luong_BangChiTienDienThoai.cs" />
+    <Compile Include="BusinessObjects\Report\QNU\Report_Luong_BangChiTienPhucVuDaoTao.cs" />
+    <Compile Include="BusinessObjects\Report\QNU\Report_Luong_BangChiTienThuNhapTangThem.cs" />
+    <Compile Include="BusinessObjects\Report\QNU\Report_Luong_BangChiTienTrachNhiemQuanLy.cs" />
+    <Compile Include="BusinessObjects\Report\QNU\Report_Luong_BangChuyenKhoanChiTienDienThoai.cs" />
+    <Compile Include="BusinessObjects\Report\QNU\Report_Luong_BangChuyenKhoanChiTienPhucVuDaoTao.cs" />
+    <Compile Include="BusinessObjects\Report\QNU\Report_Luong_BangChuyenKhoanChiTienThuNhapTangThem.cs" />
+    <Compile Include="BusinessObjects\Report\QNU\Report_Luong_BangChuyenKhoanChiTienTrachNhiemQuanLy.cs" />
+    <Compile Include="BusinessObjects\Report\QNU\Report_ThanhToanThuLaoNhanVien.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_ChungTu_DuToanNganSach.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_ChungTu_GiayRutDuToanNganSach_0113.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_ChungTu_GiayRutDuToanNganSach_0114.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_ChungTu_SoSanhChungTu.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_KhauTru_BangKhauTruLuong.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_KhauTru_BangTongHopKhauTruLuong.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_KhauTru_BangChiTietKhauTruLuongNhanVien.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_KhauTru_BangChiTietKhauTruLuong.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_ChungTu_UyNhiemChi.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_Luong_BangKeCacKhoanNopTheoLuong.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_Luong_BangThanhToanPhuCapDocHai_UEL.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_Luong_ThanhTienTienLuongVaCacKhoanPhuCap.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_KhauTru_BaoHiemXaHoi.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_KhauTru_DangPhi.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_KhauTru_DoanPhi.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_Luong_BangChiTienAn.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_Luong_BangChiTietKhauTru.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_Luong_BangThanhToanPhuCapUuDai.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_Luong_BangThanhToanThuNhapTangThem.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_Luong_BangThanhToanTienLuong.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_Luong_BangThanhToanTienLuongHopDong.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_Luong_BangThanhToanTienLuongHopDongKhoan.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_Luong_BangThanhToanTienPhuCapThamNien.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_Luong_BangThanhToanTienPhuCapVuotKhung.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_Luong_BangTinhPhuCapCongViec.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_Luong_BangTongHopCacKhoanThuNhap.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_Luong_BangTrichNop.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_Luong_BangTruyLinhLuongVaThuNhapTangThem.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_Luong_ChiLuongQuaTheATM.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_Luong_ChiTietLuongNhanVien.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_Luong_ChiTietThuNhapCaNhan.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_Luong_DanhSachGiangVienHuongPhuCapThamNien.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_NgoaiGio_BangChiTienNgoaiGio.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_NgoaiGio_ChiTietLuongNgoaiGio.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_TamUng_BangChiTietKhauTruTamUng.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_TamUng_BangChiTietTamUng.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_TamUng_BangTongHopKhauTruTamUng.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_TamUng_BangTongHopTamUng.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_TamUng_DanhSachTamUngTheoThang.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_ThueTNCN_01DK_TNCN.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_ThueTNCN_02KK_TNCN.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_ThueTNCN_05AKK_TNCN.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_ThueTNCN_05BKK_TNCN.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_ThueTNCN_05KK_TNCN.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_ThueTNCN_27MT_TNCN.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_ThueTNCN_GiangVienThinhGiang.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_ThueTNCN_TamTruThueTNCN.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_ThueTNCN_ThongTinNguoiPhuThuoc.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_ThuLao_DanhSachBangThuLaoNhanVien.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_ThuNhapKhac_BangChiTietThuNhapKhac.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_ThuNhapKhac_BangTongHopThuNhapKhac.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_ThuNhapKhac_DanhSachBangThuNhapKhacNhanVien.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_ThuNhapTangThem_BangTinhTamUngThuNhapTangThemTheoQuy.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_ThuNhapTangThem_BangTinhThuNhapTangThem.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_ThuNhapTangThem_BangTongHopThuNhapTangThem.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_Thuong_BangChiTietKhenThuong.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_Thuong_BangTongHopKhenThuong.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_Thuong_DanhSachCanBoDuocThuongTheoLoaiKhenThuong.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_Thuong_DanhSachCanBoDuocThuongTheoThang.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_TruyLuong_BangChiTietTruyLuong.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_TruyLuong_BangTongHopTruyLuong.cs" />
+    <Compile Include="BusinessObjects\Report\UEL\Report_TruyLuong_DanhSachBangTruyLuongNhanVien.cs" />
+    <Compile Include="BusinessObjects\ThueTNCN\ChiTietQuanLyTruyThuThueTNCN.cs" />
+    <Compile Include="BusinessObjects\ThueTNCN\TruyThuThueTNCN.cs" />
+    <Compile Include="BusinessObjects\ThueTNCN\QuanLyTruyThuThueTNCN.cs" />
+    <Compile Include="BusinessObjects\ThuLao\ChiTietTamUngThuLao.cs" />
+    <Compile Include="BusinessObjects\ThuLao\ChiTietTheoDoiTruTietChuan.cs" />
+    <Compile Include="BusinessObjects\ThuLao\LoaiTamUng.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessObjects\TruyLuong\BangTruyLinhKhac.cs" />
+    <Compile Include="BusinessObjects\TruyLuong\ChiTietTruyLinhKhac.cs" />
+    <Compile Include="BusinessObjects\TruyLuong\BangTruyLuongNew.cs" />
+    <Compile Include="BusinessObjects\TruyLuong\ChiTietTruyLuongNew.cs" />
+    <Compile Include="BusinessObjects\TruyLuong\TruyLuongNhanVienNew.cs" />
+    <Compile Include="BusinessObjects\TruyLuong\TruyLinhKhac.cs" />
+    <Compile Include="BusinessObjects\TruyThu\BangTruyThuKhac.cs" />
+    <Compile Include="BusinessObjects\TruyThu\ChiTietTruyThuKhac.cs" />
+    <Compile Include="BusinessObjects\TruyThu\TruyThuKhac.cs" />
+    <Compile Include="Controllers\BoSungLuong\BoSungLuong_TinhChiBoSungLuongKy1Controller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\BoSungLuong\BoSungLuong_TinhChiBoSungLuongKy1Controller.designer.cs">
+      <DependentUpon>BoSungLuong_TinhChiBoSungLuongKy1Controller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\BoSungLuong\BoSungLuong_TinhChiBoSungPhuCapTrachNhiemController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\BoSungLuong\BoSungLuong_TinhChiBoSungPhuCapTrachNhiemController.designer.cs">
+      <DependentUpon>BoSungLuong_TinhChiBoSungPhuCapTrachNhiemController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\BoSungLuong\BoSungLuong_TinhChiBoSungPhuCapThamNienController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\BoSungLuong\BoSungLuong_TinhChiBoSungPhuCapThamNienController.designer.cs">
+      <DependentUpon>BoSungLuong_TinhChiBoSungPhuCapThamNienController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\BoSungLuong\BoSungLuong_ImportBoSungLuongController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\BoSungLuong\BoSungLuong_ImportBoSungLuongController.Designer.cs">
+      <DependentUpon>BoSungLuong_ImportBoSungLuongController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\BoSungLuong\BoSungLuong_TinhChiBoSungPhuCapUuDaiController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\BoSungLuong\BoSungLuong_TinhChiBoSungPhuCapUuDaiController.designer.cs">
+      <DependentUpon>BoSungLuong_TinhChiBoSungPhuCapUuDaiController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\BoSungLuong\BoSungLuong_TinhChiBoSungNangLuongKy1Controller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\BoSungLuong\BoSungLuong_TinhChiBoSungNangLuongKy1Controller.designer.cs">
+      <DependentUpon>BoSungLuong_TinhChiBoSungNangLuongKy1Controller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\BoSungLuong\BoSungLuong_TinhChiBoSungLuongKy2Controller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\BoSungLuong\BoSungLuong_TinhChiBoSungLuongKy2Controller.designer.cs">
+      <DependentUpon>BoSungLuong_TinhChiBoSungLuongKy2Controller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\BoSungLuong\BoSungLuong_TinhChiBoSungNangLuongKy2Controller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\BoSungLuong\BoSungLuong_TinhChiBoSungNangLuongKy2Controller.designer.cs">
+      <DependentUpon>BoSungLuong_TinhChiBoSungNangLuongKy2Controller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ChungTu\ChungTu_DeleteChiTMLuongNhanVienController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ChungTu\ChungTu_DeleteChiTMLuongNhanVienController.designer.cs">
+      <DependentUpon>ChungTu_DeleteChiTMLuongNhanVienController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ChungTu\ChungTu_ChotTongThuNhapNhanVienController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ChungTu\ChungTu_ChotTongThuNhapNhanVienController.designer.cs">
+      <DependentUpon>ChungTu_ChotTongThuNhapNhanVienController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ChungTu\ChungTu_DeleteChotTongThuNhapNhanVienController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ChungTu\ChungTu_DeleteChotTongThuNhapNhanVienController.designer.cs">
+      <DependentUpon>ChungTu_DeleteChotTongThuNhapNhanVienController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ChungTu\ChungTu_LapThanhToanController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ChungTu\ChungTu_LapThanhToanController.designer.cs">
+      <DependentUpon>ChungTu_LapThanhToanController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ChungTu\ChungTu_DeleteThanhToanController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ChungTu\ChungTu_DeleteThanhToanController.designer.cs">
+      <DependentUpon>ChungTu_DeleteThanhToanController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ChungTu\ChungTu_ExportExcelBangLuongUTEController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ChungTu\ChungTu_ExportExcelBangLuongUTEController.designer.cs">
+      <DependentUpon>ChungTu_ExportExcelBangLuongUTEController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ChungTu\ChungTu_LayDanhSachTamGiuLuongController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ChungTu\ChungTu_LayDanhSachTamGiuLuongController.designer.cs">
+      <DependentUpon>ChungTu_LayDanhSachTamGiuLuongController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ChungTu\ChungTu_LapChungTuTamGiuLuongNhanVienController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ChungTu\ChungTu_LapChungTuTamGiuLuongNhanVienController.designer.cs">
+      <DependentUpon>ChungTu_LapChungTuTamGiuLuongNhanVienController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ChungTu\ChungTu_DeleteChuyenKhoanLuongNhanVien_TamGiuLuongController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ChungTu\ChungTu_DeleteChuyenKhoanLuongNhanVien_TamGiuLuongController.designer.cs">
+      <DependentUpon>ChungTu_DeleteChuyenKhoanLuongNhanVien_TamGiuLuongController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\KhauTruLuong\KhauTruLuong_CopyKhauTruThueThuNhapController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\KhauTruLuong\KhauTruLuong_CopyKhauTruThueThuNhapController.designer.cs">
+      <DependentUpon>KhauTruLuong_CopyKhauTruThueThuNhapController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\LuongWeb\LuongWeb_XoaBangLuongNhanVienWebController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\LuongWeb\LuongWeb_XoaBangLuongNhanVienWebController.designer.cs">
+      <DependentUpon>LuongWeb_XoaBangLuongNhanVienWebController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ProcessClass\ChotTongThuNhapNhanVien.cs" />
+    <Compile Include="Controllers\ProcessClass\TinhTruyTNTT.cs" />
+    <Compile Include="Controllers\ProcessClass\LapThanhToan.cs" />
+    <Compile Include="Controllers\ProcessClass\TinhChiBoSungLuong.cs" />
+    <Compile Include="Controllers\ProcessClass\TinhChiTienMat.cs" />
+    <Compile Include="Controllers\ProcessClass\TinhChuyenKhoan.cs" />
+    <Compile Include="BusinessObjects\ChungTu\UyNhiemChi.cs" />
+    <Compile Include="BusinessObjects\Common\ThuNhapBaseObject.cs" />
+    <Compile Include="BusinessObjects\Enums\BaoCaoChiTietLuongEnum.cs" />
+    <Compile Include="BusinessObjects\Enums\ChungTuEnum.cs" />
+    <Compile Include="BusinessObjects\Enums\CongTruEnum.cs" />
+    <Compile Include="BusinessObjects\Enums\DieuChinhThueTNCNNhanVienEnum.cs" />
+    <Compile Include="BusinessObjects\Enums\KhauTruThueEnum.cs" />
+    <Compile Include="BusinessObjects\Enums\KyQuyetToanThueEnum.cs" />
+    <Compile Include="BusinessObjects\Enums\PhanLoaiBaoCaoChiTietEnum.cs" />
+    <Compile Include="BusinessObjects\Enums\PhanLoaiCanBoEnum.cs" />
+    <Compile Include="BusinessObjects\Enums\PhanLoaiCaNhanEnum.cs" />
+    <Compile Include="BusinessObjects\Enums\ThuLaoThuNhapKhacEnum.cs" />
+    <Compile Include="BusinessObjects\Enums\ThuongPhuCapEnum.cs" />
+    <Compile Include="BusinessObjects\Enums\TruyLuongEnum.cs" />
+    <Compile Include="BusinessObjects\Common\ITaiChinh.cs" />
+    <Compile Include="BusinessObjects\Import\OleDbHelper.cs" />
+    <Compile Include="Controllers\ProcessClass\Utils.cs" />
+    <Compile Include="BusinessObjects\Import\ImportThuongTuQuyetDinh.cs" />
+    <Compile Include="BusinessObjects\Import\ImportBase.cs" />
+    <Compile Include="BusinessObjects\Import\ImportChamCongLuongKhoan.cs" />
+    <Compile Include="BusinessObjects\Import\ImportChamCongNgoaiGio.cs" />
+    <Compile Include="BusinessObjects\Import\ImportKhauTruLuong.cs" />
+    <Compile Include="BusinessObjects\Import\ImportLuong.cs" />
+    <Compile Include="BusinessObjects\Import\ImportNgoaiGio.cs" />
+    <Compile Include="BusinessObjects\Import\ImportTamUng.cs" />
+    <Compile Include="BusinessObjects\Import\ImportThuLaoExcel.cs" />
+    <Compile Include="BusinessObjects\Import\ImportThuLaoPMS.cs" />
+    <Compile Include="BusinessObjects\Import\ImportThuNhapKhac.cs" />
+    <Compile Include="BusinessObjects\Import\ImportThuong.cs" />
+    <Compile Include="BusinessObjects\Import\ImportTruyLuong.cs" />
+    <Compile Include="BusinessObjects\Import\ImportTruyThu.cs" />
+    <Compile Include="BusinessObjects\KhauTru\BangKhauTruLuong.cs" />
+    <Compile Include="BusinessObjects\KhauTru\ChiTietKhauTruLuong.cs" />
+    <Compile Include="BusinessObjects\KhauTru\CongThucTinhKhauTru.cs" />
+    <Compile Include="BusinessObjects\KhauTru\LoaiKhauTruLuong.cs" />
+    <Compile Include="Controllers\ProcessClass\TinhKhauTruLuong.cs" />
+    <Compile Include="BusinessObjects\Luong\BangLuongNhanVien.cs" />
+    <Compile Include="BusinessObjects\Luong\ChiTietCongThucTinhLuong.cs" />
+    <Compile Include="BusinessObjects\Luong\ChiTietLuongNhanVien.cs" />
+    <Compile Include="BusinessObjects\Luong\CongThucTinhLuong.cs" />
+    <Compile Include="BusinessObjects\Luong\LuongNhanVien.cs" />
+    <Compile Include="Controllers\ProcessClass\TinhLuongNhanVien.cs" />
+    <Compile Include="BusinessObjects\NgoaiGio\BangLuongNgoaiGio.cs" />
+    <Compile Include="BusinessObjects\NgoaiGio\ChiTietLuongNgoaiGio.cs" />
+    <Compile Include="BusinessObjects\NgoaiGio\CongThucTinhNgoaiGio.cs" />
+    <Compile Include="Controllers\ProcessClass\TinhTienNgoaiGio.cs" />
+    <Compile Include="BusinessObjects\NonPersistentThuNhap\IUH\Luong_BangLuongBoPhanKy2Item.cs" />
+    <Compile Include="BusinessObjects\NonPersistentThuNhap\IUH\Luong_BangLuongBoPhanKy2.cs" />
+    <Compile Include="BusinessObjects\NonPersistentThuNhap\IUH\Luong_BangLuongChiTietKy2Item.cs" />
+    <Compile Include="BusinessObjects\NonPersistentThuNhap\IUH\Luong_BangLuongChiTietKy2.cs" />
+    <Compile Include="BusinessObjects\NonPersistentThuNhap\IUH\Luong_BangLuongBoPhanKy1.cs" />
+    <Compile Include="BusinessObjects\NonPersistentThuNhap\IUH\Luong_BangLuongBoPhanKy1Item.cs" />
+    <Compile Include="BusinessObjects\NonPersistentThuNhap\IUH\Luong_BangLuongChiTietKy1.cs" />
+    <Compile Include="BusinessObjects\NonPersistentThuNhap\IUH\Luong_BangLuongChiTietKy1Item.cs" />
+    <Compile Include="BusinessObjects\NonPersistentThuNhap\IUH\Luong_ChonCongThucTinhLuong.cs" />
+    <Compile Include="BusinessObjects\NonPersistentThuNhap\IUH\Luong_ChonCongThucTinhLuongItem.cs" />
+    <Compile Include="BusinessObjects\NonPersistentThuNhap\IUH\PhuCap_HoTroTienSy.cs" />
+    <Compile Include="BusinessObjects\NonPersistentThuNhap\IUH\PhuCap_HoTroTienSyItems.cs" />
+    <Compile Include="BusinessObjects\NonPersistentThuNhap\IUH\PhuCap_PhuCapThamNienNhaGiao.cs" />
+    <Compile Include="BusinessObjects\NonPersistentThuNhap\IUH\PhuCap_PhuCapThamNienNhaGiaoItem.cs" />
+    <Compile Include="BusinessObjects\NonPersistentThuNhap\IUH\PhuCap_PhuCapTrachNhiem.cs" />
+    <Compile Include="BusinessObjects\NonPersistentThuNhap\IUH\PhuCap_PhuCapTrachNhiemItems.cs" />
+    <Compile Include="BusinessObjects\TamUng\BangKhauTruTamUng.cs" />
+    <Compile Include="BusinessObjects\TamUng\BangTamUng.cs" />
+    <Compile Include="BusinessObjects\TamUng\ChiTietKhauTruTamUng.cs" />
+    <Compile Include="BusinessObjects\TamUng\KetChuyenTamUng.cs" />
+    <Compile Include="BusinessObjects\TamUng\TamUng.cs" />
+    <Compile Include="BusinessObjects\TamUng\ChiTietTamUng.cs" />
+    <Compile Include="Controllers\ProcessClass\TinhKhauTruTamUng.cs" />
+    <Compile Include="BusinessObjects\ThueTNCN\BangKeThueTNCNNgoai.cs" />
+    <Compile Include="BusinessObjects\ThueTNCN\BangKeThueTNCNNhanVien.cs" />
+    <Compile Include="BusinessObjects\ThueTNCN\BangThueTNCNTamTru.cs" />
+    <Compile Include="BusinessObjects\ThueTNCN\ChiTietBangKeThueTNCNNgoai.cs" />
+    <Compile Include="BusinessObjects\ThueTNCN\ChiTietBangKeThueTNCNNhanVien.cs" />
+    <Compile Include="BusinessObjects\ThueTNCN\ChiTietDieuChinhThueTNCNNhanVien.cs" />
+    <Compile Include="BusinessObjects\ThueTNCN\BangDinhMucNopThueTNCN.cs" />
+    <Compile Include="BusinessObjects\ThueTNCN\ChiTietDinhMucNopThueTNCN.cs" />
+    <Compile Include="BusinessObjects\ThueTNCN\QuanLyThueThuNhapCaNhan.cs" />
+    <Compile Include="BusinessObjects\ThueTNCN\ChiTietThueThuNhapCaNhan.cs" />
+    <Compile Include="BusinessObjects\ThueTNCN\DieuChinhThueTNCNNhanVien.cs" />
+    <Compile Include="BusinessObjects\ThueTNCN\Export05AK_TNCN.cs" />
+    <Compile Include="BusinessObjects\ThueTNCN\Export05BK_TNCN.cs" />
+    <Compile Include="BusinessObjects\ThueTNCN\MienGiamThueTNCN.cs" />
+    <Compile Include="BusinessObjects\ThueTNCN\QuanLyDieuChinhThueTNCN.cs" />
+    <Compile Include="BusinessObjects\ThueTNCN\ThueTNCNTamTruNgoai.cs" />
+    <Compile Include="BusinessObjects\ThueTNCN\ThueTNCNTamTruNhanVien.cs" />
+    <Compile Include="Controllers\ProcessClass\TinhDieuChinhThueTNCN.cs" />
+    <Compile Include="Controllers\ProcessClass\TinhKhauTruThueTNCN.cs" />
+    <Compile Include="Controllers\ProcessClass\TinhQuyetToanThueTNCN.cs" />
+    <Compile Include="BusinessObjects\ThueTNCN\ToKhaiKhauTruThueTNCN.cs" />
+    <Compile Include="BusinessObjects\ThueTNCN\ToKhaiQuyetToanThueTNCN.cs" />
+    <Compile Include="BusinessObjects\ThuLao\BangThuLaoNhanVien.cs" />
+    <Compile Include="BusinessObjects\ThuLao\ChiTietThuLaoNhanVien.cs" />
+    <Compile Include="BusinessObjects\ThuNhapKhac\BangThuNhapKhac.cs" />
+    <Compile Include="BusinessObjects\ThuNhapKhac\ChiTietThuNhapKhac.cs" />
+    <Compile Include="BusinessObjects\ThuNhapKhac\LoaiThuNhapKhac.cs" />
+    <Compile Include="BusinessObjects\ThuNhapTangThem\BangQuyetToanThuNhapTangThem.cs" />
+    <Compile Include="BusinessObjects\ThuNhapTangThem\BangThuNhapTangThem.cs" />
+    <Compile Include="BusinessObjects\ThuNhapTangThem\ChiTietQuyetToanThuNhapTangThem.cs" />
+    <Compile Include="BusinessObjects\ThuNhapTangThem\ChiTietThuNhapTangThem.cs" />
+    <Compile Include="BusinessObjects\ThuNhapTangThem\CongThucTinhThuNhapTangThem.cs" />
+    <Compile Include="Controllers\ProcessClass\TinhQuyetToanThuNhapTangThem.cs" />
+    <Compile Include="Controllers\ProcessClass\TinhThuNhapTangThem.cs" />
+    <Compile Include="BusinessObjects\Thuong\BangThuongNhanVien.cs" />
+    <Compile Include="BusinessObjects\Thuong\ChiTietThuongNhanVien.cs" />
+    <Compile Include="BusinessObjects\Thuong\CongThucKhenThuongPhucLoi.cs" />
+    <Compile Include="BusinessObjects\Thuong\LoaiKhenThuongPhucLoi.cs" />
+    <Compile Include="Controllers\ProcessClass\TinhKhenThuongPhucLoi.cs" />
+    <Compile Include="BusinessObjects\TruyLuong\BangTruyLuong.cs" />
+    <Compile Include="BusinessObjects\TruyLuong\ChiTietTruyLuong.cs" />
+    <Compile Include="Controllers\ProcessClass\TinhTruyLuong.cs" />
+    <Compile Include="BusinessObjects\TruyLuong\TruyLuongNhanVien.cs" />
+    <Compile Include="BusinessObjects\TruyThu\BangTruyThu.cs" />
+    <Compile Include="BusinessObjects\TruyThu\ChiTietTruyThu.cs" />
+    <Compile Include="BusinessObjects\TruyThu\TruyThuNhanVien.cs" />
+    <Compile Include="Controllers\Luong\Luong_BaoCaoHienDetailViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\Luong\Luong_BaoCaoHienDetailViewController.designer.cs">
+      <DependentUpon>Luong_BaoCaoHienDetailViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ChungTu\ChungTu_ChiLuongTienMatController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ChungTu\ChungTu_ChiLuongTienMatController.designer.cs">
+      <DependentUpon>ChungTu_ChiLuongTienMatController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ChungTu\ChungTu_ChuyenKhoanLuongController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ChungTu\ChungTu_ChuyenKhoanLuongController.designer.cs">
+      <DependentUpon>ChungTu_ChuyenKhoanLuongController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ChungTu\ChungTu_DeleteChuyenKhoanLuongNhanVienController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ChungTu\ChungTu_DeleteChuyenKhoanLuongNhanVienController.designer.cs">
+      <DependentUpon>ChungTu_DeleteChuyenKhoanLuongNhanVienController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ChungTu\ChungTu_LapUyNhiemChiChuyenKhoanController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ChungTu\ChungTu_LapUyNhiemChiChuyenKhoanController.designer.cs">
+      <DependentUpon>ChungTu_LapUyNhiemChiChuyenKhoanController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\Luong\Luong_TinhLuongNhanVienController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\Luong\Luong_TinhLuongNhanVienController.designer.cs">
+      <DependentUpon>Luong_TinhLuongNhanVienController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\Luong\Luong_MoKhoaSoController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\Luong\Luong_MoKhoaSoController.designer.cs">
+      <DependentUpon>Luong_MoKhoaSoController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\TamUng\TamUng_KetChuyenTamUngController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\TamUng\TamUng_KetChuyenTamUngController.designer.cs">
+      <DependentUpon>TamUng_KetChuyenTamUngController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\Import\ImportTaiChinhController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\Import\ImportTaiChinhController.designer.cs">
+      <DependentUpon>ImportTaiChinhController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\KhauTruLuong\KhauTruLuong_TinhController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\KhauTruLuong\KhauTruLuong_TinhController.designer.cs">
+      <DependentUpon>KhauTruLuong_TinhController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\KhauTruLuong\KhauTruLuong_XoaBangKhauTruLuongController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\KhauTruLuong\KhauTruLuong_XoaBangKhauTruLuongController.designer.cs">
+      <DependentUpon>KhauTruLuong_XoaBangKhauTruLuongController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\Luong\Luong_XoaBangLuongNhanVienController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\Luong\Luong_XoaBangLuongNhanVienController.designer.cs">
+      <DependentUpon>Luong_XoaBangLuongNhanVienController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\NgoaiGio\NgoaiGio_TinhNgoaiGioController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\NgoaiGio\NgoaiGio_TinhNgoaiGioController.designer.cs">
+      <DependentUpon>NgoaiGio_TinhNgoaiGioController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\NgoaiGio\NgoaiGio_XoaBangLuongNgoaiGioController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\NgoaiGio\NgoaiGio_XoaBangLuongNgoaiGioController.designer.cs">
+      <DependentUpon>NgoaiGio_XoaBangLuongNgoaiGioController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\TamUng\TamUng_TinhKhauTruTamUngController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\TamUng\TamUng_TinhKhauTruTamUngController.designer.cs">
+      <DependentUpon>TamUng_TinhKhauTruTamUngController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\TamUng\TamUng_XoaBangKhauTruTamUngController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\TamUng\TamUng_XoaBangKhauTruTamUngController.designer.cs">
+      <DependentUpon>TamUng_XoaBangKhauTruTamUngController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ThueTNCN\ThueTNCN_TruyThuThueTNCNController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ThueTNCN\ThueTNCN_TruyThuThueTNCNController.designer.cs">
+      <DependentUpon>ThueTNCN_TruyThuThueTNCNController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ThueTNCN\ThueTNCN_CopyThueTNCNController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ThueTNCN\ThueTNCN_CopyThueTNCNController.designer.cs">
+      <DependentUpon>ThueTNCN_CopyThueTNCNController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ThueTNCN\ThueTNCN_DieuChinhThueTNCNController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ThueTNCN\ThueTNCN_DieuChinhThueTNCNController.designer.cs">
+      <DependentUpon>ThueTNCN_DieuChinhThueTNCNController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ThueTNCN\ThueTNCN_Export05A_BK_TNCNController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ThueTNCN\ThueTNCN_Export05A_BK_TNCNController.designer.cs">
+      <DependentUpon>ThueTNCN_Export05A_BK_TNCNController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ThueTNCN\ThueTNCN_Export05B_BK_TNCNController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ThueTNCN\ThueTNCN_Export05B_BK_TNCNController.designer.cs">
+      <DependentUpon>ThueTNCN_Export05B_BK_TNCNController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ThueTNCN\ThueTNCN_KhauTruThueTNCNController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ThueTNCN\ThueTNCN_KhauTruThueTNCNController.designer.cs">
+      <DependentUpon>ThueTNCN_KhauTruThueTNCNController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ThueTNCN\ThueTNCN_MienGiamThueTNCNController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ThueTNCN\ThueTNCN_MienGiamThueTNCNController.designer.cs">
+      <DependentUpon>ThueTNCN_MienGiamThueTNCNController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ThueTNCN\ThueTNCN_QuyetToanThueTNCNController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ThueTNCN\ThueTNCN_QuyetToanThueTNCNController.designer.cs">
+      <DependentUpon>ThueTNCN_QuyetToanThueTNCNController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ThueTNCN\ThueTNCN_XoaQuyetToanController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ThueTNCN\ThueTNCN_XoaQuyetToanController.designer.cs">
+      <DependentUpon>ThueTNCN_XoaQuyetToanController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ThuNhapTangThem\ThuNhapTangThem_TinhThuNhapTangThemController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ThuNhapTangThem\ThuNhapTangThem_TinhThuNhapTangThemController.designer.cs">
+      <DependentUpon>ThuNhapTangThem_TinhThuNhapTangThemController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ThuNhapTangThem\ThuNhapTangThem_TinhQuyetToanTNTTController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ThuNhapTangThem\ThuNhapTangThem_TinhQuyetToanTNTTController.designer.cs">
+      <DependentUpon>ThuNhapTangThem_TinhQuyetToanTNTTController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ThuNhapTangThem\ThuNhapTangThem_XoaBangQuyetToanController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ThuNhapTangThem\ThuNhapTangThem_XoaBangQuyetToanController.designer.cs">
+      <DependentUpon>ThuNhapTangThem_XoaBangQuyetToanController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ThuNhapTangThem\ThuNhapTangThem_XoaBangThuNhapTangThemController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ThuNhapTangThem\ThuNhapTangThem_XoaBangThuNhapTangThemController.designer.cs">
+      <DependentUpon>ThuNhapTangThem_XoaBangThuNhapTangThemController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\Thuong\Thuong_TinhThuongController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\Thuong\Thuong_TinhThuongController.designer.cs">
+      <DependentUpon>Thuong_TinhThuongController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\Thuong\Thuong_XoaBangThuongNhanVienController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\Thuong\Thuong_XoaBangThuongNhanVienController.designer.cs">
+      <DependentUpon>Thuong_XoaBangThuongNhanVienController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\TruyLuong\TruyLuongNew_LayHeSoController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\TruyLuong\TruyLuongNew_LayHeSoController.designer.cs">
+      <DependentUpon>TruyLuongNew_LayHeSoController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\TruyLuong\TruyLuongNew_TinhTruyTheoCongThucHienTaiController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\TruyLuong\TruyLuongNew_TinhTruyTheoCongThucHienTaiController.designer.cs">
+      <DependentUpon>TruyLuongNew_TinhTruyTheoCongThucHienTaiController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\TruyLuong\TruyLuong_TinhTruyLuongNewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\TruyLuong\TruyLuong_TinhTruyLuongNewController.designer.cs">
+      <DependentUpon>TruyLuong_TinhTruyLuongNewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\TruyLuong\TruyLuong_XoaBangTruyThuKhacController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\TruyLuong\TruyLuong_XoaBangTruyThuKhacController.designer.cs">
+      <DependentUpon>TruyLuong_XoaBangTruyThuKhacController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\TruyLuong\TruyLuong_XoaBangTruyLinhKhacController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\TruyLuong\TruyLuong_XoaBangTruyLinhKhacController.designer.cs">
+      <DependentUpon>TruyLuong_XoaBangTruyLinhKhacController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\TruyLuong\TruyLuong_TinhTruyLuongController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\TruyLuong\TruyLuong_TinhTruyLuongController.designer.cs">
+      <DependentUpon>TruyLuong_TinhTruyLuongController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\TruyLuong\TruyLuong_TinhTruyTNTTController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\TruyLuong\TruyLuong_TinhTruyTNTTController.designer.cs">
+      <DependentUpon>TruyLuong_TinhTruyTNTTController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\TruyLuong\TruyLuong_XoaBangTruyLuongController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\TruyLuong\TruyLuong_XoaBangTruyLuongController.designer.cs">
+      <DependentUpon>TruyLuong_XoaBangTruyLuongController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Extension\TaiChinhRegister.cs" />
+    <Compile Include="Module.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Module.Designer.cs">
+      <DependentUpon>Module.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DatabaseUpdate\Updater.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controllers\BoSungLuong\BoSungLuong_ImportBoSungLuongController.resx">
+      <DependentUpon>BoSungLuong_ImportBoSungLuongController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\BoSungLuong\BoSungLuong_TinhChiBoSungLuongKy1Controller.resx">
+      <DependentUpon>BoSungLuong_TinhChiBoSungLuongKy1Controller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\BoSungLuong\BoSungLuong_TinhChiBoSungPhuCapTrachNhiemController.resx">
+      <DependentUpon>BoSungLuong_TinhChiBoSungPhuCapTrachNhiemController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\BoSungLuong\BoSungLuong_TinhChiBoSungPhuCapThamNienController.resx">
+      <DependentUpon>BoSungLuong_TinhChiBoSungPhuCapThamNienController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\BoSungLuong\BoSungLuong_TinhChiBoSungPhuCapUuDaiController.resx">
+      <DependentUpon>BoSungLuong_TinhChiBoSungPhuCapUuDaiController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\BoSungLuong\BoSungLuong_TinhChiBoSungNangLuongKy1Controller.resx">
+      <DependentUpon>BoSungLuong_TinhChiBoSungNangLuongKy1Controller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\BoSungLuong\BoSungLuong_TinhChiBoSungLuongKy2Controller.resx">
+      <DependentUpon>BoSungLuong_TinhChiBoSungLuongKy2Controller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\BoSungLuong\BoSungLuong_TinhChiBoSungNangLuongKy2Controller.resx">
+      <DependentUpon>BoSungLuong_TinhChiBoSungNangLuongKy2Controller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\ChungTu\ChungTu_ChotTongThuNhapNhanVienController.resx">
+      <DependentUpon>ChungTu_ChotTongThuNhapNhanVienController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\ChungTu\ChungTu_DeleteChotTongThuNhapNhanVienController.resx">
+      <DependentUpon>ChungTu_DeleteChotTongThuNhapNhanVienController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\ChungTu\ChungTu_LapThanhToanController.resx">
+      <DependentUpon>ChungTu_LapThanhToanController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\ChungTu\ChungTu_DeleteThanhToanController.resx">
+      <DependentUpon>ChungTu_DeleteThanhToanController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\ChungTu\ChungTu_ExportExcelBangLuongUTEController.resx">
+      <DependentUpon>ChungTu_ExportExcelBangLuongUTEController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\ChungTu\ChungTu_LayDanhSachTamGiuLuongController.resx">
+      <DependentUpon>ChungTu_LayDanhSachTamGiuLuongController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\ChungTu\ChungTu_LapChungTuTamGiuLuongNhanVienController.resx">
+      <DependentUpon>ChungTu_LapChungTuTamGiuLuongNhanVienController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\ChungTu\ChungTu_DeleteChuyenKhoanLuongNhanVien_TamGiuLuongController.resx">
+      <DependentUpon>ChungTu_DeleteChuyenKhoanLuongNhanVien_TamGiuLuongController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\KhauTruLuong\KhauTruLuong_CopyKhauTruThueThuNhapController.resx">
+      <DependentUpon>KhauTruLuong_CopyKhauTruThueThuNhapController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\LuongWeb\LuongWeb_XoaBangLuongNhanVienWebController.resx">
+      <DependentUpon>LuongWeb_XoaBangLuongNhanVienWebController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\Luong\Luong_BaoCaoHienDetailViewController.resx">
+      <DependentUpon>Luong_BaoCaoHienDetailViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\ChungTu\ChungTu_ChiLuongTienMatController.resx">
+      <DependentUpon>ChungTu_ChiLuongTienMatController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\ChungTu\ChungTu_ChuyenKhoanLuongController.resx">
+      <DependentUpon>ChungTu_ChuyenKhoanLuongController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\ChungTu\ChungTu_DeleteChuyenKhoanLuongNhanVienController.resx">
+      <DependentUpon>ChungTu_DeleteChuyenKhoanLuongNhanVienController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\ChungTu\ChungTu_LapUyNhiemChiChuyenKhoanController.resx">
+      <DependentUpon>ChungTu_LapUyNhiemChiChuyenKhoanController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\ChungTu\ChungTu_DeleteChiTMLuongNhanVienController.resx">
+      <DependentUpon>ChungTu_DeleteChiTMLuongNhanVienController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\Luong\Luong_TinhLuongNhanVienController.resx">
+      <DependentUpon>Luong_TinhLuongNhanVienController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\Luong\Luong_MoKhoaSoController.resx">
+      <DependentUpon>Luong_MoKhoaSoController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\TamUng\TamUng_KetChuyenTamUngController.resx">
+      <DependentUpon>TamUng_KetChuyenTamUngController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\Import\ImportTaiChinhController.resx">
+      <DependentUpon>ImportTaiChinhController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\KhauTruLuong\KhauTruLuong_TinhController.resx">
+      <DependentUpon>KhauTruLuong_TinhController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\KhauTruLuong\KhauTruLuong_XoaBangKhauTruLuongController.resx">
+      <DependentUpon>KhauTruLuong_XoaBangKhauTruLuongController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\Luong\Luong_XoaBangLuongNhanVienController.resx">
+      <DependentUpon>Luong_XoaBangLuongNhanVienController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\NgoaiGio\NgoaiGio_TinhNgoaiGioController.resx">
+      <DependentUpon>NgoaiGio_TinhNgoaiGioController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\NgoaiGio\NgoaiGio_XoaBangLuongNgoaiGioController.resx">
+      <DependentUpon>NgoaiGio_XoaBangLuongNgoaiGioController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\TamUng\TamUng_TinhKhauTruTamUngController.resx">
+      <DependentUpon>TamUng_TinhKhauTruTamUngController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\TamUng\TamUng_XoaBangKhauTruTamUngController.resx">
+      <DependentUpon>TamUng_XoaBangKhauTruTamUngController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\ThueTNCN\ThueTNCN_TruyThuThueTNCNController.resx">
+      <DependentUpon>ThueTNCN_TruyThuThueTNCNController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\ThueTNCN\ThueTNCN_CopyThueTNCNController.resx">
+      <DependentUpon>ThueTNCN_CopyThueTNCNController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\ThueTNCN\ThueTNCN_DieuChinhThueTNCNController.resx">
+      <DependentUpon>ThueTNCN_DieuChinhThueTNCNController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\ThueTNCN\ThueTNCN_Export05A_BK_TNCNController.resx">
+      <DependentUpon>ThueTNCN_Export05A_BK_TNCNController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\ThueTNCN\ThueTNCN_Export05B_BK_TNCNController.resx">
+      <DependentUpon>ThueTNCN_Export05B_BK_TNCNController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\ThueTNCN\ThueTNCN_KhauTruThueTNCNController.resx">
+      <DependentUpon>ThueTNCN_KhauTruThueTNCNController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\ThueTNCN\ThueTNCN_MienGiamThueTNCNController.resx">
+      <DependentUpon>ThueTNCN_MienGiamThueTNCNController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\ThueTNCN\ThueTNCN_QuyetToanThueTNCNController.resx">
+      <DependentUpon>ThueTNCN_QuyetToanThueTNCNController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\ThueTNCN\ThueTNCN_XoaQuyetToanController.resx">
+      <DependentUpon>ThueTNCN_XoaQuyetToanController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\ThuNhapTangThem\ThuNhapTangThem_TinhThuNhapTangThemController.resx">
+      <DependentUpon>ThuNhapTangThem_TinhThuNhapTangThemController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\ThuNhapTangThem\ThuNhapTangThem_TinhQuyetToanTNTTController.resx">
+      <DependentUpon>ThuNhapTangThem_TinhQuyetToanTNTTController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\ThuNhapTangThem\ThuNhapTangThem_XoaBangQuyetToanController.resx">
+      <DependentUpon>ThuNhapTangThem_XoaBangQuyetToanController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\ThuNhapTangThem\ThuNhapTangThem_XoaBangThuNhapTangThemController.resx">
+      <DependentUpon>ThuNhapTangThem_XoaBangThuNhapTangThemController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\Thuong\Thuong_TinhThuongController.resx">
+      <DependentUpon>Thuong_TinhThuongController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\Thuong\Thuong_XoaBangThuongNhanVienController.resx">
+      <DependentUpon>Thuong_XoaBangThuongNhanVienController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\TruyLuong\TruyLuongNew_LayHeSoController.resx">
+      <DependentUpon>TruyLuongNew_LayHeSoController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\TruyLuong\TruyLuongNew_TinhTruyTheoCongThucHienTaiController.resx">
+      <DependentUpon>TruyLuongNew_TinhTruyTheoCongThucHienTaiController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\TruyLuong\TruyLuong_TinhTruyLuongNewController.resx">
+      <DependentUpon>TruyLuong_TinhTruyLuongNewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\TruyLuong\TruyLuong_XoaBangTruyThuKhacController.resx">
+      <DependentUpon>TruyLuong_XoaBangTruyThuKhacController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\TruyLuong\TruyLuong_XoaBangTruyLinhKhacController.resx">
+      <DependentUpon>TruyLuong_XoaBangTruyLinhKhacController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\TruyLuong\TruyLuong_TinhTruyLuongController.resx">
+      <DependentUpon>TruyLuong_TinhTruyLuongController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\TruyLuong\TruyLuong_TinhTruyTNTTController.resx">
+      <DependentUpon>TruyLuong_TinhTruyTNTTController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\TruyLuong\TruyLuong_XoaBangTruyLuongController.resx">
+      <DependentUpon>TruyLuong_XoaBangTruyLuongController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module.resx">
+      <DependentUpon>Module.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Model.DesignedDiffs.xafml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DatabaseUpdate\ReadMe.txt" />
+    <None Include="Nhac Viec.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PSC_HRM.Module.PMS\PSC_HRM.Module.PMS.csproj">
+      <Project>{7A75F616-F539-40CB-9B01-944E1C5A7343}</Project>
+      <Name>PSC_HRM.Module.PMS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PSC_HRM.Module\PSC_HRM.Module.csproj">
+      <Project>{5f15837d-d1e5-44dc-92f0-4f2ebe9c3f8d}</Project>
+      <Name>PSC_HRM.Module</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Act_Copy.png" />
+    <EmbeddedResource Include="Images\Act_Copy_32x32.png" />
+    <EmbeddedResource Include="Images\Act_Export1_32x32.png" />
+    <EmbeddedResource Include="Images\Act_Import.png" />
+    <EmbeddedResource Include="Images\Act_Import_32x32.png" />
+    <EmbeddedResource Include="Images\Act_ToKhai.png" />
+    <EmbeddedResource Include="Images\Act_ToKhai_32x32.png" />
+    <EmbeddedResource Include="Images\BO_BangLuong.png" />
+    <EmbeddedResource Include="Images\BO_BangLuong_32x32.png" />
+    <EmbeddedResource Include="Images\BO_ChamCong.png" />
+    <EmbeddedResource Include="Images\BO_ChamCong_32x32.png" />
+    <EmbeddedResource Include="Images\BO_ChiTietLuong.png" />
+    <EmbeddedResource Include="Images\BO_ChiTietLuong_32x32.png" />
+    <EmbeddedResource Include="Images\BO_ChungTu.png" />
+    <EmbeddedResource Include="Images\BO_ChungTu_32x32.png" />
+    <EmbeddedResource Include="Images\BO_ChuyenKhoan.png" />
+    <EmbeddedResource Include="Images\BO_ChuyenKhoan_32x32.png" />
+    <EmbeddedResource Include="Images\BO_Expression.png" />
+    <EmbeddedResource Include="Images\BO_Expression_32x32.png" />
+    <EmbeddedResource Include="Images\BO_GiaDinh_32x32.png" />
+    <EmbeddedResource Include="Images\BO_HoaDon.png" />
+    <EmbeddedResource Include="Images\BO_HoaDon_32x32.png" />
+    <EmbeddedResource Include="Images\BO_KhauTru.png" />
+    <EmbeddedResource Include="Images\BO_KhauTru_32x32.png" />
+    <EmbeddedResource Include="Images\BO_KyTinhLuong.png" />
+    <EmbeddedResource Include="Images\BO_KyTinhLuong_32x32.png" />
+    <EmbeddedResource Include="Images\BO_LoaiKhauTru.png" />
+    <EmbeddedResource Include="Images\BO_LoaiKhauTru_32x32.png" />
+    <EmbeddedResource Include="Images\BO_LoaiKhenThuong.png" />
+    <EmbeddedResource Include="Images\BO_LoaiKhenThuong_32x32.png" />
+    <EmbeddedResource Include="Images\BO_ThuLao.png" />
+    <EmbeddedResource Include="Images\BO_ThuLao_32x32.png" />
+    <EmbeddedResource Include="Images\BO_TienMat.png" />
+    <EmbeddedResource Include="Images\BO_TienMat_32x32.png" />
+    <EmbeddedResource Include="Images\BO_ToKhai.png" />
+    <EmbeddedResource Include="Images\BO_ToKhai_32x32.png" />
+    <EmbeddedResource Include="Images\BO_XepLoaiLaoDong.png" />
+    <EmbeddedResource Include="Images\BO_XepLoaiLaoDong_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\ExportBangLuongFull.xls" />
+    <None Include="UnusableNodes3.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\Images\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
