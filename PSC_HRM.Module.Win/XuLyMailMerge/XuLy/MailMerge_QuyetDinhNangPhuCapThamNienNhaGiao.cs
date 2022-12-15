@@ -25,11 +25,11 @@ namespace PSC_HRM.Module.Win.XuLyMailMerge.XuLy
             {
                 QuyetDinhCaNhan(obs, caNhan.ToList());
             }
-            if (tapThe.Count() > 0 && !TruongConfig.MaTruong.Equals("QNU"))
+            if (tapThe.Count() > 0 && !TruongConfig.MaTruong.Equals("HVNH"))
             {
                 QuyetDinhTapThe(obs, tapThe.ToList());
             }
-            if (tapThe.Count() > 0 && TruongConfig.MaTruong.Equals("QNU"))
+            if (tapThe.Count() > 0 && TruongConfig.MaTruong.Equals("HVNH"))
             {
                 QuyetDinhTapThe_New(obs, tapThe.ToList());
             }
@@ -244,11 +244,14 @@ namespace PSC_HRM.Module.Win.XuLyMailMerge.XuLy
                 qd.SoPhieuTrinh = quyetDinh.SoPhieuTrinh;
                 qd.NgayQuyetDinh = quyetDinh.NgayQuyetDinh.ToString("'ngày' dd 'tháng' MM 'năm' yyyy");
                 qd.NgayHieuLuc = quyetDinh.NgayHieuLuc.ToString("d");
+                qd.NamQuyetDinh = quyetDinh.NgayQuyetDinh.ToString("yyyy");
+                qd.ThangQuyetDinh = quyetDinh.NgayQuyetDinh.ToString("MM");
                 qd.CanCu = quyetDinh.CanCu;
                 qd.NoiDung = quyetDinh.NoiDung;
                 qd.ChucVuNguoiKy = quyetDinh.ChucVuNguoiKy != null ? quyetDinh.ChucVuNguoiKy.TenChucVu.ToUpper() : "";
                 qd.ChucDanhNguoiKy = HamDungChung.GetChucDanhNguoiKy(quyetDinh.NguoiKy);
                 qd.NguoiKy = quyetDinh.NguoiKy1;
+                qd.ThangNamNangTN = quyetDinh.NgayQuyetDinh.ToString("'tháng' MM 'năm' yyyy");
 
                 //  
                 quyetDinh.ListChiTietQuyetDinhNangPhuCapThamNienNhaGiao.Sorting.Add(new DevExpress.Xpo.SortProperty("ThamNienMoi", DevExpress.Xpo.DB.SortingDirection.Descending));
@@ -281,6 +284,8 @@ namespace PSC_HRM.Module.Win.XuLyMailMerge.XuLy
                 master.SoQuyetDinh = qd.SoQuyetDinh;
                 master.NguoiKy = qd.NguoiKy;
                 master.NgayQuyetDinh = qd.NgayQuyetDinh;
+                master.NamQuyetDinh = qd.NamQuyetDinh;
+                master.ThangQuyetDinh = qd.ThangQuyetDinh;
                 qd.Master.Add(master);
 
                 //detail
@@ -298,12 +303,15 @@ namespace PSC_HRM.Module.Win.XuLyMailMerge.XuLy
                     detail.DanhXungVietThuong = item.ThongTinNhanVien.GioiTinh == GioiTinhEnum.Nam ? "ông" : "bà";
                     detail.HoTen = item.ThongTinNhanVien.HoTen;
                     detail.GioiTinh = item.ThongTinNhanVien.GioiTinh == GioiTinhEnum.Nam ? "Nam" : "Nữ";
+                    detail.GioiTinhNam = item.ThongTinNhanVien.GioiTinh == GioiTinhEnum.Nam ? item.ThongTinNhanVien.NgaySinh.ToString("d") : "";
+                    detail.GioiTinhNu = item.ThongTinNhanVien.GioiTinh == GioiTinhEnum.Nu ? item.ThongTinNhanVien.NgaySinh.ToString("d") : "";
                     detail.NgaySinh = item.ThongTinNhanVien.NgaySinh != DateTime.MinValue ? item.ThongTinNhanVien.NgaySinh.ToString("d") : "";
                     detail.DonVi = HamDungChung.GetTenBoPhan(item.BoPhan);
                     detail.ThamNienCu = item.ThamNienCu.ToString("N0");
-                    detail.NgayHuongThamNienCu = item.NgayHuongThamNienCu.ToString("d");
+                    detail.NgayHuongThamNienCu = item.NgayHuongThamNienCu.ToString("MM/yyyy");
                     detail.ThamNienMoi = item.ThamNienMoi.ToString("N0");
-                    detail.NgayHuongThamNienMoi = item.NgayHuongThamNienMoi.ToString("d");
+                    detail.NgayHuongThamNienMoi = item.NgayHuongThamNienMoi.ToString("MM/yyyy");
+                    detail.MaNgachLuong = item.ThongTinNhanVien.NhanVienThongTinLuong.NgachLuong != null ? item.ThongTinNhanVien.NhanVienThongTinLuong.NgachLuong.MaQuanLy: "";
                     if (TruongConfig.MaTruong == "QNU")
                     {
                         detail.ChucVu = item.ThongTinNhanVien.ChucVu != null ?
@@ -313,6 +321,7 @@ namespace PSC_HRM.Module.Win.XuLyMailMerge.XuLy
                     }
                     qd.Detail.Add(detail);
                     stt++;
+                    qd.SoLuongCanBo = (stt-1).ToString("N0");
                 }
 
                 list.Add(qd);

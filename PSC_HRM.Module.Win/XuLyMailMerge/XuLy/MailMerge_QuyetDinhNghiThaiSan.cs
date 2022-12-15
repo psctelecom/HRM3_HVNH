@@ -54,8 +54,9 @@ namespace PSC_HRM.Module.Win.XuLyMailMerge.XuLy
                 }
 
 
-                qd.TuNgay = quyetDinh.TuNgay != DateTime.MinValue ? quyetDinh.TuNgay.ToString("d") : "";
-                qd.DenNgay = quyetDinh.DenNgay != DateTime.MinValue ? quyetDinh.DenNgay.ToString("d") : "";
+                qd.TuNgay = quyetDinh.TuNgay != DateTime.MinValue ? quyetDinh.TuNgay.ToString("'ngày' dd 'tháng' MM 'năm' yyyy") : "";
+                qd.DenNgay = quyetDinh.DenNgay != DateTime.MinValue ? quyetDinh.DenNgay.ToString("'ngày' dd 'tháng' MM 'năm' yyyy") : "";
+                qd.NgayXinNghi = quyetDinh.NgayXinNghi != DateTime.MinValue ? quyetDinh.NgayXinNghi.ToString("'ngày' dd 'tháng' MM 'năm' yyyy") : "";
                 qd.SoSoBHXH = quyetDinh.SoSoBHXH != null ? quyetDinh.SoSoBHXH : "";
 
                 list.Add(qd);

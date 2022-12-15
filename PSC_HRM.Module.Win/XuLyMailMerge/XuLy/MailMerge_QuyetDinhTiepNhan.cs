@@ -42,7 +42,7 @@ namespace PSC_HRM.Module.Win.XuLyMailMerge.XuLy
                 qd.ChucVuNguoiKy = quyetDinh.ChucVuNguoiKy != null ? quyetDinh.ChucVuNguoiKy.TenChucVu.ToUpper() : "";
                 qd.ChucDanhNguoiKy = HamDungChung.GetChucDanhNguoiKy(quyetDinh.NguoiKy);
                 qd.NguoiKy = quyetDinh.NguoiKy1;
-                qd.NgayXinTiepNhan = quyetDinh.NgayXinTiepNhan.ToString("dd/MM/yyyy");
+                qd.NgayXinTiepNhan = quyetDinh.NgayXinTiepNhan.ToString("'ngày' dd 'tháng' MM 'năm' yyyy");
 
                 if (quyetDinh.ThongTinNhanVien != null)
                 {
@@ -65,9 +65,9 @@ namespace PSC_HRM.Module.Win.XuLyMailMerge.XuLy
                 if (quyetDinh.QuyetDinhNghiKhongHuongLuong != null)
                 {
                     qd.SoQDNghiKhongLuong = quyetDinh.QuyetDinhNghiKhongHuongLuong.SoQuyetDinh;
-                    qd.NgayNghiKhongLuong = quyetDinh.QuyetDinhNghiKhongHuongLuong.NgayQuyetDinh.ToString("d");
-                    qd.TuNgayNghiKhongLuong = quyetDinh.QuyetDinhNghiKhongHuongLuong.TuNgay != DateTime.MinValue ? quyetDinh.QuyetDinhNghiKhongHuongLuong.TuNgay.ToString("d") : "";
-                    qd.DenNgayNghiKhongLuong = quyetDinh.QuyetDinhNghiKhongHuongLuong.DenNgay != DateTime.MinValue ? quyetDinh.QuyetDinhNghiKhongHuongLuong.DenNgay.ToString("d") : "";
+                    qd.NgayNghiKhongLuong = quyetDinh.QuyetDinhNghiKhongHuongLuong.NgayQuyetDinh.ToString("'ngày' dd 'tháng' MM 'năm' yyyy");
+                    qd.TuNgayNghiKhongLuong = quyetDinh.QuyetDinhNghiKhongHuongLuong.TuNgay != DateTime.MinValue ? quyetDinh.QuyetDinhNghiKhongHuongLuong.TuNgay.ToString("'ngày' dd 'tháng' MM 'năm' yyyy") : "";
+                    qd.DenNgayNghiKhongLuong = quyetDinh.QuyetDinhNghiKhongHuongLuong.DenNgay != DateTime.MinValue ? quyetDinh.QuyetDinhNghiKhongHuongLuong.DenNgay.ToString("'ngày' dd 'tháng' MM 'năm' yyyy") : "";
                     qd.SoThang = ((quyetDinh.QuyetDinhNghiKhongHuongLuong.DenNgay.Year * 12 + quyetDinh.QuyetDinhNghiKhongHuongLuong.DenNgay.Month)
                                         - (quyetDinh.QuyetDinhNghiKhongHuongLuong.TuNgay.Year * 12 + quyetDinh.QuyetDinhNghiKhongHuongLuong.TuNgay.Month)).ToString("00");
                 }

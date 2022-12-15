@@ -38,8 +38,10 @@ namespace PSC_HRM.Module.MailMerge.QuyetDinh
         public string ThamNienCu { get; set; }
         [System.ComponentModel.DisplayName("Ngày hưởng thâm niên cũ")]
         public string NgayHuongThamNienCu { get; set; }
-           [System.ComponentModel.DisplayName("Ngày Ký")]
+        [System.ComponentModel.DisplayName("Ngày Ký")]
         public string NgayKy { get; set; }
+        [System.ComponentModel.DisplayName("Tháng năm nâng thâm niên")]
+        public string ThangNamNangTN { get; set; }
         public Non_QuyetDinhNangPhuCapThamNienNhaGiao()
         {
             Master = new List<Non_ChiTietQuyetDinhNangPhuCapThamNienNhaGiaoMaster>();

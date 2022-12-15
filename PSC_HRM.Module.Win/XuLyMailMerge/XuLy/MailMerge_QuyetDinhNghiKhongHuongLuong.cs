@@ -37,7 +37,7 @@ namespace PSC_HRM.Module.Win.XuLyMailMerge.XuLy
                     qd.NgayHieuLuc = quyetDinh.NgayHieuLuc.ToString("'ngày' dd 'tháng' MM 'năm' yyyy");
                     qd.NgayHieuLucDate = quyetDinh.NgayHieuLuc.ToString("dd/MM/yyyy");
                 }
-                qd.NgayDeNghi = quyetDinh.NgayXinNghi.ToString("dd/MM/yyyy");
+                qd.NgayDeNghi = quyetDinh.NgayXinNghi.ToString("'ngày' dd 'tháng' MM 'năm' yyyy");
                 qd.NgayKy=DateTime.Now.ToString("'ngày' dd 'tháng' MM 'năm' yyyy");
                 qd.CanCu = quyetDinh.CanCu;
                 qd.NoiDung = quyetDinh.NoiDung;
@@ -68,8 +68,8 @@ namespace PSC_HRM.Module.Win.XuLyMailMerge.XuLy
                 qd.ChucVu = quyetDinh.ThongTinNhanVien.ChucVu != null ? quyetDinh.ThongTinNhanVien.ChucVu.TenChucVu : "";
                 qd.ChucVuNhanVienVietThuong = HamDungChung.GetChucVuNhanVien(quyetDinh.ThongTinNhanVien).ToLower();
                 qd.ChucVuNhanVienVietHoa = HamDungChung.GetChucVuNhanVien(quyetDinh.ThongTinNhanVien);
-                qd.TuNgay = quyetDinh.TuNgay != DateTime.MinValue ? quyetDinh.TuNgay.ToString("d") : "";
-                qd.DenNgay = quyetDinh.DenNgay != DateTime.MinValue ? quyetDinh.DenNgay.ToString("d") : "";
+                qd.TuNgay = quyetDinh.TuNgay != DateTime.MinValue ? quyetDinh.TuNgay.ToString("'ngày' dd 'tháng' MM 'năm' yyyy") : "";
+                qd.DenNgay = quyetDinh.DenNgay != DateTime.MinValue ? quyetDinh.DenNgay.ToString("'ngày' dd 'tháng' MM 'năm' yyyy") : "";
                 qd.SoThang = ((quyetDinh.DenNgay.Year * 12 + quyetDinh.DenNgay.Month)
                                      - (quyetDinh.TuNgay.Year * 12 + quyetDinh.TuNgay.Month)).ToString("00");
                 qd.LyDo = quyetDinh.LyDo.ToLower();

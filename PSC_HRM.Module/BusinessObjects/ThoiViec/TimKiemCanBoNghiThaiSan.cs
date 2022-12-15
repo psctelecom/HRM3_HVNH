@@ -100,8 +100,6 @@ namespace PSC_HRM.Module.ThoiViec
                                 
                                 DanhSach.TuNgay = DateTime.Parse(item["TuNgay"].ToString());
                                 DanhSach.DenNgay = DateTime.Parse(item["DenNgay"].ToString());
-                                DanhSach.TuNgay1 = DateTime.Parse(item["TuNgay1"].ToString());
-                                DanhSach.DenNgay1 = DateTime.Parse(item["DenNgay1"].ToString());
                             }
                             //
                             ListCanBo.Add(DanhSach);

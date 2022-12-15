@@ -52,8 +52,9 @@ namespace PSC_HRM.Module.Win.XuLyMailMerge.XuLy
                 qd.ChucDanhNguoiKy = HamDungChung.GetChucDanhNguoiKy(quyetDinh.NguoiKy);
                 qd.NguoiKy = quyetDinh.NguoiKy1;
 
-                qd.TuNgay = quyetDinh.TuNgay != DateTime.MinValue ? quyetDinh.TuNgay.ToString("d") : "";
-                qd.DenNgay = quyetDinh.DenNgay != DateTime.MinValue ? quyetDinh.DenNgay.ToString("d") : "";
+                qd.TuNgay = quyetDinh.TuNgay != DateTime.MinValue ? quyetDinh.TuNgay.ToString("'ngày' dd 'tháng' MM 'năm' yyyy") : "";
+                qd.DenNgay = quyetDinh.DenNgay != DateTime.MinValue ? quyetDinh.DenNgay.ToString("'ngày' dd 'tháng' MM 'năm' yyyy") : "";
+                qd.NgayTroLai = quyetDinh.NgayTroLai != DateTime.MinValue ? quyetDinh.NgayTroLai.ToString("'ngày' dd 'tháng' MM 'năm' yyyy") : "";
                 
                 foreach (ChiTietTiepNhanNghiThaiSan item in quyetDinh.ListChiTietTiepNhanNghiThaiSan)
                 {
