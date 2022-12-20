@@ -12,37 +12,39 @@ namespace PSC_HRM.Module.ReportClass
 {
     [NonPersistent()]
     [ImageName("BO_Report")]
-    [ModelDefault("Caption", "Báo cáo: Thống kê chất lượng viên chức trong các đơn vị sự nghiệp công lập")]
+    [ModelDefault("Caption", "Báo cáo: Thống kê số lượng, chất lượng đội ngũ viên chức")]
     public class Report_ThongKe_ChatLuongVienChuc : StoreProcedureReport
     {
         // Fields...
-        private DateTime _Ngay;
+        private DateTime _DenNgay;
 
         [ModelDefault("Caption", "Tính đến ngày")]
+        [ModelDefault("EditMask", "dd/MM/yyyy")]
+        [ModelDefault("DisplayFormat", "dd/MM/yyyy")]
         [RuleRequiredField(DefaultContexts.Save)]
-        public DateTime Ngay
+        public DateTime DenNgay
         {
             get
             {
-                return _Ngay;
+                return _DenNgay;
             }
             set
             {
-                SetPropertyValue("Ngay", ref _Ngay, value);
+                SetPropertyValue("DenNgay", ref _DenNgay, value);
             }
         }
         public Report_ThongKe_ChatLuongVienChuc(Session session) : base(session) { }
         public override void AfterConstruction()
         {
             base.AfterConstruction();
-            Ngay = HamDungChung.GetServerTime();
+            DenNgay = HamDungChung.GetServerTime();
         }
 
         public override SqlCommand CreateCommand()
         {
             SqlParameter[] parameter = new SqlParameter[1];
-            parameter[0] = new SqlParameter("@Ngay", Ngay);
-            SqlCommand cmd = DataProvider.GetCommand("spd_Report_ThongKe_ChatLuongVienChuc", System.Data.CommandType.StoredProcedure, parameter);
+            parameter[0] = new SqlParameter("@DenNgay", DenNgay);
+            SqlCommand cmd = DataProvider.GetCommand("spd_Report_BaoCaoSoLuongChatLuongDoiNguVienChuc", System.Data.CommandType.StoredProcedure, parameter);
             return cmd;
         }
     }
