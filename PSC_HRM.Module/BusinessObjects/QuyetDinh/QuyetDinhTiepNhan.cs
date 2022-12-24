@@ -78,7 +78,7 @@ namespace PSC_HRM.Module.QuyetDinh
             }
         }
 
-        [ModelDefault("Caption", "Ngày xin tiếp nhận")]
+        [ModelDefault("Caption", "Ngày trở lại")]
         public DateTime NgayXinTiepNhan
         {
             get

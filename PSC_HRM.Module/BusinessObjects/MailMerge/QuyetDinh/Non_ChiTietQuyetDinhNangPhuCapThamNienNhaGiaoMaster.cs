@@ -22,5 +22,7 @@ namespace PSC_HRM.Module.MailMerge.QuyetDinh
         public string NgayQuyetDinh { get; set; }
         [System.ComponentModel.DisplayName("Năm quyết định Master")]
         public string NamQuyetDinh { get; set; }
+        [System.ComponentModel.DisplayName("tháng quyết định Master")]
+        public string ThangQuyetDinh { get; set; }
     }
 }

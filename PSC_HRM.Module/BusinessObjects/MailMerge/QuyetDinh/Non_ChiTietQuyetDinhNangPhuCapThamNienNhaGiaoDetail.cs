@@ -13,6 +13,10 @@ namespace PSC_HRM.Module.MailMerge.QuyetDinh
         public string HoTen { get; set; }
         [DisplayName("Giới tính")]
         public string GioiTinh { get; set; }
+        [DisplayName("Giới tính nam")]
+        public string GioiTinhNam { get; set; }
+        [DisplayName("Giới tính nữ")]
+        public string GioiTinhNu { get; set; }
         [DisplayName("Ngày sinh")]
         public string NgaySinh { get; set; }
         [DisplayName("Đơn vị")]

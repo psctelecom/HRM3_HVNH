@@ -58,6 +58,7 @@ namespace PSC_HRM.Module.Win.XuLyMailMerge.XuLy
 
                 qd.NgayHopHoiDongLuongDate = quyetDinh.NgayHopHoiDongLuong.ToString("d");
                 qd.NamQuyetDinh = quyetDinh.NgayHieuLuc.ToString("yyyy");
+                qd.GhiChu = quyetDinh.GhiChu;
                 switch (quyetDinh.NgayHieuLuc.Month)
                 {
                     case 1: case 2: case 3:

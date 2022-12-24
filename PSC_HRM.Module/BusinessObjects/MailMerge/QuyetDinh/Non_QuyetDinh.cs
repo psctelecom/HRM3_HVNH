@@ -28,6 +28,8 @@ namespace PSC_HRM.Module.MailMerge.QuyetDinh
         public string NgayQuyetDinh { get; set; }
         [System.ComponentModel.DisplayName("Năm quyết định 1")]
         public string NamQuyetDinh { get; set; }
+        [System.ComponentModel.DisplayName("Tháng quyết định 1")]
+        public string ThangQuyetDinh { get; set; }
         [System.ComponentModel.DisplayName("Quý quyết định")]
         public string QuyQuyetDinh { get; set; }
         [System.ComponentModel.DisplayName("Ngày hiệu lực")]
