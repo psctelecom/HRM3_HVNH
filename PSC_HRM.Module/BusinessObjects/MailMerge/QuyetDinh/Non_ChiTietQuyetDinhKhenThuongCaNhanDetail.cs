@@ -14,5 +14,8 @@ namespace PSC_HRM.Module.MailMerge.QuyetDinh
         public string ChucDanh { get; set; }
         [System.ComponentModel.DisplayName("Chức vụ")]
         public string Chucvu { get; set; }
+
+        [System.ComponentModel.DisplayName("Ghi chú")]
+        public string GhiChu { get; set; }
     }
 }
