@@ -12,6 +12,8 @@ namespace PSC_HRM.Module.Win.XuLyMailMerge.XuLy
     public class MailMerge_QuyetDinhKhenThuong : IMailMerge<IList<QuyetDinhKhenThuong>>
     {
         bool giayKhen = false;
+        bool phanVien = false;
+        string tenPhanVien = null;
         
         public void Merge(DevExpress.ExpressApp.IObjectSpace obs, IList<QuyetDinhKhenThuong> qdList)
         {
@@ -262,8 +264,17 @@ namespace PSC_HRM.Module.Win.XuLyMailMerge.XuLy
 
                 foreach (ChiTietKhenThuongBoPhan item in quyetDinh.ListChiTietKhenThuongBoPhan)
                 {
+                    if (item.BoPhan.BoPhanCha.TenBoPhan.Contains("Phân viện"))
+                    {
+                        phanVien = true;
+                        tenPhanVien = item.BoPhan.BoPhanCha.TenBoPhan;
+                    }
+
                     qd.DonVi = item.BoPhan.TenBoPhan;
                 }
+
+                qd.TenPhanVien = tenPhanVien;
+
                 list.Add(qd);
             }
             MailMergeTemplate merge = HamDungChung.GetTemplate(obs, "QuyetDinhKhenThuongTapThe.rtf");
@@ -320,6 +331,12 @@ namespace PSC_HRM.Module.Win.XuLyMailMerge.XuLy
                 int stt = 1;
                 foreach (ChiTietKhenThuongBoPhan item in quyetDinh.ListChiTietKhenThuongBoPhan)
                 {
+                    if (item.BoPhan.BoPhanCha.TenBoPhan.Contains("Phân viện"))
+                    {
+                        phanVien = true;
+                        tenPhanVien = item.BoPhan.BoPhanCha.TenBoPhan;
+                    }
+
                     detail = new Non_ChiTietQuyetDinhKhenThuongTapTheDetail();
                     detail.Oid = quyetDinh.Oid.ToString();
                     detail.STT = stt.ToString();
@@ -335,6 +352,8 @@ namespace PSC_HRM.Module.Win.XuLyMailMerge.XuLy
 
                 qd.SoLuongCanBo = master.TongNhanVien.ToString();
 
+                qd.TenPhanVien = tenPhanVien;
+
                 qd.Master1.Add(master);
               
                 list.Add(qd);
@@ -342,17 +361,25 @@ namespace PSC_HRM.Module.Win.XuLyMailMerge.XuLy
 
             MailMergeTemplate masterTemplate = null;
             MailMergeTemplate detailTemplate = null;
-            MailMergeTemplate template = HamDungChung.GetTemplate(obs, "QuyetDinhKhenThuongDanhSachTapThe.rtf");      
+            MailMergeTemplate template = HamDungChung.GetTemplate(obs, "QuyetDinhKhenThuongDanhSachTapThe.rtf");
 
-            if (giayKhen)
+            if (phanVien)
             {
-                masterTemplate = obs.FindObject<MailMergeTemplate>(CriteriaOperator.Parse("MaQuanLy like ?", "QuyetDinhKhenThuongGiayKhenMaster1.rtf"));
-                detailTemplate = obs.FindObject<MailMergeTemplate>(CriteriaOperator.Parse("MaQuanLy like ?", "QuyetDinhKhenThuongGiayKhenDetail1.rtf"));
+                masterTemplate = obs.FindObject<MailMergeTemplate>(CriteriaOperator.Parse("MaQuanLy like ?", "QuyetDinhKhenThuongPhanVienMaster1.rtf"));
+                detailTemplate = obs.FindObject<MailMergeTemplate>(CriteriaOperator.Parse("MaQuanLy like ?", "QuyetDinhKhenThuongPhanVienDetail1.rtf"));
             }
             else
             {
-                masterTemplate = obs.FindObject<MailMergeTemplate>(CriteriaOperator.Parse("MaQuanLy like ?", "QuyetDinhKhenThuongMaster1.rtf"));
-                detailTemplate = obs.FindObject<MailMergeTemplate>(CriteriaOperator.Parse("MaQuanLy like ?", "QuyetDinhKhenThuongDetail1.rtf"));
+                if (giayKhen)
+                {
+                    masterTemplate = obs.FindObject<MailMergeTemplate>(CriteriaOperator.Parse("MaQuanLy like ?", "QuyetDinhKhenThuongGiayKhenMaster1.rtf"));
+                    detailTemplate = obs.FindObject<MailMergeTemplate>(CriteriaOperator.Parse("MaQuanLy like ?", "QuyetDinhKhenThuongGiayKhenDetail1.rtf"));
+                }
+                else
+                {
+                    masterTemplate = obs.FindObject<MailMergeTemplate>(CriteriaOperator.Parse("MaQuanLy like ?", "QuyetDinhKhenThuongMaster1.rtf"));
+                    detailTemplate = obs.FindObject<MailMergeTemplate>(CriteriaOperator.Parse("MaQuanLy like ?", "QuyetDinhKhenThuongDetail1.rtf"));
+                }
             }
             
             MailMergeTemplate[] merge = new MailMergeTemplate[3] { template, masterTemplate, detailTemplate };

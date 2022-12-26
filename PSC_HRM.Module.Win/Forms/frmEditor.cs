@@ -211,6 +211,9 @@ namespace PSC_HRM.Module.Win.Forms
                     ||//Nguyên thêm để hiện tab1
                     (_MailMerge[1].MaQuanLy.Contains("QuyetDinhKhenThuongGiayKhenMaster1.rtf")
                     && _MailMerge[2].MaQuanLy.Contains("QuyetDinhKhenThuongGiayKhenDetail1.rtf"))
+                    ||
+                    (_MailMerge[1].MaQuanLy.Contains("QuyetDinhKhenThuongPhanVienMaster1.rtf")
+                    && _MailMerge[2].MaQuanLy.Contains("QuyetDinhKhenThuongPhanVienDetail1.rtf"))
                 )
                 {
                     tabMaster.PageVisible = false;
@@ -264,6 +267,9 @@ namespace PSC_HRM.Module.Win.Forms
                     ||//Nguyên thêm để hiện tab1
                     (mailMerge[1].MaQuanLy.Contains("QuyetDinhKhenThuongGiayKhenMaster1.rtf")
                     && mailMerge[2].MaQuanLy.Contains("QuyetDinhKhenThuongGiayKhenDetail1.rtf"))
+                    ||
+                    (_MailMerge[1].MaQuanLy.Contains("QuyetDinhKhenThuongPhanVienMaster1.rtf")
+                    && _MailMerge[2].MaQuanLy.Contains("QuyetDinhKhenThuongPhanVienDetail1.rtf"))
                 )
                 {
                     //master1
