@@ -540,7 +540,7 @@ namespace PSC_HRM.Module.Win.XuLyMailMerge.XuLy
                 master.NguoiKy = qd.NguoiKy;
                 master.NgayQuyetDinh = qd.NgayQuyetDinh;
                 master.NamHoc = qd.NamHoc;
-                master.DanhHieu = qd.DanhHieu;
+                master.DanhHieu = qd.DanhHieu;            
 
                 //
                 Non_ChiTietQuyetDinhKhenThuongTapTheMaster master1 = new Non_ChiTietQuyetDinhKhenThuongTapTheMaster();
@@ -578,6 +578,7 @@ namespace PSC_HRM.Module.Win.XuLyMailMerge.XuLy
                     stt++;
                 }
 
+                master.TongNhanVien = Convert.ToInt32(stt-1);
                 qd.SLCaNhan = (stt - 1).ToString();
                 qd.Master.Add(master);
 
@@ -593,6 +594,7 @@ namespace PSC_HRM.Module.Win.XuLyMailMerge.XuLy
                     stt++;
                 }
 
+                master1.TongNhanVien = Convert.ToInt32(stt - 1);
                 qd.SLTapThe = (stt - 1).ToString();
                 qd.Master1.Add(master1);
 
