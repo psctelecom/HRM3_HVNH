@@ -22,16 +22,16 @@ namespace PSC_HRM.Module.ReportClass
 {
     [NonPersistent]
     [ImageName("BO_Report")]
-    [ModelDefault("Caption", "Báo cáo: Danh sách cán bộ được cử đi bồi dưỡng từ ngày đến ngày")]
-    [Appearance("Report_NhanSu_DanhSachCanBoDuocCuDiBoiDuong", TargetItems = "BoPhan", Enabled = false, Criteria = "TatCaBoPhan")]
-    public class Report_NhanSu_DanhSachCanBoDuocCuDiBoiDuong : StoreProcedureReport
+    [ModelDefault("Caption", "Báo cáo: Danh sách kết quả cán bộ được cử đi bồi dưỡng dài hạn")]
+    [Appearance("Report_NhanSu_DanhSachKetQuaCanBoDuocCuDiBoiDuongDaiHan", TargetItems = "BoPhan", Enabled = false, Criteria = "TatCaBoPhan")]
+    public class Report_NhanSu_DanhSachKetQuaCanBoDuocCuDiBoiDuongDaiHan : StoreProcedureReport
     {
         private bool _TatCaBoPhan = true;
         private BoPhan _BoPhan;
         private DateTime _TuNgay;
         private DateTime _DenNgay;
 
-        public Report_NhanSu_DanhSachCanBoDuocCuDiBoiDuong(Session session) : base(session) { }
+        public Report_NhanSu_DanhSachKetQuaCanBoDuocCuDiBoiDuongDaiHan(Session session) : base(session) { }
 
         [ImmediatePostData]
         [ModelDefault("Caption", "Tất cả bộ phận")]
@@ -110,7 +110,7 @@ namespace PSC_HRM.Module.ReportClass
                 sb.Append(String.Format("{0};", item));
             }
 
-            SqlCommand cm = new SqlCommand("[dbo].[spd_Report_NhanSu_DanhSachCanBoDuocCuDiBoiDuong]");
+            SqlCommand cm = new SqlCommand("[dbo].[spd_Report_NhanSu_DanhSachCanBoDuocCuDiBoiDuongDaiHan]");
             cm.CommandType = System.Data.CommandType.StoredProcedure;
 
             cm.Parameters.AddWithValue("@BoPhanList", sb.ToString());
