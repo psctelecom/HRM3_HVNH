@@ -20,8 +20,8 @@ namespace PSC_HRM.Module.MailMerge.QuyetDinh
 
         public Non_QuyetDinhKhenThuongTapThe()
         {
-            Master = new List<Non_ChiTietQuyetDinhKhenThuongMaster>();
-            Detail = new List<Non_ChiTietQuyetDinhKhenThuongTapTheDetail>();
+            Master1 = new List<Non_ChiTietQuyetDinhKhenThuongTapTheMaster>();
+            Detail1 = new List<Non_ChiTietQuyetDinhKhenThuongTapTheDetail>();
         }
     }
 }

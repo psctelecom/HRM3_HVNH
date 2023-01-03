@@ -4,6 +4,7 @@ using DevExpress.ExpressApp;
 using System.Collections.Generic;
 using PSC_HRM.Module.QuyetDinh;
 using DevExpress.ExpressApp.Actions;
+using PSC_HRM.Module.Win.XuLyMailMerge.XuLy;
 
 namespace PSC_HRM.Module.Win.XuLyMailMerge
 {
@@ -25,7 +26,8 @@ namespace PSC_HRM.Module.Win.XuLyMailMerge
                 if (qd != null)
                     list.Add(qd);
             }
-            SystemContainer.Resolver<IMailMerge<IList<QuyetDinhNghiThaiSan>>>().Merge(Application.CreateObjectSpace(), list);
+            //SystemContainer.Resolver<IMailMerge<IList<QuyetDinhNghiThaiSan>>>().Merge(Application.CreateObjectSpace(), list);
+            SystemContainer.Resolver<MailMerge_QuyetDinhNghiThaiSan>().Merge(Application.CreateObjectSpace(), list);
         }
     }
 }

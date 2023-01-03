@@ -205,8 +205,16 @@ namespace PSC_HRM.Module.Win.Forms
             }
             else if (args.Length == 3)
             {
-                if (_MailMerge[1].MaQuanLy.Contains("QuyetDinhKhenThuongMaster1.rtf")
+                if (
+                    (_MailMerge[1].MaQuanLy.Contains("QuyetDinhKhenThuongMaster1.rtf")
                     && _MailMerge[2].MaQuanLy.Contains("QuyetDinhKhenThuongDetail1.rtf"))
+                    ||//Nguyên thêm để hiện tab1
+                    (_MailMerge[1].MaQuanLy.Contains("QuyetDinhKhenThuongGiayKhenMaster1.rtf")
+                    && _MailMerge[2].MaQuanLy.Contains("QuyetDinhKhenThuongGiayKhenDetail1.rtf"))
+                    ||
+                    (_MailMerge[1].MaQuanLy.Contains("QuyetDinhKhenThuongPhanVienMaster1.rtf")
+                    && _MailMerge[2].MaQuanLy.Contains("QuyetDinhKhenThuongPhanVienDetail1.rtf"))
+                )
                 {
                     tabMaster.PageVisible = false;
                     tabDetail.PageVisible = false;
@@ -253,8 +261,16 @@ namespace PSC_HRM.Module.Win.Forms
 
             if (mailMerge.Length >= 3)
             {
-                if (mailMerge[1].MaQuanLy.Contains("QuyetDinhKhenThuongMaster1.rtf")
+                if (
+                    (mailMerge[1].MaQuanLy.Contains("QuyetDinhKhenThuongMaster1.rtf")
                     && mailMerge[2].MaQuanLy.Contains("QuyetDinhKhenThuongDetail1.rtf"))
+                    ||//Nguyên thêm để hiện tab1
+                    (mailMerge[1].MaQuanLy.Contains("QuyetDinhKhenThuongGiayKhenMaster1.rtf")
+                    && mailMerge[2].MaQuanLy.Contains("QuyetDinhKhenThuongGiayKhenDetail1.rtf"))
+                    ||
+                    (_MailMerge[1].MaQuanLy.Contains("QuyetDinhKhenThuongPhanVienMaster1.rtf")
+                    && _MailMerge[2].MaQuanLy.Contains("QuyetDinhKhenThuongPhanVienDetail1.rtf"))
+                )
                 {
                     //master1
                     ReplaceRichEditCommandFactoryService(richMaster1, mailMerge[1], (XPObjectSpace)obs);
@@ -445,14 +461,26 @@ namespace PSC_HRM.Module.Win.Forms
             if (tabMaster1.PageVisible)
             {
                 cmd = new CustomSaveDocumentCommand(richMaster1);
-                cmd.MailMerge = _MailMerge[3];
+                //cmd.MailMerge = _MailMerge[3];//old
+                //Phần Nguyên thêm sửa lỗi báo index
+                if (_MailMerge[1].MaQuanLy.Contains("1"))
+                    cmd.MailMerge = _MailMerge[1];
+                else
+                    cmd.MailMerge = _MailMerge[3];
+                //
                 cmd.ObjectSpace = obs;
                 cmd.Execute();
             }
             if (tabDetail1.PageVisible)
             {
                 cmd = new CustomSaveDocumentCommand(richDetail1);
-                cmd.MailMerge = _MailMerge[4];
+                //cmd.MailMerge = _MailMerge[4];//old
+                //Phần Nguyên thêm sửa lỗi báo index
+                if (_MailMerge[2].MaQuanLy.Contains("1"))
+                    cmd.MailMerge = _MailMerge[2];
+                else
+                    cmd.MailMerge = _MailMerge[4];
+                //
                 cmd.ObjectSpace = obs;
                 cmd.Execute();
             }

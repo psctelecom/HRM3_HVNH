@@ -59,7 +59,11 @@ namespace PSC_HRM.Module.MailMerge.QuyetDinh
         [System.ComponentModel.DisplayName("Ghi chú")]
         public string GhiChu { get; set; }
         [System.ComponentModel.DisplayName("Cử đoàn")]
-        public string CuDoan { get; set; }       
+        public string CuDoan { get; set; }
+
+        //Dành cho mẫu phân viện
+        [System.ComponentModel.DisplayName("Tên phân viện")]
+        public string TenPhanVien { get; set; }
 
         public IList Master { get; set; }
         public IList Detail { get; set; }

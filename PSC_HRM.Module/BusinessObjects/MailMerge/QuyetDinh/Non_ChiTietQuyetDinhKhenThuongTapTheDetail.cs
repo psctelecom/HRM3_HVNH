@@ -8,5 +8,7 @@ namespace PSC_HRM.Module.MailMerge.QuyetDinh
         public string STT { get; set; }
         [System.ComponentModel.DisplayName("Đơn vị")]
         public string DonVi { get; set; }
+        [System.ComponentModel.DisplayName("Ghi chú")]
+        public string GhiChu { get; set; }
     }
 }
